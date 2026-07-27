@@ -1,0 +1,34 @@
+name: Update IBTrACS
+
+on:
+  schedule:
+    - cron: "0 4 * * 1"   # tous les lundis à 04:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install -r etl/requirements.txt
+
+      - name: Récupérer IBTrACS (bassin Sud Indien)
+        run: python etl/fetch_ibtracs.py
+
+      - name: Committer les données mises à jour
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/raw/ibtracs_si_raw.csv data/raw/ibtracs_si_raw.meta.json
+          git diff --cached --quiet && echo "Aucun changement" && exit 0
+          git commit -m "chore(data): mise à jour automatique IBTrACS"
+          git push

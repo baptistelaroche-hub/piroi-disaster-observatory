@@ -39,5 +39,13 @@ RELIEFWEB_APPNAME=votre-appname python etl/fetch_reliefweb.py
 | Source | Contenu | Statut |
 |---|---|---|
 | ReliefWeb | Catastrophes mondiales (officiel) | ✅ étape 1 |
-| IBTrACS (NOAA) | Trajectoires de cyclones tropicaux | à venir |
+| IBTrACS (NOAA) | Trajectoires de cyclones, bassin Sud Indien (zone PIROI) | ✅ étape 2 |
 | IFRC | Sociétés nationales | à venir |
+
+### IBTrACS — note sur la couverture des données
+
+Le bassin Sud Indien (`SI`) couvre l'intégralité de la zone PIROI. Les données sont conservées
+telles quelles (toutes colonnes sources) en RAW ; le filtrage (colonnes utiles, types de
+trajectoire, période) se fera au niveau CLEAN. À noter : la couverture vent/pression est nulle
+avant les années 1970 (ère pré-satellite, positions seules) et reste partielle (40-60%) ensuite —
+à prendre en compte dans les analyses de fréquence et cartes de chaleur.

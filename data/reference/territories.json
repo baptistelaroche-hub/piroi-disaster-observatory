@@ -1,0 +1,10 @@
+[
+  { "iso3": "mdg", "name": "Madagascar", "piroi_region": "Océan Indien" },
+  { "iso3": "com", "name": "Comores", "piroi_region": "Océan Indien" },
+  { "iso3": "mus", "name": "Maurice", "piroi_region": "Océan Indien" },
+  { "iso3": "syc", "name": "Seychelles", "piroi_region": "Océan Indien" },
+  { "iso3": "reu", "name": "La Réunion", "piroi_region": "Océan Indien" },
+  { "iso3": "myt", "name": "Mayotte", "piroi_region": "Océan Indien" },
+  { "iso3": "moz", "name": "Mozambique", "piroi_region": "Afrique australe" },
+  { "iso3": "tza", "name": "Tanzanie", "piroi_region": "Afrique de l'Est" }
+]

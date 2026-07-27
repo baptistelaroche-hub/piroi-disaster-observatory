@@ -1,0 +1,83 @@
+[
+  {
+    "category": "Cyclone tropical",
+    "is_ibtracs_join": true,
+    "reliefweb_types": [{ "code": "TC", "name": "Tropical Cyclone" }]
+  },
+  {
+    "category": "Cyclone/tempête",
+    "is_ibtracs_join": false,
+    "reliefweb_types": [
+      { "code": "ST", "name": "Severe Local Storm" },
+      { "code": "EC", "name": "Extratropical Cyclone" },
+      { "code": "SS", "name": "Storm Surge" }
+    ]
+  },
+  {
+    "category": "Inondation",
+    "is_ibtracs_join": false,
+    "reliefweb_types": [
+      { "code": "FL", "name": "Flood" },
+      { "code": "FF", "name": "Flash Flood" }
+    ]
+  },
+  {
+    "category": "Sécheresse",
+    "is_ibtracs_join": false,
+    "reliefweb_types": [{ "code": "DR", "name": "Drought" }]
+  },
+  {
+    "category": "Séisme",
+    "is_ibtracs_join": false,
+    "reliefweb_types": [{ "code": "EQ", "name": "Earthquake" }]
+  },
+  {
+    "category": "Tsunami",
+    "is_ibtracs_join": false,
+    "reliefweb_types": [{ "code": "TS", "name": "Tsunami" }]
+  },
+  {
+    "category": "Volcan",
+    "is_ibtracs_join": false,
+    "reliefweb_types": [{ "code": "VO", "name": "Volcano" }]
+  },
+  {
+    "category": "Glissement de terrain",
+    "is_ibtracs_join": false,
+    "reliefweb_types": [
+      { "code": "LS", "name": "Land Slide" },
+      { "code": "MS", "name": "Mud Slide" }
+    ]
+  },
+  {
+    "category": "Crise sanitaire",
+    "is_ibtracs_join": false,
+    "reliefweb_types": [{ "code": "EP", "name": "Epidemic" }]
+  },
+  {
+    "category": "Incendie",
+    "is_ibtracs_join": false,
+    "reliefweb_types": [
+      { "code": "WF", "name": "Wild Fire" },
+      { "code": "FR", "name": "Fire" }
+    ]
+  },
+  {
+    "category": "Météorologique",
+    "is_ibtracs_join": false,
+    "reliefweb_types": [
+      { "code": "CW", "name": "Cold Wave" },
+      { "code": "HT", "name": "Heat Wave" }
+    ]
+  },
+  {
+    "category": "Autre",
+    "is_ibtracs_join": false,
+    "reliefweb_types": [
+      { "code": "AV", "name": "Snow Avalanche" },
+      { "code": "IN", "name": "Insect Infestation" },
+      { "code": "AC", "name": "Technological Disaster" },
+      { "code": "OT", "name": "Other" }
+    ]
+  }
+]

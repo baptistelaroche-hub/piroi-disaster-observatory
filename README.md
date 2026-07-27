@@ -80,3 +80,13 @@ ReliefWeb déjà récupérées) sert de référentiel de coordonnées pour la jo
 Note : Réunion et Mayotte (territoires PIROI) n'ont pas de Société nationale distincte dans le
 registre IFRC — elles sont rattachées à la Croix-Rouge française. C'est attendu, pas un manque
 de données.
+
+### Référentiel (REFERENCE)
+
+- `countries.json` — 229 pays (iso3, nom, coordonnées), extraits des données ReliefWeb.
+- `territories.json` — les 8 territoires PIROI, regroupés par région (Océan Indien / Afrique
+  australe / Afrique de l'Est), référencés par `iso3`.
+- `hazard_types.json` — 12 catégories d'aléas (vocabulaire PIROI), avec le mapping des 21 codes
+  de la taxonomie ReliefWeb vers chaque catégorie. La catégorie `Cyclone tropical` porte le flag
+  `is_ibtracs_join: true` : c'est le point de jonction entre les catastrophes ReliefWeb de type
+  `TC` et l'ensemble des trajectoires IBTrACS (qui sont, par construction, toutes des cyclones).

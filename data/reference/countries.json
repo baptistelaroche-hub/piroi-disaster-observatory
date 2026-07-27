@@ -1,0 +1,1834 @@
+[
+  {
+    "iso3": "afg",
+    "reliefweb_id": 13,
+    "name": "Afghanistan",
+    "shortname": "Afghanistan",
+    "lat": 33.84,
+    "lon": 66.03
+  },
+  {
+    "iso3": "alb",
+    "reliefweb_id": 15,
+    "name": "Albania",
+    "shortname": "Albania",
+    "lat": 40.64,
+    "lon": 20.16
+  },
+  {
+    "iso3": "dza",
+    "reliefweb_id": 16,
+    "name": "Algeria",
+    "shortname": "Algeria",
+    "lat": 28.16,
+    "lon": 2.63
+  },
+  {
+    "iso3": "asm",
+    "reliefweb_id": 17,
+    "name": "American Samoa",
+    "shortname": "American Samoa",
+    "lat": -14.3,
+    "lon": -170.71
+  },
+  {
+    "iso3": "and",
+    "reliefweb_id": 18,
+    "name": "Andorra",
+    "shortname": "Andorra",
+    "lat": 42.5462,
+    "lon": 1.60155
+  },
+  {
+    "iso3": "ago",
+    "reliefweb_id": 19,
+    "name": "Angola",
+    "shortname": "Angola",
+    "lat": -12.1,
+    "lon": 17.91
+  },
+  {
+    "iso3": "aia",
+    "reliefweb_id": 20,
+    "name": "Anguilla",
+    "shortname": "Anguilla",
+    "lat": 18.2206,
+    "lon": -63.0686
+  },
+  {
+    "iso3": "atg",
+    "reliefweb_id": 21,
+    "name": "Antigua and Barbuda",
+    "shortname": "Antigua and Barbuda",
+    "lat": 17.28,
+    "lon": -61.79
+  },
+  {
+    "iso3": "arg",
+    "reliefweb_id": 22,
+    "name": "Argentina",
+    "shortname": "Argentina",
+    "lat": -35.38,
+    "lon": -64
+  },
+  {
+    "iso3": "arm",
+    "reliefweb_id": 23,
+    "name": "Armenia",
+    "shortname": "Armenia",
+    "lat": 40.61,
+    "lon": 44.66
+  },
+  {
+    "iso3": "abw",
+    "reliefweb_id": 24,
+    "name": "Aruba (The Netherlands)",
+    "shortname": "Aruba (The Netherlands)",
+    "lat": 12.52,
+    "lon": -69.98
+  },
+  {
+    "iso3": "aus",
+    "reliefweb_id": 25,
+    "name": "Australia",
+    "shortname": "Australia",
+    "lat": -25.73,
+    "lon": 134.49
+  },
+  {
+    "iso3": "aut",
+    "reliefweb_id": 26,
+    "name": "Austria",
+    "shortname": "Austria",
+    "lat": 47.61,
+    "lon": 14.3
+  },
+  {
+    "iso3": "aze",
+    "reliefweb_id": 27,
+    "name": "Azerbaijan",
+    "shortname": "Azerbaijan",
+    "lat": 40.42,
+    "lon": 47.72
+  },
+  {
+    "iso3": "bhs",
+    "reliefweb_id": 29,
+    "name": "Bahamas",
+    "shortname": "Bahamas",
+    "lat": 25.24,
+    "lon": -76.55
+  },
+  {
+    "iso3": "bhr",
+    "reliefweb_id": 30,
+    "name": "Bahrain",
+    "shortname": "Bahrain",
+    "lat": 26.02,
+    "lon": 50.56
+  },
+  {
+    "iso3": "bgd",
+    "reliefweb_id": 31,
+    "name": "Bangladesh",
+    "shortname": "Bangladesh",
+    "lat": 23.84,
+    "lon": 90.27
+  },
+  {
+    "iso3": "brb",
+    "reliefweb_id": 32,
+    "name": "Barbados",
+    "shortname": "Barbados",
+    "lat": 13.18,
+    "lon": -59.56
+  },
+  {
+    "iso3": "blr",
+    "reliefweb_id": 33,
+    "name": "Belarus",
+    "shortname": "Belarus",
+    "lat": 53.54,
+    "lon": 28.05
+  },
+  {
+    "iso3": "bel",
+    "reliefweb_id": 34,
+    "name": "Belgium",
+    "shortname": "Belgium",
+    "lat": 50.64,
+    "lon": 4.66
+  },
+  {
+    "iso3": "blz",
+    "reliefweb_id": 35,
+    "name": "Belize",
+    "shortname": "Belize",
+    "lat": 17.22,
+    "lon": -88.69
+  },
+  {
+    "iso3": "ben",
+    "reliefweb_id": 36,
+    "name": "Benin",
+    "shortname": "Benin",
+    "lat": 10.34,
+    "lon": 2.43
+  },
+  {
+    "iso3": "bmu",
+    "reliefweb_id": 37,
+    "name": "Bermuda",
+    "shortname": "Bermuda",
+    "lat": 32.32,
+    "lon": -64.74
+  },
+  {
+    "iso3": "btn",
+    "reliefweb_id": 38,
+    "name": "Bhutan",
+    "shortname": "Bhutan",
+    "lat": 27.42,
+    "lon": 90.43
+  },
+  {
+    "iso3": "bol",
+    "reliefweb_id": 39,
+    "name": "Bolivia (Plurinational State of)",
+    "shortname": "Bolivia",
+    "lat": -16.97,
+    "lon": -64.27
+  },
+  {
+    "iso3": "bes",
+    "reliefweb_id": 14894,
+    "name": "Bonaire, Saint Eustatius and Saba (The Netherlands)",
+    "shortname": "Bonaire, Saint Eustatius and Saba (The Netherlands)",
+    "lat": 12.18,
+    "lon": -68.25
+  },
+  {
+    "iso3": "bih",
+    "reliefweb_id": 40,
+    "name": "Bosnia and Herzegovina",
+    "shortname": "Bosnia and Herzegovina",
+    "lat": 44.17,
+    "lon": 17.79
+  },
+  {
+    "iso3": "bwa",
+    "reliefweb_id": 41,
+    "name": "Botswana",
+    "shortname": "Botswana",
+    "lat": -22.21,
+    "lon": 24.32
+  },
+  {
+    "iso3": "bra",
+    "reliefweb_id": 42,
+    "name": "Brazil",
+    "shortname": "Brazil",
+    "lat": -9.59,
+    "lon": -51.62
+  },
+  {
+    "iso3": "vgb",
+    "reliefweb_id": 43,
+    "name": "British Virgin Islands",
+    "shortname": "British Virgin Islands",
+    "lat": 18.4207,
+    "lon": -64.64
+  },
+  {
+    "iso3": "brn",
+    "reliefweb_id": 44,
+    "name": "Brunei Darussalam",
+    "shortname": "Brunei Darussalam",
+    "lat": 4.57,
+    "lon": 114.56
+  },
+  {
+    "iso3": "bgr",
+    "reliefweb_id": 45,
+    "name": "Bulgaria",
+    "shortname": "Bulgaria",
+    "lat": 42.76,
+    "lon": 25.23
+  },
+  {
+    "iso3": "bfa",
+    "reliefweb_id": 46,
+    "name": "Burkina Faso",
+    "shortname": "Burkina Faso",
+    "lat": 12.28,
+    "lon": -1.57
+  },
+  {
+    "iso3": "bdi",
+    "reliefweb_id": 47,
+    "name": "Burundi",
+    "shortname": "Burundi",
+    "lat": -3.53,
+    "lon": 29.89
+  },
+  {
+    "iso3": "cpv",
+    "reliefweb_id": 52,
+    "name": "Cabo Verde",
+    "shortname": "Cabo Verde",
+    "lat": 15.98,
+    "lon": -23.97
+  },
+  {
+    "iso3": "khm",
+    "reliefweb_id": 48,
+    "name": "Cambodia",
+    "shortname": "Cambodia",
+    "lat": 12.46,
+    "lon": 104.92
+  },
+  {
+    "iso3": "cmr",
+    "reliefweb_id": 49,
+    "name": "Cameroon",
+    "shortname": "Cameroon",
+    "lat": 4.81,
+    "lon": 12.21
+  },
+  {
+    "iso3": "can",
+    "reliefweb_id": 50,
+    "name": "Canada",
+    "shortname": "Canada",
+    "lat": 59.59,
+    "lon": -105.75
+  },
+  {
+    "iso3": "cym",
+    "reliefweb_id": 53,
+    "name": "Cayman Islands",
+    "shortname": "Cayman Islands",
+    "lat": 19.31,
+    "lon": -81.24
+  },
+  {
+    "iso3": "caf",
+    "reliefweb_id": 54,
+    "name": "Central African Republic",
+    "shortname": "CAR",
+    "lat": 6.57,
+    "lon": 20.48
+  },
+  {
+    "iso3": "tcd",
+    "reliefweb_id": 55,
+    "name": "Chad",
+    "shortname": "Chad",
+    "lat": 15.36,
+    "lon": 18.66
+  },
+  {
+    "iso3": "chi",
+    "reliefweb_id": 56,
+    "name": "Channel Islands",
+    "shortname": "Channel Islands",
+    "lat": 49.34,
+    "lon": -2.35
+  },
+  {
+    "iso3": "chl",
+    "reliefweb_id": 57,
+    "name": "Chile",
+    "shortname": "Chile",
+    "lat": -37.72,
+    "lon": -72.31
+  },
+  {
+    "iso3": "chn",
+    "reliefweb_id": 58,
+    "name": "China",
+    "shortname": "China",
+    "lat": 35.49,
+    "lon": 101.9
+  },
+  {
+    "iso3": "hkg",
+    "reliefweb_id": 59,
+    "name": "China - Hong Kong (Special Administrative Region)",
+    "shortname": "China - Hong Kong (Special Administrative Region)",
+    "lat": 22.39,
+    "lon": 114.1
+  },
+  {
+    "iso3": "mac",
+    "reliefweb_id": 60,
+    "name": "China - Macau (Special Administrative Region)",
+    "shortname": "China - Macau (Special Administrative Region)",
+    "lat": 22.2,
+    "lon": 113.55
+  },
+  {
+    "iso3": "twn",
+    "reliefweb_id": 61,
+    "name": "China - Taiwan Province",
+    "shortname": "China - Taiwan Province",
+    "lat": 23.6,
+    "lon": 121.02
+  },
+  {
+    "iso3": "col",
+    "reliefweb_id": 64,
+    "name": "Colombia",
+    "shortname": "Colombia",
+    "lat": 3.9,
+    "lon": -73.07
+  },
+  {
+    "iso3": "com",
+    "reliefweb_id": 65,
+    "name": "Comoros",
+    "shortname": "Comoros",
+    "lat": -11.89,
+    "lon": 43.68
+  },
+  {
+    "iso3": "cog",
+    "reliefweb_id": 66,
+    "name": "Congo",
+    "shortname": "Congo",
+    "lat": -0.31,
+    "lon": 15.99
+  },
+  {
+    "iso3": "cok",
+    "reliefweb_id": 67,
+    "name": "Cook Islands",
+    "shortname": "Cook Islands",
+    "lat": -21.23,
+    "lon": -159.77
+  },
+  {
+    "iso3": "cri",
+    "reliefweb_id": 68,
+    "name": "Costa Rica",
+    "shortname": "Costa Rica",
+    "lat": 9.97,
+    "lon": -84.19
+  },
+  {
+    "iso3": "hrv",
+    "reliefweb_id": 70,
+    "name": "Croatia",
+    "shortname": "Croatia",
+    "lat": 45.66,
+    "lon": 16.68
+  },
+  {
+    "iso3": "cub",
+    "reliefweb_id": 71,
+    "name": "Cuba",
+    "shortname": "Cuba",
+    "lat": 21.95,
+    "lon": -79.24
+  },
+  {
+    "iso3": "cuw",
+    "reliefweb_id": 14893,
+    "name": "Curaçao (The Netherlands)",
+    "shortname": "Curaçao (The Netherlands)",
+    "lat": 12.15,
+    "lon": -68.98
+  },
+  {
+    "iso3": "cyp",
+    "reliefweb_id": 72,
+    "name": "Cyprus",
+    "shortname": "Cyprus",
+    "lat": 35.05,
+    "lon": 33.22
+  },
+  {
+    "iso3": "cze",
+    "reliefweb_id": 73,
+    "name": "Czechia",
+    "shortname": "Czechia",
+    "lat": 49.74,
+    "lon": 15.34
+  },
+  {
+    "iso3": "civ",
+    "reliefweb_id": 69,
+    "name": "Côte d'Ivoire",
+    "shortname": "Côte d'Ivoire",
+    "lat": 7.81,
+    "lon": -5.38
+  },
+  {
+    "iso3": "prk",
+    "reliefweb_id": 74,
+    "name": "Democratic People's Republic of Korea",
+    "shortname": "DPRK",
+    "lat": 40.35,
+    "lon": 126.85
+  },
+  {
+    "iso3": "cod",
+    "reliefweb_id": 75,
+    "name": "Democratic Republic of the Congo",
+    "shortname": "DR Congo",
+    "lat": -4.03833,
+    "lon": 21.7587
+  },
+  {
+    "iso3": "dnk",
+    "reliefweb_id": 76,
+    "name": "Denmark",
+    "shortname": "Denmark",
+    "lat": 55.96,
+    "lon": 10.05
+  },
+  {
+    "iso3": "dji",
+    "reliefweb_id": 77,
+    "name": "Djibouti",
+    "shortname": "Djibouti",
+    "lat": 11.75,
+    "lon": 42.58
+  },
+  {
+    "iso3": "dma",
+    "reliefweb_id": 78,
+    "name": "Dominica",
+    "shortname": "Dominica",
+    "lat": 15.44,
+    "lon": -61.36
+  },
+  {
+    "iso3": "dom",
+    "reliefweb_id": 79,
+    "name": "Dominican Republic",
+    "shortname": "Dominican Rep.",
+    "lat": 18.85,
+    "lon": -70.11
+  },
+  {
+    "iso3": "ecu",
+    "reliefweb_id": 81,
+    "name": "Ecuador",
+    "shortname": "Ecuador",
+    "lat": -1.16,
+    "lon": -78.43
+  },
+  {
+    "iso3": "egy",
+    "reliefweb_id": 82,
+    "name": "Egypt",
+    "shortname": "Egypt",
+    "lat": 26.49,
+    "lon": 29.87
+  },
+  {
+    "iso3": "slv",
+    "reliefweb_id": 83,
+    "name": "El Salvador",
+    "shortname": "El Salvador",
+    "lat": 13.74,
+    "lon": -88.87
+  },
+  {
+    "iso3": "gnq",
+    "reliefweb_id": 84,
+    "name": "Equatorial Guinea",
+    "shortname": "Equatorial Guinea",
+    "lat": 1.61,
+    "lon": 10.53
+  },
+  {
+    "iso3": "eri",
+    "reliefweb_id": 85,
+    "name": "Eritrea",
+    "shortname": "Eritrea",
+    "lat": 15.68,
+    "lon": 38.58
+  },
+  {
+    "iso3": "est",
+    "reliefweb_id": 86,
+    "name": "Estonia",
+    "shortname": "Estonia",
+    "lat": 58.78,
+    "lon": 25.76
+  },
+  {
+    "iso3": "swz",
+    "reliefweb_id": 223,
+    "name": "Eswatini",
+    "shortname": "Eswatini",
+    "lat": -26.56,
+    "lon": 31.5
+  },
+  {
+    "iso3": "eth",
+    "reliefweb_id": 87,
+    "name": "Ethiopia",
+    "shortname": "Ethiopia",
+    "lat": 8.63,
+    "lon": 39.62
+  },
+  {
+    "iso3": "fji",
+    "reliefweb_id": 90,
+    "name": "Fiji",
+    "shortname": "Fiji",
+    "lat": -17.71,
+    "lon": 178.065
+  },
+  {
+    "iso3": "fin",
+    "reliefweb_id": 91,
+    "name": "Finland",
+    "shortname": "Finland",
+    "lat": 62.78,
+    "lon": 26.2
+  },
+  {
+    "iso3": "fra",
+    "reliefweb_id": 92,
+    "name": "France",
+    "shortname": "France",
+    "lat": 47.82,
+    "lon": 2.62
+  },
+  {
+    "iso3": "guf",
+    "reliefweb_id": 93,
+    "name": "French Guiana (France)",
+    "shortname": "French Guiana (France)",
+    "lat": 3.93389,
+    "lon": -53.1258
+  },
+  {
+    "iso3": "pyf",
+    "reliefweb_id": 94,
+    "name": "French Polynesia (France)",
+    "shortname": "French Polynesia (France)",
+    "lat": -14.85,
+    "lon": -146.42
+  },
+  {
+    "iso3": "gab",
+    "reliefweb_id": 96,
+    "name": "Gabon",
+    "shortname": "Gabon",
+    "lat": -0.59,
+    "lon": 11.8
+  },
+  {
+    "iso3": "gmb",
+    "reliefweb_id": 98,
+    "name": "Gambia",
+    "shortname": "Gambia",
+    "lat": 13.44,
+    "lon": -15.91
+  },
+  {
+    "iso3": "geo",
+    "reliefweb_id": 100,
+    "name": "Georgia",
+    "shortname": "Georgia",
+    "lat": 42.18,
+    "lon": 43.52
+  },
+  {
+    "iso3": "deu",
+    "reliefweb_id": 101,
+    "name": "Germany",
+    "shortname": "Germany",
+    "lat": 51.13,
+    "lon": 10.02
+  },
+  {
+    "iso3": "gha",
+    "reliefweb_id": 102,
+    "name": "Ghana",
+    "shortname": "Ghana",
+    "lat": 7.28,
+    "lon": -1.19
+  },
+  {
+    "iso3": "grc",
+    "reliefweb_id": 104,
+    "name": "Greece",
+    "shortname": "Greece",
+    "lat": 38.59,
+    "lon": 23.83
+  },
+  {
+    "iso3": "grd",
+    "reliefweb_id": 106,
+    "name": "Grenada",
+    "shortname": "Grenada",
+    "lat": 12.11,
+    "lon": -61.68
+  },
+  {
+    "iso3": "glp",
+    "reliefweb_id": 107,
+    "name": "Guadeloupe (France)",
+    "shortname": "Guadeloupe (France)",
+    "lat": 16.16,
+    "lon": -61.68
+  },
+  {
+    "iso3": "gum",
+    "reliefweb_id": 108,
+    "name": "Guam",
+    "shortname": "Guam",
+    "lat": 13.44,
+    "lon": 144.78
+  },
+  {
+    "iso3": "gtm",
+    "reliefweb_id": 109,
+    "name": "Guatemala",
+    "shortname": "Guatemala",
+    "lat": 15.61,
+    "lon": -90.39
+  },
+  {
+    "iso3": "gin",
+    "reliefweb_id": 110,
+    "name": "Guinea",
+    "shortname": "Guinea",
+    "lat": 10.79,
+    "lon": -11.03
+  },
+  {
+    "iso3": "gnb",
+    "reliefweb_id": 111,
+    "name": "Guinea-Bissau",
+    "shortname": "Guinea-Bissau",
+    "lat": 12.03,
+    "lon": -14.96
+  },
+  {
+    "iso3": "guy",
+    "reliefweb_id": 112,
+    "name": "Guyana",
+    "shortname": "Guyana",
+    "lat": 5.62,
+    "lon": -58.97
+  },
+  {
+    "iso3": "hti",
+    "reliefweb_id": 113,
+    "name": "Haiti",
+    "shortname": "Haiti",
+    "lat": 19.18,
+    "lon": -72.43
+  },
+  {
+    "iso3": "hnd",
+    "reliefweb_id": 116,
+    "name": "Honduras",
+    "shortname": "Honduras",
+    "lat": 14.82,
+    "lon": -86.62
+  },
+  {
+    "iso3": "hun",
+    "reliefweb_id": 117,
+    "name": "Hungary",
+    "shortname": "Hungary",
+    "lat": 47.06,
+    "lon": 19.5
+  },
+  {
+    "iso3": "isl",
+    "reliefweb_id": 118,
+    "name": "Iceland",
+    "shortname": "Iceland",
+    "lat": 65,
+    "lon": -18.61
+  },
+  {
+    "iso3": "ind",
+    "reliefweb_id": 119,
+    "name": "India",
+    "shortname": "India",
+    "lat": 22.76,
+    "lon": 79.28
+  },
+  {
+    "iso3": "idn",
+    "reliefweb_id": 120,
+    "name": "Indonesia",
+    "shortname": "Indonesia",
+    "lat": -2.28,
+    "lon": 117.37
+  },
+  {
+    "iso3": "irn",
+    "reliefweb_id": 121,
+    "name": "Iran (Islamic Republic of)",
+    "shortname": "Iran",
+    "lat": 32.57,
+    "lon": 54.3
+  },
+  {
+    "iso3": "irq",
+    "reliefweb_id": 122,
+    "name": "Iraq",
+    "shortname": "Iraq",
+    "lat": 33.05,
+    "lon": 43.4
+  },
+  {
+    "iso3": "irl",
+    "reliefweb_id": 123,
+    "name": "Ireland",
+    "shortname": "Ireland",
+    "lat": 53.31,
+    "lon": -7.74
+  },
+  {
+    "iso3": "ilm",
+    "reliefweb_id": 124,
+    "name": "Isle of Man (The United Kingdom of Great Britain and Northern Ireland)",
+    "shortname": "Isle of Man (The United Kingdom of Great Britain and Northern Ireland)",
+    "lat": 54.2361,
+    "lon": -4.54806
+  },
+  {
+    "iso3": "isr",
+    "reliefweb_id": 125,
+    "name": "Israel",
+    "shortname": "Israel",
+    "lat": 31.09,
+    "lon": 34.87
+  },
+  {
+    "iso3": "ita",
+    "reliefweb_id": 126,
+    "name": "Italy",
+    "shortname": "Italy",
+    "lat": 42.5,
+    "lon": 12.65
+  },
+  {
+    "iso3": "jam",
+    "reliefweb_id": 127,
+    "name": "Jamaica",
+    "shortname": "Jamaica",
+    "lat": 18.15,
+    "lon": -77.32
+  },
+  {
+    "iso3": "jpn",
+    "reliefweb_id": 128,
+    "name": "Japan",
+    "shortname": "Japan",
+    "lat": 36.39,
+    "lon": 138.59
+  },
+  {
+    "iso3": "jor",
+    "reliefweb_id": 129,
+    "name": "Jordan",
+    "shortname": "Jordan",
+    "lat": 31.01,
+    "lon": 36.44
+  },
+  {
+    "iso3": "kaz",
+    "reliefweb_id": 130,
+    "name": "Kazakhstan",
+    "shortname": "Kazakhstan",
+    "lat": 48.16,
+    "lon": 67.3
+  },
+  {
+    "iso3": "ken",
+    "reliefweb_id": 131,
+    "name": "Kenya",
+    "shortname": "Kenya",
+    "lat": 0.53,
+    "lon": 37.86
+  },
+  {
+    "iso3": "kir",
+    "reliefweb_id": 132,
+    "name": "Kiribati",
+    "shortname": "Kiribati",
+    "lat": 1.84,
+    "lon": -157.37
+  },
+  {
+    "iso3": "kwt",
+    "reliefweb_id": 133,
+    "name": "Kuwait",
+    "shortname": "Kuwait",
+    "lat": 29.34,
+    "lon": 47.59
+  },
+  {
+    "iso3": "kgz",
+    "reliefweb_id": 134,
+    "name": "Kyrgyzstan",
+    "shortname": "Kyrgyzstan",
+    "lat": 41.47,
+    "lon": 74.56
+  },
+  {
+    "iso3": "lao",
+    "reliefweb_id": 135,
+    "name": "Lao People's Democratic Republic (the)",
+    "shortname": "Lao PDR",
+    "lat": 19.92,
+    "lon": 102.59
+  },
+  {
+    "iso3": "lva",
+    "reliefweb_id": 136,
+    "name": "Latvia",
+    "shortname": "Latvia",
+    "lat": 56.96,
+    "lon": 24.86
+  },
+  {
+    "iso3": "lbn",
+    "reliefweb_id": 137,
+    "name": "Lebanon",
+    "shortname": "Lebanon",
+    "lat": 33.92,
+    "lon": 35.89
+  },
+  {
+    "iso3": "lso",
+    "reliefweb_id": 138,
+    "name": "Lesotho",
+    "shortname": "Lesotho",
+    "lat": -29.58,
+    "lon": 28.24
+  },
+  {
+    "iso3": "lbr",
+    "reliefweb_id": 139,
+    "name": "Liberia",
+    "shortname": "Liberia",
+    "lat": 6.45,
+    "lon": -9.31
+  },
+  {
+    "iso3": "lby",
+    "reliefweb_id": 140,
+    "name": "Libya",
+    "shortname": "Libya",
+    "lat": 27.04,
+    "lon": 18.02
+  },
+  {
+    "iso3": "lie",
+    "reliefweb_id": 141,
+    "name": "Liechtenstein",
+    "shortname": "Liechtenstein",
+    "lat": 47.15,
+    "lon": 9.55
+  },
+  {
+    "iso3": "ltu",
+    "reliefweb_id": 142,
+    "name": "Lithuania",
+    "shortname": "Lithuania",
+    "lat": 55.49,
+    "lon": 23.93
+  },
+  {
+    "iso3": "lux",
+    "reliefweb_id": 143,
+    "name": "Luxembourg",
+    "shortname": "Luxembourg",
+    "lat": 49.77,
+    "lon": 6.09
+  },
+  {
+    "iso3": "mdg",
+    "reliefweb_id": 144,
+    "name": "Madagascar",
+    "shortname": "Madagascar",
+    "lat": -19.37,
+    "lon": 46.71
+  },
+  {
+    "iso3": "mdr",
+    "reliefweb_id": 145,
+    "name": "Madeira (Portugal)",
+    "shortname": "Madeira (Portugal)",
+    "lat": 32.7607,
+    "lon": -16.9595
+  },
+  {
+    "iso3": "mwi",
+    "reliefweb_id": 146,
+    "name": "Malawi",
+    "shortname": "Malawi",
+    "lat": -13.22,
+    "lon": 33.74
+  },
+  {
+    "iso3": "mys",
+    "reliefweb_id": 147,
+    "name": "Malaysia",
+    "shortname": "Malaysia",
+    "lat": 3.2,
+    "lon": 108.71
+  },
+  {
+    "iso3": "mdv",
+    "reliefweb_id": 148,
+    "name": "Maldives",
+    "shortname": "Maldives",
+    "lat": 3.22,
+    "lon": 73.25
+  },
+  {
+    "iso3": "mli",
+    "reliefweb_id": 149,
+    "name": "Mali",
+    "shortname": "Mali",
+    "lat": 17.35,
+    "lon": -1.25
+  },
+  {
+    "iso3": "mlt",
+    "reliefweb_id": 150,
+    "name": "Malta",
+    "shortname": "Malta",
+    "lat": 35.89,
+    "lon": 14.44
+  },
+  {
+    "iso3": "mhl",
+    "reliefweb_id": 151,
+    "name": "Marshall Islands",
+    "shortname": "Marshall Islands",
+    "lat": 8.43,
+    "lon": 168.55
+  },
+  {
+    "iso3": "mtq",
+    "reliefweb_id": 152,
+    "name": "Martinique (France)",
+    "shortname": "Martinique (France)",
+    "lat": 14.6415,
+    "lon": -61.0242
+  },
+  {
+    "iso3": "mrt",
+    "reliefweb_id": 153,
+    "name": "Mauritania",
+    "shortname": "Mauritania",
+    "lat": 19.76,
+    "lon": -10.53
+  },
+  {
+    "iso3": "mus",
+    "reliefweb_id": 154,
+    "name": "Mauritius",
+    "shortname": "Mauritius",
+    "lat": -20.25,
+    "lon": 57.87
+  },
+  {
+    "iso3": "myt",
+    "reliefweb_id": 155,
+    "name": "Mayotte (France)",
+    "shortname": "Mayotte (France)",
+    "lat": -12.82,
+    "lon": 45.14
+  },
+  {
+    "iso3": "mex",
+    "reliefweb_id": 156,
+    "name": "Mexico",
+    "shortname": "Mexico",
+    "lat": 23.95,
+    "lon": -102.53
+  },
+  {
+    "iso3": "fsm",
+    "reliefweb_id": 157,
+    "name": "Micronesia (Federated States of)",
+    "shortname": "Micronesia",
+    "lat": 6.08,
+    "lon": 160.4
+  },
+  {
+    "iso3": "mda",
+    "reliefweb_id": 158,
+    "name": "Moldova",
+    "shortname": "Moldova",
+    "lat": 47.19,
+    "lon": 28.57
+  },
+  {
+    "iso3": "mco",
+    "reliefweb_id": 159,
+    "name": "Monaco",
+    "shortname": "Monaco",
+    "lat": 43.75,
+    "lon": 7.41
+  },
+  {
+    "iso3": "mng",
+    "reliefweb_id": 160,
+    "name": "Mongolia",
+    "shortname": "Mongolia",
+    "lat": 46.84,
+    "lon": 103.08
+  },
+  {
+    "iso3": "mne",
+    "reliefweb_id": 161,
+    "name": "Montenegro",
+    "shortname": "Montenegro",
+    "lat": 42.79,
+    "lon": 19.25
+  },
+  {
+    "iso3": "msr",
+    "reliefweb_id": 162,
+    "name": "Montserrat",
+    "shortname": "Montserrat",
+    "lat": 16.7425,
+    "lon": -62.1874
+  },
+  {
+    "iso3": "mar",
+    "reliefweb_id": 163,
+    "name": "Morocco",
+    "shortname": "Morocco",
+    "lat": 32.35,
+    "lon": -6.02
+  },
+  {
+    "iso3": "moz",
+    "reliefweb_id": 164,
+    "name": "Mozambique",
+    "shortname": "Mozambique",
+    "lat": -18.09,
+    "lon": 34.75
+  },
+  {
+    "iso3": "mmr",
+    "reliefweb_id": 165,
+    "name": "Myanmar",
+    "shortname": "Myanmar",
+    "lat": 21.15,
+    "lon": 96.51
+  },
+  {
+    "iso3": "nam",
+    "reliefweb_id": 166,
+    "name": "Namibia",
+    "shortname": "Namibia",
+    "lat": -21.2,
+    "lon": 17.29
+  },
+  {
+    "iso3": "nru",
+    "reliefweb_id": 167,
+    "name": "Nauru",
+    "shortname": "Nauru",
+    "lat": -0.53,
+    "lon": 166.92
+  },
+  {
+    "iso3": "npl",
+    "reliefweb_id": 168,
+    "name": "Nepal",
+    "shortname": "Nepal",
+    "lat": 28.25,
+    "lon": 83.94
+  },
+  {
+    "iso3": "nld",
+    "reliefweb_id": 169,
+    "name": "Netherlands",
+    "shortname": "Netherlands",
+    "lat": 52.27,
+    "lon": 5.58
+  },
+  {
+    "iso3": "ncl",
+    "reliefweb_id": 171,
+    "name": "New Caledonia (France)",
+    "shortname": "New Caledonia (France)",
+    "lat": -21.32,
+    "lon": 165.72
+  },
+  {
+    "iso3": "nzl",
+    "reliefweb_id": 172,
+    "name": "New Zealand",
+    "shortname": "New Zealand",
+    "lat": -41.84,
+    "lon": 171.78
+  },
+  {
+    "iso3": "nic",
+    "reliefweb_id": 173,
+    "name": "Nicaragua",
+    "shortname": "Nicaragua",
+    "lat": 12.84,
+    "lon": -85.03
+  },
+  {
+    "iso3": "ner",
+    "reliefweb_id": 174,
+    "name": "Niger",
+    "shortname": "Niger",
+    "lat": 17.43,
+    "lon": 9.4
+  },
+  {
+    "iso3": "nga",
+    "reliefweb_id": 175,
+    "name": "Nigeria",
+    "shortname": "Nigeria",
+    "lat": 9.59,
+    "lon": 8.11
+  },
+  {
+    "iso3": "niu",
+    "reliefweb_id": 176,
+    "name": "Niue (New Zealand)",
+    "shortname": "Niue (New Zealand)",
+    "lat": -19.05,
+    "lon": -169.86
+  },
+  {
+    "iso3": "mnp",
+    "reliefweb_id": 178,
+    "name": "Northern Mariana Islands (The United States of America)",
+    "shortname": "Northern Mariana Islands (The United States of America)",
+    "lat": 15.09,
+    "lon": 145.68
+  },
+  {
+    "iso3": "nor",
+    "reliefweb_id": 179,
+    "name": "Norway",
+    "shortname": "Norway",
+    "lat": 61.25,
+    "lon": 8.8
+  },
+  {
+    "iso3": "omn",
+    "reliefweb_id": 181,
+    "name": "Oman",
+    "shortname": "Oman",
+    "lat": 21.38,
+    "lon": 57.09
+  },
+  {
+    "iso3": "pak",
+    "reliefweb_id": 182,
+    "name": "Pakistan",
+    "shortname": "Pakistan",
+    "lat": 29.97,
+    "lon": 69.39
+  },
+  {
+    "iso3": "plw",
+    "reliefweb_id": 183,
+    "name": "Palau",
+    "shortname": "Palau",
+    "lat": 7.52,
+    "lon": 134.58
+  },
+  {
+    "iso3": "pan",
+    "reliefweb_id": 184,
+    "name": "Panama",
+    "shortname": "Panama",
+    "lat": 8.7,
+    "lon": -80.27
+  },
+  {
+    "iso3": "png",
+    "reliefweb_id": 185,
+    "name": "Papua New Guinea",
+    "shortname": "PNG",
+    "lat": -6.48,
+    "lon": 145.24
+  },
+  {
+    "iso3": "pry",
+    "reliefweb_id": 186,
+    "name": "Paraguay",
+    "shortname": "Paraguay",
+    "lat": -23.24,
+    "lon": -58.39
+  },
+  {
+    "iso3": "per",
+    "reliefweb_id": 187,
+    "name": "Peru",
+    "shortname": "Peru",
+    "lat": -10.15,
+    "lon": -75.31
+  },
+  {
+    "iso3": "phl",
+    "reliefweb_id": 188,
+    "name": "Philippines",
+    "shortname": "Philippines",
+    "lat": 11.74,
+    "lon": 122.88
+  },
+  {
+    "iso3": "pol",
+    "reliefweb_id": 190,
+    "name": "Poland",
+    "shortname": "Poland",
+    "lat": 52.12,
+    "lon": 19.3
+  },
+  {
+    "iso3": "prt",
+    "reliefweb_id": 191,
+    "name": "Portugal",
+    "shortname": "Portugal",
+    "lat": 39.6,
+    "lon": -8.56
+  },
+  {
+    "iso3": "pri",
+    "reliefweb_id": 192,
+    "name": "Puerto Rico (The United States of America)",
+    "shortname": "Puerto Rico (The United States of America)",
+    "lat": 18.22,
+    "lon": -66.46
+  },
+  {
+    "iso3": "qat",
+    "reliefweb_id": 193,
+    "name": "Qatar",
+    "shortname": "Qatar",
+    "lat": 25.32,
+    "lon": 51.19
+  },
+  {
+    "iso3": "kor",
+    "reliefweb_id": 194,
+    "name": "Republic of Korea",
+    "shortname": "Republic of Korea",
+    "lat": 36.54,
+    "lon": 128.17
+  },
+  {
+    "iso3": "rou",
+    "reliefweb_id": 196,
+    "name": "Romania",
+    "shortname": "Romania",
+    "lat": 45.9432,
+    "lon": 24.9668
+  },
+  {
+    "iso3": "rus",
+    "reliefweb_id": 197,
+    "name": "Russian Federation",
+    "shortname": "Russia",
+    "lat": 61.99,
+    "lon": 96.67
+  },
+  {
+    "iso3": "rwa",
+    "reliefweb_id": 198,
+    "name": "Rwanda",
+    "shortname": "Rwanda",
+    "lat": -1.87,
+    "lon": 29.92
+  },
+  {
+    "iso3": "reu",
+    "reliefweb_id": 195,
+    "name": "Réunion (France)",
+    "shortname": "Réunion (France)",
+    "lat": -21.1151,
+    "lon": 55.5364
+  },
+  {
+    "iso3": "blm",
+    "reliefweb_id": 14890,
+    "name": "Saint Barthélemy (France)",
+    "shortname": "Saint Barthélemy (France)",
+    "lat": 17.89,
+    "lon": -62.83
+  },
+  {
+    "iso3": "kna",
+    "reliefweb_id": 200,
+    "name": "Saint Kitts and Nevis",
+    "shortname": "Saint Kitts and Nevis",
+    "lat": 17.33,
+    "lon": -62.75
+  },
+  {
+    "iso3": "lca",
+    "reliefweb_id": 201,
+    "name": "Saint Lucia",
+    "shortname": "Saint Lucia",
+    "lat": 13.9,
+    "lon": -60.97
+  },
+  {
+    "iso3": "maf",
+    "reliefweb_id": 14891,
+    "name": "Saint Martin (France)",
+    "shortname": "Saint Martin (France)",
+    "lat": 18.07,
+    "lon": -63.05
+  },
+  {
+    "iso3": "vct",
+    "reliefweb_id": 203,
+    "name": "Saint Vincent and the Grenadines",
+    "shortname": "St. Vincent & Grenadines",
+    "lat": 13.25,
+    "lon": -61.19
+  },
+  {
+    "iso3": "wsm",
+    "reliefweb_id": 204,
+    "name": "Samoa",
+    "shortname": "Samoa",
+    "lat": -13.76,
+    "lon": -172.16
+  },
+  {
+    "iso3": "stp",
+    "reliefweb_id": 206,
+    "name": "Sao Tome and Principe",
+    "shortname": "Sao Tome and Principe",
+    "lat": 0.46,
+    "lon": 6.74
+  },
+  {
+    "iso3": "sau",
+    "reliefweb_id": 207,
+    "name": "Saudi Arabia",
+    "shortname": "Saudi Arabia",
+    "lat": 24.13,
+    "lon": 44.55
+  },
+  {
+    "iso3": "sen",
+    "reliefweb_id": 208,
+    "name": "Senegal",
+    "shortname": "Senegal",
+    "lat": 15.22,
+    "lon": -14.82
+  },
+  {
+    "iso3": "srb",
+    "reliefweb_id": 209,
+    "name": "Serbia",
+    "shortname": "Serbia",
+    "lat": 44.23,
+    "lon": 20.8
+  },
+  {
+    "iso3": "syc",
+    "reliefweb_id": 210,
+    "name": "Seychelles",
+    "shortname": "Seychelles",
+    "lat": -6.35,
+    "lon": 52.23
+  },
+  {
+    "iso3": "sle",
+    "reliefweb_id": 211,
+    "name": "Sierra Leone",
+    "shortname": "Sierra Leone",
+    "lat": 8.56,
+    "lon": -11.79
+  },
+  {
+    "iso3": "sgp",
+    "reliefweb_id": 212,
+    "name": "Singapore",
+    "shortname": "Singapore",
+    "lat": 1.35,
+    "lon": 103.81
+  },
+  {
+    "iso3": "sxm",
+    "reliefweb_id": 14892,
+    "name": "Sint Maarten (The Netherlands)",
+    "shortname": "Sint Maarten (The Netherlands)",
+    "lat": 18.04,
+    "lon": -63.07
+  },
+  {
+    "iso3": "svk",
+    "reliefweb_id": 213,
+    "name": "Slovakia",
+    "shortname": "Slovakia",
+    "lat": 48.71,
+    "lon": 19.49
+  },
+  {
+    "iso3": "svn",
+    "reliefweb_id": 214,
+    "name": "Slovenia",
+    "shortname": "Slovenia",
+    "lat": 46.17,
+    "lon": 14.69
+  },
+  {
+    "iso3": "slb",
+    "reliefweb_id": 215,
+    "name": "Solomon Islands",
+    "shortname": "Solomon Islands",
+    "lat": -8.92,
+    "lon": 159.63
+  },
+  {
+    "iso3": "som",
+    "reliefweb_id": 216,
+    "name": "Somalia",
+    "shortname": "Somalia",
+    "lat": 5.79,
+    "lon": 47.33
+  },
+  {
+    "iso3": "zaf",
+    "reliefweb_id": 217,
+    "name": "South Africa",
+    "shortname": "South Africa",
+    "lat": -28.38,
+    "lon": 23.91
+  },
+  {
+    "iso3": "ssd",
+    "reliefweb_id": 8657,
+    "name": "South Sudan",
+    "shortname": "South Sudan",
+    "lat": 6.9,
+    "lon": 30.5
+  },
+  {
+    "iso3": "esp",
+    "reliefweb_id": 218,
+    "name": "Spain",
+    "shortname": "Spain",
+    "lat": 40.3,
+    "lon": -3.28
+  },
+  {
+    "iso3": "lka",
+    "reliefweb_id": 219,
+    "name": "Sri Lanka",
+    "shortname": "Sri Lanka",
+    "lat": 7.61,
+    "lon": 80.7
+  },
+  {
+    "iso3": "sdn",
+    "reliefweb_id": 220,
+    "name": "Sudan",
+    "shortname": "Sudan",
+    "lat": 15,
+    "lon": 30
+  },
+  {
+    "iso3": "sur",
+    "reliefweb_id": 221,
+    "name": "Suriname",
+    "shortname": "Suriname",
+    "lat": 3.69,
+    "lon": -55.91
+  },
+  {
+    "iso3": "swe",
+    "reliefweb_id": 224,
+    "name": "Sweden",
+    "shortname": "Sweden",
+    "lat": 64.96,
+    "lon": 17.68
+  },
+  {
+    "iso3": "che",
+    "reliefweb_id": 225,
+    "name": "Switzerland",
+    "shortname": "Switzerland",
+    "lat": 46.8,
+    "lon": 8.23
+  },
+  {
+    "iso3": "syr",
+    "reliefweb_id": 226,
+    "name": "Syrian Arab Republic",
+    "shortname": "Syria",
+    "lat": 35.01,
+    "lon": 38.51
+  },
+  {
+    "iso3": "tjk",
+    "reliefweb_id": 227,
+    "name": "Tajikistan",
+    "shortname": "Tajikistan",
+    "lat": 38.84,
+    "lon": 71.04
+  },
+  {
+    "iso3": "tha",
+    "reliefweb_id": 228,
+    "name": "Thailand",
+    "shortname": "Thailand",
+    "lat": 15.13,
+    "lon": 101.02
+  },
+  {
+    "iso3": "tls",
+    "reliefweb_id": 230,
+    "name": "Timor-Leste",
+    "shortname": "Timor-Leste",
+    "lat": -8.89,
+    "lon": 126.12
+  },
+  {
+    "iso3": "tgo",
+    "reliefweb_id": 231,
+    "name": "Togo",
+    "shortname": "Togo",
+    "lat": 8.77,
+    "lon": 1.04
+  },
+  {
+    "iso3": "tkl",
+    "reliefweb_id": 232,
+    "name": "Tokelau",
+    "shortname": "Tokelau",
+    "lat": -9.38,
+    "lon": -171.25
+  },
+  {
+    "iso3": "ton",
+    "reliefweb_id": 233,
+    "name": "Tonga",
+    "shortname": "Tonga",
+    "lat": -20.39,
+    "lon": -174.83
+  },
+  {
+    "iso3": "tto",
+    "reliefweb_id": 234,
+    "name": "Trinidad and Tobago",
+    "shortname": "Trinidad and Tobago",
+    "lat": 10.47,
+    "lon": -61.25
+  },
+  {
+    "iso3": "tun",
+    "reliefweb_id": 235,
+    "name": "Tunisia",
+    "shortname": "Tunisia",
+    "lat": 34.11,
+    "lon": 9.56
+  },
+  {
+    "iso3": "tkm",
+    "reliefweb_id": 237,
+    "name": "Turkmenistan",
+    "shortname": "Turkmenistan",
+    "lat": 39.12,
+    "lon": 59.38
+  },
+  {
+    "iso3": "tca",
+    "reliefweb_id": 238,
+    "name": "Turks and Caicos Islands",
+    "shortname": "Turks and Caicos Islands",
+    "lat": 21.694,
+    "lon": -71.7979
+  },
+  {
+    "iso3": "tuv",
+    "reliefweb_id": 239,
+    "name": "Tuvalu",
+    "shortname": "Tuvalu",
+    "lat": -7.47,
+    "lon": 178.69
+  },
+  {
+    "iso3": "tur",
+    "reliefweb_id": 236,
+    "name": "Türkiye",
+    "shortname": "Türkiye",
+    "lat": 39.06,
+    "lon": 35.18
+  },
+  {
+    "iso3": "uga",
+    "reliefweb_id": 240,
+    "name": "Uganda",
+    "shortname": "Uganda",
+    "lat": 1.28,
+    "lon": 32.39
+  },
+  {
+    "iso3": "ukr",
+    "reliefweb_id": 241,
+    "name": "Ukraine",
+    "shortname": "Ukraine",
+    "lat": 49.32,
+    "lon": 31.32
+  },
+  {
+    "iso3": "are",
+    "reliefweb_id": 242,
+    "name": "United Arab Emirates",
+    "shortname": "UAE",
+    "lat": 23.85,
+    "lon": 54.26
+  },
+  {
+    "iso3": "gbr",
+    "reliefweb_id": 243,
+    "name": "United Kingdom of Great Britain and Northern Ireland",
+    "shortname": "UK",
+    "lat": 52.58,
+    "lon": -1.43
+  },
+  {
+    "iso3": "tza",
+    "reliefweb_id": 244,
+    "name": "United Republic of Tanzania",
+    "shortname": "Tanzania",
+    "lat": -6.27,
+    "lon": 34.82
+  },
+  {
+    "iso3": "vir",
+    "reliefweb_id": 246,
+    "name": "United States Virgin Islands",
+    "shortname": "United States Virgin Islands",
+    "lat": 17.74,
+    "lon": -64.76
+  },
+  {
+    "iso3": "usa",
+    "reliefweb_id": 245,
+    "name": "United States of America",
+    "shortname": "USA",
+    "lat": 39.38,
+    "lon": -97.92
+  },
+  {
+    "iso3": "ury",
+    "reliefweb_id": 247,
+    "name": "Uruguay",
+    "shortname": "Uruguay",
+    "lat": -32.8,
+    "lon": -56.01
+  },
+  {
+    "iso3": "uzb",
+    "reliefweb_id": 248,
+    "name": "Uzbekistan",
+    "shortname": "Uzbekistan",
+    "lat": 41.75,
+    "lon": 63.17
+  },
+  {
+    "iso3": "vut",
+    "reliefweb_id": 249,
+    "name": "Vanuatu",
+    "shortname": "Vanuatu",
+    "lat": -16.26,
+    "lon": 167.72
+  },
+  {
+    "iso3": "ven",
+    "reliefweb_id": 250,
+    "name": "Venezuela (Bolivarian Republic of)",
+    "shortname": "Venezuela",
+    "lat": 7.62,
+    "lon": -65.8
+  },
+  {
+    "iso3": "vnm",
+    "reliefweb_id": 251,
+    "name": "Viet Nam",
+    "shortname": "Viet Nam",
+    "lat": 14.32,
+    "lon": 108.34
+  },
+  {
+    "iso3": "wlf",
+    "reliefweb_id": 252,
+    "name": "Wallis and Futuna (France)",
+    "shortname": "Wallis and Futuna (France)",
+    "lat": -13.28,
+    "lon": -176.17
+  },
+  {
+    "iso3": "esh",
+    "reliefweb_id": 253,
+    "name": "Western Sahara",
+    "shortname": "Western Sahara",
+    "lat": 24.2155,
+    "lon": -12.8858
+  },
+  {
+    "iso3": "wld",
+    "reliefweb_id": 254,
+    "name": "World",
+    "shortname": "World",
+    "lat": null,
+    "lon": null
+  },
+  {
+    "iso3": "yem",
+    "reliefweb_id": 255,
+    "name": "Yemen",
+    "shortname": "Yemen",
+    "lat": 15.94,
+    "lon": 47.62
+  },
+  {
+    "iso3": "zmb",
+    "reliefweb_id": 256,
+    "name": "Zambia",
+    "shortname": "Zambia",
+    "lat": -14,
+    "lon": 27.43
+  },
+  {
+    "iso3": "zwe",
+    "reliefweb_id": 257,
+    "name": "Zimbabwe",
+    "shortname": "Zimbabwe",
+    "lat": -19.19,
+    "lon": 29.94
+  },
+  {
+    "iso3": "pse",
+    "reliefweb_id": 180,
+    "name": "occupied Palestinian territory",
+    "shortname": "oPt",
+    "lat": 31.9522,
+    "lon": 35.2332
+  },
+  {
+    "iso3": "mkd",
+    "reliefweb_id": 229,
+    "name": "the Republic of North Macedonia",
+    "shortname": "North Macedonia",
+    "lat": 41.6,
+    "lon": 21.7
+  }
+]

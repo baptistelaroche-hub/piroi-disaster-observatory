@@ -18,8 +18,13 @@ côté dashboard, pas dupliquées dans les données.
 
 ## Mise à jour des données
 
-Un workflow GitHub Actions planifié (`.github/workflows/update-data.yml`) exécute les scripts ETL
-et commit les fichiers JSON mis à jour dans `data/`.
+Deux workflows GitHub Actions planifiés exécutent les scripts ETL et commitent les fichiers
+mis à jour dans `data/raw/` :
+
+- `update-reliefweb.yml` — quotidien, nécessite le secret `RELIEFWEB_APPNAME`.
+- `update-ibtracs.yml` — hebdomadaire, pas de secret requis.
+
+IFRC n'a pas de workflow automatique (voir section IFRC ci-dessous) — mise à jour manuelle.
 
 ## Développement local
 
@@ -32,6 +37,10 @@ $env:RELIEFWEB_APPNAME="votre-appname"; python etl/fetch_reliefweb.py
 
 # macOS/Linux
 RELIEFWEB_APPNAME=votre-appname python etl/fetch_reliefweb.py
+
+python etl/fetch_ibtracs.py
+python etl/reference/build_countries.py
+python etl/ingest_ifrc.py
 ```
 
 ## Sources
@@ -40,7 +49,7 @@ RELIEFWEB_APPNAME=votre-appname python etl/fetch_reliefweb.py
 |---|---|---|
 | ReliefWeb | Catastrophes mondiales (officiel) | ✅ étape 1 |
 | IBTrACS (NOAA) | Trajectoires de cyclones, bassin Sud Indien (zone PIROI) | ✅ étape 2 |
-| IFRC | Sociétés nationales | à venir |
+| IFRC (FDRS) | Indicateurs institutionnels des Sociétés nationales | ✅ étape 3 |
 
 ### IBTrACS — note sur la couverture des données
 
@@ -49,3 +58,25 @@ telles quelles (toutes colonnes sources) en RAW ; le filtrage (colonnes utiles, 
 trajectoire, période) se fera au niveau CLEAN. À noter : la couverture vent/pression est nulle
 avant les années 1970 (ère pré-satellite, positions seules) et reste partielle (40-60%) ensuite —
 à prendre en compte dans les analyses de fréquence et cartes de chaleur.
+
+### IFRC — mise à jour manuelle
+
+Il n'existe pas d'URL publique stable pour l'export FDRS (data.ifrc.org/fdrs est une application
+authentifiée) : contrairement à ReliefWeb et IBTrACS, cette source n'est pas automatisée par
+GitHub Actions.
+
+Pour rafraîchir les données :
+
+1. Télécharger un nouvel export depuis [data.ifrc.org/fdrs](https://data.ifrc.org/fdrs/).
+2. Remplacer `etl/manual-drops/ifrc_ns_export.csv` par ce fichier.
+3. Exécuter `python etl/ingest_ifrc.py` (ne garde que les colonnes d'identification et les
+   65 indicateurs retenus avec le PIROI Center — l'export source fait ~1791 colonnes).
+4. Committer `data/raw/ifrc_ns_raw.csv`.
+
+Le fichier source ne contient pas de coordonnées géographiques : `data/reference/countries.json`
+(généré par `etl/reference/build_countries.py` à partir des pays présents dans les données
+ReliefWeb déjà récupérées) sert de référentiel de coordonnées pour la jointure par `iso3`.
+
+Note : Réunion et Mayotte (territoires PIROI) n'ont pas de Société nationale distincte dans le
+registre IFRC — elles sont rattachées à la Croix-Rouge française. C'est attendu, pas un manque
+de données.

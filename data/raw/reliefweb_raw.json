@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-27T11:46:49.919170+00:00",
+  "fetched_at": "2026-07-27T12:03:12.285188+00:00",
   "source": "https://api.reliefweb.int/v2/disasters",
   "total_count": 3715,
   "disasters": [
@@ -50767,6 +50767,51 @@
       }
     },
     {
+      "id": "5016",
+      "name": "Iran: Flash Floods - Aug 2002",
+      "status": "past",
+      "glide": "FL-2002-000500-IRN",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/121",
+        "id": 121,
+        "name": "Iran (Islamic Republic of)",
+        "shortname": "Iran",
+        "iso3": "irn",
+        "location": {
+          "lat": 32.57,
+          "lon": 54.3
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/121",
+          "id": 121,
+          "name": "Iran (Islamic Republic of)",
+          "shortname": "Iran",
+          "iso3": "irn",
+          "location": {
+            "lat": 32.57,
+            "lon": 54.3
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4624,
+          "name": "Flash Flood",
+          "code": "FF",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5016",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "2002-08-14T00:00:00+00:00",
+        "event": "2002-08-14T00:00:00+00:00"
+      }
+    },
+    {
       "id": "6133",
       "name": "Czech Republic: Floods - Aug 2002",
       "status": "past",
@@ -50849,51 +50894,6 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/6133",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "2002-08-14T00:00:00+00:00",
-        "event": "2002-08-14T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "5016",
-      "name": "Iran: Flash Floods - Aug 2002",
-      "status": "past",
-      "glide": "FL-2002-000500-IRN",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/121",
-        "id": 121,
-        "name": "Iran (Islamic Republic of)",
-        "shortname": "Iran",
-        "iso3": "irn",
-        "location": {
-          "lat": 32.57,
-          "lon": 54.3
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/121",
-          "id": 121,
-          "name": "Iran (Islamic Republic of)",
-          "shortname": "Iran",
-          "iso3": "irn",
-          "location": {
-            "lat": 32.57,
-            "lon": 54.3
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4624,
-          "name": "Flash Flood",
-          "code": "FF",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5016",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "2002-08-14T00:00:00+00:00",
@@ -68245,52 +68245,6 @@
       }
     },
     {
-      "id": "5735",
-      "name": "Timor-Leste: Flash Floods - Feb 2006",
-      "description": "Districts including Ainaro, Viqueque, Bobonaro and Baucau were exposed to storms, which destroyed or damaged some 1,200 houses and several crops. Oecusse, the Timor-Leste enclave located on the coast of the Indonesian part of Timor, was hit by a flood, with house and crop destruction affecting more than 2,000 families. ([IFRC, 16 Feb 2006](https://reliefweb.int/node/200180/))\n\nA series of storms and flooding from late December 2005 through January 2006 affected some 8,400 people in Timor-Leste, resulting in severe losses of livelihood and shelters. A six-month operation focusing on the provision of safe drinking water, the rebuilding of shelter, livelihoods and capacity building of the national society was developed after a thorough assessment of the disaster area. ([IFRC, 27 Jul 2006](https://reliefweb.int/node/430167))",
-      "status": "past",
-      "glide": "FF-2006-000022-TLS",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/230",
-        "id": 230,
-        "name": "Timor-Leste",
-        "shortname": "Timor-Leste",
-        "iso3": "tls",
-        "location": {
-          "lat": -8.89,
-          "lon": 126.12
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/230",
-          "id": 230,
-          "name": "Timor-Leste",
-          "shortname": "Timor-Leste",
-          "iso3": "tls",
-          "location": {
-            "lat": -8.89,
-            "lon": 126.12
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4624,
-          "name": "Flash Flood",
-          "code": "FF",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5735",
-      "date": {
-        "changed": "2024-10-23T04:53:40+00:00",
-        "created": "2006-02-10T00:00:00+00:00",
-        "event": "2006-02-10T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5205",
       "name": "Madagascar: Cyclone Boloeste - Feb 2006",
       "description": "On 4 Feb 2006, Cyclone Boloeste hit the South-Western part of Madagascar. ([ReliefWeb Situation Map, 9 Feb 2006](https://reliefweb.int/node/4312/))\nAs of 9 Feb 2006, 6112 people were reported as affected, of which 5138 in the commune of Androka and 300 in the commune of Itampolo (Coastal area 200 Km south of Tulear). A total amount of 11 schools, 2 health centers, 1 market, 20 public buildings and 2491 private houses were either damaged or destroyed. ([UN Resident Coordinator, 9 Feb 2006](https://reliefweb.int/node/199663/))",
@@ -68332,6 +68286,52 @@
       "url": "https://reliefweb.int/taxonomy/term/5205",
       "date": {
         "changed": "2015-01-15T16:48:26+00:00",
+        "created": "2006-02-10T00:00:00+00:00",
+        "event": "2006-02-10T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5735",
+      "name": "Timor-Leste: Flash Floods - Feb 2006",
+      "description": "Districts including Ainaro, Viqueque, Bobonaro and Baucau were exposed to storms, which destroyed or damaged some 1,200 houses and several crops. Oecusse, the Timor-Leste enclave located on the coast of the Indonesian part of Timor, was hit by a flood, with house and crop destruction affecting more than 2,000 families. ([IFRC, 16 Feb 2006](https://reliefweb.int/node/200180/))\n\nA series of storms and flooding from late December 2005 through January 2006 affected some 8,400 people in Timor-Leste, resulting in severe losses of livelihood and shelters. A six-month operation focusing on the provision of safe drinking water, the rebuilding of shelter, livelihoods and capacity building of the national society was developed after a thorough assessment of the disaster area. ([IFRC, 27 Jul 2006](https://reliefweb.int/node/430167))",
+      "status": "past",
+      "glide": "FF-2006-000022-TLS",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/230",
+        "id": 230,
+        "name": "Timor-Leste",
+        "shortname": "Timor-Leste",
+        "iso3": "tls",
+        "location": {
+          "lat": -8.89,
+          "lon": 126.12
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/230",
+          "id": 230,
+          "name": "Timor-Leste",
+          "shortname": "Timor-Leste",
+          "iso3": "tls",
+          "location": {
+            "lat": -8.89,
+            "lon": 126.12
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4624,
+          "name": "Flash Flood",
+          "code": "FF",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5735",
+      "date": {
+        "changed": "2024-10-23T04:53:40+00:00",
         "created": "2006-02-10T00:00:00+00:00",
         "event": "2006-02-10T00:00:00+00:00"
       }
@@ -68529,51 +68529,6 @@
       }
     },
     {
-      "id": "5928",
-      "name": "Indonesia: Floods and Landslides - Feb 2006",
-      "status": "past",
-      "glide": "FL-2006-000027-IDN",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/120",
-        "id": 120,
-        "name": "Indonesia",
-        "shortname": "Indonesia",
-        "iso3": "idn",
-        "location": {
-          "lat": -2.28,
-          "lon": 117.37
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/120",
-          "id": 120,
-          "name": "Indonesia",
-          "shortname": "Indonesia",
-          "iso3": "idn",
-          "location": {
-            "lat": -2.28,
-            "lon": 117.37
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5928",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "2006-02-23T00:00:00+00:00",
-        "event": "2006-02-23T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5283",
       "name": "Mozambique: Earthquake - Feb 2006",
       "status": "past",
@@ -68612,6 +68567,51 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/5283",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "2006-02-23T00:00:00+00:00",
+        "event": "2006-02-23T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5928",
+      "name": "Indonesia: Floods and Landslides - Feb 2006",
+      "status": "past",
+      "glide": "FL-2006-000027-IDN",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/120",
+        "id": 120,
+        "name": "Indonesia",
+        "shortname": "Indonesia",
+        "iso3": "idn",
+        "location": {
+          "lat": -2.28,
+          "lon": 117.37
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/120",
+          "id": 120,
+          "name": "Indonesia",
+          "shortname": "Indonesia",
+          "iso3": "idn",
+          "location": {
+            "lat": -2.28,
+            "lon": 117.37
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5928",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "2006-02-23T00:00:00+00:00",
@@ -69642,51 +69642,6 @@
       }
     },
     {
-      "id": "5968",
-      "name": "Russian Federation: Earthquake - Apr 2006",
-      "status": "past",
-      "glide": "EQ-2006-000051-RUS",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/197",
-        "id": 197,
-        "name": "Russian Federation",
-        "shortname": "Russia",
-        "iso3": "rus",
-        "location": {
-          "lat": 61.99,
-          "lon": 96.67
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/197",
-          "id": 197,
-          "name": "Russian Federation",
-          "shortname": "Russia",
-          "iso3": "rus",
-          "location": {
-            "lat": 61.99,
-            "lon": 96.67
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4628,
-          "name": "Earthquake",
-          "code": "EQ",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5968",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "2006-04-21T00:00:00+00:00",
-        "event": "2006-04-21T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5122",
       "name": "Indonesia: Flash Floods and Landslides - Java Province - Apr 2006",
       "status": "past",
@@ -69725,6 +69680,51 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/5122",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "2006-04-21T00:00:00+00:00",
+        "event": "2006-04-21T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5968",
+      "name": "Russian Federation: Earthquake - Apr 2006",
+      "status": "past",
+      "glide": "EQ-2006-000051-RUS",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/197",
+        "id": 197,
+        "name": "Russian Federation",
+        "shortname": "Russia",
+        "iso3": "rus",
+        "location": {
+          "lat": 61.99,
+          "lon": 96.67
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/197",
+          "id": 197,
+          "name": "Russian Federation",
+          "shortname": "Russia",
+          "iso3": "rus",
+          "location": {
+            "lat": 61.99,
+            "lon": 96.67
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4628,
+          "name": "Earthquake",
+          "code": "EQ",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5968",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "2006-04-21T00:00:00+00:00",
@@ -88765,6 +88765,51 @@
       }
     },
     {
+      "id": "5349",
+      "name": "Colombia: Cold Wave - Nov 2008",
+      "status": "past",
+      "glide": "CW-2008-000236-COL",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/64",
+        "id": 64,
+        "name": "Colombia",
+        "shortname": "Colombia",
+        "iso3": "col",
+        "location": {
+          "lat": 3.9,
+          "lon": -73.07
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/64",
+          "id": 64,
+          "name": "Colombia",
+          "shortname": "Colombia",
+          "iso3": "col",
+          "location": {
+            "lat": 3.9,
+            "lon": -73.07
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4653,
+          "name": "Cold Wave",
+          "code": "CW",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5349",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "2008-11-25T00:00:00+00:00",
+        "event": "2008-11-25T00:00:00+00:00"
+      }
+    },
+    {
       "id": "5714",
       "name": "Tropical Cyclone Nisha - Nov 2008",
       "description": "**Sri Lanka:** Due to heavy rains, parts of the Northern districts of Jaffna, Mannar, Trincomalee, Kilinochchi and Mullaitivu were affected by floods. The Tropical Storm was forecasted to be downgraded into a Tropical Depression. ([Govt. of Sri Lanka/IASC Sri Lanka, 26 Nov 2008](https://reliefweb.int/node/288715/)) The Disaster Management Centre reported that over 136,298 persons in five districts in the island were displaced, temporarily sheltered in temples, schools and other public buildings. ([Govt. of Sri Lanka, 28 Nov 2008](https://reliefweb.int/node/288938/)). In December, heavy rains continued to affect Jaffna District. Although in most areas the flood water caused by cyclone Nisha had receded by the beginning of December, some low lying areas were still affected. ([IASC Sri Lanka, 18 Dec 2008](https://reliefweb.int/node/291374/))\n\n**India:** The Indian Meteorological Department reported that the cyclonic storm 'NISHA' over southwest Bay of Bengal moved slightly northwestwards and lay centred at 0530 hours IST of 27 November 2008, very close to Tamil Nadu & Puducherry coast to the north of Karaikal. More than 800,000 people were affected and around 100,000 people were evacuated in Tamil Nadu and Puducherry. As of 28 November, 54 people had lost their lives, while media reports stated that 89 lives were lost in Tamil Nadu. The release of water from dams, particularly 15,000 cusecs from the Chembarambakkam dam, added to the flood situation in Tamil Nadu. ([UNCT India, 28 Nov 2008](https://reliefweb.int/node/288798/))",
@@ -88817,51 +88862,6 @@
       "url": "https://reliefweb.int/taxonomy/term/5714",
       "date": {
         "changed": "2022-11-15T06:53:59+00:00",
-        "created": "2008-11-25T00:00:00+00:00",
-        "event": "2008-11-25T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "5349",
-      "name": "Colombia: Cold Wave - Nov 2008",
-      "status": "past",
-      "glide": "CW-2008-000236-COL",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/64",
-        "id": 64,
-        "name": "Colombia",
-        "shortname": "Colombia",
-        "iso3": "col",
-        "location": {
-          "lat": 3.9,
-          "lon": -73.07
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/64",
-          "id": 64,
-          "name": "Colombia",
-          "shortname": "Colombia",
-          "iso3": "col",
-          "location": {
-            "lat": 3.9,
-            "lon": -73.07
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4653,
-          "name": "Cold Wave",
-          "code": "CW",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5349",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
         "created": "2008-11-25T00:00:00+00:00",
         "event": "2008-11-25T00:00:00+00:00"
       }
@@ -98906,51 +98906,6 @@
       }
     },
     {
-      "id": "5637",
-      "name": "Colombia: Galeras Volcano - Sep 2009",
-      "status": "past",
-      "glide": "VO-2009-000213-COL",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/64",
-        "id": 64,
-        "name": "Colombia",
-        "shortname": "Colombia",
-        "iso3": "col",
-        "location": {
-          "lat": 3.9,
-          "lon": -73.07
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/64",
-          "id": 64,
-          "name": "Colombia",
-          "shortname": "Colombia",
-          "iso3": "col",
-          "location": {
-            "lat": 3.9,
-            "lon": -73.07
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4615,
-          "name": "Volcano",
-          "code": "VO",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5637",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "2009-09-30T00:00:00+00:00",
-        "event": "2009-09-30T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5185",
       "name": "Indonesia: West Sumatra Earthquakes - Sep 2009",
       "status": "past",
@@ -98991,6 +98946,51 @@
       "url": "https://reliefweb.int/taxonomy/term/5185",
       "date": {
         "changed": "2023-09-14T04:27:08+00:00",
+        "created": "2009-09-30T00:00:00+00:00",
+        "event": "2009-09-30T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5637",
+      "name": "Colombia: Galeras Volcano - Sep 2009",
+      "status": "past",
+      "glide": "VO-2009-000213-COL",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/64",
+        "id": 64,
+        "name": "Colombia",
+        "shortname": "Colombia",
+        "iso3": "col",
+        "location": {
+          "lat": 3.9,
+          "lon": -73.07
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/64",
+          "id": 64,
+          "name": "Colombia",
+          "shortname": "Colombia",
+          "iso3": "col",
+          "location": {
+            "lat": 3.9,
+            "lon": -73.07
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4615,
+          "name": "Volcano",
+          "code": "VO",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5637",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
         "created": "2009-09-30T00:00:00+00:00",
         "event": "2009-09-30T00:00:00+00:00"
       }
@@ -99842,6 +99842,51 @@
       }
     },
     {
+      "id": "5092",
+      "name": "Brazil: Floods - Nov 2009",
+      "status": "past",
+      "glide": "FL-2009-000239-BRA",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/42",
+        "id": 42,
+        "name": "Brazil",
+        "shortname": "Brazil",
+        "iso3": "bra",
+        "location": {
+          "lat": -9.59,
+          "lon": -51.62
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/42",
+          "id": 42,
+          "name": "Brazil",
+          "shortname": "Brazil",
+          "iso3": "bra",
+          "location": {
+            "lat": -9.59,
+            "lon": -51.62
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5092",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "2009-11-09T00:00:00+00:00",
+        "event": "2009-11-09T00:00:00+00:00"
+      }
+    },
+    {
       "id": "5792",
       "name": "Thailand: Floods - Nov 2009",
       "description": "Floods caused by heavy rains claimed 15 lives in southern Thailand. Heavy rains sparked flash floods in Thailand's southernmost provinces of Songkhla, Narathiwat, Pattani and Yala; in Narathiwat province, the floods claimed at least 10 lives, affected 124,335 residents and prompted the government to evacuate 1,697 households. ([DPA, 9 Nov 2009](https://reliefweb.int/node/332485))\n\nMore than 50 households in Waeng district, Narathiwat province are affected by flood, after three days of continuous heavy downpour.\nThe heavy rains cause rapid increase of water level in Sungai Kolok river, and overflow the households in Waeng district, Narathiwat province. 250 residents had to be evacuated to higher grounds. ([Govt. of Thailand, 19 Dec 2009](https://reliefweb.int/node/337898/))",
@@ -99883,51 +99928,6 @@
       "url": "https://reliefweb.int/taxonomy/term/5792",
       "date": {
         "changed": "2022-11-23T04:12:56+00:00",
-        "created": "2009-11-09T00:00:00+00:00",
-        "event": "2009-11-09T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "5092",
-      "name": "Brazil: Floods - Nov 2009",
-      "status": "past",
-      "glide": "FL-2009-000239-BRA",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/42",
-        "id": 42,
-        "name": "Brazil",
-        "shortname": "Brazil",
-        "iso3": "bra",
-        "location": {
-          "lat": -9.59,
-          "lon": -51.62
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/42",
-          "id": 42,
-          "name": "Brazil",
-          "shortname": "Brazil",
-          "iso3": "bra",
-          "location": {
-            "lat": -9.59,
-            "lon": -51.62
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5092",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
         "created": "2009-11-09T00:00:00+00:00",
         "event": "2009-11-09T00:00:00+00:00"
       }
@@ -153781,52 +153781,6 @@
       }
     },
     {
-      "id": "46794",
-      "name": "Costa Rica: Floods - Oct 2018",
-      "description": "On 2 October 2018, the IMN warned of a low-pressure system coming in from the south-western Caribbean Sea, which activated an Inter-Tropical Convergence Zone over the country and over the waters of the Pacific (Meteorological Report # 2). On 4 October, IMN detected two other low-pressure systems (Meteorological Report #8), one in the Caribbean near the Nicaraguan coast and another in the Pacific in western Costa Rica, that led to even more intense rainfall and severe weather conditions along the Pacific coast and slightly milder conditions in other parts of the country. Rains of varying intensity fell in Pacific regions and even in the Central Valley. The greatest amount of rainfall was recorded in the Nicoya Peninsula and the Central Pacific, where between 50 to150 mm over a period of 24 hours. 125,190 people were affected by the floods. ([IFRC, 15 Oct 2018](https://reliefweb.int/node/2830859)) .   \n\nOn 17 October 2018, the Costa Rica National Commission for Risk Prevention and Emergency Care (CNE) reported a red alert for the districts of Lepanto, Paquera, and Cobano in the Puntarenas Canton and Nicoya, Nandayure, Hojancha, Carrillo, and Santa Cruz Cantons, Guanacaste Province due to a tropical wave. Currently, 18 shelters are open and assisting 557 people; the CNE is providing assistance to 193 communities. ([PAHO, 18 Oct 2018](https://reliefweb.int/node/2838773)) .",
-      "status": "past",
-      "glide": "FL-2018-000165-CRI",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/68",
-        "id": 68,
-        "name": "Costa Rica",
-        "shortname": "Costa Rica",
-        "iso3": "cri",
-        "location": {
-          "lat": 9.97,
-          "lon": -84.19
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/68",
-          "id": 68,
-          "name": "Costa Rica",
-          "shortname": "Costa Rica",
-          "iso3": "cri",
-          "location": {
-            "lat": 9.97,
-            "lon": -84.19
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/46794",
-      "date": {
-        "changed": "2018-12-04T21:45:58+00:00",
-        "created": "2018-10-05T00:00:00+00:00",
-        "event": "2018-10-05T00:00:00+00:00"
-      }
-    },
-    {
       "id": "46739",
       "name": "El Salvador: Floods - Oct 2018",
       "description": "Two low pressure systems, one in the Atlantic and the other in the Pacific, caused intense rainfall conditions, flash floods in several communities in Costa Rica, El Salvador, Guatemala, Honduras and Nicaragua since 5 October...Civil Protection reported 15 people injured, six dead, one missing and 768 people in shelters. In addition, 1541 flooded houses and eight houses destroyed, an affected school and three other collapsed walls; eight roads and 13 damaged streets, 120 contaminated wells. ([OCHA, 13 Oct 2018](https://reliefweb.int/node/2828894))      \n\nOn October 6, in El Salvador the national Civil Protection System declared a Green Alert for the entire country. On October 7, a Yellow Alert was declared for 29 coastal municipalities, which on October 8 increased to 34 municipalities to include three municipalities in Morazán department and two in La Union department. A Green Alert remained in place for the rest of the country. The rains have affected the entire country. The hardest hit have been the eastern regions, specifically the cantons of El Brazo, La Canoa and El Tecomatal in the municipality of San Miguel; the cantons of San Felipe and Las Tunas in La Unión department; the cantons of Capitán Lazo and Puerto Parada in the municipality of Usulután; as well as the canton of Metalío in Sonsonate department (western El Salvador) and the cantons of San Diego and San Rafael Abajo in the municipality of La Libertad in central El Salvador. It should be noted that these floods have affected the majority of the municipalities located along the country's coast. ([IFRC, 16 Oct 2018](https://reliefweb.int/node/2833124))    \n\nRain continues to fall as a new system is beginning to form...In El Salvador, Sonsonate is one of the departments most affected. To date six deaths have been reported, 1 546 houses flooded. Rain will continue in coastal areas. ([ECHO, 18 Oct 2018](https://reliefweb.int/node/2836038))\n### Useful Links\n\n- [Ministerio de Medio Ambiente y Recursos Naturales](http://www.marn.gob.sv/)",
@@ -153873,6 +153827,52 @@
       "url": "https://reliefweb.int/taxonomy/term/46739",
       "date": {
         "changed": "2018-12-04T21:47:59+00:00",
+        "created": "2018-10-05T00:00:00+00:00",
+        "event": "2018-10-05T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "46794",
+      "name": "Costa Rica: Floods - Oct 2018",
+      "description": "On 2 October 2018, the IMN warned of a low-pressure system coming in from the south-western Caribbean Sea, which activated an Inter-Tropical Convergence Zone over the country and over the waters of the Pacific (Meteorological Report # 2). On 4 October, IMN detected two other low-pressure systems (Meteorological Report #8), one in the Caribbean near the Nicaraguan coast and another in the Pacific in western Costa Rica, that led to even more intense rainfall and severe weather conditions along the Pacific coast and slightly milder conditions in other parts of the country. Rains of varying intensity fell in Pacific regions and even in the Central Valley. The greatest amount of rainfall was recorded in the Nicoya Peninsula and the Central Pacific, where between 50 to150 mm over a period of 24 hours. 125,190 people were affected by the floods. ([IFRC, 15 Oct 2018](https://reliefweb.int/node/2830859)) .   \n\nOn 17 October 2018, the Costa Rica National Commission for Risk Prevention and Emergency Care (CNE) reported a red alert for the districts of Lepanto, Paquera, and Cobano in the Puntarenas Canton and Nicoya, Nandayure, Hojancha, Carrillo, and Santa Cruz Cantons, Guanacaste Province due to a tropical wave. Currently, 18 shelters are open and assisting 557 people; the CNE is providing assistance to 193 communities. ([PAHO, 18 Oct 2018](https://reliefweb.int/node/2838773)) .",
+      "status": "past",
+      "glide": "FL-2018-000165-CRI",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/68",
+        "id": 68,
+        "name": "Costa Rica",
+        "shortname": "Costa Rica",
+        "iso3": "cri",
+        "location": {
+          "lat": 9.97,
+          "lon": -84.19
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/68",
+          "id": 68,
+          "name": "Costa Rica",
+          "shortname": "Costa Rica",
+          "iso3": "cri",
+          "location": {
+            "lat": 9.97,
+            "lon": -84.19
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/46794",
+      "date": {
+        "changed": "2018-12-04T21:45:58+00:00",
         "created": "2018-10-05T00:00:00+00:00",
         "event": "2018-10-05T00:00:00+00:00"
       }

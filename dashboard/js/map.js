@@ -10,7 +10,7 @@ const SOUTH_AFRICA_ISO3 = "zaf";
     return;
   }
 
-  const { disasters, countryByIso3, piroiIso3 } = data;
+  const { disasters, countryByIso3, piroiIso3, operationById } = data;
   const reliefwebDisasters = disasters.filter((d) => d.source === "reliefweb");
 
   const map = initMap();
@@ -29,7 +29,7 @@ const SOUTH_AFRICA_ISO3 = "zaf";
     const inZone = reliefwebDisasters.filter((d) => zoneIso3.has(d.primary_iso3));
 
     if (currentLayer) map.removeLayer(currentLayer);
-    const { markers, countsByCategory } = buildMarkers(inZone, countryByIso3);
+    const { markers, countsByCategory } = buildMarkers(inZone, countryByIso3, operationById);
     markers.addTo(map);
     currentLayer = markers;
 
@@ -47,7 +47,7 @@ const SOUTH_AFRICA_ISO3 = "zaf";
     return leafletMap;
   }
 
-  function buildMarkers(list, countryLookup) {
+  function buildMarkers(list, countryLookup, operationLookup) {
     const clusterGroup = L.markerClusterGroup({ maxClusterRadius: 40 });
     const countsByCategory = {};
 
@@ -58,21 +58,22 @@ const SOUTH_AFRICA_ISO3 = "zaf";
       countsByCategory[disaster.hazard_category] = (countsByCategory[disaster.hazard_category] || 0) + 1;
 
       const color = hazardColor(disaster.hazard_category);
+      const badge = disaster.piroi_response ? '<i class="response-badge" title="Réponse PIROI"></i>' : "";
       const icon = L.divIcon({
         className: "hazard-marker",
-        html: `<span style="background:${color}"></span>`,
+        html: `<span style="background:${color}"></span>${badge}`,
         iconSize: [12, 12],
       });
 
       const marker = L.marker([country.lat, country.lon], { icon });
-      marker.bindPopup(popupContent(disaster, country));
+      marker.bindPopup(popupContent(disaster, country, operationLookup));
       clusterGroup.addLayer(marker);
     }
 
     return { markers: clusterGroup, countsByCategory };
   }
 
-  function popupContent(disaster, country) {
+  function popupContent(disaster, country, operationLookup) {
     const date = disaster.date_start ? disaster.date_start.slice(0, 10) : "date inconnue";
     const link = disaster.url
       ? `<div class="popup-link"><a href="${disaster.url}" target="_blank" rel="noopener">Voir sur ReliefWeb</a></div>`
@@ -81,7 +82,26 @@ const SOUTH_AFRICA_ISO3 = "zaf";
       <div class="popup-title">${escapeHTML(disaster.name)}</div>
       <div class="popup-meta">${escapeHTML(disaster.hazard_category)} · ${escapeHTML(country.name)} · ${date}</div>
       ${link}
+      ${piroiResponseBlock(disaster, operationLookup)}
     `;
+  }
+
+  function piroiResponseBlock(disaster, operationLookup) {
+    if (!disaster.piroi_response) return "";
+    const ops = disaster.piroi_operation_ids.map((id) => operationLookup.get(id)).filter(Boolean);
+    if (!ops.length) return "";
+
+    const rows = ops
+      .map((op) => {
+        const parts = [];
+        if (op.activities.length) parts.push(escapeHTML(op.activities.join(", ")));
+        if (op.beneficiaries != null) parts.push(`${formatNumber(op.beneficiaries)} bénéficiaires`);
+        if (op.budget_total != null) parts.push(`${formatNumber(op.budget_total)} € budget`);
+        return `<div class="popup-op-row">${parts.join(" · ") || "détails non renseignés"}</div>`;
+      })
+      .join("");
+
+    return `<div class="popup-response"><strong>Réponse PIROI</strong>${rows}</div>`;
   }
 
   function renderStatTiles(inZone) {
@@ -113,7 +133,13 @@ const SOUTH_AFRICA_ISO3 = "zaf";
       )
       .join("");
 
-    legend.innerHTML = `<h2>Types d'aléas (ReliefWeb, zone PIROI)</h2>${rows || "<p>Aucun événement</p>"}`;
+    legend.innerHTML = `
+      <h2>Types d'aléas (ReliefWeb, zone PIROI)</h2>${rows || "<p>Aucun événement</p>"}
+      <div class="legend-row legend-response-note">
+        <span class="legend-swatch legend-swatch--badge"></span>
+        <span>Réponse PIROI</span>
+      </div>
+    `;
   }
 
   function formatNumber(n) {

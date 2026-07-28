@@ -77,8 +77,19 @@ Regénérer : `python etl/analytics/build_global_indicators.py && python etl/ana
 couleur par catégorie d'aléa, popup nom/date/lien). Carte centrée et filtrée sur la zone
 PIROI (les 8 territoires) par défaut, avec une case à cocher pour inclure l'Afrique du Sud —
 la donnée CLEAN reste mondiale (comparaison possible plus tard), seul l'affichage par défaut
-est restreint. Trajectoires cycloniques, filtres avancés et graphiques à venir dans des
-sous-étapes suivantes.
+est restreint.
+
+Étape 1bis : badge "réponse PIROI" sur les marqueurs concernés (petit anneau blanc, visible
+en cliquant un cluster ou en zoomant — beaucoup de catastrophes d'un même pays partagent le
+même marqueur au niveau centroïde pays, donc plusieurs badges restent superposés tant qu'on
+n'a pas zoomé/dé-clusterisé). La popup liste alors les opérations liées (activités,
+bénéficiaires, budget) depuis `piroi_operations.json`.
+
+Hypothèse à vérifier avec le PIROI Center : `budget_total` est affiché en euros (€) dans la
+popup, mais la colonne source ne précise la devise que sur certaines lignes (ex: "50 000 €")
+— les valeurs sans symbole pourraient être dans une autre devise selon l'opération.
+
+Trajectoires cycloniques, filtres avancés et graphiques à venir dans des sous-étapes suivantes.
 
 Palette catégorielle validée avec le skill dataviz (8 teintes fixes pour les catégories les
 plus fréquentes, repli neutre gris pour les 4 restantes — la couleur renforce l'identité mais

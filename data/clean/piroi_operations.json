@@ -1,0 +1,4183 @@
+[
+  {
+    "id": "piroi_op:1",
+    "iso3": "moz",
+    "year": 2000,
+    "year_month": "2000-03",
+    "disaster_type_raw": "Inondations",
+    "hazard_category": "Inondation",
+    "title": null,
+    "activities": [
+      "Shelter",
+      "WatSan",
+      "Santé",
+      "PPN"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 5.5,
+    "volume_m3": null,
+    "beneficiaries": null,
+    "budget_total": 68602,
+    "donors": "Région Réunion (CR974), Conseil général Réunion (CG974)",
+    "details": "Envoi et distribution via la FICR de 5,5 tonnes de matériel (eau, abris, santé)",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:5498",
+        "source": "reliefweb",
+        "name": "Mozambique: Floods - Jan 1999",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:4691",
+        "source": "reliefweb",
+        "name": "Mozambique: Floods - Jan 2000",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:5226",
+        "source": "reliefweb",
+        "name": "Botswana: Floods - Feb 2000",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:4951",
+        "source": "reliefweb",
+        "name": "Zimbabwe: Floods - Mar 2000",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:5539",
+        "source": "reliefweb",
+        "name": "Mozambique: Floods - Feb 2001",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:6588",
+        "source": "reliefweb",
+        "name": "Zimbabwe: Floods - Mar 2001",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:2",
+    "iso3": "reu",
+    "year": 2002,
+    "year_month": "2002-01",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Dina",
+    "activities": [
+      "WatSan",
+      "Soutien Psy"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": null,
+    "budget_total": null,
+    "donors": "-",
+    "details": "mise en place de réseaux de distrib eau potable + citernes de stockage.  distributions d'articles de première nécessité, soutien psychologique",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "ibtracs:2002017S07078",
+        "source": "ibtracs",
+        "name": "DINA",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:3",
+    "iso3": "reu",
+    "year": 2002,
+    "year_month": "2002-01",
+    "disaster_type_raw": "Volcan",
+    "hazard_category": "Volcan",
+    "title": "Fournaise",
+    "activities": [],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": null,
+    "budget_total": null,
+    "donors": "-",
+    "details": "Soutien logistique à la DD Réunion",
+    "comments": null,
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:4",
+    "iso3": "com",
+    "year": 2002,
+    "year_month": null,
+    "disaster_type_raw": "Epidémie",
+    "hazard_category": "Crise sanitaire",
+    "title": "Choléra",
+    "activities": [
+      "Santé"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 2.7,
+    "volume_m3": null,
+    "beneficiaries": null,
+    "budget_total": null,
+    "donors": "CRF",
+    "details": "Envoi d'un kit choléra (2,7 tonnes)\n1 RH : santé",
+    "comments": null,
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:5",
+    "iso3": "mus",
+    "year": 2003,
+    "year_month": "2003-03",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Kalunde",
+    "activities": [
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 1.5,
+    "volume_m3": null,
+    "beneficiaries": 10000,
+    "budget_total": 40880,
+    "donors": "CR974, CG974, CRF",
+    "details": "Envoi de matériel watsan et télécoms \n2 RH : log et watsan",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:5622",
+        "source": "reliefweb",
+        "name": "Mauritius: Tropical Cyclone Dina - Jan 2002",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2002017S07078",
+        "source": "ibtracs",
+        "name": "DINA",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2002045S18049",
+        "source": "ibtracs",
+        "name": "GUILLAUME",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2002356S07070",
+        "source": "ibtracs",
+        "name": "CRYSTAL",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2003037S12061",
+        "source": "ibtracs",
+        "name": "GERRY",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2003358S06067",
+        "source": "ibtracs",
+        "name": "DARIUS",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:6",
+    "iso3": "mdg",
+    "year": 2003,
+    "year_month": "2003-05",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Manou",
+    "activities": [
+      "WatSan",
+      "Santé",
+      "Soutien Psy"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 5500,
+    "budget_total": 50000,
+    "donors": "CR974, CG974, CRF",
+    "details": "Distribution de matériel prépositionné à Madagascar (abris, kits familles, semences)\nTraitement et distribution d’eau, curage des puits, soins médicaux, soutien psychologique",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:6595",
+        "source": "reliefweb",
+        "name": "Madagascar: Tropical Cyclone Manou - May 2003",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2003122S11065",
+        "source": "ibtracs",
+        "name": "MANOU",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:7",
+    "iso3": "com",
+    "year": 2003,
+    "year_month": "2003-06",
+    "disaster_type_raw": "Inondations",
+    "hazard_category": "Inondation",
+    "title": "île de Mohéli",
+    "activities": [
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 20000,
+    "budget_total": 60000,
+    "donors": "CR974, CG974, Ambassade de France aux Comores",
+    "details": "Réhabilitation du réseau d’adduction d'eau\n1 RH : watsan",
+    "comments": null,
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:8",
+    "iso3": "mdg",
+    "year": 2004,
+    "year_month": "2004-03",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Gafilo",
+    "activities": [
+      "Shelter",
+      "WatSan",
+      "Santé",
+      "PPN"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 4,
+    "volume_m3": null,
+    "beneficiaries": 36000,
+    "budget_total": 120000,
+    "donors": "CR974, CG974",
+    "details": "Envoi de 4 tonnes de matériel (traitement d'eau, abris temporaires, kit logistique) \nDistributions\n4 RH : 2 watsan, 1 médical, 1 coordinateur",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:6425",
+        "source": "reliefweb",
+        "name": "Madagascar: Cyclone Gafilo - Mar 2004",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2004061S12072",
+        "source": "ibtracs",
+        "name": "GAFILO",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:10",
+    "iso3": "com",
+    "year": 2005,
+    "year_month": "2005-04",
+    "disaster_type_raw": "Volcan",
+    "hazard_category": "Volcan",
+    "title": "Karthala, Grande Comore",
+    "activities": [
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 31390,
+    "budget_total": 62546,
+    "donors": "UNICEF, Ambassade de France aux Comores",
+    "details": "Sécurisation de citernes  \n1 RH : watsan",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:6507",
+        "source": "reliefweb",
+        "name": "Comoros: Karthala Volcanic Eruption - Apr 2005",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "reliefweb:6633",
+        "source": "reliefweb",
+        "name": "Comoros: Karthala Volcano - Nov 2005",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "reliefweb:5327",
+        "source": "reliefweb",
+        "name": "Comoros: Karthala Volcano - May 2006",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:11",
+    "iso3": "com",
+    "year": 2005,
+    "year_month": "2005-11",
+    "disaster_type_raw": "Volcan",
+    "hazard_category": "Volcan",
+    "title": "Karthala, Grande Comore",
+    "activities": [
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 202980,
+    "budget_total": 68500,
+    "donors": "CR974, CG974, Région PACA (CR PACA)",
+    "details": "Nettoyage et protection de 260 citernes communautaires et de 13 citernes de Centres de Santé de District\n6 RH : 2 médicaux, 3 watsan, 1 logisticien",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:6507",
+        "source": "reliefweb",
+        "name": "Comoros: Karthala Volcanic Eruption - Apr 2005",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "reliefweb:6633",
+        "source": "reliefweb",
+        "name": "Comoros: Karthala Volcano - Nov 2005",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "reliefweb:5327",
+        "source": "reliefweb",
+        "name": "Comoros: Karthala Volcano - May 2006",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:12",
+    "iso3": "reu",
+    "year": 2006,
+    "year_month": "2006-01",
+    "disaster_type_raw": "Epidémie",
+    "hazard_category": "Crise sanitaire",
+    "title": "chikungunya",
+    "activities": [
+      "Santé",
+      "Soutien Psy"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 36000,
+    "budget_total": 368712,
+    "donors": "CG974, DRASS",
+    "details": "Soutien logistique à la DD CRF \nApprovisionnement et distribution de 30 000 répulsifs et de  moustiquaires\nSensibilisation à la maladie et soutien psychosocial auprès des personnes démunies (maraudes)",
+    "comments": null,
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:13",
+    "iso3": "reu",
+    "year": 2006,
+    "year_month": "2006-02",
+    "disaster_type_raw": "Inondations",
+    "hazard_category": "Inondation",
+    "title": "quartier de la Bretagne",
+    "activities": [
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 5000,
+    "budget_total": null,
+    "donors": "(Partenariat technique avec le SDIS et VEOLIA)",
+    "details": "Traitement d’eau, installation de réservoirs et de rampes de distribution et distribution de jerricans de 15 litres",
+    "comments": null,
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:14",
+    "iso3": "mdg",
+    "year": 2007,
+    "year_month": "2007-01",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Clovis, régions de Mananjary et Nosy Varika",
+    "activities": [
+      "Shelter",
+      "WatSan",
+      "PPN"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 7,
+    "volume_m3": null,
+    "beneficiaries": 4000,
+    "budget_total": 85225,
+    "donors": "FICR (Soutien logistique des FAZSOI - Transall)",
+    "details": "Acheminement et distribution de 7 tonnes de matériel (bâches, jerricans, moustiquaires, savons, kits cuisine, couvertures, ligne de traitement d’eau), désinfection de puits et distribution d’eau \n2 RH : 1 watsan, 1 logisticien",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:5832",
+        "source": "reliefweb",
+        "name": "Madagascar: Cyclone Clovis - Jan 2007",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2006364S12058",
+        "source": "ibtracs",
+        "name": "CLOVIS",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:15",
+    "iso3": "moz",
+    "year": 2007,
+    "year_month": "2007-02",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Favio",
+    "activities": [
+      "Shelter",
+      "PPN"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 38,
+    "volume_m3": null,
+    "beneficiaries": 100000,
+    "budget_total": 199166,
+    "donors": "DAH/MAEE, CRF",
+    "details": "Acheminement et distribution de 38 tonnes de matériel (tentes, bâches, couvertures, kits cuisine)",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:6654",
+        "source": "reliefweb",
+        "name": "Southern Africa: Cyclone Favio - Feb 2007",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2007043S11071",
+        "source": "ibtracs",
+        "name": "FAVIO",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:16",
+    "iso3": "reu",
+    "year": 2007,
+    "year_month": "2007-02",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Gamède",
+    "activities": [
+      "Shelter",
+      "Santé",
+      "Soutien Psy"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 250,
+    "budget_total": null,
+    "donors": "-",
+    "details": "Soutien à la DD CRF : mise en place d'un CHU (centre d'hébergement d'urgence) pour les passagers d’un vol dérouté de Maurice – Prise en charges des insuffisants rénaux et respiratoires",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "ibtracs:2007050S16079",
+        "source": "ibtracs",
+        "name": "GAMEDE",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:17",
+    "iso3": "mdg",
+    "year": 2007,
+    "year_month": "2007-03",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Indlala",
+    "activities": [
+      "Shelter",
+      "WatSan",
+      "PPN"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 80695,
+    "budget_total": 404000,
+    "donors": "DG ECHO (UE), (soutien logistique des FAZSOI)",
+    "details": "Production et distribution d’eau, réhabilitation de puits, distribution de PPN (moustiquaires, sceaux, jerrycans, kits cuisine, couvertures, tentes), sensibilisation à l’hygiène\n2 RH : 1 coordinateur, 1 log",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:5936",
+        "source": "reliefweb",
+        "name": "Madagascar: Cyclone Indlala - Mar 2007",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2007066S12066",
+        "source": "ibtracs",
+        "name": "INDLALA",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:18",
+    "iso3": "com",
+    "year": 2007,
+    "year_month": "2007-08",
+    "disaster_type_raw": "Epidémie",
+    "hazard_category": "Crise sanitaire",
+    "title": "Choléra en Grande Comore et à Mohéli",
+    "activities": [
+      "WatSan",
+      "Santé"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 150000,
+    "budget_total": 123367,
+    "donors": "FICR (DREF), Ambassade de France aux Comores (FSD)",
+    "details": "Gestion des 2 principaux Centres de Traitement du Choléra (CTC) de Moroni et de Mitsamiouli, approvisionnement en eau, désinfection, sensibilisation communautaire\n3 RH: 1 watsan, 2 santé",
+    "comments": null,
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:19",
+    "iso3": "moz",
+    "year": 2008,
+    "year_month": "2008-02",
+    "disaster_type_raw": "Inondations",
+    "hazard_category": "Inondation",
+    "title": "régions de Sofala, Manica et Zambezia",
+    "activities": [
+      "Shelter"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 20,
+    "volume_m3": null,
+    "beneficiaries": 36150,
+    "budget_total": 269339,
+    "donors": "DAH/MAEE, CRF",
+    "details": "Acheminement et distribution de 20 tonnes de matériel (tentes, kits cuisine, moustiquaires)\nRH : 1 logisticien",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:5519",
+        "source": "reliefweb",
+        "name": "Southern Africa: Floods - Jan 2007",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:5950",
+        "source": "reliefweb",
+        "name": "Southern Africa: Floods - Dec 2007",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:4661",
+        "source": "reliefweb",
+        "name": "Southern Africa: Floods - Dec 2008",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:20",
+    "iso3": "mdg",
+    "year": 2008,
+    "year_month": "2008-02",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Ivan, régions Analanjirofo et Antsinanana",
+    "activities": [
+      "WatSan",
+      "Santé"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 90000,
+    "budget_total": 279983,
+    "donors": "DG ECHO/ UE",
+    "details": "Distribution de PPN, désinfection et curage des puits, réhabilitation de puits, sensibilisations \n4 RH : 1 coordinateur, 2 watsan, 1 logisticien",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:6097",
+        "source": "reliefweb",
+        "name": "Madagascar: Cyclone Ivan - Feb 2008",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2008037S10055",
+        "source": "ibtracs",
+        "name": "IVAN",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:22",
+    "iso3": "mdg",
+    "year": 2009,
+    "year_month": "2009-04",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Jade",
+    "activities": [
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 19699,
+    "budget_total": 30000,
+    "donors": "CRF",
+    "details": "Mission d'appui en eau et assainissement : réhabilitation de puits et campagnes de sensibilisations à l'hygiène",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:6236",
+        "source": "reliefweb",
+        "name": "Madagascar: Tropical Cyclone Jade - Apr 2009",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2009093S12062",
+        "source": "ibtracs",
+        "name": "JADE",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:23",
+    "iso3": "com",
+    "year": 2009,
+    "year_month": "2009-06",
+    "disaster_type_raw": "Crash aérien",
+    "hazard_category": "Autre",
+    "title": "Yemenia",
+    "activities": [
+      "Soutien Psy",
+      "Autres"
+    ],
+    "activities_other_detail": "cooordo secours",
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": null,
+    "budget_total": 5000,
+    "donors": "FICR",
+    "details": "Opération d'urgence suite au krash aérien de la compagnie Yemenia: logistique et soutien psychologique",
+    "comments": null,
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:25",
+    "iso3": "tza",
+    "year": 2010,
+    "year_month": "2010-01",
+    "disaster_type_raw": "Inondations",
+    "hazard_category": "Inondation",
+    "title": "Kilosa",
+    "activities": [
+      "WatSan",
+      "PPN"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 10000,
+    "budget_total": 60000,
+    "donors": "Ambassade de France en Tanzanie\nCRF",
+    "details": "Opération d'urgence: coordination des opérations sur place (HoD CRF) et mobilisation de ressources",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:6758",
+        "source": "reliefweb",
+        "name": "East Africa: Floods - Mar 2010",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:9698",
+        "source": "reliefweb",
+        "name": "Tanzania: Floods and Landslides - Dec 2011",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:26",
+    "iso3": "mdg",
+    "year": 2010,
+    "year_month": "2010-02",
+    "disaster_type_raw": "Epidémie",
+    "hazard_category": "Crise sanitaire",
+    "title": "Chikungunya",
+    "activities": [
+      "Santé"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 44000,
+    "budget_total": 23889,
+    "donors": "FICR (DREF), (mise à disposition de RH DRASS)",
+    "details": "Envoi de 30 kits EPI\nCampagnes de sensibilisation\n1 RH : santé",
+    "comments": null,
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:27",
+    "iso3": "mdg",
+    "year": 2010,
+    "year_month": "2010-03",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Hubert",
+    "activities": [
+      "Evaluations",
+      "WatSan",
+      "PPN"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 10,
+    "volume_m3": null,
+    "beneficiaries": 28300,
+    "budget_total": 55447,
+    "donors": "FICR (DREF) et (appui des FAZSOI pour le transport)",
+    "details": "Opération d'urgence: envoi de matériel, évaluations, distributions, watsan\nRH: 1 DM coordinaiton terrain et + RDRT",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:6747",
+        "source": "reliefweb",
+        "name": "Madagascar: Cyclone Hubert - Mar 2010",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2010066S19050",
+        "source": "ibtracs",
+        "name": "HUBERT",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:28",
+    "iso3": "reu",
+    "year": 2010,
+    "year_month": "2010-04",
+    "disaster_type_raw": "Volcan",
+    "hazard_category": "Volcan",
+    "title": "Eyjafjöll",
+    "activities": [
+      "Soutien Psy",
+      "PPN"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": null,
+    "budget_total": null,
+    "donors": "_",
+    "details": "Logistique, distribution et soutien psychologique pour les passagers bloqués à l’aéroport de la Réunion\nCoordination des opérations en lien avec la DT Réunion",
+    "comments": null,
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:29",
+    "iso3": "moz",
+    "year": 2011,
+    "year_month": "2011-01",
+    "disaster_type_raw": "Inondations",
+    "hazard_category": "Inondation",
+    "title": null,
+    "activities": [
+      "Shelter",
+      "WatSan",
+      "Santé",
+      "PPN"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 38,
+    "volume_m3": null,
+    "beneficiaries": 20000,
+    "budget_total": 87055,
+    "donors": "FICR (DREF)",
+    "details": "Opération d'urgence :envoi de matériel par bateau (abris et articles de première nécessité)",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:6764",
+        "source": "reliefweb",
+        "name": "Southern Africa: Floods - Mar 2010",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:6847",
+        "source": "reliefweb",
+        "name": "Southern Africa: Floods - Jan 2011",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:9926",
+        "source": "reliefweb",
+        "name": "Mozambique: Storms and Floods - Jan 2012",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:30",
+    "iso3": "mdg",
+    "year": 2011,
+    "year_month": "2011-08",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Bingiza",
+    "activities": [
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 5000,
+    "budget_total": 50000,
+    "donors": "CR974",
+    "details": "Evaluation puis projet de réhabilitation de points d'eau suite au passage du cyclone",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:6859",
+        "source": "reliefweb",
+        "name": "Madagascar: Cyclone Bingiza - Feb 2011",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2011038S11062",
+        "source": "ibtracs",
+        "name": "BINGIZA",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:31",
+    "iso3": "tza",
+    "year": 2011,
+    "year_month": "2011-07",
+    "disaster_type_raw": "Sécheresse",
+    "hazard_category": "Sécheresse",
+    "title": null,
+    "activities": [
+      "Evaluations"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 13901,
+    "budget_total": 75000,
+    "donors": "FICR (appel)",
+    "details": "Envoi d'un évaluateur en sécurité alimentaire puis appel d'urgence de la FICR.",
+    "comments": "75000 sur 370000€",
+    "linked_disasters": [
+      {
+        "id": "reliefweb:8727",
+        "source": "reliefweb",
+        "name": "Horn of Africa Crisis: 2011-2012",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:32",
+    "iso3": "moz",
+    "year": 2012,
+    "year_month": "2012-01",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Dando et Funso, inondations",
+    "activities": [
+      "Evaluations"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 20000,
+    "budget_total": 5000,
+    "donors": "CRF",
+    "details": "Envoi de ressources humaines en appui à la CRMz",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:10180",
+        "source": "reliefweb",
+        "name": "Tropical Storm Irina - Mar 2012",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:33",
+    "iso3": "mdg",
+    "year": 2012,
+    "year_month": "2012-02",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Giovana",
+    "activities": [
+      "Shelter",
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": 2000,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": 3000,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 15000,
+    "budget_total": 50000,
+    "donors": "Région Réunion",
+    "details": "1 DM pour écriture DREF,coordination Shelter WatSan , 1 RDRT WASH",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:6859",
+        "source": "reliefweb",
+        "name": "Madagascar: Cyclone Bingiza - Feb 2011",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:10180",
+        "source": "reliefweb",
+        "name": "Tropical Storm Irina - Mar 2012",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:11906",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Felleng - Jan 2013",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:12078",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Haruna - Feb 2013",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2011038S11062",
+        "source": "ibtracs",
+        "name": "BINGIZA",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2012039S14075",
+        "source": "ibtracs",
+        "name": "GIOVANNA",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2012056S13057",
+        "source": "ibtracs",
+        "name": "IRINA",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:34",
+    "iso3": "mdg",
+    "year": 2012,
+    "year_month": "2012-03",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Tempête Irina",
+    "activities": [
+      "Shelter",
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 50,
+    "volume_m3": null,
+    "beneficiaries": 10000,
+    "budget_total": 50000,
+    "donors": "CR974",
+    "details": "1 DM pour révision/écriture DREF en Appel : envoi de matériel depuis la Réunion et mobilisation du stock PIROI basé à Antananarivo",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:10180",
+        "source": "reliefweb",
+        "name": "Tropical Storm Irina - Mar 2012",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2012056S13057",
+        "source": "ibtracs",
+        "name": "IRINA",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:35",
+    "iso3": "com",
+    "year": 2012,
+    "year_month": "2012-04",
+    "disaster_type_raw": "Inondations",
+    "hazard_category": "Inondation",
+    "title": null,
+    "activities": [
+      "WatSan",
+      "PPN"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 20,
+    "volume_m3": null,
+    "beneficiaries": 9000,
+    "budget_total": 150000,
+    "donors": "CR974, Ambassade de France aux Comores, COI, CR PACA, CG974, CG 93, CG13, mairie de Montreuil",
+    "details": "Acheminement de matériel humanitaire RUN et MAY, réhabilitation des infrastructures en eau, programmes de sensibilisation\n1 DM pour coordinaiton et écirture Appel, 2 LOG, 2 RDRT",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:10483",
+        "source": "reliefweb",
+        "name": "Comoros: Floods - Apr 2012",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:36",
+    "iso3": "reu",
+    "year": 2013,
+    "year_month": "2013-01",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Dumile",
+    "activities": [
+      "Shelter"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": null,
+    "budget_total": null,
+    "donors": "/",
+    "details": "Coordo, Shelter",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "ibtracs:2012362S08071",
+        "source": "ibtracs",
+        "name": "DUMILE",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:37",
+    "iso3": "moz",
+    "year": 2013,
+    "year_month": "2013-01",
+    "disaster_type_raw": "Inondations",
+    "hazard_category": "Inondation",
+    "title": null,
+    "activities": [
+      "Shelter",
+      "WatSan",
+      "Santé"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 25,
+    "volume_m3": null,
+    "beneficiaries": 15000,
+    "budget_total": 116000,
+    "donors": "Fondation Total, Fond READY",
+    "details": "Envoi de matériel (kits abris et bâches)\n2 RDRT : logisticien et watsan",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:9926",
+        "source": "reliefweb",
+        "name": "Mozambique: Storms and Floods - Jan 2012",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:11860",
+        "source": "reliefweb",
+        "name": "Mozambique: Floods - Jan 2013",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:38",
+    "iso3": "syc",
+    "year": 2013,
+    "year_month": "2013-01",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Felleng",
+    "activities": [
+      "WatSan",
+      "PPN"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 3000,
+    "budget_total": 50000,
+    "donors": "CR974",
+    "details": "Appui technique et à la coordination\nEnvoi de matériel de traitement d'eau et d'assainissement, mobilisation de fonds pour achat local d'articles de première nécessité pour les sinistrés",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:11906",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Felleng - Jan 2013",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:39",
+    "iso3": "mdg",
+    "year": 2013,
+    "year_month": "2013-02",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Haruna, Sud-Ouest de l'île",
+    "activities": [
+      "Shelter",
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 35,
+    "volume_m3": null,
+    "beneficiaries": 10000,
+    "budget_total": 161163,
+    "donors": "CR974, COI",
+    "details": "Envoi de matériel (kits abris, bâches et lignes de traitement d'eau)",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:12078",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Haruna - Feb 2013",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:40",
+    "iso3": "reu",
+    "year": 2014,
+    "year_month": "2014-01",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Bejisa",
+    "activities": [
+      "Shelter"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": null,
+    "budget_total": null,
+    "donors": "/",
+    "details": "Coordo, Shelter",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "ibtracs:2013362S09053",
+        "source": "ibtracs",
+        "name": "BEJISA",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:41",
+    "iso3": "syc",
+    "year": 2014,
+    "year_month": "2014-02",
+    "disaster_type_raw": "Inondations",
+    "hazard_category": "Inondation",
+    "title": null,
+    "activities": [
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": null,
+    "budget_total": 20573,
+    "donors": "/",
+    "details": "WatSan",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:14074",
+        "source": "reliefweb",
+        "name": "Seychelles: Floods - Feb 2014",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:42",
+    "iso3": "com",
+    "year": 2014,
+    "year_month": "2014-04",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Hellen",
+    "activities": [
+      "Shelter",
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 3000,
+    "budget_total": 21474,
+    "donors": "DREF",
+    "details": "Shelter, watsan, 1 RDRT WASH",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:14394",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Hellen - Mar 2014",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2014086S10041",
+        "source": "ibtracs",
+        "name": "HELLEN",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:43",
+    "iso3": "mdg",
+    "year": 2015,
+    "year_month": "2015-01",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Chedza (tempête tropicale)",
+    "activities": [
+      "Shelter",
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 42,
+    "volume_m3": null,
+    "beneficiaries": 15000,
+    "budget_total": 127585,
+    "donors": "DREF",
+    "details": "1 DM pour écriture DREF\nShelter, Watsan",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:17826",
+        "source": "reliefweb",
+        "name": "Tropical Storm Chedza - Jan 2015",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2015013S18038",
+        "source": "ibtracs",
+        "name": "CHEDZA",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:44",
+    "iso3": "moz",
+    "year": 2015,
+    "year_month": "2015-02",
+    "disaster_type_raw": "Inondations",
+    "hazard_category": "Inondation",
+    "title": null,
+    "activities": [
+      "Shelter",
+      "WatSan",
+      "Santé"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 40,
+    "volume_m3": null,
+    "beneficiaries": 17250,
+    "budget_total": 286532,
+    "donors": "ECHO",
+    "details": "Shelter, Watsan, santé",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:17696",
+        "source": "reliefweb",
+        "name": "Southern Africa: Floods - Jan 2015",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:45",
+    "iso3": "mdg",
+    "year": 2015,
+    "year_month": "2015-03",
+    "disaster_type_raw": "Inondations",
+    "hazard_category": "Inondation",
+    "title": null,
+    "activities": [
+      "Shelter"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 5,
+    "volume_m3": null,
+    "beneficiaries": 10000,
+    "budget_total": 25800,
+    "donors": "MAEDI",
+    "details": "1 DM pour écriture DREF\nShelter",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:17696",
+        "source": "reliefweb",
+        "name": "Southern Africa: Floods - Jan 2015",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:46",
+    "iso3": "syc",
+    "year": 2016,
+    "year_month": "2016-06",
+    "disaster_type_raw": "Epidémie",
+    "hazard_category": "Crise sanitaire",
+    "title": "Epidémie - Dengue",
+    "activities": [],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 16400,
+    "budget_total": null,
+    "donors": "IFRC",
+    "details": "Envoi d'un RDRT Santé pour répondre à l'épidémie de dengue aux Seychelles",
+    "comments": null,
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:47",
+    "iso3": "mdg",
+    "year": 2016,
+    "year_month": "2016-01",
+    "disaster_type_raw": "Inondations",
+    "hazard_category": "Inondation",
+    "title": "ZCIT Nord",
+    "activities": [
+      "Shelter",
+      "WatSan",
+      "PPN"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 12,
+    "volume_m3": null,
+    "beneficiaries": 2500,
+    "budget_total": 58000,
+    "donors": "SCAC Mada",
+    "details": "Shelter + Tarpaulin + kits cuisines + kits Wash",
+    "comments": "Ambassade de France sur projet de dvlpt renf cap log et préparation. 58 000€ sur porjet tital de 100 000 €",
+    "linked_disasters": [
+      {
+        "id": "reliefweb:17696",
+        "source": "reliefweb",
+        "name": "Southern Africa: Floods - Jan 2015",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:48",
+    "iso3": "mdg",
+    "year": 2017,
+    "year_month": "2017-03",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Enawo",
+    "activities": [
+      "Evaluations",
+      "Shelter",
+      "WatSan",
+      "Santé",
+      "PPN"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 60,
+    "volume_m3": null,
+    "beneficiaries": 15000,
+    "budget_total": 365673,
+    "donors": "Régions Run \nRégion Ile de France \nLe PORT \nDUE à Madagascar \nMAEDI \nFAZSOI (1 navire)",
+    "details": "1 DM pour écriture EPoA Appel FD, 2 Logs pour livraison de 3 000 STK + 6 000 bâches + 3 kit chloration, 1 ADM pour suivi financier",
+    "comments": "budget PIROI 388 000 euros sur appeal total de 777 152 euros de la FICR",
+    "linked_disasters": [
+      {
+        "id": "reliefweb:40889",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Enawo - Mar 2017",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2017061S11063",
+        "source": "ibtracs",
+        "name": "ENAWO",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:50",
+    "iso3": "mdg",
+    "year": 2017,
+    "year_month": "2017-10",
+    "disaster_type_raw": "Epidémie",
+    "hazard_category": "Crise sanitaire",
+    "title": "Peste",
+    "activities": [
+      "PPN"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 1,
+    "volume_m3": null,
+    "beneficiaries": 2000,
+    "budget_total": null,
+    "donors": "COI",
+    "details": "Envoi de 200 EPI COI + 1 staff FACT\nPré-positionnement de 2000 EPI aux Comores (1000), Mlaurice (500 ) et Seychelles (500)",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:44149",
+        "source": "reliefweb",
+        "name": "Madagascar: Plague Outbreak - Sep 2017",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:46689",
+        "source": "reliefweb",
+        "name": "Madagascar: Plague Outbreak - Sep 2018",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:47028",
+        "source": "reliefweb",
+        "name": "Madagascar: Measles Outbreak - Oct 2018",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:51",
+    "iso3": "reu",
+    "year": 2018,
+    "year_month": "2018-07",
+    "disaster_type_raw": "Epidémie",
+    "hazard_category": "Crise sanitaire",
+    "title": "Dengue",
+    "activities": [
+      "Santé"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": null,
+    "budget_total": null,
+    "donors": "/",
+    "details": "LAV porte-à-porte, sensibilisaiton gd-pubblic",
+    "comments": null,
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:52",
+    "iso3": "moz",
+    "year": 2019,
+    "year_month": "2019-03",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Idai",
+    "activities": [
+      "Shelter",
+      "WatSan",
+      "Santé"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": 7000,
+      "kits abris": 3500,
+      "Tentes": null,
+      "kits cuisine": 2123,
+      "kits hygiène": 5,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": 6000,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": 5100,
+      "seaux": 4200,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 25.92,
+    "volume_m3": 278,
+    "beneficiaries": 200000,
+    "budget_total": 422794,
+    "donors": "CD 974\nCD 976\nCDCS MAE\nDG ECHO\nTechnip FMC\nAppel à dons CRf\nVille du Tampon\nSuez\nVille de Saint Deis\n(FAZSOI)",
+    "details": "Stocks RUN et MAY via fret civil et FAZSOI (Transall, Tonnerre, Nivose) \n7 300 savons\n137 latrines d'urgence\n1 kit relief (6 tentes, entrepôts, 10 groupes electrogènes, 2 kits cordage, 2 kits éclairage \n8 équipiers ERU spécialisés en WASH",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:47733",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Idai - Mar 2019",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2019063S18038",
+        "source": "ibtracs",
+        "name": "IDAI",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:53",
+    "iso3": "com",
+    "year": 2019,
+    "year_month": "2019-04",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Kenneth",
+    "activities": [
+      "Evaluations",
+      "Shelter",
+      "WatSan",
+      "PPN"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": 2000,
+      "kits abris": 495,
+      "Tentes": null,
+      "kits cuisine": 1000,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": 4000,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": 1000,
+      "seaux": 1000,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 20,
+    "volume_m3": 25.8,
+    "beneficiaries": 7500,
+    "budget_total": 260000,
+    "donors": "ECHO \nCD 974\nVille du Tampon\nUSAID\n(FAZSOI)",
+    "details": "formation volontaires, distrib kits nfi, baches moustiquaires savons seaux jerrycans, lampes, kits cuisines, kits outils \n1000 lampes portables solaires, 2 kits outils, 5 groupes electrogènes, 2005 savons \nenvoi RH: LOG + chargé de préparation",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:48078",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Kenneth - Apr 2019",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2019112S10053",
+        "source": "ibtracs",
+        "name": "KENNETH",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:54",
+    "iso3": "mus",
+    "year": 2019,
+    "year_month": "2019-04",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Joaninha",
+    "activities": [
+      "Shelter",
+      "Santé",
+      "Autres"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 250,
+    "budget_total": 32000,
+    "donors": "CD974",
+    "details": "matériel acheté sur place: Tôles, kits de constrcution, vouchers, sensibilisation aux risques sanitaires\nDistribution de matériel pédagogique et de bons alimentaires \nDistribution de tôles, de bois et de matériel de fixation",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:44899",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Berguitta - Jan 2018",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2018010S10069",
+        "source": "ibtracs",
+        "name": "BERGUITTA",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2018111S07055",
+        "source": "ibtracs",
+        "name": "FAKIR",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2018351S09059",
+        "source": "ibtracs",
+        "name": "CILIDA",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2019035S11058",
+        "source": "ibtracs",
+        "name": "GELENA",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2019352S14070",
+        "source": "ibtracs",
+        "name": "CALVINIA",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2020022S17043",
+        "source": "ibtracs",
+        "name": "DIANE",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2020023S19056",
+        "source": "ibtracs",
+        "name": "ESAMI",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2020034S13063",
+        "source": "ibtracs",
+        "name": "FRANCISCO",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2020072S14054",
+        "source": "ibtracs",
+        "name": "HEROLD",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2020366S12073",
+        "source": "ibtracs",
+        "name": "DANILO",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:55",
+    "iso3": "mdg",
+    "year": 2019,
+    "year_month": "2019-12",
+    "disaster_type_raw": "Tempête tropicale",
+    "hazard_category": "Cyclone/tempête",
+    "title": "Belna",
+    "activities": [
+      "Shelter",
+      "Autres"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 2500,
+    "budget_total": null,
+    "donors": "DREF",
+    "details": "contribution au DREF de la FICR",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "ibtracs:2019336S06055",
+        "source": "ibtracs",
+        "name": "BELNA",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:56",
+    "iso3": "mdg",
+    "year": 2020,
+    "year_month": "2020-01",
+    "disaster_type_raw": "Tempête tropicale",
+    "hazard_category": "Cyclone/tempête",
+    "title": "Diane (nommée apres)",
+    "activities": [
+      "Shelter",
+      "WatSan",
+      "Santé"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": 1300,
+      "kits abris": 1300,
+      "Tentes": null,
+      "kits cuisine": 6500,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": 2000,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": 1000,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 16.25,
+    "volume_m3": 40,
+    "beneficiaries": null,
+    "budget_total": 190000,
+    "donors": "CDCS\nCD974",
+    "details": "15 tonnes minimum \n650 STK + 1300 bâches\n1000 kits wash \n2000 moustiquaires \n6500 kits cuisine en contingence à Tana",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "ibtracs:2020022S17043",
+        "source": "ibtracs",
+        "name": "DIANE",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:58",
+    "iso3": "mdg",
+    "year": 2020,
+    "year_month": "2020-12",
+    "disaster_type_raw": "Forte tempête tropicale",
+    "hazard_category": "Cyclone/tempête",
+    "title": "Chalane",
+    "activities": [
+      "Evaluations",
+      "Shelter",
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": 350,
+      "Tentes": null,
+      "kits cuisine": 350,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": 350,
+      "seaux": 700,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 500,
+    "budget_total": 3400,
+    "donors": "ECHO (Crisis Modifier de PF342)",
+    "details": null,
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "ibtracs:2020355S11065",
+        "source": "ibtracs",
+        "name": "CHALANE",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:59",
+    "iso3": "moz",
+    "year": 2021,
+    "year_month": "2021-02",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Eloise",
+    "activities": [
+      "Shelter",
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": 1040,
+      "kits abris": 520,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": 3000,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": 1000,
+      "seaux": 2000,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 15.12,
+    "volume_m3": 57.4,
+    "beneficiaries": 7500,
+    "budget_total": null,
+    "donors": "ECHO (Crisis Modifier de PF342)",
+    "details": "500 familles Shelter et 1 000 familles Wash\nEgalement 32 latrines et 4000 savons",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:50575",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Eloise - Jan 2021",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2021012S12086",
+        "source": "ibtracs",
+        "name": "ELOISE",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:61",
+    "iso3": "reu",
+    "year": 2021,
+    "year_month": "2021-12",
+    "disaster_type_raw": "Incendie",
+    "hazard_category": "Incendie",
+    "title": "Incendie Saint-Denis / Montgaillard",
+    "activities": [
+      "Shelter",
+      "PPN"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": 200,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": 200,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": 500,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 200,
+    "budget_total": null,
+    "donors": "Mairie de Saint-Denis",
+    "details": "Mise à disposition de 200 lits picots + couvertures + mobilisation ESV sur place 3 jours\n500 masques et 5L de gel hydro",
+    "comments": null,
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:62",
+    "iso3": "mdg",
+    "year": 2021,
+    "year_month": "2021-12",
+    "disaster_type_raw": "sécheresse / famine",
+    "hazard_category": "Sécheresse",
+    "title": "Prison Mada",
+    "activities": [],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": 220,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": 215,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 640,
+    "budget_total": 38688,
+    "donors": "ECHO (Crisis Modifier de PF342)",
+    "details": "Appui alimentaire, appui wash, matériel d'appui du centre\n5120kg de denrées alimentaires (riz, légumineuses, huile, sel)",
+    "comments": "appui à la CRM",
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:63",
+    "iso3": "mdg",
+    "year": 2022,
+    "year_month": "2022-02",
+    "disaster_type_raw": "cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Batsirai",
+    "activities": [
+      "WatSan",
+      "Santé"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": 6000,
+      "kits abris": 3000,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": 6000,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": 7000,
+      "seaux": 9000,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": 3258.5,
+    "beneficiaries": 15000,
+    "budget_total": 506700,
+    "donors": "CDCS/DUE/ CD974/ POssession/ CINOR / TCO/ Collecte fonds publics/ (FAZSOI)",
+    "details": "répondre aux besoins immédiats en abris de 3000 ménages\nRépondre aux besoins en EHA de -3000 ménages\nDisposer de matériel de réponse en cas de nouvelle cris\n4 Surge CRF dont 1 PIROI + 2 PIROI (LOG et COM) dans le CASA FAZSOI\n4 ERU déployés (op manager, log officer, 2 relief cash officer\nDéploiement de stocks PIROI des entrepôts de Madagascar (Tana, Tamatave) et Réunion. Option depuis Mayotte supprimée (11 tentes 45m2, 3800 savons et 250 baches sollune)",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:51039",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Batsirai - Feb 2022",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2022024S09090",
+        "source": "ibtracs",
+        "name": "BATSIRAI",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:64",
+    "iso3": "moz",
+    "year": 2022,
+    "year_month": "2022-03",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Gombe",
+    "activities": [
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": 2000,
+      "kits abris": 1000,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": 1000,
+      "seaux": 1000,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 5000,
+    "budget_total": 120000,
+    "donors": "CDCS/ fonds propres",
+    "details": "e kits abris et de bâches (cible : 1 000 ménages)\nHygiène et Assainissement (EHA) (cible : 1 000 ménages)\nNombre de stocks mobilisés qui sont réassortis à l’identique  (cible : 1 stock) + 3000 savons",
+    "comments": "appui à la Fédé",
+    "linked_disasters": [
+      {
+        "id": "reliefweb:51086",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Gombe - Mar 2022",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2022065S16055",
+        "source": "ibtracs",
+        "name": "GOMBE",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:65",
+    "iso3": "com",
+    "year": 2022,
+    "year_month": "2022-04",
+    "disaster_type_raw": "Inondation",
+    "hazard_category": "Inondation",
+    "title": "Inondation Comores",
+    "activities": [
+      "Evaluations",
+      "WatSan",
+      "CASH"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": 89,
+      "Tentes": null,
+      "kits cuisine": 89,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": 2800,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": 89,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": null,
+    "volume_m3": null,
+    "beneficiaries": 3480,
+    "budget_total": 32444,
+    "donors": "PF347  (Crismo)",
+    "details": "Réponse NFI+CASH\n89 kits outillage, kits cuisine, kits Wash, 900 savons, 2800 déstockés de l’entrepôt de Moroni et transportés vers Anjouan et Mohéli.\n2 staff mobilisés : un coordo op et assist coordo op\n696 ménages",
+    "comments": null,
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:66",
+    "iso3": "mdg",
+    "year": 2023,
+    "year_month": "2023-02",
+    "disaster_type_raw": "cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "CHENESO",
+    "activities": [
+      "Alerte et actions anticipées",
+      "Evaluations",
+      "WatSan",
+      "CASH"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": 920,
+      "seaux": 460,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": 920,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 2.32,
+    "volume_m3": 25,
+    "beneficiaries": 3350,
+    "budget_total": 17285,
+    "donors": "PF347  (Crismo)",
+    "details": "Evaluation des besoins initiaux\nRecensement et évaluation des besoins approfondis à Majunga I\n\nAcheminement des kits wash à distribuer aux sinistrés\nFormation des volontaires sur le processus de la distribution\nCiblage des bénéficiaires et mise en place d’activités CEA (et\ncomités CEA provisoires)\nDistribution des kits WASH (2 jerricans (de 10L à 20L), 1 seau (de\n14L à 15L), 2 barres de savon (de 100g) et 2 flacons de Sur'Eau)\n\nDistribution d’argent liquide (CASH) de 120 000 ariary par ménage\npour 460 ménages\nCash et kits Wash : 460 ménages\r\nSensibilisation: 1050 ménages\nEvaluation post-distribution (PDM)\nAtelier de leçons apprises",
+    "comments": "1.Rapport final_Crisis Modifier_Cheneso2023_ vf CRM.docx.pdf",
+    "linked_disasters": [
+      {
+        "id": "reliefweb:51450",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Cheneso - Jan 2023",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2023013S08081",
+        "source": "ibtracs",
+        "name": "CHENESO",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:67",
+    "iso3": "mdg",
+    "year": 2023,
+    "year_month": "2023-02",
+    "disaster_type_raw": "cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "FREDDY",
+    "activities": [
+      "Alerte et actions anticipées",
+      "Shelter",
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": 1000,
+      "kits abris": 500,
+      "Tentes": null,
+      "kits cuisine": 500,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": 1000,
+      "seaux": 500,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": 1000,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 17.658,
+    "volume_m3": 41.62,
+    "beneficiaries": 2500,
+    "budget_total": 102500,
+    "donors": "PF347\n(FAZSOI)",
+    "details": "500 ménages dans la région de Vatovavy( à trvers un financement de par la  PIROI \n(26000 à l'echelle de l'opération global portée par la CRM )",
+    "comments": "PF356_Rapport_Final_FREDDY MADAGASCAR_sign CP.pdfk",
+    "linked_disasters": [
+      {
+        "id": "reliefweb:51486",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Freddy - Feb 2023",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2023036S12117",
+        "source": "ibtracs",
+        "name": "FREDDY",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:68",
+    "iso3": "moz",
+    "year": 2023,
+    "year_month": "2023-02",
+    "disaster_type_raw": "cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "FREDDY",
+    "activities": [
+      "Evaluations",
+      "Shelter",
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": 2000,
+      "kits abris": 1000,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": 3000,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": 2010,
+      "seaux": 1000,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": 3000,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 24.32,
+    "volume_m3": 74.54,
+    "beneficiaries": 999,
+    "budget_total": 172000,
+    "donors": "PF357",
+    "details": "Comme convenu dans la concept note, le matériel décrit ci-dessous a été acheminé depuis La Réunion vers le Mozambique et mis à disposition de la Croix-Rouge du Mozambique : \r\n1 000 Shelter toolkits \r\n2 000 bâches 4*6m\r\n3 000 Moustiquaires \r\n2 010 Jerrycans 20 L (10 jerrycans additionnels ont été envoyés au Mozambique en prévision de possibles casses ou dommages durant le transport)\r\n1 000 seaux en plastique 14 L\r\n3 000 savons de 100 grammes.",
+    "comments": "PF357_Freddy Mozambique_Modèle rapport final.docxe",
+    "linked_disasters": [
+      {
+        "id": "reliefweb:51486",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Freddy - Feb 2023",
+        "match_type": "cyclone_name"
+      },
+      {
+        "id": "ibtracs:2023036S12117",
+        "source": "ibtracs",
+        "name": "FREDDY",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:69",
+    "iso3": "mdg",
+    "year": 2024,
+    "year_month": "2024-01",
+    "disaster_type_raw": "Tempête tropical",
+    "hazard_category": "Cyclone/tempête",
+    "title": "ALVARO",
+    "activities": [
+      "Alerte et actions anticipées",
+      "Evaluations",
+      "Shelter",
+      "WatSan",
+      "Santé",
+      "PPN",
+      "CASH"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": 100,
+      "kits hygiène": 2070,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": 1200,
+      "seaux": 600,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 7.39,
+    "volume_m3": 59.74,
+    "beneficiaries": 6948,
+    "budget_total": 71940,
+    "donors": "PF347  (Crismo)",
+    "details": "- Réalisation d’évaluations approfondies des besoins\n- Réception, acheminement et distributions de kits WASH, dignité et Cuisine pour 600 ménages\n- Formation du personnel à la santé/wash/control des épidémies (préventif en cas de maladie potentiel lié aux inondations)\n- Sensibilisation de la population\n- Désinfection des puits\n- Distribution de Cash/transferts monétaires\n\nChiffres  finaux : \n578 ménages wash \r\n100 ménages kit cuisine\r\n558 personnes kit dignité\r\n600 ménages pour CaSH",
+    "comments": "WatSan (Wash + dignité); PPN (kits cuisine ) \nKit hygiène = 870 Kit dignité + 1200 savon \n=> Source Plan d'action , en attente du RF\n+ 2024- RE-APPRO &  BESOINS DES  SN",
+    "linked_disasters": [
+      {
+        "id": "ibtracs:2023364S19035",
+        "source": "ibtracs",
+        "name": "ALVARO",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:70",
+    "iso3": "mus",
+    "year": 2024,
+    "year_month": "2024-02",
+    "disaster_type_raw": "Epidémie",
+    "hazard_category": "Crise sanitaire",
+    "title": "Dengue",
+    "activities": [
+      "Santé"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": 300,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 0.2,
+    "volume_m3": 0.56,
+    "beneficiaries": 16695,
+    "budget_total": 24882,
+    "donors": "PF347 (Crismo)",
+    "details": "- Formation du personnel de la CRMu à la sensibilisation en contexte Dengue et à l’utilisation des Test de Diagnostic Rapide\n- Actions de sensibilisation : 26 000 bénéficiaires dont 600 personnes en sensibilisation renforcées (atelier/échanges directs)\n- Réalisation de Test de Diagnostic Rapide dans les populations vulnérables\n- Distribution de répulsifs aux familles inscrit sur le registre social\n- Donation de 300 moustiquaires au Ministère de la Santé\n\nChiffres finaux : \n1300 repulsifs distribués\r\n745 tests effectués\r\n300 mousticaires distribuées\r\n14650 personnes sensibilisées",
+    "comments": "en attente du RF",
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:71",
+    "iso3": "com",
+    "year": 2024,
+    "year_month": "2024-02",
+    "disaster_type_raw": "Inondation",
+    "hazard_category": "Inondation",
+    "title": "Inondation Comores",
+    "activities": [
+      "Evaluations"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 0,
+    "volume_m3": 0,
+    "beneficiaries": 0,
+    "budget_total": 2500,
+    "donors": "PF347 (Crismo)",
+    "details": "Réalisation d’une évaluation approfondie des besoins",
+    "comments": "Lancement des activités de réponse +/- en même temps que le démarrage de l'épidémie de choléra. =>Difficulté de mise en oeuvre. \nDécision commune de basculer cette opération Inondations pour des besoins de réponse Choléra. Opé arrêtée le 16/04/2024.\n\nVoir RF Rapport narratif final_Crismo Inondation 2024.docx",
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:71-2",
+    "iso3": "com",
+    "year": 2024,
+    "year_month": "2024-02",
+    "disaster_type_raw": "Epidémie",
+    "hazard_category": "Crise sanitaire",
+    "title": "Choléra",
+    "activities": [
+      "Evaluations",
+      "WatSan",
+      "Santé"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": 2,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 6.758,
+    "volume_m3": 25.28,
+    "beneficiaries": 20000,
+    "budget_total": 24882,
+    "donors": "PF347 (Crismo)",
+    "details": "- Déploiement 2 UTE\n- Mission Julien G + 2 bénévoles Aquassistance\n- Mission Gabriel (Mayotte/Anjouan) \n- réparation incinérateur CTC Ngazidja Samba\n- articles complémentaires & consommables pour les UTE (notamment 2ème UTE)\n- entretien des motopompes\n\nChiffres finaux : 300 000 L distribués > minimum humanitaire d'urgence = 15L / pers/ jours = 20 000 pers en besoin journalier",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:51899",
+        "source": "reliefweb",
+        "name": "Comoros: Cholera Outbreak - Feb 2024",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:72",
+    "iso3": "mdg",
+    "year": 2024,
+    "year_month": "2024-03",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Guamane",
+    "activities": [
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": 1200,
+      "seaux": 600,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 5.57,
+    "volume_m3": 24.06,
+    "beneficiaries": 600,
+    "budget_total": null,
+    "donors": "PPP",
+    "details": null,
+    "comments": "Réappro à faire depuis la PIROI sur les fonds PPP de la DLG",
+    "linked_disasters": [
+      {
+        "id": "reliefweb:51450",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Cheneso - Jan 2023",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:51486",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Freddy - Feb 2023",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:51939",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Gamane - Mar 2024",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:52243",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Chido - Dec 2024",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:52263",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Dikeledi - Jan 2025",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:52304",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Honde - Feb 2025",
+        "match_type": "country_year"
+      },
+      {
+        "id": "reliefweb:52306",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Jude - Mar 2025",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2023013S08081",
+        "source": "ibtracs",
+        "name": "CHENESO",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2023036S12117",
+        "source": "ibtracs",
+        "name": "FREDDY",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2023364S19035",
+        "source": "ibtracs",
+        "name": "ALVARO",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2024049S17052",
+        "source": "ibtracs",
+        "name": "ELEANOR",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:73",
+    "iso3": "mdg",
+    "year": 2024,
+    "year_month": "2024-12",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "CHIDO",
+    "activities": [
+      "Alerte et actions anticipées",
+      "Evaluations"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 0,
+    "volume_m3": 0,
+    "beneficiaries": 13487,
+    "budget_total": 5510,
+    "donors": "PF347 (Crismo)",
+    "details": "262 volontaires de la CRM ont été mobilisés pour réaliser des actions de sensibilisation (Alerte et évacuation précoce) dans les régions de DIANA, SAVA et SOFIA.\nAu total, 13 487 personnes (6718 femmes et 6769 hommes) ont été touchées par les actions de sensibilisation, ce qui représente 3254 ménages.",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:52243",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Chido - Dec 2024",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:74",
+    "iso3": "myt",
+    "year": 2024,
+    "year_month": "2024-12",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "CHIDO",
+    "activities": [
+      "Alerte et actions anticipées",
+      "Evaluations",
+      "Shelter",
+      "WatSan",
+      "Santé",
+      "Télécoms",
+      "Autres"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": 10100,
+      "kits abris": 4000,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": 1000,
+      "kits nettoyage": null,
+      "couvertures": 500,
+      "moustiquaires": 3700,
+      "tapis de sol": null,
+      "lits picots": 403,
+      "jerrycans": 2000,
+      "seaux": 8010,
+      "lampes solaire": 1000,
+      "UTE": 2,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 136,
+    "volume_m3": 366,
+    "beneficiaries": 95849,
+    "budget_total": 575000,
+    "donors": "EA National, Région réunion, TCO, Saint-Joseph et Saint XXXX , (FAZSOI)",
+    "details": "Appui à la production et la potabilisation de  739 789 L d'eau. En partant des standards humanitaires d'un minima de 15L d'eau par jour et par personne, cela représente l'appui à 49 319 bénéficiaires dans leur besoin journalier en eau. \nL'opération a aussi permis la distribution de NFI a bénéficié à  9306 ménages, soit 46 530 personnes",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:52243",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Chido - Dec 2024",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:75",
+    "iso3": "com",
+    "year": 2024,
+    "year_month": "2024-12",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "CHIDO",
+    "activities": [
+      "Alerte et actions anticipées",
+      "Evaluations"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 0,
+    "volume_m3": 0,
+    "beneficiaries": 28429,
+    "budget_total": 8501,
+    "donors": "PF347 (Crismo)",
+    "details": "Dans le cadre de la réponse d'urgence CHIDO, le CRCO a mobilisé 96 volontaires et 14 membres du staff de la SN pour réaliser des actions de sensibilisation et des évaluations rapides et initiales. AU total, 28 429 personnes ont été sensibilisées au niveau des 3 îles.",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:52243",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Chido - Dec 2024",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:76",
+    "iso3": "moz",
+    "year": 2024,
+    "year_month": "2024-12",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "CHIDO",
+    "activities": [],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": 2000,
+      "kits abris": 1000,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": 3000,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": 2000,
+      "seaux": 1000,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 17,
+    "volume_m3": 79,
+    "beneficiaries": 0,
+    "budget_total": null,
+    "donors": "EA IFRC",
+    "details": "Appui dans l'envoi de matériel dans le cadre de l'EA IFRC",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:52243",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Chido - Dec 2024",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:77",
+    "iso3": "reu",
+    "year": 2025,
+    "year_month": "2025-02",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Garance",
+    "activities": [
+      "Alerte et actions anticipées",
+      "Autres"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": 1920,
+      "kits abris": 124,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": 400,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 11,
+    "volume_m3": 23,
+    "beneficiaries": 390,
+    "budget_total": null,
+    "donors": "/",
+    "details": "Ouverture de centre d'hebergement d'urgence : \n4 CHU ouverts et 32 bénévoles mobilisés \n\nOpération coup de main, coup de coeur :\n15 missions réalisées, 28 logements traités\n\n265 bénéficiaires (255 CHU et 10 CV) et 125 bénéficiaires pour opérations CMCC (25 foyers, estimation de 5 personnes par foyer)",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:52304",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Honde - Feb 2025",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2024012S12059",
+        "source": "ibtracs",
+        "name": "BELAL",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2024022S16058",
+        "source": "ibtracs",
+        "name": "CANDICE",
+        "match_type": "country_year"
+      },
+      {
+        "id": "ibtracs:2024049S17052",
+        "source": "ibtracs",
+        "name": "ELEANOR",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:78",
+    "iso3": "moz",
+    "year": 2025,
+    "year_month": "2025-03",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "JUDE",
+    "activities": [
+      "Shelter",
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": 3000,
+      "kits abris": 1500,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": 3500,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": 2500,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 33,
+    "volume_m3": 113,
+    "beneficiaries": 0,
+    "budget_total": null,
+    "donors": "CDCS - PHARE U",
+    "details": "Appui dans l'envoi de matériel dans le cadre d'une opération phare-U leadé par le siège CRF",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:52306",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Jude - Mar 2025",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:79",
+    "iso3": "reu",
+    "year": 2025,
+    "year_month": "2025-02",
+    "disaster_type_raw": "Epidémie",
+    "hazard_category": "Crise sanitaire",
+    "title": "Chikungunya",
+    "activities": [
+      "WatSan",
+      "Santé",
+      "Autres"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": 1300,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": 11247,
+      "DLM": null,
+      "Borne CO2": 7
+    },
+    "tonnes": 0,
+    "volume_m3": 0,
+    "beneficiaries": 13197,
+    "budget_total": 100000,
+    "donors": "Fond l'Oréal pour l'environnement PF366",
+    "details": "Formation du personnel CRf. Distribution de 11247 répulsifs et 1300 mosutiquaires1950 personnes sensibilisés. 6 sites Croix-Rouge accueillant des personnes vulnérables protégés par des bornes CO2",
+    "comments": null,
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:80",
+    "iso3": "myt",
+    "year": 2025,
+    "year_month": "2025-04",
+    "disaster_type_raw": "Epidémie",
+    "hazard_category": "Crise sanitaire",
+    "title": "Chikungunya",
+    "activities": [
+      "Santé"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 0,
+    "volume_m3": 0,
+    "beneficiaries": null,
+    "budget_total": null,
+    "donors": "Fond Chido DNOM",
+    "details": "Approvisionnement de 5000 répulsifs, appui technique à l'élaboration du plan de réponse. Re-lance du projet SBC Chido",
+    "comments": null,
+    "linked_disasters": []
+  },
+  {
+    "id": "piroi_op:81",
+    "iso3": "mdg",
+    "year": 2026,
+    "year_month": "2026-01",
+    "disaster_type_raw": "Epidémie",
+    "hazard_category": "Crise sanitaire",
+    "title": "MPOX",
+    "activities": [
+      "WatSan",
+      "Santé"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": null,
+      "kits abris": null,
+      "Tentes": 2,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": 75,
+      "jerrycans": 800,
+      "seaux": 400,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": 24620,
+      "DLM": 40,
+      "Borne CO2": null
+    },
+    "tonnes": 6.86,
+    "volume_m3": 31,
+    "beneficiaries": 27000,
+    "budget_total": 100000,
+    "donors": "CDCS",
+    "details": "Renforcement des capacités de formation / sensibilisation des volontaires, Distribution communautaire, renforcement capacités structures de santé via dotation matériel et EPI et protection des volontaires CRM",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:52509",
+        "source": "reliefweb",
+        "name": "Madagascar: Mpox Outbreak - Dec 2025",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:82",
+    "iso3": "moz",
+    "year": 2026,
+    "year_month": "2026-02",
+    "disaster_type_raw": "Inondations",
+    "hazard_category": "Inondation",
+    "title": "Inondations",
+    "activities": [],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": 4000,
+      "kits abris": 2000,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": 6000,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": 4000,
+      "seaux": 2000,
+      "lampes solaire": 2000,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 5.84,
+    "volume_m3": 135,
+    "beneficiaries": 2000,
+    "budget_total": 240000,
+    "donors": "DOI et fond L'Oréal",
+    "details": "Appui dans l'envoi de matériel dans le cadre de l'EA IFRC",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:52496",
+        "source": "reliefweb",
+        "name": "Mozambique: Floods - Dec 2025",
+        "match_type": "country_year"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:83",
+    "iso3": "mdg",
+    "year": 2026,
+    "year_month": "2026-02",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Fytia",
+    "activities": [
+      "Shelter",
+      "WatSan"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": 300,
+      "kits abris": 150,
+      "Tentes": null,
+      "kits cuisine": 150,
+      "kits hygiène": 890,
+      "kits nettoyage": null,
+      "couvertures": 850,
+      "moustiquaires": null,
+      "tapis de sol": null,
+      "lits picots": 210,
+      "jerrycans": 1380,
+      "seaux": 540,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 11.98,
+    "volume_m3": 51,
+    "beneficiaries": 2700,
+    "budget_total": null,
+    "donors": "FAZOI",
+    "details": "Prestation de service PIROI Center, opération FAZOI / gouvernement Malgache",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:52512",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Fytia - Jan 2026",
+        "match_type": "cyclone_name"
+      }
+    ]
+  },
+  {
+    "id": "piroi_op:84",
+    "iso3": "mdg",
+    "year": 2026,
+    "year_month": "2026-02",
+    "disaster_type_raw": "Cyclone",
+    "hazard_category": "Cyclone tropical",
+    "title": "Gezani",
+    "activities": [
+      "Alerte et actions anticipées",
+      "Shelter",
+      "WatSan",
+      "Autres"
+    ],
+    "activities_other_detail": null,
+    "items_distributed": {
+      "bâches": 4500,
+      "kits abris": 2250,
+      "Tentes": null,
+      "kits cuisine": null,
+      "kits hygiène": null,
+      "kits nettoyage": null,
+      "couvertures": null,
+      "moustiquaires": 2250,
+      "tapis de sol": null,
+      "lits picots": null,
+      "jerrycans": null,
+      "seaux": null,
+      "lampes solaire": null,
+      "UTE": null,
+      "Kit 2 / Wash": null,
+      "EPI": null,
+      "DLM": null,
+      "Borne CO2": null
+    },
+    "tonnes": 39.79,
+    "volume_m3": 143,
+    "beneficiaries": 7500,
+    "budget_total": 200000,
+    "donors": "Région Réunion et Département Réunion, fond DOI",
+    "details": "Appui dans l'envoi de matériel dans le cadre de l'EA IFRC, déploiement RH pour RELIEF et Communication, distribution SHELTER pour 1500 familles dans la région de Tamatave",
+    "comments": null,
+    "linked_disasters": [
+      {
+        "id": "reliefweb:52519",
+        "source": "reliefweb",
+        "name": "Tropical Cyclone Gezani - Feb 2026",
+        "match_type": "cyclone_name"
+      }
+    ]
+  }
+]

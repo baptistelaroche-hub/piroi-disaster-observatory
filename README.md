@@ -39,8 +39,20 @@ IFRC n'a pas de workflow automatique (voir section IFRC ci-dessous) — mise à 
 - `cyclone_tracks.json` — géométrie des trajectoires (points lat/lon/vent/pression par tempête),
   utilisée pour tracer les lignes sur la carte. Ce n'est pas une table analytique à part entière,
   juste la géométrie derrière les entrées "Cyclone tropical" de `disasters.json`.
+- `piroi_operations.json` — opérations d'urgence PIROI (export manuel de capitalisation),
+  nettoyé et rattaché aux catastrophes de `disasters.json`. Deux niveaux de confiance :
+  `cyclone_name` (nom d'opération retrouvé dans le nom d'une catastrophe du même territoire,
+  ±1 an — fiable) et `country_year` (repli : même territoire/année/catégorie d'aléa, sans
+  correspondance de nom — à traiter comme des candidats, pas une certitude). `disasters.json`
+  est enrichi en conséquence de `piroi_response` (bool) et `piroi_operation_ids`, uniquement à
+  partir des liens `cyclone_name` pour ne pas propager l'incertitude du repli dans la table
+  catastrophes. Pays hors zone PIROI exclus (Zimbabwe, Haïti, RDC, régions "OI"...).
 
-Regénérer : `python etl/clean/build_disasters.py && python etl/clean/build_national_societies.py && python etl/clean/build_cyclone_tracks.py`
+Regénérer : `python etl/clean/build_disasters.py && python etl/clean/build_national_societies.py && python etl/clean/build_cyclone_tracks.py && python etl/clean/build_piroi_operations.py`
+
+Mise à jour manuelle (comme IFRC, pas d'API) : remplacer
+`etl/manual-drops/piroi_operations_export.csv` par un nouvel export du Sheet de capitalisation
+PIROI, puis relancer `build_piroi_operations.py`.
 
 ### ANALYTICS
 

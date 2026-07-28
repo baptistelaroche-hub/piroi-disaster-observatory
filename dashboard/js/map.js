@@ -111,12 +111,27 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
     });
   }
 
-  // Filtres hors catégorie d'aléa, avec filtre territoire (sur le pays primaire) : base pour la
-  // carte (un marqueur = un point = le pays primaire) et pour les compteurs de la légende (qui
-  // doivent rester visibles même pour une catégorie masquée, sinon impossible de savoir combien
-  // d'événements elle contient).
+  // Filtres hors catégorie d'aléa : un événement est "dans la vue" dès qu'il touche au moins un
+  // territoire sélectionné (liste complète des pays ReliefWeb, pas seulement le pays
+  // "primaire" — sinon La Réunion et Mayotte, quasiment jamais primaires dans le dataset,
+  // n'affichent jamais aucune catastrophe alors qu'elles sont bien listées comme pays affectés
+  // sur plusieurs événements régionaux, ex: cyclone Chido). Sert de base pour les compteurs
+  // (légende, tuiles) qui doivent rester visibles même pour une catégorie masquée.
   function applyBaseFilters() {
-    return applyNonTerritoryFilters().filter((d) => state.territories.has(d.primary_iso3));
+    return applyNonTerritoryFilters().filter((d) => d.iso3.some((iso3) => state.territories.has(iso3)));
+  }
+
+  // Un marqueur par (catastrophe, territoire sélectionné qu'elle touche) — pas un marqueur par
+  // catastrophe au seul pays primaire. Un événement régional produit donc un marqueur par
+  // territoire concerné, positionné aux coordonnées de CE territoire.
+  function buildMarkerEntries(visibleDisasters) {
+    const entries = [];
+    for (const d of visibleDisasters) {
+      for (const iso3 of d.iso3) {
+        if (state.territories.has(iso3)) entries.push({ disaster: d, iso3 });
+      }
+    }
+    return entries;
   }
 
   function render() {
@@ -124,7 +139,7 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
     const visible = base.filter((d) => !state.hiddenCategories.has(d.hazard_category));
 
     if (currentLayer) map.removeLayer(currentLayer);
-    const { markers } = buildMarkers(visible, countryByIso3, operationById);
+    const { markers } = buildMarkers(buildMarkerEntries(visible), countryByIso3, operationById);
     markers.addTo(map);
     currentLayer = markers;
 
@@ -154,11 +169,11 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
     return leafletMap;
   }
 
-  function buildMarkers(list, countryLookup, operationLookup) {
+  function buildMarkers(entries, countryLookup, operationLookup) {
     const clusterGroup = L.markerClusterGroup({ maxClusterRadius: 40 });
 
-    for (const disaster of list) {
-      const country = countryLookup.get(disaster.primary_iso3);
+    for (const { disaster, iso3 } of entries) {
+      const country = countryLookup.get(iso3);
       if (!country || country.lat == null || country.lon == null) continue;
 
       const color = hazardColor(disaster.hazard_category);

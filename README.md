@@ -103,8 +103,18 @@ zéro alors qu'elles sont listées comme pays affectés sur plusieurs catastroph
 (ex: cyclone Chido, primaire Mozambique, affecte aussi Comores/Madagascar/Mayotte). Corrigé en
 comptant sur la liste complète des pays touchés plutôt que le seul pays primaire — un événement
 régional est donc compté dans chaque territoire concerné (le total du graphique peut dépasser
-le nombre total d'événements, c'est intentionnel, noté dans le sous-titre du graphique). La
-carte elle-même garde le pays primaire (un marqueur = un point = une localisation).
+le nombre total d'événements, c'est intentionnel, noté dans le sous-titre du graphique).
+
+Deuxième bug du même type, trouvé après le premier déploiement public (signalé par Baptiste :
+"aucune catastrophe pour La Réunion et Mayotte" sur la carte) : la carte elle-même filtrait
+encore sur le seul pays primaire, contrairement au graphique déjà corrigé. Même correctif
+appliqué à la carte : un marqueur par (catastrophe, territoire sélectionné qu'elle touche),
+positionné aux coordonnées de ce territoire — un événement régional produit donc plusieurs
+marqueurs (un par territoire concerné) plutôt qu'un seul au pays primaire. Vérifié : La Réunion
+affiche maintenant ses 7 catastrophes, Mayotte ses 2 (dont le cyclone Chido, primaire
+Mozambique). Le nombre total de catastrophes distinctes dans la tuile/légende reste néanmoins
+un compte par événement (pas par marqueur), pour ne pas gonfler artificiellement l'indicateur
+global.
 
 Étape 1quinquies : trajectoires cycloniques IBTrACS sur la carte, case à cocher (chargement
 paresseux de `cyclone_tracks.json`, ~23 Mo — pas imposé par défaut). Polylignes colorées comme

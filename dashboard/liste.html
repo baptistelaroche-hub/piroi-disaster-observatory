@@ -9,9 +9,12 @@
 <body>
   <header class="app-header">
     <div class="app-header-top">
-      <div>
-        <h1>PIROI Disaster Observatory</h1>
-        <p class="app-subtitle">Liste des catastrophes — zone Océan Indien</p>
+      <div class="app-header-brand">
+        <img src="assets/piroi-logo.jpg" alt="PIROI Center — Croix-Rouge française" class="app-logo" />
+        <div>
+          <h1>PIROI Disaster Observatory</h1>
+          <p class="app-subtitle">Liste des catastrophes — zone Océan Indien</p>
+        </div>
       </div>
       <nav class="app-nav" aria-label="Navigation">
         <a href="index.html" class="app-nav-link">Carte</a>
@@ -56,7 +59,12 @@
             <th data-sort="hazard_category">Type d'aléa</th>
             <th data-sort="territories">Territoires touchés</th>
             <th data-sort="date_start">Date</th>
-            <th>Réponse PIROI</th>
+            <th data-sort="status">Statut</th>
+            <th class="table-center">Réponse PIROI</th>
+            <th>Type d'activité</th>
+            <th>Déploiement de stocks</th>
+            <th data-sort="budget_total">Budget</th>
+            <th data-sort="beneficiaries">Bénéficiaires</th>
             <th>ReliefWeb</th>
           </tr>
         </thead>

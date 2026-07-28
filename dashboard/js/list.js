@@ -1,6 +1,7 @@
 const SOUTH_AFRICA_ISO3_LIST = "zaf";
 const DEFAULT_YEAR_MIN_LIST = 1982;
 const DEFAULT_YEAR_MAX_LIST = new Date().getFullYear();
+const STATUS_LABELS = { past: "Terminée", ongoing: "En cours", alert: "Alerte" };
 
 (async function initList() {
   let data;
@@ -13,7 +14,7 @@ const DEFAULT_YEAR_MAX_LIST = new Date().getFullYear();
     return;
   }
 
-  const { disasters, piroiIso3, territories } = data;
+  const { disasters, piroiIso3, territories, operationById } = data;
   const reliefwebDisasters = disasters.filter((d) => d.source === "reliefweb");
   const allTerritoryOptions = [...territories, { iso3: SOUTH_AFRICA_ISO3_LIST, name: "Afrique du Sud", piroi_region: "Hors zone PIROI" }];
   const territoryByIso3 = new Map(allTerritoryOptions.map((t) => [t.iso3, t]));
@@ -130,6 +131,30 @@ const DEFAULT_YEAR_MAX_LIST = new Date().getFullYear();
     return disaster.iso3.filter((iso3) => state.territories.has(iso3)).map((iso3) => territoryByIso3.get(iso3));
   }
 
+  // Un même événement peut être lié à plusieurs opérations PIROI (rare, ex. phases
+  // successives) — on agrège : union des activités, somme des stocks/budget/bénéficiaires.
+  function aggregateOperations(disaster) {
+    const ops = disaster.piroi_operation_ids.map((id) => operationById.get(id)).filter(Boolean);
+    if (!ops.length) return null;
+
+    const activities = new Set();
+    const items = new Map();
+    let budget = null;
+    let beneficiaries = null;
+
+    for (const op of ops) {
+      op.activities.forEach((a) => activities.add(a));
+      for (const [item, qty] of Object.entries(op.items_distributed)) {
+        if (qty == null) continue;
+        items.set(item, (items.get(item) || 0) + qty);
+      }
+      if (op.budget_total != null) budget = (budget || 0) + op.budget_total;
+      if (op.beneficiaries != null) beneficiaries = (beneficiaries || 0) + op.beneficiaries;
+    }
+
+    return { activities: [...activities], items, budget, beneficiaries };
+  }
+
   function applyFilters() {
     return reliefwebDisasters.filter((d) => {
       if (!state.categories.has(d.hazard_category)) return false;
@@ -140,17 +165,35 @@ const DEFAULT_YEAR_MAX_LIST = new Date().getFullYear();
     });
   }
 
+  function buildRows() {
+    return applyFilters().map((d) => ({
+      disaster: d,
+      territoryNames: matchedTerritories(d).map((t) => t.name).join(", "),
+      statusLabel: STATUS_LABELS[d.status] || d.status || "—",
+      agg: aggregateOperations(d),
+    }));
+  }
+
+  function sortValue(row, key) {
+    switch (key) {
+      case "territories":
+        return row.territoryNames;
+      case "status":
+        return row.statusLabel;
+      case "budget_total":
+        return row.agg?.budget ?? -Infinity;
+      case "beneficiaries":
+        return row.agg?.beneficiaries ?? -Infinity;
+      default:
+        return row.disaster[key] ?? "";
+    }
+  }
+
   function sortRows(rows) {
     const dir = state.sortDir === "asc" ? 1 : -1;
     return [...rows].sort((a, b) => {
-      let va, vb;
-      if (state.sortKey === "territories") {
-        va = matchedTerritories(a).map((t) => t.name).join(", ");
-        vb = matchedTerritories(b).map((t) => t.name).join(", ");
-      } else {
-        va = a[state.sortKey] ?? "";
-        vb = b[state.sortKey] ?? "";
-      }
+      const va = sortValue(a, state.sortKey);
+      const vb = sortValue(b, state.sortKey);
       if (va < vb) return -1 * dir;
       if (va > vb) return 1 * dir;
       return 0;
@@ -158,32 +201,43 @@ const DEFAULT_YEAR_MAX_LIST = new Date().getFullYear();
   }
 
   function render() {
-    const filtered = sortRows(applyFilters());
-    document.getElementById("list-count").textContent = `${formatNumberList(filtered.length)} catastrophe${filtered.length > 1 ? "s" : ""}`;
+    const rows = sortRows(buildRows());
+    document.getElementById("list-count").textContent = `${formatNumberList(rows.length)} catastrophe${rows.length > 1 ? "s" : ""}`;
 
     const tbody = document.getElementById("disasters-tbody");
-    tbody.innerHTML = filtered
-      .map((d) => {
-        const date = d.date_start ? d.date_start.slice(0, 10) : "—";
-        const territoryNames = matchedTerritories(d).map((t) => escapeHTMLList(t.name)).join(", ");
-        const responseBadge = d.piroi_response ? '<span class="table-response-badge" title="Réponse PIROI">●</span>' : "—";
-        const link = d.url ? `<a href="${d.url}" target="_blank" rel="noopener">Voir</a>` : "—";
-        return `
-          <tr>
-            <td>${escapeHTMLList(d.name)}</td>
-            <td><span class="legend-swatch" style="background:${hazardColor(d.hazard_category)}"></span> ${escapeHTMLList(d.hazard_category)}</td>
-            <td>${territoryNames}</td>
-            <td class="table-date">${date}</td>
-            <td class="table-center">${responseBadge}</td>
-            <td>${link}</td>
-          </tr>`;
-      })
-      .join("");
+    tbody.innerHTML = rows.map(renderRow).join("");
 
     document.querySelectorAll("th[data-sort]").forEach((th) => {
       th.classList.toggle("th-sorted", th.dataset.sort === state.sortKey);
       th.dataset.sortDir = th.dataset.sort === state.sortKey ? state.sortDir : "";
     });
+  }
+
+  function renderRow({ disaster: d, territoryNames, statusLabel, agg }) {
+    const date = d.date_start ? d.date_start.slice(0, 10) : "—";
+    const responseBadge = d.piroi_response ? '<span class="table-response-badge" title="Réponse PIROI">✓</span>' : "—";
+    const link = d.url ? `<a href="${d.url}" target="_blank" rel="noopener">Voir</a>` : "—";
+    const activities = agg?.activities.length ? escapeHTMLList(agg.activities.join(", ")) : "—";
+    const stocks = agg?.items.size
+      ? escapeHTMLList([...agg.items].map(([item, qty]) => `${item}: ${qty.toLocaleString("fr-FR")}`).join(", "))
+      : "—";
+    const budget = agg?.budget != null ? `${formatNumberList(agg.budget)} €` : "—";
+    const beneficiaries = agg?.beneficiaries != null ? formatNumberList(agg.beneficiaries) : "—";
+
+    return `
+      <tr>
+        <td>${escapeHTMLList(d.name)}</td>
+        <td><span class="legend-swatch" style="background:${hazardColor(d.hazard_category)}"></span> ${escapeHTMLList(d.hazard_category)}</td>
+        <td>${escapeHTMLList(territoryNames)}</td>
+        <td class="table-date">${date}</td>
+        <td>${escapeHTMLList(statusLabel)}</td>
+        <td class="table-center">${responseBadge}</td>
+        <td>${activities}</td>
+        <td>${stocks}</td>
+        <td class="table-date">${budget}</td>
+        <td class="table-date">${beneficiaries}</td>
+        <td>${link}</td>
+      </tr>`;
   }
 
   function formatNumberList(n) {

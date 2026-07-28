@@ -12,7 +12,7 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
     return;
   }
 
-  const { disasters, countryByIso3, piroiIso3, territories, operationById, cycloneStats, nationalSocietiesSummary } = data;
+  const { disasters, countryByIso3, piroiIso3, territories, cycloneStats, nationalSocietiesSummary } = data;
   const reliefwebDisasters = disasters.filter((d) => d.source === "reliefweb");
   const ibtracsDisasters = disasters.filter((d) => d.source === "ibtracs");
   const allTerritoryOptions = [...territories, { iso3: SOUTH_AFRICA_ISO3, name: "Afrique du Sud", piroi_region: "Hors zone PIROI" }];
@@ -139,7 +139,7 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
     const visible = base.filter((d) => !state.hiddenCategories.has(d.hazard_category));
 
     if (currentLayer) map.removeLayer(currentLayer);
-    const { markers } = buildMarkers(buildMarkerEntries(visible), countryByIso3, operationById);
+    const { markers } = buildMarkers(buildMarkerEntries(visible), countryByIso3);
     markers.addTo(map);
     currentLayer = markers;
 
@@ -169,7 +169,7 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
     return leafletMap;
   }
 
-  function buildMarkers(entries, countryLookup, operationLookup) {
+  function buildMarkers(entries, countryLookup) {
     const clusterGroup = L.markerClusterGroup({ maxClusterRadius: 40 });
 
     for (const { disaster, iso3 } of entries) {
@@ -185,14 +185,14 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
       });
 
       const marker = L.marker([country.lat, country.lon], { icon });
-      marker.bindPopup(popupContent(disaster, country, operationLookup));
+      marker.bindPopup(popupContent(disaster, country));
       clusterGroup.addLayer(marker);
     }
 
     return { markers: clusterGroup };
   }
 
-  function popupContent(disaster, country, operationLookup) {
+  function popupContent(disaster, country) {
     const date = disaster.date_start ? disaster.date_start.slice(0, 10) : "date inconnue";
     const link = disaster.url
       ? `<div class="popup-link"><a href="${disaster.url}" target="_blank" rel="noopener">Voir sur ReliefWeb</a></div>`
@@ -201,26 +201,15 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
       <div class="popup-title">${escapeHTML(disaster.name)}</div>
       <div class="popup-meta">${escapeHTML(disaster.hazard_category)} · ${escapeHTML(country.name)} · ${date}</div>
       ${link}
-      ${piroiResponseBlock(disaster, operationLookup)}
+      ${piroiResponseBlock(disaster)}
     `;
   }
 
-  function piroiResponseBlock(disaster, operationLookup) {
+  // Le détail (activités, bénéficiaires, budget) vit dans le tableau (liste.html) ; ici on
+  // affiche juste le fait qu'il y a eu une réponse, sur simple clic.
+  function piroiResponseBlock(disaster) {
     if (!disaster.piroi_response) return "";
-    const ops = disaster.piroi_operation_ids.map((id) => operationLookup.get(id)).filter(Boolean);
-    if (!ops.length) return "";
-
-    const rows = ops
-      .map((op) => {
-        const parts = [];
-        if (op.activities.length) parts.push(escapeHTML(op.activities.join(", ")));
-        if (op.beneficiaries != null) parts.push(`${formatNumber(op.beneficiaries)} bénéficiaires`);
-        if (op.budget_total != null) parts.push(`${formatNumber(op.budget_total)} € budget`);
-        return `<div class="popup-op-row">${parts.join(" · ") || "détails non renseignés"}</div>`;
-      })
-      .join("");
-
-    return `<div class="popup-response"><strong>Réponse PIROI</strong>${rows}</div>`;
+    return `<div class="popup-response">Réponse PIROI</div>`;
   }
 
   function filteredIbtracsCount() {

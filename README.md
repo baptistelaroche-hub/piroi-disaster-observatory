@@ -141,8 +141,30 @@ Testé en navigateur : 164 catastrophes par défaut (identique à la carte), fil
 (-56 sans "Inondation"), tri par nom, réponse PIROI uniquement (31, identique à la carte),
 lien ReliefWeb vérifié, aucune erreur console.
 
-Filtres supplémentaires (intensité) à venir dans des sous-étapes
-suivantes.
+### Retours PIROI Center (28/07/2026) : identité visuelle + détail des réponses
+
+- **Popup carte simplifiée** : au clic, affiche juste "Réponse PIROI" (en rouge CRF) si
+  applicable — le détail (activités, bénéficiaires, budget) a été déplacé vers le tableau.
+- **Tableau enrichi** : colonnes Statut (traduit depuis `status` ReliefWeb — champ qui manquait
+  dans `disasters.json`, ajouté dans `build_disasters.py`), coche verte (✓) pour la réponse
+  PIROI (remplace l'ancien point plein), Type d'activité, Déploiement de stocks, Budget,
+  Bénéficiaires — agrégés depuis `piroi_operations.json` (une catastrophe peut être liée à
+  plusieurs opérations PIROI ; dans ce cas, activités = union, stocks/budget/bénéficiaires =
+  somme).
+- **Logo PIROI Center** ajouté à gauche du titre sur les deux pages (`dashboard/assets/piroi-logo.jpg`,
+  fond blanc pour rester lisible en dark mode).
+- **Charte graphique CRF** : rouge officiel `#e30613` (Pantone 485 C, extrait de
+  `Charte_Croix-Rouge_francaise_202407.md`) appliqué aux éléments d'interface — navigation,
+  bordure d'en-tête, bouton réinitialiser, tri des colonnes, cases à cocher. La palette
+  catégorielle des types d'aléas (carte/graphiques) n'est pas touchée : elle a sa propre
+  validation d'accessibilité (CVD-safe), indépendante de la charte de marque.
+
+Testé en navigateur : rouge CRF vérifié par computed style (`rgb(227, 6, 19)`), logo chargé
+(322×146 → 42px), agrégation multi-opérations vérifiée sur Cyclone Freddy 2023 (2 opérations
+liées, Madagascar + Mozambique), tri par budget (Cyclone Chido 2024 en tête, cohérent avec une
+réponse sur 4 territoires), aucune erreur console.
+
+Filtres supplémentaires (intensité) à venir dans des sous-étapes suivantes.
 
 Palette catégorielle validée avec le skill dataviz (8 teintes fixes pour les catégories les
 plus fréquentes, repli neutre gris pour les 4 restantes — la couleur renforce l'identité mais

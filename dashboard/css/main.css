@@ -7,6 +7,12 @@
   --text-muted: #898781;
   --gridline: #e1e0d9;
   --border: rgba(11, 11, 11, 0.1);
+  /* Charte graphique Croix-Rouge française : rouge Pantone 485 C, mode-invariant (contraste
+     vérifié >= 3:1 en texte gras sur surface claire ET sombre). Réservé aux éléments
+     d'interface (nav, boutons, accents de marque) — jamais utilisé pour encoder les catégories
+     d'aléas, qui suivent leur propre palette catégorielle validée CVD-safe. */
+  --crf-red: #e30613;
+  --crf-red-tint: rgba(227, 6, 19, 0.08);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -56,6 +62,7 @@ body {
 .app-header {
   padding: 20px 28px 12px;
   border-bottom: 1px solid var(--border);
+  border-top: 3px solid var(--crf-red);
   background: var(--surface-1);
 }
 
@@ -65,6 +72,20 @@ body {
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
+}
+
+.app-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.app-logo {
+  height: 42px;
+  width: auto;
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 3px 6px;
 }
 
 .app-nav {
@@ -82,13 +103,13 @@ body {
 }
 
 .app-nav-link:hover {
-  background: var(--page-plane);
-  color: var(--text-primary);
+  background: var(--crf-red-tint);
+  color: var(--crf-red);
 }
 
 .app-nav-link--active {
-  background: var(--page-plane);
-  color: var(--text-primary);
+  background: var(--crf-red-tint);
+  color: var(--crf-red);
   font-weight: 600;
 }
 
@@ -245,11 +266,8 @@ body {
   padding-top: 6px;
   border-top: 1px solid var(--gridline);
   font-size: 0.82rem;
-}
-
-.popup-op-row {
-  color: var(--text-secondary);
-  margin-top: 2px;
+  font-weight: 700;
+  color: var(--crf-red);
 }
 
 #map {
@@ -338,8 +356,12 @@ body {
 }
 
 .filter-reset:hover {
-  color: var(--text-primary);
-  border-color: var(--text-secondary);
+  color: var(--crf-red);
+  border-color: var(--crf-red);
+}
+
+input[type="checkbox"] {
+  accent-color: var(--crf-red);
 }
 
 .legend-row[role="button"] {
@@ -473,7 +495,11 @@ body {
 }
 
 .disasters-table th:hover {
-  color: var(--text-primary);
+  color: var(--crf-red);
+}
+
+.disasters-table th.th-sorted {
+  color: var(--crf-red);
 }
 
 .disasters-table th.th-sorted::after {
@@ -509,5 +535,6 @@ body {
 }
 
 .table-response-badge {
-  color: var(--text-primary);
+  color: #0ca30c;
+  font-weight: 700;
 }

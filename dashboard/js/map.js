@@ -14,6 +14,7 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
 
   const { disasters, countryByIso3, piroiIso3, territories, operationById, cycloneStats, nationalSocietiesSummary } = data;
   const reliefwebDisasters = disasters.filter((d) => d.source === "reliefweb");
+  const ibtracsDisasters = disasters.filter((d) => d.source === "ibtracs");
   const allTerritoryOptions = [...territories, { iso3: SOUTH_AFRICA_ISO3, name: "Afrique du Sud", piroi_region: "Hors zone PIROI" }];
 
   const state = {
@@ -28,6 +29,7 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
   let currentLayer = null;
 
   initStaticCharts(cycloneStats);
+  initTracksToggle(map, () => ibtracsDisasters, () => state);
   buildTerritoryFilterUI();
   wireFilterControls();
   render();
@@ -139,6 +141,7 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
     updateByYearChart(visible, state.yearMin, state.yearMax);
     updateByTerritoryChart(forTerritoryChart, selectedTerritories);
     renderNsCards(nationalSocietiesSummary, state.territories);
+    renderTracks(ibtracsDisasters, state);
   }
 
   function initMap() {
@@ -205,10 +208,17 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
     return `<div class="popup-response"><strong>Réponse PIROI</strong>${rows}</div>`;
   }
 
+  function filteredIbtracsCount() {
+    return ibtracsDisasters.filter((d) => {
+      if (!d.territories_piroi_approches.some((iso3) => state.territories.has(iso3))) return false;
+      if (state.piroiResponseOnly && !d.piroi_response) return false;
+      const year = d.date_start ? Number(d.date_start.slice(0, 4)) : null;
+      return year != null && year >= state.yearMin && year <= state.yearMax;
+    }).length;
+  }
+
   function renderStatTiles(inZone) {
-    const cyclonesInZone = disasters.filter(
-      (d) => d.source === "ibtracs" && d.territories_piroi_approches.some((iso3) => state.territories.has(iso3))
-    ).length;
+    const cyclonesInZone = filteredIbtracsCount();
     const dates = inZone.map((d) => d.date_start).filter(Boolean);
 
     document.getElementById("stat-total-disasters").textContent = formatNumber(inZone.length);

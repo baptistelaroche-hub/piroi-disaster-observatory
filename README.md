@@ -108,7 +108,20 @@ régional est donc compté dans chaque territoire concerné (le total du graphiq
 le nombre total d'événements, c'est intentionnel, noté dans le sous-titre du graphique). La
 carte elle-même garde le pays primaire (un marqueur = un point = une localisation).
 
-Trajectoires cycloniques et filtres supplémentaires (intensité) à venir dans des sous-étapes
+Étape 1quinquies : trajectoires cycloniques IBTrACS sur la carte, case à cocher (chargement
+paresseux de `cyclone_tracks.json`, ~23 Mo — pas imposé par défaut). Polylignes colorées comme
+"Cyclone tropical" dans la légende, popup nom/dates/vent max/pression min au clic. Réagissent
+aux mêmes filtres que le reste (période, territoires via `territories_piroi_approches`, réponse
+PIROI) — pas de rattachement pour l'instant si seule "Afrique du Sud" est cochée (le champ
+`territories_piroi_approches` ne couvre que les 8 territoires PIROI officiels, pas l'option
+bonus Afrique du Sud ; limitation mineure, à corriger plus tard si besoin réel).
+
+Bug trouvé et corrigé pendant les tests : la tuile "Cyclones IBTrACS" ignorait le filtre de
+période depuis sa création (comptait tout l'historique 1848-2026 quel que soit le filtre
+année) — ne s'est vu qu'en comparant son chiffre (861) au nombre réel de trajectoires tracées
+pour la période par défaut (202). Corrigé.
+
+Filtres supplémentaires (intensité) à venir dans des sous-étapes
 suivantes.
 
 Palette catégorielle validée avec le skill dataviz (8 teintes fixes pour les catégories les

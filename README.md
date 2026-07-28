@@ -75,9 +75,13 @@ Regénérer : `python etl/analytics/build_global_indicators.py && python etl/ana
 
 Étape 1 : structure de page + carte Leaflet avec les catastrophes ReliefWeb (clustering,
 couleur par catégorie d'aléa, popup nom/date/lien). Carte centrée et filtrée sur la zone
-PIROI (les 8 territoires) par défaut, avec une case à cocher pour inclure l'Afrique du Sud —
-la donnée CLEAN reste mondiale (comparaison possible plus tard), seul l'affichage par défaut
-est restreint.
+PIROI (les 8 territoires) par défaut — la donnée CLEAN reste mondiale (comparaison possible
+plus tard), seul l'affichage par défaut est restreint.
+
+Étape 1ter : barre de filtres — période (année min/max), territoires (chips par région PIROI,
+Afrique du Sud incluse hors zone par défaut), réponse PIROI uniquement, et type d'aléa via la
+légende cliquable (le compteur reste affiché même masqué, pour ne pas perdre l'info du volume
+filtré). Tous les filtres se combinent, un bouton réinitialise l'ensemble.
 
 Étape 1bis : badge "réponse PIROI" sur les marqueurs concernés (petit anneau blanc, visible
 en cliquant un cluster ou en zoomant — beaucoup de catastrophes d'un même pays partagent le

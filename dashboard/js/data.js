@@ -27,5 +27,5 @@ async function loadDashboardData() {
   const countryByIso3 = new Map(countries.map((c) => [c.iso3, c]));
   const piroiIso3 = new Set(territories.map((t) => t.iso3));
   const operationById = new Map(piroiOperations.map((op) => [op.id, op]));
-  return { disasters, countryByIso3, globalIndicators, piroiIso3, operationById };
+  return { disasters, countryByIso3, globalIndicators, piroiIso3, territories, operationById };
 }

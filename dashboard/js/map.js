@@ -1,4 +1,6 @@
 const SOUTH_AFRICA_ISO3 = "zaf";
+const DEFAULT_YEAR_MIN = 1982;
+const DEFAULT_YEAR_MAX = new Date().getFullYear();
 
 (async function initDashboard() {
   let data;
@@ -10,30 +12,116 @@ const SOUTH_AFRICA_ISO3 = "zaf";
     return;
   }
 
-  const { disasters, countryByIso3, piroiIso3, operationById } = data;
+  const { disasters, countryByIso3, piroiIso3, territories, operationById } = data;
   const reliefwebDisasters = disasters.filter((d) => d.source === "reliefweb");
+  const allTerritoryOptions = [...territories, { iso3: SOUTH_AFRICA_ISO3, name: "Afrique du Sud", piroi_region: "Hors zone PIROI" }];
+
+  const state = {
+    yearMin: DEFAULT_YEAR_MIN,
+    yearMax: DEFAULT_YEAR_MAX,
+    territories: new Set(piroiIso3), // Afrique du Sud exclue par défaut
+    piroiResponseOnly: false,
+    hiddenCategories: new Set(),
+  };
 
   const map = initMap();
   let currentLayer = null;
 
-  render(false);
+  buildTerritoryFilterUI();
+  wireFilterControls();
+  render();
 
-  document.getElementById("include-zaf").addEventListener("change", (event) => {
-    render(event.target.checked);
-  });
+  function wireFilterControls() {
+    const yearMinInput = document.getElementById("filter-year-min");
+    const yearMaxInput = document.getElementById("filter-year-max");
+    yearMinInput.value = state.yearMin;
+    yearMaxInput.value = state.yearMax;
+    yearMinInput.addEventListener("change", () => {
+      state.yearMin = Number(yearMinInput.value) || DEFAULT_YEAR_MIN;
+      render();
+    });
+    yearMaxInput.addEventListener("change", () => {
+      state.yearMax = Number(yearMaxInput.value) || DEFAULT_YEAR_MAX;
+      render();
+    });
 
-  function render(includeZaf) {
-    const zoneIso3 = new Set(piroiIso3);
-    if (includeZaf) zoneIso3.add(SOUTH_AFRICA_ISO3);
+    document.getElementById("filter-piroi-response").addEventListener("change", (event) => {
+      state.piroiResponseOnly = event.target.checked;
+      render();
+    });
 
-    const inZone = reliefwebDisasters.filter((d) => zoneIso3.has(d.primary_iso3));
+    document.getElementById("filter-reset").addEventListener("click", () => {
+      state.yearMin = DEFAULT_YEAR_MIN;
+      state.yearMax = DEFAULT_YEAR_MAX;
+      state.territories = new Set(piroiIso3);
+      state.piroiResponseOnly = false;
+      state.hiddenCategories.clear();
+      yearMinInput.value = state.yearMin;
+      yearMaxInput.value = state.yearMax;
+      document.getElementById("filter-piroi-response").checked = false;
+      document.querySelectorAll(".territory-checkbox").forEach((cb) => {
+        cb.checked = state.territories.has(cb.value);
+      });
+      render();
+    });
+  }
+
+  function buildTerritoryFilterUI() {
+    const container = document.getElementById("filter-territories");
+    const byRegion = new Map();
+    for (const t of allTerritoryOptions) {
+      if (!byRegion.has(t.piroi_region)) byRegion.set(t.piroi_region, []);
+      byRegion.get(t.piroi_region).push(t);
+    }
+
+    for (const [region, list] of byRegion) {
+      const group = document.createElement("div");
+      group.className = "territory-region";
+      group.innerHTML = `<span class="territory-region-label">${escapeHTML(region)}</span>`;
+      for (const t of list) {
+        const label = document.createElement("label");
+        label.className = "territory-chip";
+        const checked = state.territories.has(t.iso3);
+        label.innerHTML = `<input type="checkbox" class="territory-checkbox" value="${t.iso3}" ${checked ? "checked" : ""}/> ${escapeHTML(t.name)}`;
+        label.querySelector("input").addEventListener("change", (event) => {
+          if (event.target.checked) state.territories.add(t.iso3);
+          else state.territories.delete(t.iso3);
+          render();
+        });
+        group.appendChild(label);
+      }
+      container.appendChild(group);
+    }
+  }
+
+  // Filtres hors catégorie d'aléa : sert à la fois de base pour la carte (après exclusion des
+  // catégories masquées) et pour les compteurs de la légende (qui doivent rester visibles même
+  // pour une catégorie masquée, sinon impossible de savoir combien d'événements elle contient).
+  function applyBaseFilters() {
+    return reliefwebDisasters.filter((d) => {
+      if (!state.territories.has(d.primary_iso3)) return false;
+      if (state.piroiResponseOnly && !d.piroi_response) return false;
+      const year = d.date_start ? Number(d.date_start.slice(0, 4)) : null;
+      if (year == null || year < state.yearMin || year > state.yearMax) return false;
+      return true;
+    });
+  }
+
+  function render() {
+    const base = applyBaseFilters();
+    const visible = base.filter((d) => !state.hiddenCategories.has(d.hazard_category));
 
     if (currentLayer) map.removeLayer(currentLayer);
-    const { markers, countsByCategory } = buildMarkers(inZone, countryByIso3, operationById);
+    const { markers } = buildMarkers(visible, countryByIso3, operationById);
     markers.addTo(map);
     currentLayer = markers;
 
-    renderStatTiles(inZone);
+    const countsByCategory = {};
+    for (const d of base) {
+      countsByCategory[d.hazard_category] = (countsByCategory[d.hazard_category] || 0) + 1;
+    }
+
+    renderStatTiles(visible);
     renderLegend(countsByCategory);
   }
 
@@ -49,13 +137,10 @@ const SOUTH_AFRICA_ISO3 = "zaf";
 
   function buildMarkers(list, countryLookup, operationLookup) {
     const clusterGroup = L.markerClusterGroup({ maxClusterRadius: 40 });
-    const countsByCategory = {};
 
     for (const disaster of list) {
       const country = countryLookup.get(disaster.primary_iso3);
       if (!country || country.lat == null || country.lon == null) continue;
-
-      countsByCategory[disaster.hazard_category] = (countsByCategory[disaster.hazard_category] || 0) + 1;
 
       const color = hazardColor(disaster.hazard_category);
       const badge = disaster.piroi_response ? '<i class="response-badge" title="Réponse PIROI"></i>' : "";
@@ -70,7 +155,7 @@ const SOUTH_AFRICA_ISO3 = "zaf";
       clusterGroup.addLayer(marker);
     }
 
-    return { markers: clusterGroup, countsByCategory };
+    return { markers: clusterGroup };
   }
 
   function popupContent(disaster, country, operationLookup) {
@@ -106,7 +191,7 @@ const SOUTH_AFRICA_ISO3 = "zaf";
 
   function renderStatTiles(inZone) {
     const cyclonesInZone = disasters.filter(
-      (d) => d.source === "ibtracs" && d.territories_piroi_approches.length > 0
+      (d) => d.source === "ibtracs" && d.territories_piroi_approches.some((iso3) => state.territories.has(iso3))
     ).length;
     const dates = inZone.map((d) => d.date_start).filter(Boolean);
 
@@ -120,26 +205,44 @@ const SOUTH_AFRICA_ISO3 = "zaf";
 
   function renderLegend(countsByCategory) {
     const legend = document.getElementById("legend");
-    const categories = Object.keys(countsByCategory).sort((a, b) => countsByCategory[b] - countsByCategory[a]);
+    const allCategories = new Set([...Object.keys(countsByCategory), ...state.hiddenCategories]);
+    const categories = [...allCategories].sort((a, b) => (countsByCategory[b] || 0) - (countsByCategory[a] || 0));
 
     const rows = categories
-      .map(
-        (category) => `
-        <div class="legend-row">
+      .map((category) => {
+        const isHidden = state.hiddenCategories.has(category);
+        return `
+        <div class="legend-row${isHidden ? " legend-row--hidden" : ""}" data-category="${escapeHTML(category)}" role="button" tabindex="0">
           <span class="legend-swatch" style="background:${hazardColor(category)}"></span>
           <span>${escapeHTML(category)}</span>
-          <span class="legend-count">${formatNumber(countsByCategory[category])}</span>
-        </div>`
-      )
+          <span class="legend-count">${formatNumber(countsByCategory[category] || 0)}</span>
+        </div>`;
+      })
       .join("");
 
     legend.innerHTML = `
-      <h2>Types d'aléas (ReliefWeb, zone PIROI)</h2>${rows || "<p>Aucun événement</p>"}
+      <h2>Types d'aléas (cliquer pour filtrer)</h2>${rows || "<p>Aucun événement</p>"}
       <div class="legend-row legend-response-note">
         <span class="legend-swatch legend-swatch--badge"></span>
         <span>Réponse PIROI</span>
       </div>
     `;
+
+    legend.querySelectorAll(".legend-row[data-category]").forEach((row) => {
+      row.addEventListener("click", () => toggleCategory(row.dataset.category));
+      row.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          toggleCategory(row.dataset.category);
+        }
+      });
+    });
+  }
+
+  function toggleCategory(category) {
+    if (state.hiddenCategories.has(category)) state.hiddenCategories.delete(category);
+    else state.hiddenCategories.add(category);
+    render();
   }
 
   function formatNumber(n) {

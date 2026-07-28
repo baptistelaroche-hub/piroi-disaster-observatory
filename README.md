@@ -89,9 +89,7 @@ même marqueur au niveau centroïde pays, donc plusieurs badges restent superpos
 n'a pas zoomé/dé-clusterisé). La popup liste alors les opérations liées (activités,
 bénéficiaires, budget) depuis `piroi_operations.json`.
 
-Hypothèse à vérifier avec le PIROI Center : `budget_total` est affiché en euros (€) dans la
-popup, mais la colonne source ne précise la devise que sur certaines lignes (ex: "50 000 €")
-— les valeurs sans symbole pourraient être dans une autre devise selon l'opération.
+`budget_total` est en euros (€) — confirmé avec le PIROI Center le 28/07/2026.
 
 Étape 1quater : section graphiques/indicateurs sous la carte (Chart.js) — catastrophes par
 année et par territoire×type d'aléa (dynamiques, réagissent aux mêmes filtres que la carte),

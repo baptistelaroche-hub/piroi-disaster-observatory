@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PIROI Disaster Observatory — Liste des catastrophes</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-header-top">
+      <div>
+        <h1>PIROI Disaster Observatory</h1>
+        <p class="app-subtitle">Liste des catastrophes — zone Océan Indien</p>
+      </div>
+      <nav class="app-nav" aria-label="Navigation">
+        <a href="index.html" class="app-nav-link">Carte</a>
+        <a href="liste.html" class="app-nav-link app-nav-link--active">Liste des catastrophes</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="filter-bar" id="filter-bar" aria-label="Filtres">
+    <div class="filter-group">
+      <span class="filter-label">Période</span>
+      <input type="number" id="filter-year-min" class="filter-year-input" />
+      <span>–</span>
+      <input type="number" id="filter-year-max" class="filter-year-input" />
+    </div>
+
+    <div class="filter-group" id="filter-territories" aria-label="Territoires">
+      <span class="filter-label">Territoires</span>
+      <!-- généré en JS -->
+    </div>
+
+    <div class="filter-group" id="filter-categories" aria-label="Types d'aléa">
+      <span class="filter-label">Types d'aléa</span>
+      <!-- généré en JS -->
+    </div>
+
+    <label class="filter-checkbox">
+      <input type="checkbox" id="filter-piroi-response" />
+      Réponse PIROI uniquement
+    </label>
+
+    <button type="button" id="filter-reset" class="filter-reset">Réinitialiser</button>
+  </section>
+
+  <main class="list-wrap">
+    <p class="list-count" id="list-count"></p>
+    <div class="table-scroll">
+      <table class="disasters-table" id="disasters-table">
+        <thead>
+          <tr>
+            <th data-sort="name">Nom</th>
+            <th data-sort="hazard_category">Type d'aléa</th>
+            <th data-sort="territories">Territoires touchés</th>
+            <th data-sort="date_start">Date</th>
+            <th>Réponse PIROI</th>
+            <th>ReliefWeb</th>
+          </tr>
+        </thead>
+        <tbody id="disasters-tbody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="js/hazard-colors.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/list.js"></script>
+</body>
+</html>

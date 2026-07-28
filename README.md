@@ -129,6 +129,18 @@ période depuis sa création (comptait tout l'historique 1848-2026 quel que soit
 année) — ne s'est vu qu'en comparant son chiffre (861) au nombre réel de trajectoires tracées
 pour la période par défaut (202). Corrigé.
 
+### Deuxième page : `liste.html`
+
+Vue tableau des catastrophes ReliefWeb (nom, type d'aléa, territoires touchés, date, réponse
+PIROI, lien ReliefWeb) — une ligne par catastrophe, contrairement à la carte qui affiche un
+marqueur par territoire touché. Filtres identiques en logique à la carte (territoires, période,
+types d'aléa via cases à cocher, réponse PIROI uniquement), tri par colonne en cliquant l'en-tête
+(date décroissante par défaut). Navigation "Carte / Liste" ajoutée à l'en-tête des deux pages.
+
+Testé en navigateur : 164 catastrophes par défaut (identique à la carte), filtre catégorie
+(-56 sans "Inondation"), tri par nom, réponse PIROI uniquement (31, identique à la carte),
+lien ReliefWeb vérifié, aucune erreur console.
+
 Filtres supplémentaires (intensité) à venir dans des sous-étapes
 suivantes.
 

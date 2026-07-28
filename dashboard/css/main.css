@@ -59,6 +59,39 @@ body {
   background: var(--surface-1);
 }
 
+.app-header-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.app-nav {
+  display: flex;
+  gap: 4px;
+  margin-top: 2px;
+}
+
+.app-nav-link {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.app-nav-link:hover {
+  background: var(--page-plane);
+  color: var(--text-primary);
+}
+
+.app-nav-link--active {
+  background: var(--page-plane);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
 .app-header h1 {
   margin: 0 0 4px;
   font-size: 1.4rem;
@@ -396,4 +429,85 @@ body {
   margin: 0;
   text-align: right;
   font-variant-numeric: tabular-nums;
+}
+
+.list-wrap {
+  padding: 16px 28px 40px;
+}
+
+.list-count {
+  margin: 0 0 10px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.disasters-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  background: var(--surface-1);
+}
+
+.disasters-table th,
+.disasters-table td {
+  padding: 8px 12px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.disasters-table th {
+  cursor: pointer;
+  user-select: none;
+  color: var(--text-secondary);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--surface-1);
+}
+
+.disasters-table th:hover {
+  color: var(--text-primary);
+}
+
+.disasters-table th.th-sorted::after {
+  content: "▲";
+  margin-left: 4px;
+  font-size: 0.7em;
+}
+
+.disasters-table th.th-sorted[data-sort-dir="desc"]::after {
+  content: "▼";
+}
+
+.disasters-table tbody tr {
+  border-bottom: 1px solid var(--gridline);
+}
+
+.disasters-table tbody tr:hover {
+  background: var(--page-plane);
+}
+
+.disasters-table td {
+  white-space: normal;
+}
+
+.table-date {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-secondary);
+}
+
+.table-center {
+  text-align: center;
+}
+
+.table-response-badge {
+  color: var(--text-primary);
 }

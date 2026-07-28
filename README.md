@@ -42,6 +42,23 @@ IFRC n'a pas de workflow automatique (voir section IFRC ci-dessous) — mise à 
 
 Regénérer : `python etl/clean/build_disasters.py && python etl/clean/build_national_societies.py && python etl/clean/build_cyclone_tracks.py`
 
+### ANALYTICS
+
+Contient uniquement les agrégats coûteux à recalculer ou pertinents en vue par défaut. Les
+graphiques qui doivent réagir aux filtres du dashboard (période, territoire, type d'aléa...)
+sont calculés côté client à partir des données CLEAN, pas ici — éviter de dupliquer la logique
+de filtrage à deux endroits.
+
+- `global_indicators.json` — compteurs globaux (nb catastrophes, nb cyclones, période couverte).
+- `cyclone_stats.json` — fréquence annuelle et saisonnalité (par mois) des cyclones IBTrACS,
+  calculé sur 178 ans d'historique.
+- `national_societies_summary.json` — un résumé par territoire PIROI (capacité, reach par
+  thématique, contexte socio-économique, lien avec les catastrophes). Pour chaque indicateur,
+  la dernière valeur connue est gardée avec son année de référence plutôt qu'une "dernière
+  année" unique — ces champs ne sont jamais tous renseignés la même année dans l'export IFRC.
+
+Regénérer : `python etl/analytics/build_global_indicators.py && python etl/analytics/build_cyclone_stats.py && python etl/analytics/build_national_societies_summary.py`
+
 ## Développement local
 
 ```bash

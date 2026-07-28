@@ -1,0 +1,1317 @@
+{
+  "generated_at": "2026-07-28T04:54:42.385675Z",
+  "note": "Année = année civile de début de tempête. Statistiques de vent basées uniquement sur les tempêtes avec données WMO/REUNION disponibles (couverture quasi nulle avant 1970).",
+  "by_year": [
+    {
+      "year": 1848,
+      "count": 4,
+      "count_piroi_approached": 1,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1851,
+      "count": 3,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1852,
+      "count": 3,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1854,
+      "count": 6,
+      "count_piroi_approached": 1,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1855,
+      "count": 4,
+      "count_piroi_approached": 1,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1856,
+      "count": 2,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1857,
+      "count": 5,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1858,
+      "count": 10,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1859,
+      "count": 13,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1860,
+      "count": 16,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1861,
+      "count": 16,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1862,
+      "count": 16,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1863,
+      "count": 14,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1864,
+      "count": 7,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1865,
+      "count": 11,
+      "count_piroi_approached": 1,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1866,
+      "count": 13,
+      "count_piroi_approached": 1,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1867,
+      "count": 7,
+      "count_piroi_approached": 1,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1868,
+      "count": 7,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1869,
+      "count": 11,
+      "count_piroi_approached": 1,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1870,
+      "count": 8,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1871,
+      "count": 9,
+      "count_piroi_approached": 1,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1872,
+      "count": 15,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1873,
+      "count": 8,
+      "count_piroi_approached": 1,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1874,
+      "count": 7,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1875,
+      "count": 5,
+      "count_piroi_approached": 1,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1876,
+      "count": 7,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1877,
+      "count": 13,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1878,
+      "count": 7,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1879,
+      "count": 11,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1880,
+      "count": 5,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1881,
+      "count": 13,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1882,
+      "count": 14,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1883,
+      "count": 17,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1884,
+      "count": 13,
+      "count_piroi_approached": 0,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1885,
+      "count": 24,
+      "count_piroi_approached": 9,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1886,
+      "count": 7,
+      "count_piroi_approached": 1,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1887,
+      "count": 6,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1888,
+      "count": 16,
+      "count_piroi_approached": 8,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1889,
+      "count": 2,
+      "count_piroi_approached": 0,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1890,
+      "count": 9,
+      "count_piroi_approached": 0,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1891,
+      "count": 9,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1892,
+      "count": 14,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1893,
+      "count": 9,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1894,
+      "count": 18,
+      "count_piroi_approached": 13,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1895,
+      "count": 7,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1896,
+      "count": 7,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1897,
+      "count": 17,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1898,
+      "count": 8,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1899,
+      "count": 15,
+      "count_piroi_approached": 10,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1900,
+      "count": 7,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1901,
+      "count": 19,
+      "count_piroi_approached": 10,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1902,
+      "count": 17,
+      "count_piroi_approached": 13,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1903,
+      "count": 20,
+      "count_piroi_approached": 13,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1904,
+      "count": 11,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1905,
+      "count": 17,
+      "count_piroi_approached": 10,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1906,
+      "count": 10,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1907,
+      "count": 21,
+      "count_piroi_approached": 9,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1908,
+      "count": 14,
+      "count_piroi_approached": 9,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1909,
+      "count": 16,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1910,
+      "count": 14,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1911,
+      "count": 19,
+      "count_piroi_approached": 8,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1912,
+      "count": 18,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1913,
+      "count": 18,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1914,
+      "count": 4,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1915,
+      "count": 8,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1916,
+      "count": 11,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1917,
+      "count": 16,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1918,
+      "count": 16,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1919,
+      "count": 6,
+      "count_piroi_approached": 1,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1920,
+      "count": 16,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1921,
+      "count": 20,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1922,
+      "count": 16,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1923,
+      "count": 15,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1924,
+      "count": 5,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1925,
+      "count": 17,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1926,
+      "count": 16,
+      "count_piroi_approached": 9,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1927,
+      "count": 18,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1928,
+      "count": 20,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1929,
+      "count": 22,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1930,
+      "count": 18,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1931,
+      "count": 17,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1932,
+      "count": 17,
+      "count_piroi_approached": 8,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1933,
+      "count": 10,
+      "count_piroi_approached": 1,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1934,
+      "count": 22,
+      "count_piroi_approached": 12,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1935,
+      "count": 19,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1936,
+      "count": 8,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1937,
+      "count": 11,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1938,
+      "count": 16,
+      "count_piroi_approached": 9,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1939,
+      "count": 18,
+      "count_piroi_approached": 8,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1940,
+      "count": 11,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1941,
+      "count": 13,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1942,
+      "count": 10,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1943,
+      "count": 20,
+      "count_piroi_approached": 8,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1944,
+      "count": 27,
+      "count_piroi_approached": 12,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1945,
+      "count": 23,
+      "count_piroi_approached": 12,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1946,
+      "count": 20,
+      "count_piroi_approached": 8,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1947,
+      "count": 16,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1948,
+      "count": 14,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1949,
+      "count": 18,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1950,
+      "count": 14,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1951,
+      "count": 15,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1952,
+      "count": 15,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1953,
+      "count": 15,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1954,
+      "count": 11,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1955,
+      "count": 15,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1956,
+      "count": 19,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1957,
+      "count": 20,
+      "count_piroi_approached": 8,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1958,
+      "count": 23,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1959,
+      "count": 23,
+      "count_piroi_approached": 10,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1960,
+      "count": 13,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1961,
+      "count": 16,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1962,
+      "count": 23,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1963,
+      "count": 18,
+      "count_piroi_approached": 1,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1964,
+      "count": 24,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1965,
+      "count": 30,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1966,
+      "count": 28,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1967,
+      "count": 14,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1968,
+      "count": 22,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1969,
+      "count": 14,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1970,
+      "count": 21,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1971,
+      "count": 20,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1972,
+      "count": 14,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": null,
+      "max_wind_kts": null
+    },
+    {
+      "year": 1973,
+      "count": 33,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": 67.1,
+      "max_wind_kts": 90.0
+    },
+    {
+      "year": 1974,
+      "count": 16,
+      "count_piroi_approached": 1,
+      "avg_wind_max_kts": 65.0,
+      "max_wind_kts": 95.0
+    },
+    {
+      "year": 1975,
+      "count": 24,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": 67.3,
+      "max_wind_kts": 115.0
+    },
+    {
+      "year": 1976,
+      "count": 15,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": 55.7,
+      "max_wind_kts": 90.0
+    },
+    {
+      "year": 1977,
+      "count": 17,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": 64.0,
+      "max_wind_kts": 92.0
+    },
+    {
+      "year": 1978,
+      "count": 17,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": 59.9,
+      "max_wind_kts": 110.0
+    },
+    {
+      "year": 1979,
+      "count": 19,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": 61.7,
+      "max_wind_kts": 110.0
+    },
+    {
+      "year": 1980,
+      "count": 28,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": 70.4,
+      "max_wind_kts": 115.0
+    },
+    {
+      "year": 1981,
+      "count": 21,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": 68.8,
+      "max_wind_kts": 110.0
+    },
+    {
+      "year": 1982,
+      "count": 22,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": 53.2,
+      "max_wind_kts": 112.0
+    },
+    {
+      "year": 1983,
+      "count": 17,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": 70.5,
+      "max_wind_kts": 92.0
+    },
+    {
+      "year": 1984,
+      "count": 23,
+      "count_piroi_approached": 8,
+      "avg_wind_max_kts": 66.8,
+      "max_wind_kts": 120.0
+    },
+    {
+      "year": 1985,
+      "count": 20,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": 69.2,
+      "max_wind_kts": 110.0
+    },
+    {
+      "year": 1986,
+      "count": 20,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": 61.3,
+      "max_wind_kts": 100.0
+    },
+    {
+      "year": 1987,
+      "count": 19,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": 60.4,
+      "max_wind_kts": 100.0
+    },
+    {
+      "year": 1988,
+      "count": 13,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": 67.4,
+      "max_wind_kts": 100.0
+    },
+    {
+      "year": 1989,
+      "count": 26,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": 67.1,
+      "max_wind_kts": 130.0
+    },
+    {
+      "year": 1990,
+      "count": 17,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": 58.0,
+      "max_wind_kts": 120.0
+    },
+    {
+      "year": 1991,
+      "count": 20,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": 60.9,
+      "max_wind_kts": 110.0
+    },
+    {
+      "year": 1992,
+      "count": 16,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": 60.1,
+      "max_wind_kts": 110.0
+    },
+    {
+      "year": 1993,
+      "count": 18,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": 55.2,
+      "max_wind_kts": 93.0
+    },
+    {
+      "year": 1994,
+      "count": 23,
+      "count_piroi_approached": 10,
+      "avg_wind_max_kts": 72.5,
+      "max_wind_kts": 110.0
+    },
+    {
+      "year": 1995,
+      "count": 19,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": 72.7,
+      "max_wind_kts": 120.0
+    },
+    {
+      "year": 1996,
+      "count": 29,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": 67.4,
+      "max_wind_kts": 105.0
+    },
+    {
+      "year": 1997,
+      "count": 12,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": 65.9,
+      "max_wind_kts": 115.0
+    },
+    {
+      "year": 1998,
+      "count": 22,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": 58.4,
+      "max_wind_kts": 120.0
+    },
+    {
+      "year": 1999,
+      "count": 19,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": 74.1,
+      "max_wind_kts": 120.0
+    },
+    {
+      "year": 2000,
+      "count": 22,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": 76.4,
+      "max_wind_kts": 120.0
+    },
+    {
+      "year": 2001,
+      "count": 21,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": 57.4,
+      "max_wind_kts": 100.0
+    },
+    {
+      "year": 2002,
+      "count": 18,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": 75.6,
+      "max_wind_kts": 120.0
+    },
+    {
+      "year": 2003,
+      "count": 21,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": 71.4,
+      "max_wind_kts": 125.0
+    },
+    {
+      "year": 2004,
+      "count": 20,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": 74.7,
+      "max_wind_kts": 125.0
+    },
+    {
+      "year": 2005,
+      "count": 17,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": 69.7,
+      "max_wind_kts": 125.0
+    },
+    {
+      "year": 2006,
+      "count": 17,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": 69.8,
+      "max_wind_kts": 135.0
+    },
+    {
+      "year": 2007,
+      "count": 19,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": 70.2,
+      "max_wind_kts": 110.0
+    },
+    {
+      "year": 2008,
+      "count": 19,
+      "count_piroi_approached": 7,
+      "avg_wind_max_kts": 67.6,
+      "max_wind_kts": 115.0
+    },
+    {
+      "year": 2009,
+      "count": 18,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": 67.5,
+      "max_wind_kts": 110.0
+    },
+    {
+      "year": 2010,
+      "count": 16,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": 63.2,
+      "max_wind_kts": 120.0
+    },
+    {
+      "year": 2011,
+      "count": 15,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": 68.3,
+      "max_wind_kts": 110.0
+    },
+    {
+      "year": 2012,
+      "count": 20,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": 65.5,
+      "max_wind_kts": 110.0
+    },
+    {
+      "year": 2013,
+      "count": 17,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": 73.5,
+      "max_wind_kts": 120.0
+    },
+    {
+      "year": 2014,
+      "count": 15,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": 67.9,
+      "max_wind_kts": 125.0
+    },
+    {
+      "year": 2015,
+      "count": 17,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": 71.4,
+      "max_wind_kts": 125.0
+    },
+    {
+      "year": 2016,
+      "count": 11,
+      "count_piroi_approached": 0,
+      "avg_wind_max_kts": 66.6,
+      "max_wind_kts": 135.0
+    },
+    {
+      "year": 2017,
+      "count": 16,
+      "count_piroi_approached": 4,
+      "avg_wind_max_kts": 62.7,
+      "max_wind_kts": 120.0
+    },
+    {
+      "year": 2018,
+      "count": 15,
+      "count_piroi_approached": 5,
+      "avg_wind_max_kts": 76.7,
+      "max_wind_kts": 135.0
+    },
+    {
+      "year": 2019,
+      "count": 19,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": 80.3,
+      "max_wind_kts": 120.0
+    },
+    {
+      "year": 2020,
+      "count": 20,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": 60.5,
+      "max_wind_kts": 95.0
+    },
+    {
+      "year": 2021,
+      "count": 19,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": 58.9,
+      "max_wind_kts": 120.0
+    },
+    {
+      "year": 2022,
+      "count": 27,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": 61.5,
+      "max_wind_kts": 125.0
+    },
+    {
+      "year": 2023,
+      "count": 10,
+      "count_piroi_approached": 3,
+      "avg_wind_max_kts": 82.0,
+      "max_wind_kts": 125.0
+    },
+    {
+      "year": 2024,
+      "count": 15,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": 80.8,
+      "max_wind_kts": 115.0
+    },
+    {
+      "year": 2025,
+      "count": 2,
+      "count_piroi_approached": 0,
+      "avg_wind_max_kts": 47.5,
+      "max_wind_kts": 55.0
+    }
+  ],
+  "by_month": [
+    {
+      "month": 1,
+      "count": 669,
+      "count_piroi_approached": 246,
+      "avg_wind_max_kts": 65.8,
+      "max_wind_kts": 125.0
+    },
+    {
+      "month": 2,
+      "count": 651,
+      "count_piroi_approached": 238,
+      "avg_wind_max_kts": 66.4,
+      "max_wind_kts": 125.0
+    },
+    {
+      "month": 3,
+      "count": 466,
+      "count_piroi_approached": 144,
+      "avg_wind_max_kts": 75.5,
+      "max_wind_kts": 135.0
+    },
+    {
+      "month": 4,
+      "count": 240,
+      "count_piroi_approached": 43,
+      "avg_wind_max_kts": 70.8,
+      "max_wind_kts": 135.0
+    },
+    {
+      "month": 5,
+      "count": 47,
+      "count_piroi_approached": 8,
+      "avg_wind_max_kts": 57.9,
+      "max_wind_kts": 95.0
+    },
+    {
+      "month": 6,
+      "count": 8,
+      "count_piroi_approached": 2,
+      "avg_wind_max_kts": 39.8,
+      "max_wind_kts": 50.0
+    },
+    {
+      "month": 7,
+      "count": 19,
+      "count_piroi_approached": 1,
+      "avg_wind_max_kts": 41.0,
+      "max_wind_kts": 50.0
+    },
+    {
+      "month": 8,
+      "count": 9,
+      "count_piroi_approached": 0,
+      "avg_wind_max_kts": 37.5,
+      "max_wind_kts": 45.0
+    },
+    {
+      "month": 9,
+      "count": 21,
+      "count_piroi_approached": 6,
+      "avg_wind_max_kts": 40.6,
+      "max_wind_kts": 45.0
+    },
+    {
+      "month": 10,
+      "count": 68,
+      "count_piroi_approached": 14,
+      "avg_wind_max_kts": 49.2,
+      "max_wind_kts": 100.0
+    },
+    {
+      "month": 11,
+      "count": 138,
+      "count_piroi_approached": 34,
+      "avg_wind_max_kts": 64.5,
+      "max_wind_kts": 115.0
+    },
+    {
+      "month": 12,
+      "count": 345,
+      "count_piroi_approached": 125,
+      "avg_wind_max_kts": 64.3,
+      "max_wind_kts": 125.0
+    }
+  ]
+}

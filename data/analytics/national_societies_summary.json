@@ -1,0 +1,491 @@
+{
+  "generated_at": "2026-07-28T04:55:35.995877+00:00",
+  "territories": [
+    {
+      "iso3": "mdg",
+      "territory_name": "Madagascar",
+      "piroi_region": "Océan Indien",
+      "national_society_name": "Malagasy Red Cross Society",
+      "capacity": {
+        "branches": {
+          "value": 23.0,
+          "year": 2024
+        },
+        "volunteers": {
+          "value": 10000.0,
+          "year": 2024
+        },
+        "paid_staff": {
+          "value": 143.0,
+          "year": 2024
+        }
+      },
+      "reach": {
+        "drr": {
+          "value": 43858.0,
+          "year": 2024
+        },
+        "wash": {
+          "value": 36777.0,
+          "year": 2024
+        },
+        "first_aid_training": {
+          "value": 2021.0,
+          "year": 2024
+        },
+        "climate": {
+          "value": null,
+          "year": null
+        }
+      },
+      "context": {
+        "population": {
+          "value": 29611714.0,
+          "year": 2022
+        },
+        "gdp": {
+          "value": 15297192798.9771,
+          "year": 2022
+        },
+        "gni_per_capita": {
+          "value": 510.0,
+          "year": 2022
+        },
+        "life_expectancy": {
+          "value": 64.485,
+          "year": 2021
+        },
+        "literacy_rate": {
+          "value": 77.48,
+          "year": 2022
+        },
+        "urban_population_pct": {
+          "value": 39.882,
+          "year": 2022
+        },
+        "poverty_rate": {
+          "value": 70.7,
+          "year": 2012
+        },
+        "child_mortality_rate": {
+          "value": 66.0,
+          "year": 2021
+        },
+        "maternal_mortality_rate": {
+          "value": 392.0,
+          "year": 2020
+        }
+      },
+      "disasters": {
+        "total_events": 290,
+        "total_cyclones": 217,
+        "most_recent_event_date": "2026-02-28T00:00:00+00:00"
+      }
+    },
+    {
+      "iso3": "com",
+      "territory_name": "Comores",
+      "piroi_region": "Océan Indien",
+      "national_society_name": "The Comoros Red Crescent",
+      "capacity": {
+        "branches": {
+          "value": 3.0,
+          "year": 2024
+        },
+        "volunteers": {
+          "value": 3656.0,
+          "year": 2024
+        },
+        "paid_staff": {
+          "value": 40.0,
+          "year": 2024
+        }
+      },
+      "reach": {
+        "drr": {
+          "value": 200.0,
+          "year": 2024
+        },
+        "wash": {
+          "value": 255109.0,
+          "year": 2024
+        },
+        "first_aid_training": {
+          "value": 505.0,
+          "year": 2024
+        },
+        "climate": {
+          "value": null,
+          "year": null
+        }
+      },
+      "context": {
+        "population": {
+          "value": 836774.0,
+          "year": 2022
+        },
+        "gdp": {
+          "value": 1242519407.2782,
+          "year": 2022
+        },
+        "gni_per_capita": {
+          "value": 1610.0,
+          "year": 2022
+        },
+        "life_expectancy": {
+          "value": 63.417,
+          "year": 2021
+        },
+        "literacy_rate": {
+          "value": 61.71,
+          "year": 2022
+        },
+        "urban_population_pct": {
+          "value": 29.864,
+          "year": 2022
+        },
+        "poverty_rate": {
+          "value": 42.4,
+          "year": 2013
+        },
+        "child_mortality_rate": {
+          "value": 49.7,
+          "year": 2021
+        },
+        "maternal_mortality_rate": {
+          "value": 217.0,
+          "year": 2020
+        }
+      },
+      "disasters": {
+        "total_events": 113,
+        "total_cyclones": 98,
+        "most_recent_event_date": "2025-01-11T00:00:00+00:00"
+      }
+    },
+    {
+      "iso3": "mus",
+      "territory_name": "Maurice",
+      "piroi_region": "Océan Indien",
+      "national_society_name": "Mauritius Red Cross Society",
+      "capacity": {
+        "branches": {
+          "value": 4.0,
+          "year": 2024
+        },
+        "volunteers": {
+          "value": 110.0,
+          "year": 2024
+        },
+        "paid_staff": {
+          "value": 9.0,
+          "year": 2024
+        }
+      },
+      "reach": {
+        "drr": {
+          "value": 535.0,
+          "year": 2024
+        },
+        "wash": {
+          "value": 0.0,
+          "year": 2018
+        },
+        "first_aid_training": {
+          "value": 542.0,
+          "year": 2024
+        },
+        "climate": {
+          "value": null,
+          "year": null
+        }
+      },
+      "context": {
+        "population": {
+          "value": 1262523.0,
+          "year": 2022
+        },
+        "gdp": {
+          "value": 12948726653.811,
+          "year": 2022
+        },
+        "gni_per_capita": {
+          "value": 10360.0,
+          "year": 2022
+        },
+        "life_expectancy": {
+          "value": 73.6802,
+          "year": 2021
+        },
+        "literacy_rate": {
+          "value": 92.15,
+          "year": 2021
+        },
+        "urban_population_pct": {
+          "value": 40.81,
+          "year": 2022
+        },
+        "poverty_rate": {
+          "value": 10.3,
+          "year": 2017
+        },
+        "child_mortality_rate": {
+          "value": 16.6,
+          "year": 2021
+        },
+        "maternal_mortality_rate": {
+          "value": 84.0,
+          "year": 2020
+        }
+      },
+      "disasters": {
+        "total_events": 432,
+        "total_cyclones": 421,
+        "most_recent_event_date": "2024-02-17 18:00:00"
+      }
+    },
+    {
+      "iso3": "syc",
+      "territory_name": "Seychelles",
+      "piroi_region": "Océan Indien",
+      "national_society_name": "Seychelles Red Cross Society",
+      "capacity": {
+        "branches": {
+          "value": 0.0,
+          "year": 2023
+        },
+        "volunteers": {
+          "value": 140.0,
+          "year": 2023
+        },
+        "paid_staff": {
+          "value": 7.0,
+          "year": 2023
+        }
+      },
+      "reach": {
+        "drr": {
+          "value": 2000.0,
+          "year": 2022
+        },
+        "wash": {
+          "value": 100.0,
+          "year": 2022
+        },
+        "first_aid_training": {
+          "value": 668.0,
+          "year": 2022
+        },
+        "climate": {
+          "value": null,
+          "year": null
+        }
+      },
+      "context": {
+        "population": {
+          "value": 119878.0,
+          "year": 2022
+        },
+        "gdp": {
+          "value": 1588438144.3769,
+          "year": 2022
+        },
+        "gni_per_capita": {
+          "value": 12010.0,
+          "year": 2022
+        },
+        "life_expectancy": {
+          "value": 73.3976,
+          "year": 2021
+        },
+        "literacy_rate": {
+          "value": 96.2,
+          "year": 2020
+        },
+        "urban_population_pct": {
+          "value": 58.396,
+          "year": 2022
+        },
+        "poverty_rate": {
+          "value": 25.3,
+          "year": 2018
+        },
+        "child_mortality_rate": {
+          "value": 13.9,
+          "year": 2021
+        },
+        "maternal_mortality_rate": {
+          "value": 3.0,
+          "year": 2020
+        }
+      },
+      "disasters": {
+        "total_events": 35,
+        "total_cyclones": 28,
+        "most_recent_event_date": "2024-05-12 18:00:00"
+      }
+    },
+    {
+      "iso3": "moz",
+      "territory_name": "Mozambique",
+      "piroi_region": "Afrique australe",
+      "national_society_name": "Mozambique Red Cross Society",
+      "capacity": {
+        "branches": {
+          "value": 11.0,
+          "year": 2023
+        },
+        "volunteers": {
+          "value": 6908.0,
+          "year": 2023
+        },
+        "paid_staff": {
+          "value": 185.0,
+          "year": 2023
+        }
+      },
+      "reach": {
+        "drr": {
+          "value": 189736.0,
+          "year": 2023
+        },
+        "wash": {
+          "value": 544301.0,
+          "year": 2023
+        },
+        "first_aid_training": {
+          "value": 1874.0,
+          "year": 2023
+        },
+        "climate": {
+          "value": 7188.0,
+          "year": 2024
+        }
+      },
+      "context": {
+        "population": {
+          "value": 32969518.0,
+          "year": 2022
+        },
+        "gdp": {
+          "value": 18406835954.6695,
+          "year": 2022
+        },
+        "gni_per_capita": {
+          "value": 440.0,
+          "year": 2022
+        },
+        "life_expectancy": {
+          "value": 59.325,
+          "year": 2021
+        },
+        "literacy_rate": {
+          "value": 59.78,
+          "year": 2020
+        },
+        "urban_population_pct": {
+          "value": 38.187,
+          "year": 2022
+        },
+        "poverty_rate": {
+          "value": 46.1,
+          "year": 2014
+        },
+        "child_mortality_rate": {
+          "value": 69.6,
+          "year": 2021
+        },
+        "maternal_mortality_rate": {
+          "value": 127.0,
+          "year": 2020
+        }
+      },
+      "disasters": {
+        "total_events": 99,
+        "total_cyclones": 45,
+        "most_recent_event_date": "2026-02-28T00:00:00+00:00"
+      }
+    },
+    {
+      "iso3": "tza",
+      "territory_name": "Tanzanie",
+      "piroi_region": "Afrique de l'Est",
+      "national_society_name": "Tanzania Red Cross National Society",
+      "capacity": {
+        "branches": {
+          "value": 31.0,
+          "year": 2024
+        },
+        "volunteers": {
+          "value": 118729.0,
+          "year": 2024
+        },
+        "paid_staff": {
+          "value": 188.0,
+          "year": 2024
+        }
+      },
+      "reach": {
+        "drr": {
+          "value": 89759.0,
+          "year": 2024
+        },
+        "wash": {
+          "value": 5640327.0,
+          "year": 2024
+        },
+        "first_aid_training": {
+          "value": 100.0,
+          "year": 2024
+        },
+        "climate": {
+          "value": null,
+          "year": null
+        }
+      },
+      "context": {
+        "population": {
+          "value": 65497748.0,
+          "year": 2022
+        },
+        "gdp": {
+          "value": 75732311666.039,
+          "year": 2022
+        },
+        "gni_per_capita": {
+          "value": 1200.0,
+          "year": 2022
+        },
+        "life_expectancy": {
+          "value": 66.201,
+          "year": 2021
+        },
+        "literacy_rate": {
+          "value": 82.02,
+          "year": 2022
+        },
+        "urban_population_pct": {
+          "value": 36.682,
+          "year": 2022
+        },
+        "poverty_rate": {
+          "value": 26.4,
+          "year": 2018
+        },
+        "child_mortality_rate": {
+          "value": 47.1,
+          "year": 2021
+        },
+        "maternal_mortality_rate": {
+          "value": 238.0,
+          "year": 2020
+        }
+      },
+      "disasters": {
+        "total_events": 46,
+        "total_cyclones": 0,
+        "most_recent_event_date": "2026-03-25T00:00:00+00:00"
+      }
+    }
+  ]
+}

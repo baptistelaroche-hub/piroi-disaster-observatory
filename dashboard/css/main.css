@@ -36,8 +36,12 @@
   box-sizing: border-box;
 }
 
-html, body {
+html {
   height: 100%;
+}
+
+body {
+  min-height: 100%;
 }
 
 body {
@@ -96,8 +100,9 @@ body {
 
 .map-wrap {
   position: relative;
-  flex: 1;
-  min-height: 0;
+  height: 64vh;
+  min-height: 420px;
+  flex-shrink: 0;
   display: flex;
 }
 
@@ -315,4 +320,80 @@ body {
 
 .legend-row--hidden {
   opacity: 0.4;
+}
+
+.analytics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 16px;
+  padding: 20px 28px 40px;
+}
+
+.chart-card {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+
+.chart-card--wide {
+  grid-column: 1 / -1;
+}
+
+.chart-card h2 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.chart-subtitle {
+  margin: 2px 0 12px;
+  color: var(--text-muted);
+  font-size: 0.76rem;
+}
+
+.chart-canvas-wrap {
+  position: relative;
+  height: 260px;
+}
+
+.ns-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.ns-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.ns-card h3 {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.ns-card-subtitle {
+  margin: 1px 0 8px;
+  color: var(--text-muted);
+  font-size: 0.74rem;
+}
+
+.ns-card-stats {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2px 8px;
+  font-size: 0.78rem;
+}
+
+.ns-card-stats dt {
+  color: var(--text-secondary);
+}
+
+.ns-card-stats dd {
+  margin: 0;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
 }

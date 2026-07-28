@@ -61,10 +61,38 @@
     <aside class="legend" id="legend" aria-label="Légende des types d'aléas (cliquer pour filtrer)"></aside>
   </main>
 
+  <section class="analytics" aria-label="Graphiques et indicateurs">
+    <div class="chart-card">
+      <h2>Catastrophes par année</h2>
+      <p class="chart-subtitle">Réagit aux filtres ci-dessus</p>
+      <div class="chart-canvas-wrap"><canvas id="chart-by-year"></canvas></div>
+    </div>
+
+    <div class="chart-card">
+      <h2>Catastrophes par territoire et type d'aléa</h2>
+      <p class="chart-subtitle">Réagit aux filtres ci-dessus — un événement régional (ex: un cyclone touchant plusieurs pays) est compté dans chaque territoire concerné</p>
+      <div class="chart-canvas-wrap"><canvas id="chart-by-territory"></canvas></div>
+    </div>
+
+    <div class="chart-card">
+      <h2>Saisonnalité cyclonique</h2>
+      <p class="chart-subtitle">Bassin Sud Indien, 1848–2026 (non filtré — historique complet)</p>
+      <div class="chart-canvas-wrap"><canvas id="chart-seasonality"></canvas></div>
+    </div>
+
+    <div class="chart-card chart-card--wide">
+      <h2>Sociétés nationales par territoire</h2>
+      <p class="chart-subtitle">Dernière valeur connue par indicateur (années de référence différentes selon le champ)</p>
+      <div id="ns-cards" class="ns-cards"></div>
+    </div>
+  </section>
+
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
   <script src="js/hazard-colors.js"></script>
   <script src="js/data.js"></script>
+  <script src="js/charts.js"></script>
   <script src="js/map.js"></script>
 </body>
 </html>

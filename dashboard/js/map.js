@@ -12,7 +12,7 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
     return;
   }
 
-  const { disasters, countryByIso3, piroiIso3, territories, operationById } = data;
+  const { disasters, countryByIso3, piroiIso3, territories, operationById, cycloneStats, nationalSocietiesSummary } = data;
   const reliefwebDisasters = disasters.filter((d) => d.source === "reliefweb");
   const allTerritoryOptions = [...territories, { iso3: SOUTH_AFRICA_ISO3, name: "Afrique du Sud", piroi_region: "Hors zone PIROI" }];
 
@@ -27,6 +27,7 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
   const map = initMap();
   let currentLayer = null;
 
+  initStaticCharts(cycloneStats);
   buildTerritoryFilterUI();
   wireFilterControls();
   render();
@@ -94,17 +95,26 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
     }
   }
 
-  // Filtres hors catégorie d'aléa : sert à la fois de base pour la carte (après exclusion des
-  // catégories masquées) et pour les compteurs de la légende (qui doivent rester visibles même
-  // pour une catégorie masquée, sinon impossible de savoir combien d'événements elle contient).
-  function applyBaseFilters() {
+  // Filtres période/réponse PIROI, sans le filtre territoire — réutilisé par le graphique
+  // "par territoire" qui doit pouvoir compter un événement dans plusieurs territoires à la fois
+  // (ex: le cyclone Chido touche Comores/Madagascar/Mayotte/Mozambique) plutôt que de ne le
+  // rattacher qu'à son pays "primaire" ReliefWeb (utile pour un marqueur unique sur la carte,
+  // mais sous-représente les territoires rarement primaires comme Mayotte ou La Réunion).
+  function applyNonTerritoryFilters() {
     return reliefwebDisasters.filter((d) => {
-      if (!state.territories.has(d.primary_iso3)) return false;
       if (state.piroiResponseOnly && !d.piroi_response) return false;
       const year = d.date_start ? Number(d.date_start.slice(0, 4)) : null;
       if (year == null || year < state.yearMin || year > state.yearMax) return false;
       return true;
     });
+  }
+
+  // Filtres hors catégorie d'aléa, avec filtre territoire (sur le pays primaire) : base pour la
+  // carte (un marqueur = un point = le pays primaire) et pour les compteurs de la légende (qui
+  // doivent rester visibles même pour une catégorie masquée, sinon impossible de savoir combien
+  // d'événements elle contient).
+  function applyBaseFilters() {
+    return applyNonTerritoryFilters().filter((d) => state.territories.has(d.primary_iso3));
   }
 
   function render() {
@@ -123,6 +133,12 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
 
     renderStatTiles(visible);
     renderLegend(countsByCategory);
+
+    const selectedTerritories = allTerritoryOptions.filter((t) => state.territories.has(t.iso3));
+    const forTerritoryChart = applyNonTerritoryFilters().filter((d) => !state.hiddenCategories.has(d.hazard_category));
+    updateByYearChart(visible, state.yearMin, state.yearMax);
+    updateByTerritoryChart(forTerritoryChart, selectedTerritories);
+    renderNsCards(nationalSocietiesSummary, state.territories);
   }
 
   function initMap() {

@@ -93,7 +93,23 @@ Hypothèse à vérifier avec le PIROI Center : `budget_total` est affiché en eu
 popup, mais la colonne source ne précise la devise que sur certaines lignes (ex: "50 000 €")
 — les valeurs sans symbole pourraient être dans une autre devise selon l'opération.
 
-Trajectoires cycloniques, filtres avancés et graphiques à venir dans des sous-étapes suivantes.
+Étape 1quater : section graphiques/indicateurs sous la carte (Chart.js) — catastrophes par
+année et par territoire×type d'aléa (dynamiques, réagissent aux mêmes filtres que la carte),
+saisonnalité cyclonique (statique, `cyclone_stats.json`, historique complet), fiches Sociétés
+nationales par territoire (`national_societies_summary.json`, filtrées par territoire coché).
+Couleurs de catégorie identiques à la légende de la carte.
+
+Bug trouvé et corrigé pendant les tests : le graphique "par territoire" comptait un événement
+uniquement dans le pays "primaire" ReliefWeb, ce qui faisait apparaître La Réunion et Mayotte à
+zéro alors qu'elles sont listées comme pays affectés sur plusieurs catastrophes régionales
+(ex: cyclone Chido, primaire Mozambique, affecte aussi Comores/Madagascar/Mayotte). Corrigé en
+comptant sur la liste complète des pays touchés plutôt que le seul pays primaire — un événement
+régional est donc compté dans chaque territoire concerné (le total du graphique peut dépasser
+le nombre total d'événements, c'est intentionnel, noté dans le sous-titre du graphique). La
+carte elle-même garde le pays primaire (un marqueur = un point = une localisation).
+
+Trajectoires cycloniques et filtres supplémentaires (intensité) à venir dans des sous-étapes
+suivantes.
 
 Palette catégorielle validée avec le skill dataviz (8 teintes fixes pour les catégories les
 plus fréquentes, repli neutre gris pour les 4 restantes — la couleur renforce l'identité mais

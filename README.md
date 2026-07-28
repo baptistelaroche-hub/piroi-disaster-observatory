@@ -26,6 +26,22 @@ mis à jour dans `data/raw/` :
 
 IFRC n'a pas de workflow automatique (voir section IFRC ci-dessous) — mise à jour manuelle.
 
+### CLEAN
+
+- `disasters.json` — table unifiée ReliefWeb + IBTrACS, une ligne par événement (6396 lignes :
+  3715 ReliefWeb + 2681 tempêtes IBTrACS, points `TRACK_TYPE != main` exclus). Pas de
+  déduplication entre les deux sources : un même cyclone peut apparaître deux fois (une fois
+  par source), distinguées par la colonne `source`. Le champ `territories_piroi_approches` est
+  calculé par distance à vol d'oiseau (seuil 300 km) entre les points de trajectoire (IBTrACS)
+  ou le pays touché (ReliefWeb) et le centroïde de chaque territoire PIROI — une approximation
+  volontairement simple à affiner plus tard si besoin.
+- `national_societies.json` — export IFRC enrichi des coordonnées et du flag `is_piroi_territory`.
+- `cyclone_tracks.json` — géométrie des trajectoires (points lat/lon/vent/pression par tempête),
+  utilisée pour tracer les lignes sur la carte. Ce n'est pas une table analytique à part entière,
+  juste la géométrie derrière les entrées "Cyclone tropical" de `disasters.json`.
+
+Regénérer : `python etl/clean/build_disasters.py && python etl/clean/build_national_societies.py && python etl/clean/build_cyclone_tracks.py`
+
 ## Développement local
 
 ```bash

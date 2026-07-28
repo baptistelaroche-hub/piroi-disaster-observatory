@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PIROI Disaster Observatory</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>PIROI Disaster Observatory</h1>
+    <p class="app-subtitle">Connaissance des risques et suivi des catastrophes — zone Océan Indien</p>
+  </header>
+
+  <section class="stat-tiles" id="stat-tiles" aria-label="Indicateurs globaux">
+    <div class="stat-tile">
+      <span class="stat-value" id="stat-total-disasters">—</span>
+      <span class="stat-label">Catastrophes ReliefWeb</span>
+    </div>
+    <div class="stat-tile">
+      <span class="stat-value" id="stat-total-cyclones">—</span>
+      <span class="stat-label">Cyclones IBTrACS</span>
+    </div>
+    <div class="stat-tile">
+      <span class="stat-value" id="stat-total-piroi">—</span>
+      <span class="stat-label">Événements zone PIROI</span>
+    </div>
+    <div class="stat-tile">
+      <span class="stat-value" id="stat-period">—</span>
+      <span class="stat-label">Période couverte</span>
+    </div>
+  </section>
+
+  <main class="map-wrap">
+    <div id="map" aria-label="Carte des catastrophes"></div>
+    <aside class="legend" id="legend" aria-label="Légende des types d'aléas"></aside>
+    <label class="zone-toggle" id="zone-toggle">
+      <input type="checkbox" id="include-zaf" />
+      Inclure l'Afrique du Sud
+    </label>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="js/hazard-colors.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>

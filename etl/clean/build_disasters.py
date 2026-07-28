@@ -72,7 +72,9 @@ def build_reliefweb_disasters(hazard_lookup: dict[str, str], territories_iso3: s
     rows = []
     for d in raw["disasters"]:
         primary_type = next((t for t in d["type"] if t.get("primary")), d["type"][0])
-        iso3_list = [c["iso3"] for c in d.get("country", [])]
+        countries = d.get("country", [])
+        iso3_list = [c["iso3"] for c in countries]
+        primary_country = next((c for c in countries if c.get("primary")), countries[0] if countries else None)
         rows.append(
             {
                 "id": f"reliefweb:{d['id']}",
@@ -80,6 +82,7 @@ def build_reliefweb_disasters(hazard_lookup: dict[str, str], territories_iso3: s
                 "name": d["name"],
                 "hazard_category": hazard_lookup.get(primary_type["code"], "Autre"),
                 "iso3": iso3_list,
+                "primary_iso3": primary_country["iso3"] if primary_country else None,
                 "date_start": d["date"]["event"],
                 "date_end": d["date"]["event"],
                 "description": d.get("description"),
@@ -120,6 +123,7 @@ def build_ibtracs_disasters(territories: list[dict]) -> list[dict]:
                 "name": name,
                 "hazard_category": "Cyclone tropical",
                 "iso3": [],
+                "primary_iso3": None,
                 "date_start": group["ISO_TIME"].min(),
                 "date_end": group["ISO_TIME"].max(),
                 "description": None,

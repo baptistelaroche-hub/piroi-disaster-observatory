@@ -59,6 +59,26 @@ de filtrage à deux endroits.
 
 Regénérer : `python etl/analytics/build_global_indicators.py && python etl/analytics/build_cyclone_stats.py && python etl/analytics/build_national_societies_summary.py`
 
+### DASHBOARD (en cours)
+
+Étape 1 : structure de page + carte Leaflet avec les catastrophes ReliefWeb (clustering,
+couleur par catégorie d'aléa, popup nom/date/lien). Carte centrée et filtrée sur la zone
+PIROI (les 8 territoires) par défaut, avec une case à cocher pour inclure l'Afrique du Sud —
+la donnée CLEAN reste mondiale (comparaison possible plus tard), seul l'affichage par défaut
+est restreint. Trajectoires cycloniques, filtres avancés et graphiques à venir dans des
+sous-étapes suivantes.
+
+Palette catégorielle validée avec le skill dataviz (8 teintes fixes pour les catégories les
+plus fréquentes, repli neutre gris pour les 4 restantes — la couleur renforce l'identité mais
+n'est jamais le seul identifiant : nom toujours visible en légende et en popup).
+
+Servir en local (fetch() sur les fichiers JSON, ne fonctionne pas en `file://`) :
+
+```bash
+python -m http.server 8765
+# puis ouvrir http://localhost:8765/dashboard/
+```
+
 ## Développement local
 
 ```bash

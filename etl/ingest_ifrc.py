@@ -96,6 +96,7 @@ INDICATOR_COLUMNS = [
     "KPI_ReachRCRCEd_D_IP",
     "KPI_ClimateHeat_I_Public",
     "KPI_Climate_CPD_Public",
+    "KPI_ClimateHeat_D_Tot",
 ]
 
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T04:55:35.995877+00:00",
+  "generated_at": "2026-08-06T13:16:09.324232+00:00",
   "territories": [
     {
       "iso3": "mdg",
@@ -9,6 +9,10 @@
       "capacity": {
         "branches": {
           "value": 23.0,
+          "year": 2024
+        },
+        "local_units": {
+          "value": 118.0,
           "year": 2024
         },
         "volunteers": {
@@ -21,21 +25,21 @@
         }
       },
       "reach": {
-        "drr": {
-          "value": 43858.0,
-          "year": 2024
-        },
-        "wash": {
-          "value": 36777.0,
-          "year": 2024
-        },
         "first_aid_training": {
           "value": 2021.0,
           "year": 2024
         },
-        "climate": {
-          "value": null,
-          "year": null
+        "drr": {
+          "value": 43858.0,
+          "year": 2024
+        },
+        "disaster_response_early_recovery": {
+          "value": 76692.0,
+          "year": 2024
+        },
+        "heatwave": {
+          "value": 33327.0,
+          "year": 2023
         }
       },
       "context": {
@@ -92,6 +96,10 @@
           "value": 3.0,
           "year": 2024
         },
+        "local_units": {
+          "value": 224.0,
+          "year": 2024
+        },
         "volunteers": {
           "value": 3656.0,
           "year": 2024
@@ -102,21 +110,21 @@
         }
       },
       "reach": {
-        "drr": {
-          "value": 200.0,
-          "year": 2024
-        },
-        "wash": {
-          "value": 255109.0,
-          "year": 2024
-        },
         "first_aid_training": {
           "value": 505.0,
           "year": 2024
         },
-        "climate": {
-          "value": null,
-          "year": null
+        "drr": {
+          "value": 200.0,
+          "year": 2024
+        },
+        "disaster_response_early_recovery": {
+          "value": 181.0,
+          "year": 2024
+        },
+        "heatwave": {
+          "value": 84.0,
+          "year": 2021
         }
       },
       "context": {
@@ -173,6 +181,10 @@
           "value": 4.0,
           "year": 2024
         },
+        "local_units": {
+          "value": 5.0,
+          "year": 2024
+        },
         "volunteers": {
           "value": 110.0,
           "year": 2024
@@ -183,19 +195,19 @@
         }
       },
       "reach": {
-        "drr": {
-          "value": 535.0,
-          "year": 2024
-        },
-        "wash": {
-          "value": 0.0,
-          "year": 2018
-        },
         "first_aid_training": {
           "value": 542.0,
           "year": 2024
         },
-        "climate": {
+        "drr": {
+          "value": 535.0,
+          "year": 2024
+        },
+        "disaster_response_early_recovery": {
+          "value": 0.0,
+          "year": 2024
+        },
+        "heatwave": {
           "value": null,
           "year": null
         }
@@ -254,6 +266,10 @@
           "value": 0.0,
           "year": 2023
         },
+        "local_units": {
+          "value": 1.0,
+          "year": 2023
+        },
         "volunteers": {
           "value": 140.0,
           "year": 2023
@@ -264,19 +280,19 @@
         }
       },
       "reach": {
-        "drr": {
-          "value": 2000.0,
-          "year": 2022
-        },
-        "wash": {
-          "value": 100.0,
-          "year": 2022
-        },
         "first_aid_training": {
           "value": 668.0,
           "year": 2022
         },
-        "climate": {
+        "drr": {
+          "value": 2000.0,
+          "year": 2022
+        },
+        "disaster_response_early_recovery": {
+          "value": 79.0,
+          "year": 2022
+        },
+        "heatwave": {
           "value": null,
           "year": null
         }
@@ -335,6 +351,10 @@
           "value": 11.0,
           "year": 2023
         },
+        "local_units": {
+          "value": 111.0,
+          "year": 2023
+        },
         "volunteers": {
           "value": 6908.0,
           "year": 2023
@@ -345,21 +365,21 @@
         }
       },
       "reach": {
-        "drr": {
-          "value": 189736.0,
-          "year": 2023
-        },
-        "wash": {
-          "value": 544301.0,
-          "year": 2023
-        },
         "first_aid_training": {
           "value": 1874.0,
           "year": 2023
         },
-        "climate": {
-          "value": 7188.0,
-          "year": 2024
+        "drr": {
+          "value": 189736.0,
+          "year": 2023
+        },
+        "disaster_response_early_recovery": {
+          "value": 244217.0,
+          "year": 2023
+        },
+        "heatwave": {
+          "value": 0.0,
+          "year": 2021
         }
       },
       "context": {
@@ -416,6 +436,10 @@
           "value": 31.0,
           "year": 2024
         },
+        "local_units": {
+          "value": 1489.0,
+          "year": 2024
+        },
         "volunteers": {
           "value": 118729.0,
           "year": 2024
@@ -426,21 +450,21 @@
         }
       },
       "reach": {
-        "drr": {
-          "value": 89759.0,
-          "year": 2024
-        },
-        "wash": {
-          "value": 5640327.0,
-          "year": 2024
-        },
         "first_aid_training": {
           "value": 100.0,
           "year": 2024
         },
-        "climate": {
-          "value": null,
-          "year": null
+        "drr": {
+          "value": 89759.0,
+          "year": 2024
+        },
+        "disaster_response_early_recovery": {
+          "value": 51287.0,
+          "year": 2024
+        },
+        "heatwave": {
+          "value": 34561.0,
+          "year": 2024
         }
       },
       "context": {

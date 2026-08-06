@@ -163,6 +163,7 @@ function renderNsCards(nsSummary, selectedIso3) {
     .filter((t) => selectedIso3.has(t.iso3))
     .map((t) => {
       const c = t.capacity;
+      const r = t.reach;
       const ctx = t.context;
       const fmt = (entry, suffix = "") => (entry.value == null ? "—" : `${Number(entry.value).toLocaleString("fr-FR")}${suffix} (${entry.year})`);
       return `
@@ -171,8 +172,13 @@ function renderNsCards(nsSummary, selectedIso3) {
           <p class="ns-card-subtitle">${escapeHTMLChart(t.national_society_name)}</p>
           <dl class="ns-card-stats">
             <dt>Branches</dt><dd>${fmt(c.branches)}</dd>
+            <dt>Unités locales</dt><dd>${fmt(c.local_units)}</dd>
             <dt>Volontaires</dt><dd>${fmt(c.volunteers)}</dd>
             <dt>Staff rémunéré</dt><dd>${fmt(c.paid_staff)}</dd>
+            <dt>Formés aux premiers secours</dt><dd>${fmt(r.first_aid_training)}</dd>
+            <dt>Atteints — réduction des risques</dt><dd>${fmt(r.drr)}</dd>
+            <dt>Atteints — réponse et relèvement précoce</dt><dd>${fmt(r.disaster_response_early_recovery)}</dd>
+            <dt>Atteints — risque canicule</dt><dd>${fmt(r.heatwave)}</dd>
             <dt>Population</dt><dd>${fmt(ctx.population)}</dd>
             <dt>Taux de pauvreté</dt><dd>${fmt(ctx.poverty_rate, "%")}</dd>
             <dt>Population urbaine</dt><dd>${fmt(ctx.urban_population_pct, "%")}</dd>

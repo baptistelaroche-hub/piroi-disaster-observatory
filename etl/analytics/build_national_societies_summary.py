@@ -27,15 +27,16 @@ OUTPUT_PATH = DATA_DIR / "analytics" / "national_societies_summary.json"
 
 CAPACITY_FIELDS = {
     "branches": "KPI_noBranches",
+    "local_units": "KPI_noLocalUnits",
     "volunteers": "KPI_PeopleVol_Tot",
     "paid_staff": "KPI_PStaff_Tot",
 }
 
 REACH_FIELDS = {
-    "drr": "KPI_ReachDRR_D_Tot",
-    "wash": "KPI_ReachWASH_CPD",
     "first_aid_training": "KPI_TrainFA_Tot",
-    "climate": "KPI_Climate_CPD_Public",
+    "drr": "KPI_ReachDRR_D_Tot",
+    "disaster_response_early_recovery": "KPI_ReachDRER_D_Tot",
+    "heatwave": "KPI_ClimateHeat_D_Tot",
 }
 
 CONTEXT_FIELDS = {

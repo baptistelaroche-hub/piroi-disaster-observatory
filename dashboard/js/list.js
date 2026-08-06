@@ -1,5 +1,5 @@
 const SOUTH_AFRICA_ISO3_LIST = "zaf";
-const DEFAULT_YEAR_MIN_LIST = 1982;
+const DEFAULT_YEAR_MIN_LIST = 2000;
 const DEFAULT_YEAR_MAX_LIST = new Date().getFullYear();
 const STATUS_LABELS = { past: "Terminée", ongoing: "En cours", alert: "Alerte" };
 

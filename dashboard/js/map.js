@@ -1,5 +1,5 @@
 const SOUTH_AFRICA_ISO3 = "zaf";
-const DEFAULT_YEAR_MIN = 1982;
+const DEFAULT_YEAR_MIN = 2000;
 const DEFAULT_YEAR_MAX = new Date().getFullYear();
 
 (async function initDashboard() {

@@ -241,3 +241,20 @@ de données.
   de la taxonomie ReliefWeb vers chaque catégorie. La catégorie `Cyclone tropical` porte le flag
   `is_ibtracs_join: true` : c'est le point de jonction entre les catastrophes ReliefWeb de type
   `TC` et l'ensemble des trajectoires IBTrACS (qui sont, par construction, toutes des cyclones).
+
+## Mise à jour du 06/08/2026 (retours PIROI Center)
+
+- **Période par défaut** : carte et liste s'ouvrent maintenant sur 2000+ (au lieu de 1982+).
+  Toujours ajustable via le filtre.
+- **Fiches Sociétés nationales** : 8 indicateurs retenus avec le PIROI Center — Branches
+  (`KPI_noBranches`), Unités locales (`KPI_noLocalUnits`), Volontaires (`KPI_PeopleVol_Tot`),
+  Staff rémunéré (`KPI_PStaff_Tot`), Formés aux premiers secours (`KPI_TrainFA_Tot`), Atteints
+  réduction des risques (`KPI_ReachDRR_D_Tot`), Atteints réponse et relèvement précoce
+  (`KPI_ReachDRER_D_Tot`), Atteints risque canicule (`KPI_ClimateHeat_D_Tot` — remplace
+  `KPI_Climate_CPD_Public`/`KPI_ClimateHeat_I_Public`, quasi vides pour nos territoires ; le
+  champ `_D_Tot`, plus rarement renseigné mais présent sur 4 des 6 territoires, est le bon choix).
+  WASH retiré (non demandé). Testé : fiche Madagascar validée avec ses 8 valeurs réelles.
+
+À venir : intégration EM-DAT (rattachement GLIDE + repli nom/pays/année), page détail par
+catastrophe, refonte de l'interaction carte (clic pays → 5 derniers aléas, façon
+reliefweb.int/disasters).

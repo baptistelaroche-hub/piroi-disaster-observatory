@@ -18,8 +18,7 @@ const STACK_CATEGORY_ORDER = [
 ];
 const STACK_OTHER_LABEL = "Autre (regroupé)";
 
-const SEQUENTIAL_BLUE = "#2a78d6";
-const CHART_FONT = { family: "system-ui, -apple-system, 'Segoe UI', sans-serif" };
+const CHART_FONT = { family: "'Lato', system-ui, -apple-system, 'Segoe UI', sans-serif" };
 
 let byYearChart = null;
 let byTerritoryChart = null;
@@ -31,6 +30,12 @@ function chartTextColor() {
 
 function chartGridColor() {
   return getComputedStyle(document.body).getPropertyValue("--gridline").trim() || "#e1e0d9";
+}
+
+// Bleu secondaire de la charte CRF pour les graphiques non catégoriels (simples comptages :
+// tendance annuelle, saisonnalité) — jamais utilisé pour la palette catégorielle des aléas.
+function chartAccentColor() {
+  return getComputedStyle(document.body).getPropertyValue("--chart-accent").trim() || "#003956";
 }
 
 function baseScaleOptions() {
@@ -53,7 +58,7 @@ function initStaticCharts(cycloneStats) {
         {
           label: "Tempêtes",
           data: cycloneStats.by_month.map((m) => m.count),
-          backgroundColor: SEQUENTIAL_BLUE,
+          backgroundColor: chartAccentColor(),
           maxBarThickness: 24,
           borderRadius: 4,
         },
@@ -85,7 +90,7 @@ function updateByYearChart(visibleDisasters, yearMin, yearMax) {
   if (!byYearChart) {
     byYearChart = new Chart(document.getElementById("chart-by-year"), {
       type: "bar",
-      data: { labels, datasets: [{ label: "Catastrophes", data: values, backgroundColor: SEQUENTIAL_BLUE, maxBarThickness: 24, borderRadius: 4 }] },
+      data: { labels, datasets: [{ label: "Catastrophes", data: values, backgroundColor: chartAccentColor(), maxBarThickness: 24, borderRadius: 4 }] },
       options: {
         responsive: true,
         maintainAspectRatio: false,

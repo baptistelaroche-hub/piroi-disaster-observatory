@@ -402,3 +402,64 @@ exact des deux côtés). Graphique Mpox vérifié pour La Réunion et Mayotte (d
 distinctes par région). Repli sanitaire vérifié pour Madagascar (7 crises sanitaires internes
 listées, triées par date décroissante). État vide météo vérifié pour les Seychelles. Navigation
 par onglets zone/section et par URL directe vérifiée, aucune erreur console.
+
+## Mise à jour du 07/08/2026 (retours PIROI Center — fiche pays et refonte visuelle)
+
+### Fiche pays (indicateurs IFRC) sur `bilan.html`
+
+Demandé : GDP, Poverty, GNIPC, LifeExp, ChildMortality, Literacy, UrbPop, MaternalMortality par
+territoire. Ces 8 champs étaient déjà calculés (objet `context` de
+`national_societies_summary.json`, ajoutés à `CONTEXT_FIELDS` dans
+`build_national_societies_summary.py` lors d'une étape antérieure) mais jamais affichés nulle
+part dans le dashboard — les fiches SN de la page de garde (`index.html`) n'exposent que
+`capacity`/`reach`, pas `context`. Aucun changement ETL nécessaire : `bilan.js` consomme
+directement ce champ existant, sans dupliquer les indicateurs SN de la page de garde (demande
+explicite du PIROI Center).
+
+Carte "Fiche pays" ajoutée à l'onglet Bilan 2026 de chaque zone territoriale, sous les 3 cartes
+existantes : PIB, RNB par habitant, taux de pauvreté, espérance de vie, mortalité infantile
+(-5 ans), taux d'alphabétisation, population urbaine, mortalité maternelle — chaque valeur avec
+son année de référence (jamais la même pour tous les champs, même logique que les fiches SN).
+Deux cas honnêtes plutôt que masqués : La Réunion/Mayotte (pas de Société nationale distincte,
+donc pas de contexte IFRC séparé) et la vue Régionale (pas de fiche pays unique possible pour un
+agrégat de 8 territoires — message invitant à sélectionner un territoire).
+
+Testé en navigateur : chiffres Madagascar croisés avec `national_societies_summary.json`
+(PIB 15,3 Md$/2022, RNB/hab 510 $/2022, pauvreté 70,7 %/2012, espérance de vie 64,5 ans/2021,
+mortalité infantile 66 ‰/2021, alphabétisation 77,5 %/2022, population urbaine 39,9 %/2022,
+mortalité maternelle 392/100 000/2020 — exact), message Réunion/Régional vérifiés, aucune erreur
+console.
+
+### Refonte visuelle : pictogrammes, charte CRF, transparence, animations
+
+- **Pictogrammes par type d'aléa** : `dashboard/js/hazard-icons.js` (nouveau) — 12 icônes ligne
+  SVG inline (une par catégorie de `hazard_types.json`), fonction `hazardBadge(category)`
+  combinant icône + couleur catégorielle existante sur un fond teinté transparent (16% d'opacité).
+  Remplace l'ancien simple point de couleur plein (`legend-swatch`) partout où une catégorie
+  d'aléa est affichée : popup carte, légende carte, filtres de la liste, cellule "type d'aléa"
+  du tableau, en-tête de la fiche détail, répartition par type dans le Bilan. La couleur
+  catégorielle elle-même (validée CVD-safe par le skill dataviz) n'est pas modifiée — le
+  pictogramme est un renfort visuel supplémentaire, jamais le seul identifiant.
+- **Typographie CRF** : Poppins (titres, police institutionnelle de la charte, chargée depuis
+  Google Fonts) et Lato (corps de texte, une des polices "rationnelles" de la charte) sur les
+  4 pages, via les variables `--font-display`/`--font-body`.
+- **Couleurs secondaires CRF sur les graphiques non catégoriels** : bleu `#003956` (p.1841 de la
+  charte) appliqué aux graphiques de comptage simple (tendance annuelle, saisonnalité
+  cyclonique) via `--chart-accent`, avec une variante plus claire (`#5fa8dd`) en mode sombre où
+  le bleu foncé se fondrait dans le fond. La palette catégorielle des aléas n'est pas touchée —
+  toujours indépendante et validée séparément.
+- **Transparence** : en-tête, légende de la carte et popups Leaflet passés en fond translucide
+  avec flou (`backdrop-filter: blur()`) plutôt qu'en fond opaque plein — effet "verre dépoli"
+  cohérent en clair et en sombre.
+- **Animations** : apparition en fondu (`fadeInUp`) au changement d'onglet zone/section sur
+  `bilan.html` et au chargement de la fiche détail, survol avec léger soulèvement (`translateY`
+  + ombre) sur les cartes (graphiques, catastrophe, société nationale), transitions de couleur/
+  bordure sur la navigation, les onglets, les filtres et les lignes du tableau. Respecte
+  `prefers-reduced-motion: reduce` (durées ramenées à ~0 pour les utilisateurs qui le demandent).
+
+Testé en navigateur sur les 4 pages : aucune régression sur les filtres, le tri, les graphiques
+ou les popups existants ; polices et couleur d'accent des graphiques vérifiées par style calculé
+en mode clair (`#003956`) et sombre (`#5fa8dd`) ; pictogrammes vérifiés (11-12 badges par page
+selon le contenu, SVG bien rendu, couleur/fond teinté corrects) ; animation de changement d'onglet
+vérifiée sur `bilan.html` (classe `fade-in` et `animationName: fadeInUp` confirmés après clic) ;
+aucune erreur console sur aucune des 4 pages.

@@ -109,7 +109,7 @@ const STATUS_LABELS = { past: "Terminée", ongoing: "En cours", alert: "Alerte" 
     for (const category of allCategories) {
       const label = document.createElement("label");
       label.className = "territory-chip";
-      label.innerHTML = `<input type="checkbox" class="category-checkbox" value="${escapeHTMLList(category)}" checked/> <span class="legend-swatch" style="background:${hazardColor(category)}"></span> ${escapeHTMLList(category)}`;
+      label.innerHTML = `<input type="checkbox" class="category-checkbox" value="${escapeHTMLList(category)}" checked/> ${hazardBadge(category, 18)} ${escapeHTMLList(category)}`;
       label.querySelector("input").addEventListener("change", (event) => {
         if (event.target.checked) state.categories.add(category);
         else state.categories.delete(category);
@@ -234,7 +234,7 @@ const STATUS_LABELS = { past: "Terminée", ongoing: "En cours", alert: "Alerte" 
     return `
       <tr>
         <td><a class="disaster-link" href="disaster.html?id=${encodeURIComponent(d.id)}">${escapeHTMLList(d.name)}</a></td>
-        <td><span class="legend-swatch" style="background:${hazardColor(d.hazard_category)}"></span> ${escapeHTMLList(d.hazard_category)}</td>
+        <td>${hazardBadge(d.hazard_category, 18)} ${escapeHTMLList(d.hazard_category)}</td>
         <td>${escapeHTMLList(territoryNames)}</td>
         <td class="table-date">${date}</td>
         <td>${escapeHTMLList(statusLabel)}</td>

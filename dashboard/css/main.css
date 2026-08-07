@@ -1,6 +1,7 @@
 :root {
   color-scheme: light;
   --surface-1: #fcfcfb;
+  --surface-1-translucent: rgba(252, 252, 251, 0.82);
   --page-plane: #f9f9f7;
   --text-primary: #0b0b0b;
   --text-secondary: #52514e;
@@ -13,29 +14,68 @@
      d'aléas, qui suivent leur propre palette catégorielle validée CVD-safe. */
   --crf-red: #e30613;
   --crf-red-tint: rgba(227, 6, 19, 0.08);
+  /* Bleu et gris secondaires de la charte (p.1841-1843) — réservés aux graphiques non
+     catégoriels (comptages simples : tendance annuelle, saisonnalité, Mpox) pour ancrer
+     l'identité de marque sans jamais toucher à la palette catégorielle des aléas. */
+  --crf-blue: #003956;
+  --crf-grey: #667385;
+  --chart-accent: #003956;
+  --font-display: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Lato", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:where(:not([data-theme="light"])) {
     color-scheme: dark;
     --surface-1: #1a1a19;
+    --surface-1-translucent: rgba(26, 26, 25, 0.78);
     --page-plane: #0d0d0d;
     --text-primary: #ffffff;
     --text-secondary: #c3c2b7;
     --text-muted: #898781;
     --gridline: #2c2c2a;
     --border: rgba(255, 255, 255, 0.1);
+    /* Variante plus claire en mode sombre : #003956 se fond dans un fond quasi noir. */
+    --chart-accent: #5fa8dd;
   }
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
   --surface-1: #1a1a19;
+  --surface-1-translucent: rgba(26, 26, 25, 0.78);
   --page-plane: #0d0d0d;
   --text-primary: #ffffff;
   --text-secondary: #c3c2b7;
   --text-muted: #898781;
   --gridline: #2c2c2a;
   --border: rgba(255, 255, 255, 0.1);
+  --chart-accent: #5fa8dd;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.35s ease both;
 }
 
 * {
@@ -54,16 +94,27 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: var(--font-body);
   background: var(--page-plane);
   color: var(--text-primary);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
 }
 
 .app-header {
   padding: 20px 28px 12px;
   border-bottom: 1px solid var(--border);
   border-top: 3px solid var(--crf-red);
-  background: var(--surface-1);
+  background: var(--surface-1-translucent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1001;
 }
 
 .app-header-top {
@@ -100,6 +151,7 @@ body {
   font-size: 0.85rem;
   color: var(--text-secondary);
   text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .app-nav-link:hover {
@@ -139,6 +191,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  transition: background-color 0.15s ease;
+}
+
+.stat-tile:hover {
+  background: var(--page-plane);
 }
 
 .stat-value {
@@ -170,7 +227,9 @@ body {
   top: 16px;
   right: 16px;
   z-index: 1000;
-  background: var(--surface-1);
+  background: var(--surface-1-translucent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 12px 14px;
@@ -199,6 +258,23 @@ body {
   height: 10px;
   border-radius: 50%;
   flex-shrink: 0;
+}
+
+.hazard-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--hazard-tint);
+  color: var(--hazard-color);
+  transition: transform 0.15s ease;
+  vertical-align: middle;
+}
+
+.legend-row:hover .hazard-badge,
+.territory-chip:hover .hazard-badge {
+  transform: scale(1.1);
 }
 
 .legend-count {
@@ -238,6 +314,12 @@ body {
 
 .territory-marker {
   position: relative;
+  transition: transform 0.15s ease;
+}
+
+.territory-marker:hover {
+  transform: scale(1.08);
+  z-index: 10000 !important;
 }
 
 .territory-marker-count {
@@ -253,6 +335,11 @@ body {
   font-size: 0.82rem;
   border: 2px solid rgba(255, 255, 255, 0.9);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+  transition: box-shadow 0.15s ease;
+}
+
+.territory-marker:hover .territory-marker-count {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
 }
 
 .territory-marker .response-badge {
@@ -304,6 +391,21 @@ body {
 
 #map {
   background: var(--page-plane);
+}
+
+.leaflet-popup-content-wrapper {
+  background: var(--surface-1-translucent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--text-primary);
+}
+
+.leaflet-popup-tip {
+  background: var(--surface-1);
+}
+
+.leaflet-popup {
+  animation: fadeInUp 0.2s ease both;
 }
 
 .filter-bar {
@@ -363,6 +465,12 @@ body {
   border-radius: 999px;
   cursor: pointer;
   white-space: nowrap;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.territory-chip:hover {
+  border-color: var(--crf-red);
+  background: var(--crf-red-tint);
 }
 
 .territory-chip input {
@@ -385,6 +493,7 @@ body {
   color: var(--text-secondary);
   font: inherit;
   cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 .filter-reset:hover {
@@ -399,6 +508,7 @@ input[type="checkbox"] {
 .legend-row[role="button"] {
   cursor: pointer;
   border-radius: 4px;
+  transition: background-color 0.15s ease, opacity 0.15s ease;
 }
 
 .legend-row[role="button"]:hover {
@@ -421,6 +531,12 @@ input[type="checkbox"] {
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 16px 18px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.chart-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .chart-card--wide {
@@ -454,6 +570,12 @@ input[type="checkbox"] {
   border: 1px solid var(--border);
   border-radius: 6px;
   padding: 10px 12px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.ns-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .ns-card h3 {
@@ -526,6 +648,10 @@ input[type="checkbox"] {
   background: var(--surface-1);
 }
 
+.disasters-table th {
+  transition: color 0.15s ease;
+}
+
 .disasters-table th:hover {
   color: var(--crf-red);
 }
@@ -546,6 +672,7 @@ input[type="checkbox"] {
 
 .disasters-table tbody tr {
   border-bottom: 1px solid var(--gridline);
+  transition: background-color 0.12s ease;
 }
 
 .disasters-table tbody tr:hover {
@@ -583,6 +710,7 @@ input[type="checkbox"] {
   color: var(--text-secondary);
   font-size: 0.85rem;
   text-decoration: none;
+  transition: color 0.15s ease;
 }
 
 .back-link:hover {
@@ -593,11 +721,6 @@ input[type="checkbox"] {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-.disaster-header .legend-swatch {
-  width: 14px;
-  height: 14px;
 }
 
 .disaster-header h2 {
@@ -617,6 +740,12 @@ input[type="checkbox"] {
   border-radius: 8px;
   padding: 16px 18px;
   margin-bottom: 16px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.disaster-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .disaster-card h3 {
@@ -673,6 +802,7 @@ input[type="checkbox"] {
   color: var(--crf-red);
   font-weight: 600;
   text-decoration: none;
+  transition: opacity 0.15s ease;
 }
 
 .disaster-link:hover {
@@ -697,6 +827,11 @@ input[type="checkbox"] {
   font: inherit;
   font-size: 0.82rem;
   cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.zone-tab:hover {
+  transform: translateY(-1px);
 }
 
 .zone-tab:hover {
@@ -727,6 +862,7 @@ input[type="checkbox"] {
   font: inherit;
   font-size: 0.88rem;
   cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 .section-tab:hover {

@@ -197,7 +197,7 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
         const date = d.date_start ? d.date_start.slice(0, 10) : "?";
         const responseMark = d.piroi_response ? '<span class="table-response-badge" title="Réponse PIROI">✓</span> ' : "";
         return `<li>
-          <span class="legend-swatch" style="background:${hazardColor(d.hazard_category)}"></span>
+          ${hazardBadge(d.hazard_category, 18)}
           <a href="disaster.html?id=${encodeURIComponent(d.id)}">${escapeHTML(d.name)}</a>
           <span class="popup-list-date">${date}</span> ${responseMark}
         </li>`;
@@ -243,7 +243,7 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
         const isHidden = state.hiddenCategories.has(category);
         return `
         <div class="legend-row${isHidden ? " legend-row--hidden" : ""}" data-category="${escapeHTML(category)}" role="button" tabindex="0">
-          <span class="legend-swatch" style="background:${hazardColor(category)}"></span>
+          ${hazardBadge(category, 20)}
           <span>${escapeHTML(category)}</span>
           <span class="legend-count">${formatNumber(countsByCategory[category] || 0)}</span>
         </div>`;

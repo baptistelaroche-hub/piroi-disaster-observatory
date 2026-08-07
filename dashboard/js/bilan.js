@@ -90,11 +90,12 @@ const ZONE_ORDER = ["regional", "mdg", "moz", "tza", "syc", "mus", "com", "reu",
     return;
   }
 
-  const { disasters, piroiOperations, territories } = data;
+  const { disasters, piroiOperations, territories, nationalSocietiesSummary } = data;
   // "reliefweb" = catastrophes ReliefWeb ; "piroi" = catastrophes synthétiques (opérations PIROI
   // sans catastrophe internationale correspondante) — mêmes deux sources que la carte/liste.
   const displayDisasters = disasters.filter((d) => d.source === "reliefweb" || d.source === "piroi");
   const piroiIso3List = territories.map((t) => t.iso3);
+  const nsSummaryByIso3 = new Map(nationalSocietiesSummary.map((t) => [t.iso3, t]));
 
   const params = new URLSearchParams(window.location.search);
   const state = {
@@ -149,6 +150,12 @@ const ZONE_ORDER = ["regional", "mdg", "moz", "tza", "syc", "mus", "com", "reu",
     if (state.section === "bilan") renderBilan(container);
     else if (state.section === "sanitaire") renderSanitaire(container);
     else renderMeteo(container);
+
+    // Relance l'animation d'entrée à chaque changement de zone/onglet (retrait puis réajout de
+    // la classe pour forcer le navigateur à rejouer le keyframe).
+    container.classList.remove("fade-in");
+    void container.offsetWidth;
+    container.classList.add("fade-in");
   }
 
   // --- Bilan 2026 ---
@@ -199,7 +206,7 @@ const ZONE_ORDER = ["regional", "mdg", "moz", "tza", "syc", "mus", "com", "reu",
       .sort((a, b) => b[1] - a[1])
       .map(
         ([cat, n]) =>
-          `<li><span class="legend-swatch" style="background:${hazardColor(cat)}"></span> ${escapeHTML(cat)}<span class="popup-list-date">${n}</span></li>`
+          `<li>${hazardBadge(cat, 18)} ${escapeHTML(cat)}<span class="popup-list-date">${n}</span></li>`
       )
       .join("");
 
@@ -236,7 +243,51 @@ const ZONE_ORDER = ["regional", "mdg", "moz", "tza", "syc", "mus", "com", "reu",
           </dl>
         </div>
       </div>
+      ${renderCountryCard()}
     `;
+  }
+
+  // --- Fiche pays (indicateurs de contexte IFRC) ---
+
+  function renderCountryCard() {
+    const zone = ZONE_RESOURCES[state.zone];
+
+    if (state.zone === "regional") {
+      return `
+        <div class="disaster-card">
+          <h3>Fiche pays</h3>
+          <p class="chart-subtitle">Sélectionnez un territoire pour afficher sa fiche pays (indicateurs IFRC).</p>
+        </div>`;
+    }
+
+    const ns = nsSummaryByIso3.get(state.zone);
+    if (!ns) {
+      return `
+        <div class="disaster-card">
+          <h3>Fiche pays</h3>
+          <p class="chart-subtitle">Pas de Société nationale distincte pour ${escapeHTML(zone.name)} — rattachée à la Croix-Rouge française, donc pas de données pays IFRC séparées pour ce territoire.</p>
+        </div>`;
+    }
+
+    const c = ns.context;
+    const fmtEntry = (entry, formatter) => (entry.value == null ? "—" : `${formatter(entry.value)} <span class="detail-tag">(${entry.year})</span>`);
+    const pct = (v) => `${v.toLocaleString("fr-FR", { maximumFractionDigits: 1 })} %`;
+
+    return `
+      <div class="disaster-card">
+        <h3>Fiche pays — ${escapeHTML(zone.name)}</h3>
+        <dl class="detail-stats">
+          <dt>PIB</dt><dd>${fmtEntry(c.gdp, (v) => `${(v / 1e9).toLocaleString("fr-FR", { maximumFractionDigits: 1, minimumFractionDigits: 1 })} Md$`)}</dd>
+          <dt>RNB par habitant</dt><dd>${fmtEntry(c.gni_per_capita, (v) => `${Math.round(v).toLocaleString("fr-FR")} $/hab`)}</dd>
+          <dt>Taux de pauvreté</dt><dd>${fmtEntry(c.poverty_rate, pct)}</dd>
+          <dt>Espérance de vie</dt><dd>${fmtEntry(c.life_expectancy, (v) => `${v.toLocaleString("fr-FR", { maximumFractionDigits: 1 })} ans`)}</dd>
+          <dt>Mortalité infantile (-5 ans)</dt><dd>${fmtEntry(c.child_mortality_rate, (v) => `${v.toLocaleString("fr-FR", { maximumFractionDigits: 1 })} ‰`)}</dd>
+          <dt>Taux d'alphabétisation</dt><dd>${fmtEntry(c.literacy_rate, pct)}</dd>
+          <dt>Population urbaine</dt><dd>${fmtEntry(c.urban_population_pct, pct)}</dd>
+          <dt>Mortalité maternelle</dt><dd>${fmtEntry(c.maternal_mortality_rate, (v) => `${v.toLocaleString("fr-FR", { maximumFractionDigits: 1 })} / 100 000 naiss.`)}</dd>
+        </dl>
+        <p class="chart-subtitle">Source : IFRC (FDRS) — dernière valeur connue par indicateur, année de référence entre parenthèses (jamais la même pour tous : le PIB peut dater de 2022, le taux de pauvreté de 2012).</p>
+      </div>`;
   }
 
   // --- Sanitaire ---
@@ -309,6 +360,10 @@ const ZONE_ORDER = ["regional", "mdg", "moz", "tza", "syc", "mus", "com", "reu",
       }
       const months = [...byMonth.keys()].sort();
 
+      const font = { family: "'Lato', system-ui, -apple-system, 'Segoe UI', sans-serif" };
+      const textColor = getComputedStyle(document.body).getPropertyValue("--text-secondary").trim() || "#52514e";
+      const gridColor = getComputedStyle(document.body).getPropertyValue("--gridline").trim() || "#e1e0d9";
+
       new Chart(canvas, {
         type: "bar",
         data: {
@@ -319,7 +374,10 @@ const ZONE_ORDER = ["regional", "mdg", "moz", "tza", "syc", "mus", "com", "reu",
           responsive: true,
           maintainAspectRatio: false,
           plugins: { legend: { display: false } },
-          scales: { x: { grid: { display: false } }, y: { beginAtZero: true, ticks: { precision: 0 } } },
+          scales: {
+            x: { ticks: { color: textColor, font }, grid: { display: false } },
+            y: { ticks: { color: textColor, font, precision: 0 }, grid: { color: gridColor, drawTicks: false }, beginAtZero: true },
+          },
         },
       });
     } catch (err) {

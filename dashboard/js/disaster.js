@@ -31,6 +31,7 @@ const CYCLONE_TRACKS_PATH_DETAIL = "../data/clean/cyclone_tracks.json";
 
   document.title = `${disaster.name} — PIROI Disaster Observatory`;
   container.innerHTML = renderDisaster(disaster, territoryByIso3, operationById);
+  container.classList.add("fade-in");
 
   if (disaster.source === "ibtracs") {
     loadTrackMap(disaster);
@@ -46,7 +47,7 @@ const CYCLONE_TRACKS_PATH_DETAIL = "../data/clean/cyclone_tracks.json";
 
     return `
       <div class="disaster-header">
-        <span class="legend-swatch" style="background:${hazardColor(d.hazard_category)}"></span>
+        ${hazardBadge(d.hazard_category, 30)}
         <h2>${escapeHTML(d.name)}</h2>
       </div>
       <p class="disaster-meta">${escapeHTML(d.hazard_category)} · ${escapeHTML(territoryNames)} · ${dateStart} → ${dateEnd} · ${escapeHTML(statusLabel)}</p>

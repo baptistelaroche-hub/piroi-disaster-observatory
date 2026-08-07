@@ -48,7 +48,9 @@ IFRC n'a pas de workflow automatique (voir section IFRC ci-dessous) — mise à 
   partir des liens `cyclone_name` pour ne pas propager l'incertitude du repli dans la table
   catastrophes. Pays hors zone PIROI exclus (Zimbabwe, Haïti, RDC, régions "OI"...).
 
-Regénérer : `python etl/clean/build_disasters.py && python etl/clean/build_national_societies.py && python etl/clean/build_cyclone_tracks.py && python etl/clean/build_piroi_operations.py`
+Regénérer : `python etl/clean/build_disasters.py && python etl/clean/build_national_societies.py && python etl/clean/build_cyclone_tracks.py && python etl/clean/build_piroi_operations.py && python etl/clean/build_emdat_links.py`
+(`build_disasters.py` en premier : les deux scripts suivants enrichissent `disasters.json` en
+place et doivent tourner après lui, dans cet ordre.)
 
 Mise à jour manuelle (comme IFRC, pas d'API) : remplacer
 `etl/manual-drops/piroi_operations_export.csv` par un nouvel export du Sheet de capitalisation
@@ -255,6 +257,39 @@ de données.
   champ `_D_Tot`, plus rarement renseigné mais présent sur 4 des 6 territoires, est le bon choix).
   WASH retiré (non demandé). Testé : fiche Madagascar validée avec ses 8 valeurs réelles.
 
-À venir : intégration EM-DAT (rattachement GLIDE + repli nom/pays/année), page détail par
-catastrophe, refonte de l'interaction carte (clic pays → 5 derniers aléas, façon
-reliefweb.int/disasters).
+### Intégration EM-DAT
+
+Source manuelle (comme IFRC et PIROI operations) : export personnalisé depuis
+[public.emdat.be](https://public.emdat.be), déposé dans `etl/manual-drops/emdat_custom_request.xlsx`
+(293 catastrophes, 6 pays — Comores, Madagascar, Maurice, Mozambique, Seychelles, Tanzanie ;
+pas de Réunion/Mayotte, EM-DAT les rattache à la France).
+
+- `etl/ingest_emdat.py` → `data/raw/emdat_raw.json` (toutes colonnes conservées, dates
+  composées depuis année/mois/jour, codes GLIDE extraits de "External IDs").
+- `etl/clean/build_emdat_links.py` rattache chaque ligne EM-DAT à une entrée de `disasters.json`
+  (ReliefWeb **et** IBTrACS — plusieurs cyclones nommés comme Alvaro ou Belna n'existent que côté
+  IBTrACS, pas ReliefWeb, il fallait donc chercher dans les deux). Deux niveaux :
+  - **glide** (88 rattachements) : le GLIDE ReliefWeb (`glide`, champ ajouté — 82% de
+    couverture) recoupe un GLIDE EM-DAT pour le même pays. Fiable.
+  - **name** (28 rattachements) : repli par mot-clé du nom d'évènement dans le nom de la
+    catastrophe, même pays, année à ±1 an. Pas de repli "pays+année" seul comme pour les
+    opérations PIROI : on enrichit des chiffres officiels directement sur l'enregistrement
+    canonique, mieux vaut ne rien rattacher qu'un mauvais rattachement.
+  - 116/293 catastrophes EM-DAT rattachées au total ; les 177 non rattachées sont
+    essentiellement des inondations/sécheresses/épidémies sans nom distinctif (pas de signal
+    fiable pour les recouper).
+  - Une catastrophe multi-pays (ex: cyclone Chido) reçoit un enregistrement EM-DAT par pays
+    touché (`disasters[].emdat` est une liste), pas un total agrégé — pour ne pas perdre le
+    détail par pays.
+
+Validé sur plusieurs cas connus (Freddy : 3 pays rattachés par nom ; Chido : 3 pays rattachés
+par glide ; Idai : Mozambique 603 morts / Madagascar 3 morts, cohérent avec les faits réels ;
+Alvaro/Belna/Belal/Fame/Fari/Gamède/Izilda/Eliakim/Dumako, tous IBTrACS-only, correctement
+rattachés par nom).
+
+Regénérer (ordre important — chaque script mutant `disasters.json` doit tourner après
+`build_disasters.py`) :
+`python etl/clean/build_disasters.py && python etl/clean/build_piroi_operations.py && python etl/clean/build_emdat_links.py`
+
+À venir : page détail par catastrophe (infos liste.html + données EM-DAT), refonte de
+l'interaction carte (clic pays → 5 derniers aléas, façon reliefweb.int/disasters).

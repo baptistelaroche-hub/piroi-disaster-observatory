@@ -404,8 +404,13 @@ h3 {
   background: var(--surface-1);
 }
 
-.leaflet-popup {
-  animation: fadeInUp 0.2s ease both;
+/* L'animation d'entrée ne doit JAMAIS toucher .leaflet-popup lui-même : Leaflet utilise
+   transform (translate3d) sur cet élément pour le positionner au-dessus du marqueur, et une
+   animation CSS sur la même propriété écrase cette position (popup rendue à des centaines de
+   pixels du marqueur cliqué). On l'applique donc uniquement au contenu interne, qui ne porte
+   aucune transform de positionnement. */
+.leaflet-popup-content-wrapper {
+  animation: fadeInUp 0.15s ease both;
 }
 
 .filter-bar {

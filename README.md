@@ -329,3 +329,36 @@ Testé en navigateur : 8 marqueurs par défaut, popup Madagascar (64 catastrophe
 récentes correctement triées), lien "Voir tout" vérifié en croisant avec `liste.html?territory=mdg`
 (64 catastrophes des deux côtés, cohérent), disparition des marqueurs sans catastrophe sur une
 période restreinte (2026 seul → 3 territoires), reset fonctionnel, aucune erreur console.
+
+## Mise à jour du 07/08/2026 (retours PIROI Center)
+
+**Fiches Sociétés nationales** : retrait de Population, Taux de pauvreté, Population urbaine,
+Catastrophes liées et Atteints — risque canicule (peu de données, jamais renseigné sur la
+majorité des territoires). Libellés précisés sur les 3 indicateurs "reach" restants : "Nb de
+personnes formées aux premiers secours", "Nb personnes atteintes — programmes de réduction des
+risques", "Nb personnes atteintes — réponse aux risques".
+
+**Opérations PIROI non rattachées — catastrophes synthétiques.** Signalé par le PIROI Center :
+des réponses réelles (Chikungunya La Réunion/Mayotte 2025, inondations Comores 2022/2024, dengue
+Maurice 2024...) étaient invisibles partout dans le dashboard. Cause : 18 des 79 opérations
+PIROI n'avaient aucune catastrophe ReliefWeb/IBTrACS correspondante (petites crises jamais
+couvertes par ces sources internationales), et le dashboard n'affichait la réponse PIROI que
+rattachée à une catastrophe existante.
+
+Décision (demande explicite, pas d'implémentation silencieuse) : ces 18 opérations obtiennent
+chacune leur propre entrée dans `disasters.json` (`source: "piroi"`), au lieu d'une page séparée
+envisagée un temps puis écartée — le PIROI Center voulait qu'elles soient traitées comme des
+catastrophes à part entière, visibles sur la carte et dans la liste comme n'importe quelle autre.
+`etl/clean/build_piroi_operations.py` construit ces entrées (nom généré depuis territoire +
+intitulé + date, catégorie d'aléa déjà calculée sur l'opération, description = détail/commentaire
+de l'opération) et les ajoute à `disasters.json` avant l'écriture. `map.js`/`list.js` élargis
+pour inclure `source === "piroi"` en plus de `"reliefweb"` (variable renommée
+`reliefwebDisasters` → `displayDisasters`, plus exacte). Bonus : ces nouvelles entrées entrent
+aussi dans le pool de candidats EM-DAT (`build_emdat_links.py` ne filtre pas par source) — le
+taux de rattachement EM-DAT est passé de 116 à 119/293.
+
+Testé en navigateur : 150 catastrophes au total (132 + 18), les 4 exemples cités par le PIROI
+Center retrouvés (`piroi:79` La Réunion Chikungunya 2025-02, `piroi:80` Mayotte Chikungunya
+2025-04, `piroi:71` Comores Inondation 2024-02, `piroi:70` Maurice Dengue 2024-02), popup carte
+et fiche détail vérifiées sur `piroi:79` (bénéficiaires, budget, stocks, description tous
+corrects), aucune erreur console.

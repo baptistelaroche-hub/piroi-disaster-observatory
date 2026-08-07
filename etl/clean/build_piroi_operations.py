@@ -25,6 +25,13 @@ disasters.json est enrichi de `piroi_response` (bool) et `piroi_operation_ids` (
 uniquement à partir des liens Tier 1, pour ne pas propager l'incertitude du Tier 2 dans la
 table catastrophes elle-même (le Tier 2 reste consultable depuis piroi_operations.json).
 
+Catastrophes synthétiques (source="piroi") : les opérations PIROI sans AUCUNE catastrophe
+ReliefWeb/IBTrACS rattachée (ex: petites crises sanitaires ou inondations locales jamais
+couvertes par ces sources internationales — Chikungunya à La Réunion/Mayotte 2025, inondations
+aux Comores 2022/2024, dengue à Maurice 2024...) créent leur propre entrée dans disasters.json
+plutôt que de rester invisibles partout dans le dashboard. Décision PIROI Center du 07/08/2026 :
+aucune opération PIROI ne doit être perdue faute de rattachement.
+
 Usage:
     python etl/clean/build_piroi_operations.py
 """
@@ -233,6 +240,40 @@ def find_linked_disasters(op: dict, disasters: list[dict]) -> list[dict]:
     ]
 
 
+def build_synthetic_disaster(op: dict, territory_names: dict[str, str]) -> dict:
+    """Construit une catastrophe (source='piroi') pour une opération sans aucun rattachement."""
+    territory_name = territory_names.get(op["iso3"], op["iso3"])
+    title = op["title"] or op["disaster_type_raw"] or "Opération PIROI"
+    date_label = op["year_month"] or (str(op["year"]) if op["year"] else None)
+    name = f"{territory_name}: {title}" + (f" - {date_label}" if date_label else "")
+
+    if op["year_month"]:
+        date_start = f"{op['year_month']}-01"
+    elif op["year"]:
+        date_start = f"{op['year']}-01-01"
+    else:
+        date_start = None
+
+    return {
+        "id": f"piroi:{op['id'].split(':', 1)[1]}",
+        "source": "piroi",
+        "name": name,
+        "hazard_category": op["hazard_category"],
+        "iso3": [op["iso3"]],
+        "primary_iso3": op["iso3"],
+        "status": None,
+        "glide": None,
+        "date_start": date_start,
+        "date_end": date_start,
+        "description": op.get("details") or op.get("comments"),
+        "url": None,
+        "wind_max_kts": None,
+        "pressure_min_mb": None,
+        "territories_piroi_approches": [op["iso3"]],
+        "piroi_operation_ids": [op["id"]],
+    }
+
+
 def build_operations(df: pd.DataFrame) -> list[dict]:
     operations = []
     seen_ids: set[str] = set()
@@ -299,9 +340,14 @@ def main() -> int:
 
     disasters = json.loads(DISASTERS_PATH.read_text(encoding="utf-8"))
     disasters_by_id = {d["id"]: d for d in disasters}
+    territory_names = {
+        t["iso3"]: t["name"]
+        for t in json.loads((DATA_DIR / "reference" / "territories.json").read_text(encoding="utf-8"))
+    }
 
     tier1_count = 0
     tier2_count = 0
+    synthetic_count = 0
     for op in operations:
         linked = find_linked_disasters(op, disasters)
         op["linked_disasters"] = linked
@@ -314,6 +360,14 @@ def main() -> int:
                     d["piroi_operation_ids"].append(op["id"])
         elif linked:
             tier2_count += 1
+        else:
+            synthetic = build_synthetic_disaster(op, territory_names)
+            disasters.append(synthetic)
+            disasters_by_id[synthetic["id"]] = synthetic
+            op["linked_disasters"] = [
+                {"id": synthetic["id"], "source": "piroi", "name": synthetic["name"], "match_type": "synthetic"}
+            ]
+            synthetic_count += 1
 
     for d in disasters:
         d["piroi_response"] = bool(d.get("piroi_operation_ids"))
@@ -323,13 +377,12 @@ def main() -> int:
     OPERATIONS_OUTPUT.write_text(json.dumps(operations, ensure_ascii=False, indent=2), encoding="utf-8")
     DISASTERS_PATH.write_text(json.dumps(disasters, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    unmatched = sum(1 for op in operations if not op["linked_disasters"])
     print(
         f"OK: {len(operations)} opérations écrites dans {OPERATIONS_OUTPUT}\n"
         f"  Tier 1 (nom de cyclone): {tier1_count} | Tier 2 (pays+année): {tier2_count} | "
-        f"sans correspondance: {unmatched}"
+        f"catastrophes synthétiques créées: {synthetic_count}"
     )
-    print(f"OK: disasters.json enrichi (piroi_response / piroi_operation_ids)")
+    print(f"OK: disasters.json enrichi (piroi_response / piroi_operation_ids + {synthetic_count} entrées source=piroi)")
     return 0
 
 

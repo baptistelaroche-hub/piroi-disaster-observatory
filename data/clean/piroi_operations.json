@@ -166,7 +166,14 @@
     "donors": "-",
     "details": "Soutien logistique à la DD Réunion",
     "comments": null,
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:3",
+        "source": "piroi",
+        "name": "La Réunion: Fournaise - 2002-01",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:4",
@@ -207,7 +214,14 @@
     "donors": "CRF",
     "details": "Envoi d'un kit choléra (2,7 tonnes)\n1 RH : santé",
     "comments": null,
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:4",
+        "source": "piroi",
+        "name": "Comores: Choléra - 2002",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:5",
@@ -382,7 +396,14 @@
     "donors": "CR974, CG974, Ambassade de France aux Comores",
     "details": "Réhabilitation du réseau d’adduction d'eau\n1 RH : watsan",
     "comments": null,
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:7",
+        "source": "piroi",
+        "name": "Comores: île de Mohéli - 2003-06",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:8",
@@ -601,7 +622,14 @@
     "donors": "CG974, DRASS",
     "details": "Soutien logistique à la DD CRF \nApprovisionnement et distribution de 30 000 répulsifs et de  moustiquaires\nSensibilisation à la maladie et soutien psychosocial auprès des personnes démunies (maraudes)",
     "comments": null,
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:12",
+        "source": "piroi",
+        "name": "La Réunion: chikungunya - 2006-01",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:13",
@@ -642,7 +670,14 @@
     "donors": "(Partenariat technique avec le SDIS et VEOLIA)",
     "details": "Traitement d’eau, installation de réservoirs et de rampes de distribution et distribution de jerricans de 15 litres",
     "comments": null,
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:13",
+        "source": "piroi",
+        "name": "La Réunion: quartier de la Bretagne - 2006-02",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:14",
@@ -901,7 +936,14 @@
     "donors": "FICR (DREF), Ambassade de France aux Comores (FSD)",
     "details": "Gestion des 2 principaux Centres de Traitement du Choléra (CTC) de Moroni et de Mitsamiouli, approvisionnement en eau, désinfection, sensibilisation communautaire\n3 RH: 1 watsan, 2 santé",
     "comments": null,
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:18",
+        "source": "piroi",
+        "name": "Comores: Choléra en Grande Comore et à Mohéli - 2007-08",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:19",
@@ -1112,7 +1154,14 @@
     "donors": "FICR",
     "details": "Opération d'urgence suite au krash aérien de la compagnie Yemenia: logistique et soutien psychologique",
     "comments": null,
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:23",
+        "source": "piroi",
+        "name": "Comores: Yemenia - 2009-06",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:25",
@@ -1208,7 +1257,14 @@
     "donors": "FICR (DREF), (mise à disposition de RH DRASS)",
     "details": "Envoi de 30 kits EPI\nCampagnes de sensibilisation\n1 RH : santé",
     "comments": null,
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:26",
+        "source": "piroi",
+        "name": "Madagascar: Chikungunya - 2010-02",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:27",
@@ -1306,7 +1362,14 @@
     "donors": "_",
     "details": "Logistique, distribution et soutien psychologique pour les passagers bloqués à l’aéroport de la Réunion\nCoordination des opérations en lien avec la DT Réunion",
     "comments": null,
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:28",
+        "source": "piroi",
+        "name": "La Réunion: Eyjafjöll - 2010-04",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:29",
@@ -2253,7 +2316,14 @@
     "donors": "IFRC",
     "details": "Envoi d'un RDRT Santé pour répondre à l'épidémie de dengue aux Seychelles",
     "comments": null,
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:46",
+        "source": "piroi",
+        "name": "Seychelles: Epidémie - Dengue - 2016-06",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:47",
@@ -2462,7 +2532,14 @@
     "donors": "/",
     "details": "LAV porte-à-porte, sensibilisaiton gd-pubblic",
     "comments": null,
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:51",
+        "source": "piroi",
+        "name": "La Réunion: Dengue - 2018-07",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:52",
@@ -2931,7 +3008,14 @@
     "donors": "Mairie de Saint-Denis",
     "details": "Mise à disposition de 200 lits picots + couvertures + mobilisation ESV sur place 3 jours\n500 masques et 5L de gel hydro",
     "comments": null,
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:61",
+        "source": "piroi",
+        "name": "La Réunion: Incendie Saint-Denis / Montgaillard - 2021-12",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:62",
@@ -2970,7 +3054,14 @@
     "donors": "ECHO (Crisis Modifier de PF342)",
     "details": "Appui alimentaire, appui wash, matériel d'appui du centre\n5120kg de denrées alimentaires (riz, légumineuses, huile, sel)",
     "comments": "appui à la CRM",
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:62",
+        "source": "piroi",
+        "name": "Madagascar: Prison Mada - 2021-12",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:63",
@@ -3122,7 +3213,14 @@
     "donors": "PF347  (Crismo)",
     "details": "Réponse NFI+CASH\n89 kits outillage, kits cuisine, kits Wash, 900 savons, 2800 déstockés de l’entrepôt de Moroni et transportés vers Anjouan et Mohéli.\n2 staff mobilisés : un coordo op et assist coordo op\n696 ménages",
     "comments": null,
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:65",
+        "source": "piroi",
+        "name": "Comores: Inondation Comores - 2022-04",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:66",
@@ -3386,7 +3484,14 @@
     "donors": "PF347 (Crismo)",
     "details": "- Formation du personnel de la CRMu à la sensibilisation en contexte Dengue et à l’utilisation des Test de Diagnostic Rapide\n- Actions de sensibilisation : 26 000 bénéficiaires dont 600 personnes en sensibilisation renforcées (atelier/échanges directs)\n- Réalisation de Test de Diagnostic Rapide dans les populations vulnérables\n- Distribution de répulsifs aux familles inscrit sur le registre social\n- Donation de 300 moustiquaires au Ministère de la Santé\n\nChiffres finaux : \n1300 repulsifs distribués\r\n745 tests effectués\r\n300 mousticaires distribuées\r\n14650 personnes sensibilisées",
     "comments": "en attente du RF",
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:70",
+        "source": "piroi",
+        "name": "Maurice: Dengue - 2024-02",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:71",
@@ -3427,7 +3532,14 @@
     "donors": "PF347 (Crismo)",
     "details": "Réalisation d’une évaluation approfondie des besoins",
     "comments": "Lancement des activités de réponse +/- en même temps que le démarrage de l'épidémie de choléra. =>Difficulté de mise en oeuvre. \nDécision commune de basculer cette opération Inondations pour des besoins de réponse Choléra. Opé arrêtée le 16/04/2024.\n\nVoir RF Rapport narratif final_Crismo Inondation 2024.docx",
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:71",
+        "source": "piroi",
+        "name": "Comores: Inondation Comores - 2024-02",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:71-2",
@@ -3942,7 +4054,14 @@
     "donors": "Fond l'Oréal pour l'environnement PF366",
     "details": "Formation du personnel CRf. Distribution de 11247 répulsifs et 1300 mosutiquaires1950 personnes sensibilisés. 6 sites Croix-Rouge accueillant des personnes vulnérables protégés par des bornes CO2",
     "comments": null,
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:79",
+        "source": "piroi",
+        "name": "La Réunion: Chikungunya - 2025-02",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:80",
@@ -3983,7 +4102,14 @@
     "donors": "Fond Chido DNOM",
     "details": "Approvisionnement de 5000 répulsifs, appui technique à l'élaboration du plan de réponse. Re-lance du projet SBC Chido",
     "comments": null,
-    "linked_disasters": []
+    "linked_disasters": [
+      {
+        "id": "piroi:80",
+        "source": "piroi",
+        "name": "Mayotte: Chikungunya - 2025-04",
+        "match_type": "synthetic"
+      }
+    ]
   },
   {
     "id": "piroi_op:81",

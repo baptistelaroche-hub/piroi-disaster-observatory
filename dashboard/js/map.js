@@ -13,7 +13,9 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
   }
 
   const { disasters, countryByIso3, piroiIso3, territories, cycloneStats, nationalSocietiesSummary } = data;
-  const reliefwebDisasters = disasters.filter((d) => d.source === "reliefweb");
+  // "reliefweb" = catastrophes ReliefWeb ; "piroi" = catastrophes synthétiques créées pour les
+  // opérations PIROI sans aucune correspondance ReliefWeb/IBTrACS (sinon invisibles partout).
+  const displayDisasters = disasters.filter((d) => d.source === "reliefweb" || d.source === "piroi");
   const ibtracsDisasters = disasters.filter((d) => d.source === "ibtracs");
   const allTerritoryOptions = [...territories, { iso3: SOUTH_AFRICA_ISO3, name: "Afrique du Sud", piroi_region: "Hors zone PIROI" }];
 
@@ -103,7 +105,7 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
   // rattacher qu'à son pays "primaire" ReliefWeb (utile pour un marqueur unique sur la carte,
   // mais sous-représente les territoires rarement primaires comme Mayotte ou La Réunion).
   function applyNonTerritoryFilters() {
-    return reliefwebDisasters.filter((d) => {
+    return displayDisasters.filter((d) => {
       if (state.piroiResponseOnly && !d.piroi_response) return false;
       const year = d.date_start ? Number(d.date_start.slice(0, 4)) : null;
       if (year == null || year < state.yearMin || year > state.yearMax) return false;

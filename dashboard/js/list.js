@@ -15,10 +15,12 @@ const STATUS_LABELS = { past: "Terminée", ongoing: "En cours", alert: "Alerte" 
   }
 
   const { disasters, piroiIso3, territories, operationById } = data;
-  const reliefwebDisasters = disasters.filter((d) => d.source === "reliefweb");
+  // "reliefweb" = catastrophes ReliefWeb ; "piroi" = catastrophes synthétiques créées pour les
+  // opérations PIROI sans aucune correspondance ReliefWeb/IBTrACS (sinon invisibles partout).
+  const displayDisasters = disasters.filter((d) => d.source === "reliefweb" || d.source === "piroi");
   const allTerritoryOptions = [...territories, { iso3: SOUTH_AFRICA_ISO3_LIST, name: "Afrique du Sud", piroi_region: "Hors zone PIROI" }];
   const territoryByIso3 = new Map(allTerritoryOptions.map((t) => [t.iso3, t]));
-  const allCategories = [...new Set(reliefwebDisasters.map((d) => d.hazard_category))];
+  const allCategories = [...new Set(displayDisasters.map((d) => d.hazard_category))];
 
   // Arrivée depuis "Voir tout" sur la carte (popup territoire) : ne cocher que ce territoire-là
   // plutôt que la zone PIROI par défaut.
@@ -161,7 +163,7 @@ const STATUS_LABELS = { past: "Terminée", ongoing: "En cours", alert: "Alerte" 
   }
 
   function applyFilters() {
-    return reliefwebDisasters.filter((d) => {
+    return displayDisasters.filter((d) => {
       if (!state.categories.has(d.hazard_category)) return false;
       if (state.piroiResponseOnly && !d.piroi_response) return false;
       const year = d.date_start ? Number(d.date_start.slice(0, 4)) : null;

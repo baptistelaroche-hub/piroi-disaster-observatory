@@ -39,6 +39,7 @@ async function loadDashboardData() {
     piroiIso3,
     territories,
     operationById,
+    piroiOperations,
     cycloneStats,
     nationalSocietiesSummary: nsSummary.territories,
   };

@@ -142316,5 +142316,530 @@
     "piroi_response": false,
     "piroi_operation_ids": [],
     "emdat": []
+  },
+  {
+    "id": "piroi:3",
+    "source": "piroi",
+    "name": "La Réunion: Fournaise - 2002-01",
+    "hazard_category": "Volcan",
+    "iso3": [
+      "reu"
+    ],
+    "primary_iso3": "reu",
+    "status": null,
+    "glide": null,
+    "date_start": "2002-01-01",
+    "date_end": "2002-01-01",
+    "description": "Soutien logistique à la DD Réunion",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "reu"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:3"
+    ],
+    "piroi_response": true,
+    "emdat": []
+  },
+  {
+    "id": "piroi:4",
+    "source": "piroi",
+    "name": "Comores: Choléra - 2002",
+    "hazard_category": "Crise sanitaire",
+    "iso3": [
+      "com"
+    ],
+    "primary_iso3": "com",
+    "status": null,
+    "glide": null,
+    "date_start": "2002-01-01",
+    "date_end": "2002-01-01",
+    "description": "Envoi d'un kit choléra (2,7 tonnes)\n1 RH : santé",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "com"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:4"
+    ],
+    "piroi_response": true,
+    "emdat": []
+  },
+  {
+    "id": "piroi:7",
+    "source": "piroi",
+    "name": "Comores: île de Mohéli - 2003-06",
+    "hazard_category": "Inondation",
+    "iso3": [
+      "com"
+    ],
+    "primary_iso3": "com",
+    "status": null,
+    "glide": null,
+    "date_start": "2003-06-01",
+    "date_end": "2003-06-01",
+    "description": "Réhabilitation du réseau d’adduction d'eau\n1 RH : watsan",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "com"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:7"
+    ],
+    "piroi_response": true,
+    "emdat": []
+  },
+  {
+    "id": "piroi:12",
+    "source": "piroi",
+    "name": "La Réunion: chikungunya - 2006-01",
+    "hazard_category": "Crise sanitaire",
+    "iso3": [
+      "reu"
+    ],
+    "primary_iso3": "reu",
+    "status": null,
+    "glide": null,
+    "date_start": "2006-01-01",
+    "date_end": "2006-01-01",
+    "description": "Soutien logistique à la DD CRF \nApprovisionnement et distribution de 30 000 répulsifs et de  moustiquaires\nSensibilisation à la maladie et soutien psychosocial auprès des personnes démunies (maraudes)",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "reu"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:12"
+    ],
+    "piroi_response": true,
+    "emdat": []
+  },
+  {
+    "id": "piroi:13",
+    "source": "piroi",
+    "name": "La Réunion: quartier de la Bretagne - 2006-02",
+    "hazard_category": "Inondation",
+    "iso3": [
+      "reu"
+    ],
+    "primary_iso3": "reu",
+    "status": null,
+    "glide": null,
+    "date_start": "2006-02-01",
+    "date_end": "2006-02-01",
+    "description": "Traitement d’eau, installation de réservoirs et de rampes de distribution et distribution de jerricans de 15 litres",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "reu"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:13"
+    ],
+    "piroi_response": true,
+    "emdat": []
+  },
+  {
+    "id": "piroi:18",
+    "source": "piroi",
+    "name": "Comores: Choléra en Grande Comore et à Mohéli - 2007-08",
+    "hazard_category": "Crise sanitaire",
+    "iso3": [
+      "com"
+    ],
+    "primary_iso3": "com",
+    "status": null,
+    "glide": null,
+    "date_start": "2007-08-01",
+    "date_end": "2007-08-01",
+    "description": "Gestion des 2 principaux Centres de Traitement du Choléra (CTC) de Moroni et de Mitsamiouli, approvisionnement en eau, désinfection, sensibilisation communautaire\n3 RH: 1 watsan, 2 santé",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "com"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:18"
+    ],
+    "piroi_response": true,
+    "emdat": [
+      {
+        "disno": "2007-0437-COM",
+        "match_type": "name",
+        "country": "Comoros",
+        "iso3": "com",
+        "start_date": "2007-03-01",
+        "end_date": "2007-09-01",
+        "location": "Moroni, Fombouni, Foumbouni, Ouzioini, Mitsamiouli, Oichili, Mbeni, Mitsoudje (Grande Comore Isl.), Fomboni, Wanani, Nioumachioi (Moheli), Anjouan Isl.",
+        "origin": null,
+        "magnitude": null,
+        "magnitude_scale": null,
+        "total_deaths": 29.0,
+        "no_injured": null,
+        "no_affected": 1490.0,
+        "no_homeless": null,
+        "total_affected": 1490.0,
+        "total_damage_000_usd": null
+      }
+    ]
+  },
+  {
+    "id": "piroi:23",
+    "source": "piroi",
+    "name": "Comores: Yemenia - 2009-06",
+    "hazard_category": "Autre",
+    "iso3": [
+      "com"
+    ],
+    "primary_iso3": "com",
+    "status": null,
+    "glide": null,
+    "date_start": "2009-06-01",
+    "date_end": "2009-06-01",
+    "description": "Opération d'urgence suite au krash aérien de la compagnie Yemenia: logistique et soutien psychologique",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "com"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:23"
+    ],
+    "piroi_response": true,
+    "emdat": []
+  },
+  {
+    "id": "piroi:26",
+    "source": "piroi",
+    "name": "Madagascar: Chikungunya - 2010-02",
+    "hazard_category": "Crise sanitaire",
+    "iso3": [
+      "mdg"
+    ],
+    "primary_iso3": "mdg",
+    "status": null,
+    "glide": null,
+    "date_start": "2010-02-01",
+    "date_end": "2010-02-01",
+    "description": "Envoi de 30 kits EPI\nCampagnes de sensibilisation\n1 RH : santé",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "mdg"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:26"
+    ],
+    "piroi_response": true,
+    "emdat": [
+      {
+        "disno": "2009-0634-MDG",
+        "match_type": "name",
+        "country": "Madagascar",
+        "iso3": "mdg",
+        "start_date": "2009-10-01",
+        "end_date": "2010-02-15",
+        "location": "Mananjary, Irondro",
+        "origin": null,
+        "magnitude": null,
+        "magnitude_scale": "Vaccinated",
+        "total_deaths": null,
+        "no_injured": null,
+        "no_affected": 702.0,
+        "no_homeless": null,
+        "total_affected": 702.0,
+        "total_damage_000_usd": null
+      }
+    ]
+  },
+  {
+    "id": "piroi:28",
+    "source": "piroi",
+    "name": "La Réunion: Eyjafjöll - 2010-04",
+    "hazard_category": "Volcan",
+    "iso3": [
+      "reu"
+    ],
+    "primary_iso3": "reu",
+    "status": null,
+    "glide": null,
+    "date_start": "2010-04-01",
+    "date_end": "2010-04-01",
+    "description": "Logistique, distribution et soutien psychologique pour les passagers bloqués à l’aéroport de la Réunion\nCoordination des opérations en lien avec la DT Réunion",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "reu"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:28"
+    ],
+    "piroi_response": true,
+    "emdat": []
+  },
+  {
+    "id": "piroi:46",
+    "source": "piroi",
+    "name": "Seychelles: Epidémie - Dengue - 2016-06",
+    "hazard_category": "Crise sanitaire",
+    "iso3": [
+      "syc"
+    ],
+    "primary_iso3": "syc",
+    "status": null,
+    "glide": null,
+    "date_start": "2016-06-01",
+    "date_end": "2016-06-01",
+    "description": "Envoi d'un RDRT Santé pour répondre à l'épidémie de dengue aux Seychelles",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "syc"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:46"
+    ],
+    "piroi_response": true,
+    "emdat": [
+      {
+        "disno": "2016-0302-SYC",
+        "match_type": "name",
+        "country": "Seychelles",
+        "iso3": "syc",
+        "start_date": "2016-01-01",
+        "end_date": "2016-07-12",
+        "location": "English river, Anse Royal, Anse Etoile, Beau Vallon, Point La Rue",
+        "origin": null,
+        "magnitude": null,
+        "magnitude_scale": "Vaccinated",
+        "total_deaths": null,
+        "no_injured": 253.0,
+        "no_affected": null,
+        "no_homeless": null,
+        "total_affected": 253.0,
+        "total_damage_000_usd": null
+      }
+    ]
+  },
+  {
+    "id": "piroi:51",
+    "source": "piroi",
+    "name": "La Réunion: Dengue - 2018-07",
+    "hazard_category": "Crise sanitaire",
+    "iso3": [
+      "reu"
+    ],
+    "primary_iso3": "reu",
+    "status": null,
+    "glide": null,
+    "date_start": "2018-07-01",
+    "date_end": "2018-07-01",
+    "description": "LAV porte-à-porte, sensibilisaiton gd-pubblic",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "reu"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:51"
+    ],
+    "piroi_response": true,
+    "emdat": []
+  },
+  {
+    "id": "piroi:61",
+    "source": "piroi",
+    "name": "La Réunion: Incendie Saint-Denis / Montgaillard - 2021-12",
+    "hazard_category": "Incendie",
+    "iso3": [
+      "reu"
+    ],
+    "primary_iso3": "reu",
+    "status": null,
+    "glide": null,
+    "date_start": "2021-12-01",
+    "date_end": "2021-12-01",
+    "description": "Mise à disposition de 200 lits picots + couvertures + mobilisation ESV sur place 3 jours\n500 masques et 5L de gel hydro",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "reu"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:61"
+    ],
+    "piroi_response": true,
+    "emdat": []
+  },
+  {
+    "id": "piroi:62",
+    "source": "piroi",
+    "name": "Madagascar: Prison Mada - 2021-12",
+    "hazard_category": "Sécheresse",
+    "iso3": [
+      "mdg"
+    ],
+    "primary_iso3": "mdg",
+    "status": null,
+    "glide": null,
+    "date_start": "2021-12-01",
+    "date_end": "2021-12-01",
+    "description": "Appui alimentaire, appui wash, matériel d'appui du centre\n5120kg de denrées alimentaires (riz, légumineuses, huile, sel)",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "mdg"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:62"
+    ],
+    "piroi_response": true,
+    "emdat": []
+  },
+  {
+    "id": "piroi:65",
+    "source": "piroi",
+    "name": "Comores: Inondation Comores - 2022-04",
+    "hazard_category": "Inondation",
+    "iso3": [
+      "com"
+    ],
+    "primary_iso3": "com",
+    "status": null,
+    "glide": null,
+    "date_start": "2022-04-01",
+    "date_end": "2022-04-01",
+    "description": "Réponse NFI+CASH\n89 kits outillage, kits cuisine, kits Wash, 900 savons, 2800 déstockés de l’entrepôt de Moroni et transportés vers Anjouan et Mohéli.\n2 staff mobilisés : un coordo op et assist coordo op\n696 ménages",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "com"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:65"
+    ],
+    "piroi_response": true,
+    "emdat": []
+  },
+  {
+    "id": "piroi:70",
+    "source": "piroi",
+    "name": "Maurice: Dengue - 2024-02",
+    "hazard_category": "Crise sanitaire",
+    "iso3": [
+      "mus"
+    ],
+    "primary_iso3": "mus",
+    "status": null,
+    "glide": null,
+    "date_start": "2024-02-01",
+    "date_end": "2024-02-01",
+    "description": "- Formation du personnel de la CRMu à la sensibilisation en contexte Dengue et à l’utilisation des Test de Diagnostic Rapide\n- Actions de sensibilisation : 26 000 bénéficiaires dont 600 personnes en sensibilisation renforcées (atelier/échanges directs)\n- Réalisation de Test de Diagnostic Rapide dans les populations vulnérables\n- Distribution de répulsifs aux familles inscrit sur le registre social\n- Donation de 300 moustiquaires au Ministère de la Santé\n\nChiffres finaux : \n1300 repulsifs distribués\r\n745 tests effectués\r\n300 mousticaires distribuées\r\n14650 personnes sensibilisées",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "mus"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:70"
+    ],
+    "piroi_response": true,
+    "emdat": []
+  },
+  {
+    "id": "piroi:71",
+    "source": "piroi",
+    "name": "Comores: Inondation Comores - 2024-02",
+    "hazard_category": "Inondation",
+    "iso3": [
+      "com"
+    ],
+    "primary_iso3": "com",
+    "status": null,
+    "glide": null,
+    "date_start": "2024-02-01",
+    "date_end": "2024-02-01",
+    "description": "Réalisation d’une évaluation approfondie des besoins",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "com"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:71"
+    ],
+    "piroi_response": true,
+    "emdat": []
+  },
+  {
+    "id": "piroi:79",
+    "source": "piroi",
+    "name": "La Réunion: Chikungunya - 2025-02",
+    "hazard_category": "Crise sanitaire",
+    "iso3": [
+      "reu"
+    ],
+    "primary_iso3": "reu",
+    "status": null,
+    "glide": null,
+    "date_start": "2025-02-01",
+    "date_end": "2025-02-01",
+    "description": "Formation du personnel CRf. Distribution de 11247 répulsifs et 1300 mosutiquaires1950 personnes sensibilisés. 6 sites Croix-Rouge accueillant des personnes vulnérables protégés par des bornes CO2",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "reu"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:79"
+    ],
+    "piroi_response": true,
+    "emdat": []
+  },
+  {
+    "id": "piroi:80",
+    "source": "piroi",
+    "name": "Mayotte: Chikungunya - 2025-04",
+    "hazard_category": "Crise sanitaire",
+    "iso3": [
+      "myt"
+    ],
+    "primary_iso3": "myt",
+    "status": null,
+    "glide": null,
+    "date_start": "2025-04-01",
+    "date_end": "2025-04-01",
+    "description": "Approvisionnement de 5000 répulsifs, appui technique à l'élaboration du plan de réponse. Re-lance du projet SBC Chido",
+    "url": null,
+    "wind_max_kts": null,
+    "pressure_min_mb": null,
+    "territories_piroi_approches": [
+      "myt"
+    ],
+    "piroi_operation_ids": [
+      "piroi_op:80"
+    ],
+    "piroi_response": true,
+    "emdat": []
   }
 ]

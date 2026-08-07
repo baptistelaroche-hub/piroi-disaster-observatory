@@ -293,3 +293,25 @@ Regénérer (ordre important — chaque script mutant `disasters.json` doit tour
 
 À venir : page détail par catastrophe (infos liste.html + données EM-DAT), refonte de
 l'interaction carte (clic pays → 5 derniers aléas, façon reliefweb.int/disasters).
+
+### Troisième page : `disaster.html?id=<id>`
+
+Fiche détail d'une catastrophe : infos de base (nom, catégorie, territoires, dates, statut,
+lien ReliefWeb, description), données cycloniques si IBTrACS (vent max, pression min, mini-carte
+de trajectoire chargée à la demande depuis `cyclone_tracks.json`), réponse PIROI (activités,
+stocks, budget, bénéficiaires — même agrégation que `liste.html`), et données EM-DAT (une entrée
+par pays rattaché, morts/blessés/affectés/sans-abri/dégâts/localisation/origine/magnitude).
+Messages honnêtes si rien n'est rattaché ("Aucune opération PIROI rattachée", "Aucune
+correspondance EM-DAT trouvée") plutôt que de masquer la section.
+
+Accessible depuis le nom cliquable dans `liste.html` et le lien "Voir la fiche" dans les popups
+de la carte (marqueurs de catastrophes et trajectoires cycloniques).
+
+Testé en navigateur : cas multi-pays avec rattachement GLIDE (Chido — les chiffres Mozambique
+120 morts/868 blessés affichés correspondent exactement à ceux cités dans le texte libre
+ReliefWeb, bonne validation croisée), cas IBTrACS-only avec rattachement par nom et trajectoire
+(Alvaro), cas sans aucun rattachement (message honnête affiché), liens depuis la liste et la
+carte (via dé-clusterisation) vérifiés, aucune erreur console.
+
+À venir : refonte de l'interaction carte (clic pays → 5 derniers aléas, façon
+reliefweb.int/disasters).

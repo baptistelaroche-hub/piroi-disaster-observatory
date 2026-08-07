@@ -200,6 +200,7 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
     return `
       <div class="popup-title">${escapeHTML(disaster.name)}</div>
       <div class="popup-meta">${escapeHTML(disaster.hazard_category)} · ${escapeHTML(country.name)} · ${date}</div>
+      <div class="popup-link"><a href="disaster.html?id=${encodeURIComponent(disaster.id)}">Voir la fiche</a></div>
       ${link}
       ${piroiResponseBlock(disaster)}
     `;

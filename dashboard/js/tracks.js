@@ -77,6 +77,7 @@ function trackPopupContent(disaster) {
     <div class="popup-title">${escapeHTMLTracks(disaster.name)}</div>
     <div class="popup-meta">${start} → ${end}</div>
     <div class="popup-meta">Vent max : ${wind} · Pression min : ${pressure}</div>
+    <div class="popup-link"><a href="disaster.html?id=${encodeURIComponent(disaster.id)}">Voir la fiche</a></div>
   `;
 }
 

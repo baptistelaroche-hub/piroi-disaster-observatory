@@ -226,7 +226,7 @@ const STATUS_LABELS = { past: "Terminée", ongoing: "En cours", alert: "Alerte" 
 
     return `
       <tr>
-        <td>${escapeHTMLList(d.name)}</td>
+        <td><a class="disaster-link" href="disaster.html?id=${encodeURIComponent(d.id)}">${escapeHTMLList(d.name)}</a></td>
         <td><span class="legend-swatch" style="background:${hazardColor(d.hazard_category)}"></span> ${escapeHTMLList(d.hazard_category)}</td>
         <td>${escapeHTMLList(territoryNames)}</td>
         <td class="table-date">${date}</td>

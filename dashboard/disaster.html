@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PIROI Disaster Observatory — Fiche catastrophe</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-header-top">
+      <div class="app-header-brand">
+        <img src="assets/piroi-logo.jpg" alt="PIROI Center — Croix-Rouge française" class="app-logo" />
+        <div>
+          <h1>PIROI Disaster Observatory</h1>
+          <p class="app-subtitle">Fiche catastrophe</p>
+        </div>
+      </div>
+      <nav class="app-nav" aria-label="Navigation">
+        <a href="index.html" class="app-nav-link">Carte</a>
+        <a href="liste.html" class="app-nav-link">Liste des catastrophes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="disaster-page" id="disaster-page">
+    <a href="liste.html" class="back-link">← Retour à la liste</a>
+    <div id="disaster-content">Chargement…</div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/hazard-colors.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/disaster.js"></script>
+</body>
+</html>

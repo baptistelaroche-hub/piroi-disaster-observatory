@@ -312,13 +312,17 @@ h3 {
   font-size: 0.85rem;
 }
 
+/* .territory-marker est la className passée à L.divIcon : c'est l'élément que Leaflet
+   repositionne lui-même via transform (translate3d) à chaque pan/zoom. Une transition CSS sur
+   transform à cet endroit fait donc "rattraper" en douceur chaque repositionnement Leaflet au
+   lieu de suivre instantanément — les marqueurs semblaient dériver/se décaler pendant le zoom.
+   Le survol grossissant est donc appliqué à l'enfant (.territory-marker-count), qui ne porte
+   aucune transform de positionnement. */
 .territory-marker {
   position: relative;
-  transition: transform 0.15s ease;
 }
 
 .territory-marker:hover {
-  transform: scale(1.08);
   z-index: 10000 !important;
 }
 
@@ -335,7 +339,11 @@ h3 {
   font-size: 0.82rem;
   border: 2px solid rgba(255, 255, 255, 0.9);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
-  transition: box-shadow 0.15s ease;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.territory-marker:hover .territory-marker-count {
+  transform: scale(1.08);
 }
 
 .territory-marker:hover .territory-marker-count {

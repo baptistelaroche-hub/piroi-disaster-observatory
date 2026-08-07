@@ -149,11 +149,23 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
   }
 
   function initMap() {
-    // Centré sur la zone PIROI (Océan Indien Sud-Ouest), pas une vue mondiale.
-    const leafletMap = L.map("map").setView([-19, 50], 5);
+    // Bassin Sud-Ouest Océan Indien : couvre les 8 territoires PIROI (+ Afrique du Sud en
+    // option) ET l'étendue réelle des trajectoires IBTrACS qui les approchent (calculé sur les
+    // données : lat -59.7 à -0.4, lon 11.3 à 118.9, avec marge). But : ne jamais pouvoir
+    // dézoomer sur une vue mondiale, sans pour autant rogner une trajectoire cyclonique.
+    const zoneBounds = L.latLngBounds([-63, 5], [3, 123]);
+
+    const leafletMap = L.map("map", {
+      maxBounds: zoneBounds,
+      maxBoundsViscosity: 1.0, // limite dure : le glisser-panoramique "rebondit" sur la bordure
+    });
+    leafletMap.setMinZoom(leafletMap.getBoundsZoom(zoneBounds));
+    leafletMap.setView([-19, 50], 5);
+
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "&copy; OpenStreetMap contributors",
       maxZoom: 18,
+      noWrap: true,
     }).addTo(leafletMap);
     return leafletMap;
   }

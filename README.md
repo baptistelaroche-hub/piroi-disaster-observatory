@@ -362,3 +362,43 @@ Center retrouvés (`piroi:79` La Réunion Chikungunya 2025-02, `piroi:80` Mayott
 2025-04, `piroi:71` Comores Inondation 2024-02, `piroi:70` Maurice Dengue 2024-02), popup carte
 et fiche détail vérifiées sur `piroi:79` (bénéficiaires, budget, stocks, description tous
 corrects), aucune erreur console.
+
+### Quatrième page : `bilan.html` — Bilan et projection
+
+Vue d'analyse par zone (les 8 territoires PIROI + une vue régionale agrégée), organisée en trois
+onglets par zone : **Bilan 2026** (données internes), **Sanitaire** et **Météorologique**
+(ressources externes curatées par zone). État sélectionné par URL (`?zone=&section=`, ex.
+`bilan.html?zone=reu&section=sanitaire`) plutôt que par état React/JS caché, pour permettre le
+lien direct et le retour arrière du navigateur. Config des ressources par zone centralisée dans
+`ZONE_RESOURCES` (`dashboard/js/bilan.js`) — curatée avec le PIROI Center le 07/08/2026.
+
+- **Bilan 2026** : nombre de catastrophes depuis 2026 (désagrégé par type d'aléa, mêmes sources
+  `reliefweb`+`piroi` que la carte/liste), impact EM-DAT agrégé (personnes affectées, blessés,
+  morts, dégâts — uniquement les catastrophes rattachées à une entrée EM-DAT, note de couverture
+  partielle affichée), et réponse PIROI (nombre d'interventions + bénéficiaires depuis
+  `piroi_operations.json`, filtré sur l'année de l'opération ≥ 2026). Lien vers la page pays
+  ReliefWeb correspondante (absent pour la vue régionale, qui n'a pas de page pays unique).
+- **Sanitaire** : liens externes par zone (vide pour Régional/Madagascar/Seychelles/Maurice/
+  Comores — pas de ressource sanitaire externe stable identifiée), note d'indicateurs à
+  consulter pour le WHO Global Cholera and AWD Dashboard (Mozambique, Tanzanie), et pour
+  La Réunion/Mayotte un graphique Mpox (cas confirmés mensuels depuis 2026) alimenté en direct
+  par l'API publique Odissé (Santé publique France, dataset
+  `mpox-incidence-selon-le-sexe-region`, CORS ouvert vérifié — codes région Réunion=4,
+  Mayotte=6). Repli : si aucune ressource externe n'est configurée pour la zone, liste des
+  catastrophes internes de catégorie "Crise sanitaire" les plus récentes (jusqu'à 8), pour ne
+  jamais laisser l'onglet vide.
+- **Météorologique** : liens vers les bulletins officiels par zone (Météo-France pour Régional/
+  Réunion/Maurice/Mayotte, Météo Madagascar, INAM Mozambique, TMA Tanzanie, Météo Comores) ;
+  message "Aucune ressource configurée" pour les Seychelles (aucun service identifié).
+
+Testé en navigateur : bug de chargement trouvé et corrigé pendant les tests — `piroiOperations`
+manquait à l'exécution malgré un fichier `data.js` correct sur disque, cause identifiée comme un
+cache HTTP navigateur sur le serveur de dev local (`http.server` n'envoie pas de `Cache-Control`,
+et un rechargement forcé ne suffisait pas à invalider le cache déjà posé sur `js/data.js` — un
+nouveau port de serveur, donc une nouvelle partition de cache, a confirmé et réglé le diagnostic).
+Chiffres Madagascar Bilan 2026 croisés avec les données brutes (2 catastrophes, impact EM-DAT
+85 morts/811 blessés/681811 affectés/632000 k$, 3 interventions PIROI, 37200 bénéficiaires —
+exact des deux côtés). Graphique Mpox vérifié pour La Réunion et Mayotte (données réelles
+distinctes par région). Repli sanitaire vérifié pour Madagascar (7 crises sanitaires internes
+listées, triées par date décroissante). État vide météo vérifié pour les Seychelles. Navigation
+par onglets zone/section et par URL directe vérifiée, aucune erreur console.

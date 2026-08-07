@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PIROI Disaster Observatory — Bilan &amp; projection</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-header-top">
+      <div class="app-header-brand">
+        <img src="assets/piroi-logo.jpg" alt="PIROI Center — Croix-Rouge française" class="app-logo" />
+        <div>
+          <h1>PIROI Disaster Observatory</h1>
+          <p class="app-subtitle">Bilan et projection par zone</p>
+        </div>
+      </div>
+      <nav class="app-nav" aria-label="Navigation">
+        <a href="index.html" class="app-nav-link">Carte</a>
+        <a href="liste.html" class="app-nav-link">Liste des catastrophes</a>
+        <a href="bilan.html" class="app-nav-link app-nav-link--active">Bilan &amp; projection</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="zone-tabs" id="zone-tabs" aria-label="Zones"></nav>
+  <nav class="section-tabs" id="section-tabs" aria-label="Sections">
+    <button type="button" class="section-tab" data-section="bilan">Bilan 2026</button>
+    <button type="button" class="section-tab" data-section="sanitaire">Sanitaire</button>
+    <button type="button" class="section-tab" data-section="meteo">Météorologique</button>
+  </nav>
+
+  <main class="bilan-page" id="bilan-content">Chargement…</main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="js/hazard-colors.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/bilan.js"></script>
+</body>
+</html>

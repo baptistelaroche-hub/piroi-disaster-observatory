@@ -109,9 +109,10 @@ h3 {
   padding: 20px 28px 12px;
   border-bottom: 1px solid var(--border);
   border-top: 3px solid var(--crf-red);
-  background: var(--surface-1-translucent);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  /* Pas de backdrop-filter : en position sticky juste au-dessus de la carte Leaflet, le flou
+     forçait un compositing GPU qui pouvait désynchroniser l'affichage peint des marqueurs
+     (transform: translate3d) pendant le pan/zoom sur certains navigateurs/GPU. */
+  background: var(--surface-1);
   position: sticky;
   top: 0;
   z-index: 1001;
@@ -227,9 +228,11 @@ h3 {
   top: 16px;
   right: 16px;
   z-index: 1000;
-  background: var(--surface-1-translucent);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  /* Pas de backdrop-filter ici : cet élément flotte directement au-dessus des panes Leaflet
+     (transform: translate3d géré par la librairie pour le pan/zoom) — le compositing GPU du
+     flou peut désynchroniser l'affichage peint de la position réelle sur certains
+     GPU/navigateurs, donnant l'impression que les marqueurs "sautent" pendant le zoom. */
+  background: var(--surface-1);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 12px 14px;
@@ -401,10 +404,10 @@ h3 {
   background: var(--page-plane);
 }
 
+/* Même raison que .legend ci-dessus : pas de backdrop-filter sur un élément positionné par
+   Leaflet (transform) au-dessus du canevas de la carte. */
 .leaflet-popup-content-wrapper {
-  background: var(--surface-1-translucent);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: var(--surface-1);
   color: var(--text-primary);
 }
 

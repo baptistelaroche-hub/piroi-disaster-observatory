@@ -167,6 +167,17 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
       maxZoom: 18,
       noWrap: true,
     }).addTo(leafletMap);
+
+    // Recalcule la limite une fois la mise en page définitive (polices web chargées, barre de
+    // filtres finalisée) : la taille du conteneur au moment de l'appel ci-dessus peut différer
+    // légèrement de la taille finale, ce qui décalerait le zoom minimal calculé.
+    window.addEventListener("load", () => {
+      leafletMap.invalidateSize();
+      const recomputed = leafletMap.getBoundsZoom(zoneBounds);
+      leafletMap.setMinZoom(recomputed);
+      if (leafletMap.getZoom() < recomputed) leafletMap.setZoom(recomputed);
+    });
+
     return leafletMap;
   }
 

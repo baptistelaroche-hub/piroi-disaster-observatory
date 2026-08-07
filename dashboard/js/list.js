@@ -20,10 +20,15 @@ const STATUS_LABELS = { past: "Terminée", ongoing: "En cours", alert: "Alerte" 
   const territoryByIso3 = new Map(allTerritoryOptions.map((t) => [t.iso3, t]));
   const allCategories = [...new Set(reliefwebDisasters.map((d) => d.hazard_category))];
 
+  // Arrivée depuis "Voir tout" sur la carte (popup territoire) : ne cocher que ce territoire-là
+  // plutôt que la zone PIROI par défaut.
+  const urlTerritory = new URLSearchParams(window.location.search).get("territory");
+  const initialTerritories = urlTerritory && territoryByIso3.has(urlTerritory) ? new Set([urlTerritory]) : new Set(piroiIso3);
+
   const state = {
     yearMin: DEFAULT_YEAR_MIN_LIST,
     yearMax: DEFAULT_YEAR_MAX_LIST,
-    territories: new Set(piroiIso3),
+    territories: initialTerritories,
     categories: new Set(allCategories),
     piroiResponseOnly: false,
     sortKey: "date_start",

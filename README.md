@@ -313,5 +313,19 @@ ReliefWeb, bonne validation croisée), cas IBTrACS-only avec rattachement par no
 (Alvaro), cas sans aucun rattachement (message honnête affiché), liens depuis la liste et la
 carte (via dé-clusterisation) vérifiés, aucune erreur console.
 
-À venir : refonte de l'interaction carte (clic pays → 5 derniers aléas, façon
-reliefweb.int/disasters).
+### Refonte de la carte (façon reliefweb.int/disasters)
+
+La carte affichait un marqueur par catastrophe (jusqu'à plusieurs dizaines superposées au même
+centroïde pays, nécessitant de dé-clusteriser pour distinguer quoi que ce soit). Remplacé par
+**un marqueur par territoire** (badge avec le nombre de catastrophes, anneau blanc si au moins
+une réponse PIROI) : au clic, la popup liste les 5 catastrophes les plus récentes (couleur de
+catégorie, date, coche verte si réponse PIROI, lien vers la fiche détail) et un lien "Voir tout
+(N)" vers `liste.html?territory=<iso3>`, qui pré-coche uniquement ce territoire.
+
+Leaflet.markercluster n'est plus nécessaire (8-9 marqueurs maximum, pas de superposition) —
+dépendance retirée de `index.html`.
+
+Testé en navigateur : 8 marqueurs par défaut, popup Madagascar (64 catastrophes, 5 plus
+récentes correctement triées), lien "Voir tout" vérifié en croisant avec `liste.html?territory=mdg`
+(64 catastrophes des deux côtés, cohérent), disparition des marqueurs sans catastrophe sur une
+période restreinte (2026 seul → 3 territoires), reset fonctionnel, aucune erreur console.

@@ -121,25 +121,12 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
     return applyNonTerritoryFilters().filter((d) => d.iso3.some((iso3) => state.territories.has(iso3)));
   }
 
-  // Un marqueur par (catastrophe, territoire sélectionné qu'elle touche) — pas un marqueur par
-  // catastrophe au seul pays primaire. Un événement régional produit donc un marqueur par
-  // territoire concerné, positionné aux coordonnées de CE territoire.
-  function buildMarkerEntries(visibleDisasters) {
-    const entries = [];
-    for (const d of visibleDisasters) {
-      for (const iso3 of d.iso3) {
-        if (state.territories.has(iso3)) entries.push({ disaster: d, iso3 });
-      }
-    }
-    return entries;
-  }
-
   function render() {
     const base = applyBaseFilters();
     const visible = base.filter((d) => !state.hiddenCategories.has(d.hazard_category));
 
     if (currentLayer) map.removeLayer(currentLayer);
-    const { markers } = buildMarkers(buildMarkerEntries(visible), countryByIso3);
+    const markers = buildTerritoryMarkers(visible, countryByIso3);
     markers.addTo(map);
     currentLayer = markers;
 
@@ -169,48 +156,58 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
     return leafletMap;
   }
 
-  function buildMarkers(entries, countryLookup) {
-    const clusterGroup = L.markerClusterGroup({ maxClusterRadius: 40 });
+  // Un marqueur par territoire (façon reliefweb.int/disasters), pas un marqueur par catastrophe :
+  // au clic, la popup liste les catastrophes les plus récentes de ce territoire plutôt que
+  // d'obliger à dé-clusteriser une pile de points superposés au même centroïde pays.
+  function buildTerritoryMarkers(visibleDisasters, countryLookup) {
+    const layerGroup = L.layerGroup();
+    const selectedTerritories = allTerritoryOptions.filter((t) => state.territories.has(t.iso3));
 
-    for (const { disaster, iso3 } of entries) {
-      const country = countryLookup.get(iso3);
+    for (const territory of selectedTerritories) {
+      const country = countryLookup.get(territory.iso3);
       if (!country || country.lat == null || country.lon == null) continue;
 
-      const color = hazardColor(disaster.hazard_category);
-      const badge = disaster.piroi_response ? '<i class="response-badge" title="Réponse PIROI"></i>' : "";
+      const territoryDisasters = visibleDisasters
+        .filter((d) => d.iso3.includes(territory.iso3))
+        .sort((a, b) => (b.date_start || "").localeCompare(a.date_start || ""));
+
+      if (!territoryDisasters.length) continue;
+
+      const hasResponse = territoryDisasters.some((d) => d.piroi_response);
       const icon = L.divIcon({
-        className: "hazard-marker",
-        html: `<span style="background:${color}"></span>${badge}`,
-        iconSize: [12, 12],
+        className: "territory-marker",
+        html: `<span class="territory-marker-count">${territoryDisasters.length}</span>${hasResponse ? '<i class="response-badge" title="Réponse PIROI"></i>' : ""}`,
+        iconSize: [30, 30],
       });
 
       const marker = L.marker([country.lat, country.lon], { icon });
-      marker.bindPopup(popupContent(disaster, country));
-      clusterGroup.addLayer(marker);
+      marker.bindPopup(territoryPopupContent(territory, territoryDisasters), { maxWidth: 320 });
+      layerGroup.addLayer(marker);
     }
 
-    return { markers: clusterGroup };
+    return layerGroup;
   }
 
-  function popupContent(disaster, country) {
-    const date = disaster.date_start ? disaster.date_start.slice(0, 10) : "date inconnue";
-    const link = disaster.url
-      ? `<div class="popup-link"><a href="${disaster.url}" target="_blank" rel="noopener">Voir sur ReliefWeb</a></div>`
-      : "";
+  function territoryPopupContent(territory, territoryDisasters) {
+    const recent = territoryDisasters.slice(0, 5);
+    const rows = recent
+      .map((d) => {
+        const date = d.date_start ? d.date_start.slice(0, 10) : "?";
+        const responseMark = d.piroi_response ? '<span class="table-response-badge" title="Réponse PIROI">✓</span> ' : "";
+        return `<li>
+          <span class="legend-swatch" style="background:${hazardColor(d.hazard_category)}"></span>
+          <a href="disaster.html?id=${encodeURIComponent(d.id)}">${escapeHTML(d.name)}</a>
+          <span class="popup-list-date">${date}</span> ${responseMark}
+        </li>`;
+      })
+      .join("");
+
     return `
-      <div class="popup-title">${escapeHTML(disaster.name)}</div>
-      <div class="popup-meta">${escapeHTML(disaster.hazard_category)} · ${escapeHTML(country.name)} · ${date}</div>
-      <div class="popup-link"><a href="disaster.html?id=${encodeURIComponent(disaster.id)}">Voir la fiche</a></div>
-      ${link}
-      ${piroiResponseBlock(disaster)}
+      <div class="popup-title">${escapeHTML(territory.name)}</div>
+      <div class="popup-meta">${formatNumber(territoryDisasters.length)} catastrophe${territoryDisasters.length > 1 ? "s" : ""} — 5 plus récentes :</div>
+      <ul class="popup-disaster-list">${rows}</ul>
+      <div class="popup-link"><a href="liste.html?territory=${territory.iso3}">Voir tout (${formatNumber(territoryDisasters.length)})</a></div>
     `;
-  }
-
-  // Le détail (activités, bénéficiaires, budget) vit dans le tableau (liste.html) ; ici on
-  // affiche juste le fait qu'il y a eu une réponse, sur simple clic.
-  function piroiResponseBlock(disaster) {
-    if (!disaster.piroi_response) return "";
-    return `<div class="popup-response">Réponse PIROI</div>`;
   }
 
   function filteredIbtracsCount() {

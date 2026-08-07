@@ -236,29 +236,61 @@ body {
   font-size: 0.85rem;
 }
 
-.hazard-marker {
+.territory-marker {
   position: relative;
 }
 
-.hazard-marker span {
-  display: block;
-  width: 12px;
-  height: 12px;
+.territory-marker-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  border: 1.5px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  background: var(--crf-red);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.82rem;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
 }
 
-.hazard-marker .response-badge {
+.territory-marker .response-badge {
   position: absolute;
   top: -3px;
   right: -3px;
-  width: 7px;
-  height: 7px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: #ffffff;
-  border: 1.5px solid var(--text-primary);
+  border: 2px solid var(--text-primary);
   font-style: normal;
+}
+
+.popup-disaster-list {
+  margin: 6px 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.82rem;
+}
+
+.popup-disaster-list li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 0;
+  border-top: 1px solid var(--gridline);
+}
+
+.popup-disaster-list li:first-child {
+  border-top: none;
+}
+
+.popup-list-date {
+  margin-left: auto;
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  white-space: nowrap;
 }
 
 .popup-response {

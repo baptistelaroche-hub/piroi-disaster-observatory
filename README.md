@@ -592,3 +592,40 @@ sembler flotter en mer faute de relief cartographique suffisamment détaillé à
 de correctif de coordonnées possible pour ce point précis ; seul un zoom plus élevé (incompatible
 avec le zoom unique demandé, qui doit aussi garder Mozambique/Tanzanie/Afrique du Sud visibles)
 le résoudrait.
+
+## Mise à jour du 10/08/2026 — retour à la vraie carte géographique
+
+Après le pivot vers une carte schématique (façon reliefweb.int/disasters, positions fixes non
+géographiques, cf. mise à jour précédente), Baptiste a fourni la **carte officielle du PIROI
+Center** en référence pour clarifier ce qu'il attendait réellement : une carte où les îles
+(Comores, Mayotte, Réunion, Maurice, Seychelles) sont à leur **vraie position relative** — pas
+un schéma stylisé façon reliefweb, mais une représentation géographiquement fidèle, simplement
+présentée proprement (silhouettes reconnaissables, logos des Sociétés nationales, repères de
+capitales).
+
+Le schéma reliefweb-style construit dans la mise à jour précédente ne correspondait donc pas au
+besoin réel — sa qualité première (positions arbitrairement espacées pour la lisibilité) était
+précisément le défaut signalé ("pas assez précise"). Plutôt que de retenter une nouvelle
+approche à l'aveugle, retour à la carte géographique réelle (Leaflet/OpenStreetMap), qui contient
+déjà nativement les vraies formes et positions des îles — via `git revert` du commit de bascule
+vers le schéma, restaurant exactement l'état précédent, déjà testé et fonctionnel :
+
+- Carte Leaflet/OpenStreetMap réelle, zoom verrouillé à un seul niveau (aucune dérive possible).
+- Coordonnées curatées et vérifiées manuellement (capitales/préfectures) pour les 8 territoires
+  PIROI + Afrique du Sud — dont le correctif Tanzanie (Dar es Salaam) de la mise à jour
+  précédente, conservé intact par le revert.
+- Trajectoires cycloniques de nouveau disponibles sur la carte (`tracks.js` restauré).
+
+Cache-buster passé à `v=9` (jamais `v=8`, qui correspondait à la version schématique — un
+navigateur ayant mis en cache cette URL précise doit être forcé de recharger un contenu
+réellement différent).
+
+Testé en navigateur : 8 marqueurs sur la vraie carte, zoom verrouillé confirmé, coordonnée
+Tanzanie toujours à Dar es Salaam, aucune erreur console, mini-carte cyclone de `disaster.html`
+inchangée.
+
+**Leçon retenue** : quand un utilisateur cite un exemple externe ("comme sur reliefweb"), vérifier
+ce que cet exemple fait *réellement* avant de s'engager dans une réécriture majeure — et,
+surtout, demander une référence visuelle concrète (capture d'écran, lien vers l'outil de
+référence exact) le plus tôt possible plutôt qu'après coup, pour éviter un aller-retour complet
+sur une fonctionnalité centrale.

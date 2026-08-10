@@ -1,10 +1,10 @@
 [
-  { "iso3": "mdg", "name": "Madagascar", "piroi_region": "Océan Indien", "lat": -18.8792, "lon": 47.5079, "schematic_x": 47, "schematic_y": 55 },
-  { "iso3": "com", "name": "Comores", "piroi_region": "Océan Indien", "lat": -11.7042, "lon": 43.2402, "schematic_x": 42, "schematic_y": 22 },
-  { "iso3": "mus", "name": "Maurice", "piroi_region": "Océan Indien", "lat": -20.1609, "lon": 57.5012, "schematic_x": 76, "schematic_y": 60 },
-  { "iso3": "syc", "name": "Seychelles", "piroi_region": "Océan Indien", "lat": -4.6191, "lon": 55.4513, "schematic_x": 68, "schematic_y": 8 },
-  { "iso3": "reu", "name": "La Réunion", "piroi_region": "Océan Indien", "lat": -20.8823, "lon": 55.4504, "schematic_x": 70, "schematic_y": 78 },
-  { "iso3": "myt", "name": "Mayotte", "piroi_region": "Océan Indien", "lat": -12.7806, "lon": 45.2278, "schematic_x": 50, "schematic_y": 32 },
-  { "iso3": "moz", "name": "Mozambique", "piroi_region": "Afrique australe", "lat": -25.9692, "lon": 32.5732, "schematic_x": 17, "schematic_y": 55 },
-  { "iso3": "tza", "name": "Tanzanie", "piroi_region": "Afrique de l'Est", "lat": -6.7924, "lon": 39.2083, "schematic_x": 20, "schematic_y": 12 }
+  { "iso3": "mdg", "name": "Madagascar", "piroi_region": "Océan Indien", "lat": -18.8792, "lon": 47.5079 },
+  { "iso3": "com", "name": "Comores", "piroi_region": "Océan Indien", "lat": -11.7042, "lon": 43.2402 },
+  { "iso3": "mus", "name": "Maurice", "piroi_region": "Océan Indien", "lat": -20.1609, "lon": 57.5012 },
+  { "iso3": "syc", "name": "Seychelles", "piroi_region": "Océan Indien", "lat": -4.6191, "lon": 55.4513 },
+  { "iso3": "reu", "name": "La Réunion", "piroi_region": "Océan Indien", "lat": -20.8823, "lon": 55.4504 },
+  { "iso3": "myt", "name": "Mayotte", "piroi_region": "Océan Indien", "lat": -12.7806, "lon": 45.2278 },
+  { "iso3": "moz", "name": "Mozambique", "piroi_region": "Afrique australe", "lat": -25.9692, "lon": 32.5732 },
+  { "iso3": "tza", "name": "Tanzanie", "piroi_region": "Afrique de l'Est", "lat": -6.7924, "lon": 39.2083 }
 ]

@@ -22,10 +22,6 @@
   --chart-accent: #003956;
   --font-display: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-body: "Lato", system-ui, -apple-system, "Segoe UI", sans-serif;
-  /* Carte schématique (pas de fond de carte réel) : teintes neutres eau/terre, purement
-     décoratives — aucune prétention de précision géographique. */
-  --schematic-water: #d6e8f0;
-  --schematic-land: #ece6d8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,8 +37,6 @@
     --border: rgba(255, 255, 255, 0.1);
     /* Variante plus claire en mode sombre : #003956 se fond dans un fond quasi noir. */
     --chart-accent: #5fa8dd;
-    --schematic-water: #14232c;
-    --schematic-land: #2b2823;
   }
 }
 :root[data-theme="dark"] {
@@ -56,8 +50,6 @@
   --gridline: #2c2c2a;
   --border: rgba(255, 255, 255, 0.1);
   --chart-accent: #5fa8dd;
-  --schematic-water: #14232c;
-  --schematic-land: #2b2823;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -229,9 +221,6 @@ h3 {
 #map {
   flex: 1;
   min-width: 0;
-  position: relative;
-  overflow: hidden;
-  background: var(--schematic-water);
 }
 
 .legend {
@@ -326,62 +315,45 @@ h3 {
   font-size: 0.85rem;
 }
 
-/* Carte schématique (façon reliefweb.int/disasters) : positions fixes en %, pas la vraie
-   latitude/longitude — cf. commentaire dans map.js pour le raisonnement complet. */
-.schematic-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.schematic-land {
-  fill: var(--schematic-land);
-}
-
-.schematic-bubbles {
-  position: absolute;
-  inset: 0;
-}
-
-.schematic-bubble {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  font: inherit;
-  transition: transform 0.15s ease;
-}
-
-.schematic-bubble:hover,
-.schematic-bubble:focus-visible {
-  transform: translate(-50%, -50%) scale(1.08);
-  z-index: 10;
-}
-
-.schematic-bubble-count {
+/* .territory-marker est la className passée à L.divIcon : c'est l'élément que Leaflet
+   repositionne lui-même via transform (translate3d) à chaque pan/zoom. Une transition CSS sur
+   transform à cet endroit fait donc "rattraper" en douceur chaque repositionnement Leaflet au
+   lieu de suivre instantanément — les marqueurs semblaient dériver/se décaler pendant le zoom.
+   Le survol grossissant est donc appliqué à l'enfant (.territory-marker-count), qui ne porte
+   aucune transform de positionnement. */
+.territory-marker {
   position: relative;
+}
+
+.territory-marker:hover {
+  z-index: 10000 !important;
+}
+
+.territory-marker-count {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: var(--crf-red);
   color: #ffffff;
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   border: 2px solid rgba(255, 255, 255, 0.9);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
 }
 
-.schematic-bubble .response-badge {
+.territory-marker:hover .territory-marker-count {
+  transform: scale(1.08);
+}
+
+.territory-marker:hover .territory-marker-count {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+.territory-marker .response-badge {
   position: absolute;
   top: -3px;
   right: -3px;
@@ -391,48 +363,6 @@ h3 {
   background: #ffffff;
   border: 2px solid var(--text-primary);
   font-style: normal;
-}
-
-.schematic-bubble-label {
-  font-size: 0.72rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  background: var(--surface-1);
-  padding: 1px 6px;
-  border-radius: 4px;
-  white-space: nowrap;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-}
-
-.schematic-popup {
-  position: absolute;
-  z-index: 20;
-  background: var(--surface-1);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 12px 14px;
-  width: 280px;
-  max-width: calc(100% - 16px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
-  font-size: 0.85rem;
-  animation: fadeInUp 0.15s ease both;
-}
-
-.schematic-popup-close {
-  position: absolute;
-  top: 6px;
-  right: 8px;
-  background: none;
-  border: none;
-  font-size: 1.1rem;
-  line-height: 1;
-  color: var(--text-muted);
-  cursor: pointer;
-  padding: 4px;
-}
-
-.schematic-popup-close:hover {
-  color: var(--crf-red);
 }
 
 .popup-disaster-list {
@@ -468,6 +398,10 @@ h3 {
   font-size: 0.82rem;
   font-weight: 700;
   color: var(--crf-red);
+}
+
+#map {
+  background: var(--page-plane);
 }
 
 /* Même raison que .legend ci-dessus : pas de backdrop-filter sur un élément positionné par

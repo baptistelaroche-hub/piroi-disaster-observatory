@@ -1,6 +1,11 @@
 const SOUTH_AFRICA_ISO3 = "zaf";
 const DEFAULT_YEAR_MIN = 2000;
 const DEFAULT_YEAR_MAX = new Date().getFullYear();
+// Zoom verrouillé sur un seul niveau (demande PIROI Center, cf. reliefweb.int/disasters) : la
+// disposition relative des marqueurs de territoire ne doit jamais changer d'apparence — seul le
+// glisser-déposer (pan, contraint à la zone) reste possible. Choisi pour que les 8 territoires
+// PIROI restent visibles sans avoir à déplacer la carte.
+const FIXED_ZOOM = 5;
 
 (async function initDashboard() {
   let data;
@@ -156,32 +161,26 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
   function initMap() {
     // Bassin Sud-Ouest Océan Indien : couvre les 8 territoires PIROI (+ Afrique du Sud en
     // option) ET l'étendue réelle des trajectoires IBTrACS qui les approchent (calculé sur les
-    // données : lat -59.7 à -0.4, lon 11.3 à 118.9, avec marge). But : ne jamais pouvoir
-    // dézoomer sur une vue mondiale, sans pour autant rogner une trajectoire cyclonique.
+    // données : lat -59.7 à -0.4, lon 11.3 à 118.9, avec marge).
     const zoneBounds = L.latLngBounds([-63, 5], [3, 123]);
 
     const leafletMap = L.map("map", {
       maxBounds: zoneBounds,
       maxBoundsViscosity: 1.0, // limite dure : le glisser-panoramique "rebondit" sur la bordure
+      zoomControl: false, // pas de boutons +/- : le zoom est fixe, ils n'auraient aucun effet
+      scrollWheelZoom: false,
+      doubleClickZoom: false,
+      touchZoom: false,
+      boxZoom: false,
+      minZoom: FIXED_ZOOM,
+      maxZoom: FIXED_ZOOM,
     });
-    leafletMap.setMinZoom(leafletMap.getBoundsZoom(zoneBounds));
-    leafletMap.setView([-19, 50], 5);
+    leafletMap.setView([-19, 50], FIXED_ZOOM);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "&copy; OpenStreetMap contributors",
-      maxZoom: 18,
       noWrap: true,
     }).addTo(leafletMap);
-
-    // Recalcule la limite une fois la mise en page définitive (polices web chargées, barre de
-    // filtres finalisée) : la taille du conteneur au moment de l'appel ci-dessus peut différer
-    // légèrement de la taille finale, ce qui décalerait le zoom minimal calculé.
-    window.addEventListener("load", () => {
-      leafletMap.invalidateSize();
-      const recomputed = leafletMap.getBoundsZoom(zoneBounds);
-      leafletMap.setMinZoom(recomputed);
-      if (leafletMap.getZoom() < recomputed) leafletMap.setZoom(recomputed);
-    });
 
     return leafletMap;
   }

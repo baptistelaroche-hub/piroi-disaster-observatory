@@ -541,3 +541,30 @@ Correctif : `fetchJSON()` (dans `data.js`) passe désormais `{ cache: "no-store"
 CLEAN/ANALYTICS sont régénérés par les workflows automatiques (quotidien/hebdomadaire) ou par des
 mises à jour manuelles, et sans ce correctif, un visiteur récurrent pouvait rester bloqué sur des
 données obsolètes indéfiniment, sans aucun moyen de le savoir depuis l'interface.
+
+**Troisième round** : même une fois les coordonnées confirmées correctes (vérifié en direct sur
+l'URL exacte utilisée par Baptiste, sans aucun cache), le rapprochement visuel de Mayotte et
+Madagascar sur sa capture d'écran restait déroutant. Explication, pas un bug : au zoom par défaut
+(niveau 5, vue régionale large), 1 pixel représente près de 5 km — deux points réellement
+distants de ~400 km (Mamoudzou/Antananarivo) peuvent donc sembler proches à l'écran sans erreur
+de position. Comparé à `reliefweb.int/disasters`, dont la carte est en réalité un schéma SVG à
+positions fixes (pas une vraie projection géographique) — fondamentalement différent de notre
+carte Leaflet/OpenStreetMap réelle.
+
+Décision (clarifiée avec Baptiste) : garder la vraie carte géographique plutôt que de la
+remplacer par un schéma, mais **verrouiller le zoom à un seul niveau fixe** (`FIXED_ZOOM = 5`
+dans `map.js`) — plus de boutons +/-, molette/double-clic/pincement désactivés, seul le
+glisser-déposer (pan, toujours contraint à la zone via `maxBounds`) reste possible. La
+disposition relative des marqueurs ne peut donc plus jamais "varier" au zoom, puisque le zoom
+lui-même ne varie plus.
+
+Bug de méthode rencontré en l'implémentant : `const FIXED_ZOOM` avait été déclarée après son
+premier usage dans le fichier (zone temporelle morte JS) — `initMap()` était appelée avant que la
+constante soit initialisée, ce qui levait une `ReferenceError` non interceptée et empêchait toute
+la carte de s'afficher (aucun marqueur, aucune tuile). Corrigé en déplaçant la déclaration en tête
+de fichier, avant tout usage. Repéré en testant localement avant déploiement — pas vu en
+production grâce à la vérification systématique avant chaque push.
+
+Testé en navigateur : 8 marqueurs affichés, zoom réellement verrouillé (molette simulée sans
+effet, aucun bouton de zoom visible), popups fonctionnelles, bascule des trajectoires cycloniques
+sans erreur, aucune régression sur les 3 autres pages, aucune erreur console.

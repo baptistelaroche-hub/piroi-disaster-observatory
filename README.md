@@ -629,3 +629,38 @@ ce que cet exemple fait *réellement* avant de s'engager dans une réécriture m
 surtout, demander une référence visuelle concrète (capture d'écran, lien vers l'outil de
 référence exact) le plus tôt possible plutôt qu'après coup, pour éviter un aller-retour complet
 sur une fonctionnalité centrale.
+
+## Mise à jour du 10/08/2026 — style de tuile épuré + noms de capitale visibles
+
+Baptiste signalait toujours 6 territoires "mal positionnés" (Mayotte, Tanzanie, Réunion,
+Maurice, Mozambique, Seychelles) malgré des coordonnées déjà vérifiées correctes à plusieurs
+reprises (mathématiques de projection Leaflet, `marker.getLatLng()` comparé aux valeurs curatées,
+popup toujours associée au bon territoire). Hypothèse retenue cette fois : **le problème n'était
+pas la position, mais l'absence de tout moyen de la vérifier visuellement** — les tuiles
+OpenStreetMap par défaut, chargées de routes/POI/toponymes dans toutes les langues, ne montrent
+pas toujours clairement le nom de la capitale exacte à ce niveau de zoom, rendant impossible de
+confirmer "ce marqueur est bien sur telle ville" d'un simple coup d'œil.
+
+Deux changements, tous deux inspirés de la carte officielle du PIROI Center fournie en
+référence :
+
+- **Tuiles CARTO Positron** (`light_nolabels`, sans clé API requise) à la place des tuiles
+  OpenStreetMap par défaut — rendu épuré (terre gris clair, mer très pâle), sans les toponymes
+  qui entraient en conflit visuel avec nos propres repères.
+- **Nom de la capitale affiché sous chaque marqueur** (`territory.capital` ajouté à
+  `territories.json` : Antananarivo, Moroni, Port Louis, Victoria, Saint-Denis, Mamoudzou,
+  Maputo, Dar es Salaam, + Pretoria pour l'Afrique du Sud dans `map.js`) — élimine toute
+  ambiguïté : n'importe qui peut désormais vérifier au premier coup d'œil qu'un marqueur est
+  bien sur la bonne ville, sans avoir à cliquer ou zoomer.
+
+Détail technique : le `divIcon` passe de 30×30px (juste le cercle) à 120×50px (cercle + libellé
+en dessous), avec un `iconAnchor` explicite `[60, 15]` pointant sur le centre du cercle — le
+point géographique réel reste exact, seul l'espace visuel occupé s'agrandit pour le libellé.
+Le badge "réponse PIROI" (`.response-badge`), auparavant positionné en absolu par rapport à toute
+la boîte du marqueur, a dû être ré-imbriqué dans un `.territory-marker-body` dédié pour rester
+ancré au coin du cercle plutôt qu'au coin de la boîte élargie.
+
+Testé en navigateur : les 8 libellés de capitale s'affichent et correspondent exactement au bon
+territoire (vérifié un par un : clic sur le marqueur "Dar es Salaam" → popup "Tanzanie", etc.),
+badge de réponse PIROI toujours bien positionné sur le cercle, tuiles CARTO chargées sans erreur,
+aucune régression sur les 3 autres pages, mode sombre et mobile vérifiés.

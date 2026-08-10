@@ -323,10 +323,19 @@ h3 {
    aucune transform de positionnement. */
 .territory-marker {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
 }
 
 .territory-marker:hover {
   z-index: 10000 !important;
+}
+
+.territory-marker-body {
+  position: relative;
+  display: flex;
 }
 
 .territory-marker-count {
@@ -347,9 +356,6 @@ h3 {
 
 .territory-marker:hover .territory-marker-count {
   transform: scale(1.08);
-}
-
-.territory-marker:hover .territory-marker-count {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
 }
 
@@ -363,6 +369,18 @@ h3 {
   background: #ffffff;
   border: 2px solid var(--text-primary);
   font-style: normal;
+}
+
+.territory-marker-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: var(--surface-1);
+  padding: 1px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  pointer-events: none;
 }
 
 .popup-disaster-list {

@@ -26,7 +26,7 @@ const FIXED_ZOOM = 5;
     ...territories,
     // Prétoria (capitale administrative) — mêmes règles de précision que les 8 territoires
     // PIROI (cf. territories.json) : un point curaté plutôt que le point ReliefWeb générique.
-    { iso3: SOUTH_AFRICA_ISO3, name: "Afrique du Sud", piroi_region: "Hors zone PIROI", lat: -25.7479, lon: 28.2293 },
+    { iso3: SOUTH_AFRICA_ISO3, name: "Afrique du Sud", piroi_region: "Hors zone PIROI", lat: -25.7479, lon: 28.2293, capital: "Pretoria" },
   ];
 
   const state = {
@@ -177,9 +177,14 @@ const FIXED_ZOOM = 5;
     });
     leafletMap.setView([-19, 50], FIXED_ZOOM);
 
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: "&copy; OpenStreetMap contributors",
+    // Style CARTO Positron (épuré, sans les noms de ville — on affiche nos propres repères de
+    // capitale pour rester cohérent avec les données curatées) plutôt que le rendu OpenStreetMap
+    // par défaut (chargé, routes/POI/multiples scripts) — demande PIROI Center, cf. capture
+    // d'écran de la carte officielle du PIROI Center fournie en référence.
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png", {
+      attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
       noWrap: true,
+      maxZoom: 20,
     }).addTo(leafletMap);
 
     return leafletMap;
@@ -214,10 +219,19 @@ const FIXED_ZOOM = 5;
       if (!territoryDisasters.length) continue;
 
       const hasResponse = territoryDisasters.some((d) => d.piroi_response);
+      // iconAnchor pointe sur le centre du cercle (30px), pas sur toute la boîte (qui inclut le
+      // libellé de capitale en dessous) — le point géographique reste exact, seul l'affichage
+      // s'étend visuellement.
       const icon = L.divIcon({
         className: "territory-marker",
-        html: `<span class="territory-marker-count">${territoryDisasters.length}</span>${hasResponse ? '<i class="response-badge" title="Réponse PIROI"></i>' : ""}`,
-        iconSize: [30, 30],
+        html: `
+          <span class="territory-marker-body">
+            <span class="territory-marker-count">${territoryDisasters.length}</span>${hasResponse ? '<i class="response-badge" title="Réponse PIROI"></i>' : ""}
+          </span>
+          ${territory.capital ? `<span class="territory-marker-label">${escapeHTML(territory.capital)}</span>` : ""}
+        `,
+        iconSize: [120, 50],
+        iconAnchor: [60, 15],
       });
 
       const marker = L.marker([lat, lon], { icon });

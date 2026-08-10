@@ -10,7 +10,11 @@ const DATA_PATHS = {
 };
 
 async function fetchJSON(path) {
-  const response = await fetch(path);
+  // cache: "no-store" — ces fichiers sont régénérés par les workflows automatiques (quotidien/
+  // hebdomadaire) ou par des mises à jour manuelles ; un fetch() par défaut peut rester en cache
+  // navigateur indéfiniment et masquer des données à jour (ou un correctif) à tout visiteur
+  // récurrent, sans aucun moyen de le savoir depuis l'interface.
+  const response = await fetch(path, { cache: "no-store" });
   if (!response.ok) {
     throw new Error(`Échec du chargement de ${path} : ${response.status}`);
   }

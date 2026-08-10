@@ -527,3 +527,17 @@ détecter une erreur dans la donnée source elle-même. Une capture d'écran fou
 l'utilisateur a permis de trancher en quelques minutes ce que plusieurs heures d'hypothèses
 n'avaient pas résolu — à privilégier plus tôt en cas de rapport de bug visuel qui persiste après
 un premier correctif plausible mais non confirmé visuellement.
+
+**Deuxième round, cause distincte** : même après ce correctif poussé et confirmé fonctionnel
+côté serveur (fetch avec `cache: "no-store"` explicite, contenu vérifié), Baptiste voyait
+toujours le même problème. Cause : `dashboard/js/data.js` charge tous les fichiers JSON
+(`territories.json` inclus) avec un `fetch()` par défaut, sans aucun cache-busting — contrairement
+aux fichiers `.js`/`.css` référencés depuis les pages HTML (`?v=5`). Un navigateur ayant déjà
+visité le site avant ce correctif garde donc l'ancien `territories.json` en cache indéfiniment,
+et aucun bump de version des scripts ne force son rechargement puisque son URL ne change jamais.
+
+Correctif : `fetchJSON()` (dans `data.js`) passe désormais `{ cache: "no-store" }` à chaque appel
+`fetch()`. Au-delà de résoudre ce blocage précis, c'est une correction de fond : les fichiers
+CLEAN/ANALYTICS sont régénérés par les workflows automatiques (quotidien/hebdomadaire) ou par des
+mises à jour manuelles, et sans ce correctif, un visiteur récurrent pouvait rester bloqué sur des
+données obsolètes indéfiniment, sans aucun moyen de le savoir depuis l'interface.

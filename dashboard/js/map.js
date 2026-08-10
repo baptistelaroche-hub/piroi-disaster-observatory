@@ -17,7 +17,12 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
   // opérations PIROI sans aucune correspondance ReliefWeb/IBTrACS (sinon invisibles partout).
   const displayDisasters = disasters.filter((d) => d.source === "reliefweb" || d.source === "piroi");
   const ibtracsDisasters = disasters.filter((d) => d.source === "ibtracs");
-  const allTerritoryOptions = [...territories, { iso3: SOUTH_AFRICA_ISO3, name: "Afrique du Sud", piroi_region: "Hors zone PIROI" }];
+  const allTerritoryOptions = [
+    ...territories,
+    // Prétoria (capitale administrative) — mêmes règles de précision que les 8 territoires
+    // PIROI (cf. territories.json) : un point curaté plutôt que le point ReliefWeb générique.
+    { iso3: SOUTH_AFRICA_ISO3, name: "Afrique du Sud", piroi_region: "Hors zone PIROI", lat: -25.7479, lon: 28.2293 },
+  ];
 
   const state = {
     yearMin: DEFAULT_YEAR_MIN,
@@ -184,13 +189,24 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
   // Un marqueur par territoire (façon reliefweb.int/disasters), pas un marqueur par catastrophe :
   // au clic, la popup liste les catastrophes les plus récentes de ce territoire plutôt que
   // d'obliger à dé-clusteriser une pile de points superposés au même centroïde pays.
+  //
+  // Position : coordonnées curatées de territory.lat/lon (capitale/préfecture, cf.
+  // territories.json), PAS le point ReliefWeb de countryLookup — ce dernier est extrait
+  // automatiquement du premier pays trouvé dans les données brutes (build_countries.py) et
+  // s'est révélé imprécis pour de petits territoires insulaires : le point Seychelles pointait
+  // vers un atoll périphérique à ~330 km de Mahé/Victoria, celui de Maurice à ~30 km en mer à
+  // l'est de l'île — invisible dans toute vérification par les mathématiques de projection
+  // Leaflet (toujours cohérentes), seulement en comparant le marqueur à la vraie géographie.
+  // countryLookup reste un repli défensif si un territoire n'a pas encore de coordonnées curatées.
   function buildTerritoryMarkers(visibleDisasters, countryLookup) {
     const layerGroup = L.layerGroup();
     const selectedTerritories = allTerritoryOptions.filter((t) => state.territories.has(t.iso3));
 
     for (const territory of selectedTerritories) {
       const country = countryLookup.get(territory.iso3);
-      if (!country || country.lat == null || country.lon == null) continue;
+      const lat = territory.lat ?? country?.lat;
+      const lon = territory.lon ?? country?.lon;
+      if (lat == null || lon == null) continue;
 
       const territoryDisasters = visibleDisasters
         .filter((d) => d.iso3.includes(territory.iso3))
@@ -205,7 +221,7 @@ const DEFAULT_YEAR_MAX = new Date().getFullYear();
         iconSize: [30, 30],
       });
 
-      const marker = L.marker([country.lat, country.lon], { icon });
+      const marker = L.marker([lat, lon], { icon });
       marker.bindPopup(territoryPopupContent(territory, territoryDisasters), { maxWidth: 320 });
       layerGroup.addLayer(marker);
     }

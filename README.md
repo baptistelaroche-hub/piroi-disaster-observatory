@@ -448,9 +448,8 @@ console.
   cyclonique) via `--chart-accent`, avec une variante plus claire (`#5fa8dd`) en mode sombre où
   le bleu foncé se fondrait dans le fond. La palette catégorielle des aléas n'est pas touchée —
   toujours indépendante et validée séparément.
-- **Transparence** : en-tête, légende de la carte et popups Leaflet passés en fond translucide
-  avec flou (`backdrop-filter: blur()`) plutôt qu'en fond opaque plein — effet "verre dépoli"
-  cohérent en clair et en sombre.
+- **Transparence** (retirée depuis, voir mise à jour ci-dessous) : en-tête, légende de la carte
+  et popups Leaflet initialement passés en fond translucide avec flou (`backdrop-filter: blur()`).
 - **Animations** : apparition en fondu (`fadeInUp`) au changement d'onglet zone/section sur
   `bilan.html` et au chargement de la fiche détail, survol avec léger soulèvement (`translateY`
   + ombre) sur les cartes (graphiques, catastrophe, société nationale), transitions de couleur/
@@ -463,3 +462,68 @@ en mode clair (`#003956`) et sombre (`#5fa8dd`) ; pictogrammes vérifiés (11-12
 selon le contenu, SVG bien rendu, couleur/fond teinté corrects) ; animation de changement d'onglet
 vérifiée sur `bilan.html` (classe `fade-in` et `animationName: fadeInUp` confirmés après clic) ;
 aucune erreur console sur aucune des 4 pages.
+
+## Mise à jour du 08/08/2026 — bugs carte (dérive au zoom, marqueurs mal placés)
+
+Signalés par le PIROI Center après la refonte visuelle ci-dessus, en plusieurs allers-retours :
+
+1. **Popups décalées au clic** : l'animation `fadeInUp` posée sur `.leaflet-popup` animait
+   `transform`, la même propriété que Leaflet utilise (`translate3d`) pour positionner la popup
+   au-dessus du marqueur cliqué — l'animation écrasait donc systématiquement cette position.
+   Déplacée sur `.leaflet-popup-content-wrapper`, qui ne porte aucune transform de positionnement.
+2. **Marqueurs semblant dériver au zoom** : même cause, sur `.territory-marker` (la className
+   passée à `L.divIcon`, donc l'élément que Leaflet repositionne lui-même à chaque pan/zoom) —
+   une transition CSS sur `transform` y avait été ajoutée pour l'effet de survol. Déplacée sur
+   l'enfant `.territory-marker-count`.
+3. **`backdrop-filter` retiré** de l'en-tête, la légende et les popups (ajoutés dans la
+   modernisation visuelle) : hypothèse d'un conflit de compositing GPU avec les éléments
+   positionnés par transform de Leaflet, en cours de diagnostic au moment où le vrai bug
+   ci-dessous a été identifié. Non confirmée comme cause réelle, mais gardée en l'état
+   (fond opaque simple) : le coût esthétique est faible et le risque n'a pas de contrepartie.
+
+**Le vrai bug, confirmé par Baptiste avec une capture d'écran** : certains marqueurs ne
+tombaient pas sur le territoire qu'ils représentent, l'écart variant selon le niveau de zoom
+observé. Diagnostic définitif : à chaque niveau de zoom testé (3 à 8), la position réellement
+peinte de chaque marqueur correspond exactement à ce que les mathématiques de projection de
+Leaflet (`map.latLngToLayerPoint`) calculent pour ses coordonnées — Leaflet n'est donc pour rien
+dans le problème. C'est la **donnée de coordonnées elle-même** qui est en cause :
+`data/reference/countries.json` (régénéré depuis `fields.country[].location` de ReliefWeb,
+premier pays trouvé dans les données brutes — cf. `etl/reference/build_countries.py`) contient un
+point par pays pensé pour l'usage de ReliefWeb, pas forcément centré sur le territoire visible.
+Pour les Seychelles en particulier, ce point pointait vers un atoll périphérique à **~330 km**
+de Mahé/Victoria (là où vivent les gens et où la PIROI intervient) ; pour Maurice, à ~30 km en
+mer à l'est de l'île. Une erreur invisible dans toute vérification par le code (position DOM,
+transform calculé) — seule une comparaison directe avec la vraie géographie la révèle, d'où la
+capture d'écran nécessaire pour la débusquer après plusieurs hypothèses infructueuses.
+
+Correctif : coordonnées curatées (capitale/préfecture, vérifiées manuellement) ajoutées
+directement dans `data/reference/territories.json` (`lat`/`lon` pour les 8 territoires PIROI) et
+dans l'objet Afrique du Sud codé en dur dans `map.js` — `buildTerritoryMarkers` les utilise en
+priorité, avec repli sur `countryByIso3` uniquement si un territoire n'a pas encore de
+coordonnées curatées (aucun cas actuellement). `territories.json` n'étant jamais régénéré
+automatiquement (contrairement à `countries.json`), ce correctif est stable dans le temps.
+
+| Territoire | Ancien point (ReliefWeb) | Nouveau point (curaté) | Écart |
+|---|---|---|---|
+| Seychelles | -6.35, 52.23 | -4.6191, 55.4513 (Victoria) | ~330 km |
+| Maurice | -20.25, 57.87 | -20.1609, 57.5012 (Port Louis) | ~30 km |
+| Comores | -11.89, 43.68 | -11.7042, 43.2402 (Moroni) | ~50 km |
+| Madagascar | -19.37, 46.71 | -18.8792, 47.5079 (Antananarivo) | ~65 km |
+| Réunion | -21.1151, 55.5364 | -20.8823, 55.4504 (Saint-Denis) | ~30 km |
+| Mayotte | -12.82, 45.14 | -12.7806, 45.2278 (Mamoudzou) | ~10 km |
+| Mozambique | -18.09, 34.75 | -25.9692, 32.5732 (Maputo) | — (grand pays, choix de convention) |
+| Tanzanie | -6.27, 34.82 | -6.163, 35.7516 (Dodoma) | — (grand pays, choix de convention) |
+
+Testé en navigateur : mathématiques de projection Leaflet re-vérifiées cohérentes à tous les
+zooms (comme avant, jamais la cause) ; coordonnée effectivement utilisée par chaque marqueur
+confirmée via `marker.getLatLng()` (les 8 territoires correspondent exactement aux nouvelles
+valeurs curatées, pas aux anciennes) ; popups toujours correctement associées à leur territoire ;
+aucune régression sur les 4 pages ; aucune erreur console.
+
+**Leçon de méthode** : plusieurs correctifs ont été tentés (transition CSS, `backdrop-filter`,
+cache-busting `?v=`) avant de trouver la vraie cause, parce que le diagnostic reposait
+uniquement sur des vérifications par code (position DOM, style calculé) qui ne pouvaient pas
+détecter une erreur dans la donnée source elle-même. Une capture d'écran fournie par
+l'utilisateur a permis de trancher en quelques minutes ce que plusieurs heures d'hypothèses
+n'avaient pas résolu — à privilégier plus tôt en cas de rapport de bug visuel qui persiste après
+un premier correctif plausible mais non confirmé visuellement.

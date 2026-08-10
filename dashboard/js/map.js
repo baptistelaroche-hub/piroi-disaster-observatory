@@ -1,11 +1,6 @@
 const SOUTH_AFRICA_ISO3 = "zaf";
 const DEFAULT_YEAR_MIN = 2000;
 const DEFAULT_YEAR_MAX = new Date().getFullYear();
-// Zoom verrouillé sur un seul niveau (demande PIROI Center, cf. reliefweb.int/disasters) : la
-// disposition relative des marqueurs de territoire ne doit jamais changer d'apparence — seul le
-// glisser-déposer (pan, contraint à la zone) reste possible. Choisi pour que les 8 territoires
-// PIROI restent visibles sans avoir à déplacer la carte.
-const FIXED_ZOOM = 5;
 
 (async function initDashboard() {
   let data;
@@ -17,16 +12,15 @@ const FIXED_ZOOM = 5;
     return;
   }
 
-  const { disasters, countryByIso3, piroiIso3, territories, cycloneStats, nationalSocietiesSummary } = data;
+  const { disasters, piroiIso3, territories, cycloneStats, nationalSocietiesSummary } = data;
   // "reliefweb" = catastrophes ReliefWeb ; "piroi" = catastrophes synthétiques créées pour les
   // opérations PIROI sans aucune correspondance ReliefWeb/IBTrACS (sinon invisibles partout).
   const displayDisasters = disasters.filter((d) => d.source === "reliefweb" || d.source === "piroi");
   const ibtracsDisasters = disasters.filter((d) => d.source === "ibtracs");
   const allTerritoryOptions = [
     ...territories,
-    // Prétoria (capitale administrative) — mêmes règles de précision que les 8 territoires
-    // PIROI (cf. territories.json) : un point curaté plutôt que le point ReliefWeb générique.
-    { iso3: SOUTH_AFRICA_ISO3, name: "Afrique du Sud", piroi_region: "Hors zone PIROI", lat: -25.7479, lon: 28.2293 },
+    // Position schématique (pas géographique) — cf. commentaire sur SCHEMATIC map plus bas.
+    { iso3: SOUTH_AFRICA_ISO3, name: "Afrique du Sud", piroi_region: "Hors zone PIROI", schematic_x: 14, schematic_y: 88 },
   ];
 
   const state = {
@@ -37,11 +31,11 @@ const FIXED_ZOOM = 5;
     hiddenCategories: new Set(),
   };
 
-  const map = initMap();
-  let currentLayer = null;
+  const mapContainer = document.getElementById("map");
+  let openPopupIso3 = null;
+  initSchematicBackground(mapContainer);
 
   initStaticCharts(cycloneStats);
-  initTracksToggle(map, () => ibtracsDisasters, () => state);
   buildTerritoryFilterUI();
   wireFilterControls();
   render();
@@ -112,8 +106,7 @@ const FIXED_ZOOM = 5;
   // Filtres période/réponse PIROI, sans le filtre territoire — réutilisé par le graphique
   // "par territoire" qui doit pouvoir compter un événement dans plusieurs territoires à la fois
   // (ex: le cyclone Chido touche Comores/Madagascar/Mayotte/Mozambique) plutôt que de ne le
-  // rattacher qu'à son pays "primaire" ReliefWeb (utile pour un marqueur unique sur la carte,
-  // mais sous-représente les territoires rarement primaires comme Mayotte ou La Réunion).
+  // rattacher qu'à son pays "primaire" ReliefWeb.
   function applyNonTerritoryFilters() {
     return displayDisasters.filter((d) => {
       if (state.piroiResponseOnly && !d.piroi_response) return false;
@@ -137,10 +130,7 @@ const FIXED_ZOOM = 5;
     const base = applyBaseFilters();
     const visible = base.filter((d) => !state.hiddenCategories.has(d.hazard_category));
 
-    if (currentLayer) map.removeLayer(currentLayer);
-    const markers = buildTerritoryMarkers(visible, countryByIso3);
-    markers.addTo(map);
-    currentLayer = markers;
+    renderTerritoryBubbles(visible, mapContainer);
 
     const countsByCategory = {};
     for (const d of base) {
@@ -155,57 +145,49 @@ const FIXED_ZOOM = 5;
     updateByYearChart(visible, state.yearMin, state.yearMax);
     updateByTerritoryChart(forTerritoryChart, selectedTerritories);
     renderNsCards(nationalSocietiesSummary, state.territories);
-    renderTracks(ibtracsDisasters, state);
   }
 
-  function initMap() {
-    // Bassin Sud-Ouest Océan Indien : couvre les 8 territoires PIROI (+ Afrique du Sud en
-    // option) ET l'étendue réelle des trajectoires IBTrACS qui les approchent (calculé sur les
-    // données : lat -59.7 à -0.4, lon 11.3 à 118.9, avec marge).
-    const zoneBounds = L.latLngBounds([-63, 5], [3, 123]);
+  // Carte schématique (façon reliefweb.int/disasters) : positions fixes curatées
+  // (territory.schematic_x/y, en % du conteneur), pas la vraie latitude/longitude. Demande
+  // explicite du PIROI Center après plusieurs correctifs sur la vraie carte géographique
+  // (Leaflet/OpenStreetMap) — des territoires réellement proches (ex: Mayotte/Madagascar,
+  // Maurice/Réunion) restaient visuellement difficiles à distinguer une fois le zoom verrouillé,
+  // quelle que soit la précision des coordonnées. Ici, l'espacement est choisi pour la
+  // lisibilité, l'orientation générale (nord/sud/est/ouest) reste cohérente avec la vraie
+  // géographie mais sans prétention de précision — cf. README pour le détail des tentatives
+  // précédentes. Ne trace plus les trajectoires cycloniques (pas de sens sur un fond non
+  // géographique) : retiré à la demande du PIROI Center, la donnée reste consultable sur la
+  // fiche de chaque cyclone (sa propre mini-carte réelle).
+  function initSchematicBackground(container) {
+    container.innerHTML = `
+      <svg class="schematic-bg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <path class="schematic-land" d="M0,0 L28,0 C34,10 30,20 26,28 C22,36 24,45 28,52 C32,60 30,68 24,74 C18,80 20,86 26,90 C30,93 28,97 22,100 L0,100 Z" />
+        <path class="schematic-land" d="M46,15 C50,14 54,18 55,26 C56,36 54,48 52,58 C50,66 48,70 44,72 C41,73 39,68 40,60 C41,50 42,38 43,26 C44,19 45,16 46,15 Z" />
+      </svg>
+      <div class="schematic-bubbles"></div>
+    `;
 
-    const leafletMap = L.map("map", {
-      maxBounds: zoneBounds,
-      maxBoundsViscosity: 1.0, // limite dure : le glisser-panoramique "rebondit" sur la bordure
-      zoomControl: false, // pas de boutons +/- : le zoom est fixe, ils n'auraient aucun effet
-      scrollWheelZoom: false,
-      doubleClickZoom: false,
-      touchZoom: false,
-      boxZoom: false,
-      minZoom: FIXED_ZOOM,
-      maxZoom: FIXED_ZOOM,
+    // Ferme la popup ouverte en cliquant n'importe où ailleurs sur la carte.
+    container.addEventListener("click", (event) => {
+      if (!event.target.closest(".schematic-bubble")) closeSchematicPopup();
     });
-    leafletMap.setView([-19, 50], FIXED_ZOOM);
-
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: "&copy; OpenStreetMap contributors",
-      noWrap: true,
-    }).addTo(leafletMap);
-
-    return leafletMap;
   }
 
-  // Un marqueur par territoire (façon reliefweb.int/disasters), pas un marqueur par catastrophe :
-  // au clic, la popup liste les catastrophes les plus récentes de ce territoire plutôt que
-  // d'obliger à dé-clusteriser une pile de points superposés au même centroïde pays.
-  //
-  // Position : coordonnées curatées de territory.lat/lon (capitale/préfecture, cf.
-  // territories.json), PAS le point ReliefWeb de countryLookup — ce dernier est extrait
-  // automatiquement du premier pays trouvé dans les données brutes (build_countries.py) et
-  // s'est révélé imprécis pour de petits territoires insulaires : le point Seychelles pointait
-  // vers un atoll périphérique à ~330 km de Mahé/Victoria, celui de Maurice à ~30 km en mer à
-  // l'est de l'île — invisible dans toute vérification par les mathématiques de projection
-  // Leaflet (toujours cohérentes), seulement en comparant le marqueur à la vraie géographie.
-  // countryLookup reste un repli défensif si un territoire n'a pas encore de coordonnées curatées.
-  function buildTerritoryMarkers(visibleDisasters, countryLookup) {
-    const layerGroup = L.layerGroup();
+  function closeSchematicPopup() {
+    openPopupIso3 = null;
+    const popup = document.querySelector(".schematic-popup");
+    if (popup) popup.remove();
+  }
+
+  function renderTerritoryBubbles(visibleDisasters, container) {
+    const bubblesLayer = container.querySelector(".schematic-bubbles");
+    bubblesLayer.innerHTML = "";
+    closeSchematicPopup();
+
     const selectedTerritories = allTerritoryOptions.filter((t) => state.territories.has(t.iso3));
 
     for (const territory of selectedTerritories) {
-      const country = countryLookup.get(territory.iso3);
-      const lat = territory.lat ?? country?.lat;
-      const lon = territory.lon ?? country?.lon;
-      if (lat == null || lon == null) continue;
+      if (territory.schematic_x == null || territory.schematic_y == null) continue;
 
       const territoryDisasters = visibleDisasters
         .filter((d) => d.iso3.includes(territory.iso3))
@@ -214,18 +196,64 @@ const FIXED_ZOOM = 5;
       if (!territoryDisasters.length) continue;
 
       const hasResponse = territoryDisasters.some((d) => d.piroi_response);
-      const icon = L.divIcon({
-        className: "territory-marker",
-        html: `<span class="territory-marker-count">${territoryDisasters.length}</span>${hasResponse ? '<i class="response-badge" title="Réponse PIROI"></i>' : ""}`,
-        iconSize: [30, 30],
+      const bubble = document.createElement("button");
+      bubble.type = "button";
+      bubble.className = "schematic-bubble";
+      bubble.style.left = `${territory.schematic_x}%`;
+      bubble.style.top = `${territory.schematic_y}%`;
+      bubble.setAttribute("aria-label", `${territory.name} — ${territoryDisasters.length} catastrophe(s)`);
+      bubble.innerHTML = `
+        <span class="schematic-bubble-count">${territoryDisasters.length}</span>
+        ${hasResponse ? '<i class="response-badge" title="Réponse PIROI"></i>' : ""}
+        <span class="schematic-bubble-label">${escapeHTML(territory.name)}</span>
+      `;
+      bubble.addEventListener("click", (event) => {
+        event.stopPropagation();
+        toggleSchematicPopup(bubble, territory, territoryDisasters);
       });
-
-      const marker = L.marker([lat, lon], { icon });
-      marker.bindPopup(territoryPopupContent(territory, territoryDisasters), { maxWidth: 320 });
-      layerGroup.addLayer(marker);
+      bubblesLayer.appendChild(bubble);
     }
+  }
 
-    return layerGroup;
+  function toggleSchematicPopup(bubble, territory, territoryDisasters) {
+    if (openPopupIso3 === territory.iso3) {
+      closeSchematicPopup();
+      return;
+    }
+    closeSchematicPopup();
+    openPopupIso3 = territory.iso3;
+
+    const popup = document.createElement("div");
+    popup.className = "schematic-popup";
+    popup.innerHTML = `
+      <button type="button" class="schematic-popup-close" aria-label="Fermer">×</button>
+      ${territoryPopupContent(territory, territoryDisasters)}
+    `;
+    popup.addEventListener("click", (event) => event.stopPropagation());
+    popup.querySelector(".schematic-popup-close").addEventListener("click", closeSchematicPopup);
+    mapContainer.appendChild(popup);
+
+    positionSchematicPopup(popup, bubble);
+  }
+
+  function positionSchematicPopup(popup, bubble) {
+    const containerRect = mapContainer.getBoundingClientRect();
+    const bubbleRect = bubble.getBoundingClientRect();
+    const popupWidth = popup.offsetWidth;
+    const popupHeight = popup.offsetHeight;
+
+    const bubbleCenterX = bubbleRect.left - containerRect.left + bubbleRect.width / 2;
+    const bubbleTop = bubbleRect.top - containerRect.top;
+    const bubbleBottom = bubbleRect.bottom - containerRect.top;
+
+    let left = bubbleCenterX - popupWidth / 2;
+    left = Math.max(8, Math.min(left, containerRect.width - popupWidth - 8));
+
+    const showBelow = bubbleTop < popupHeight + 16;
+    const top = showBelow ? bubbleBottom + 10 : bubbleTop - popupHeight - 10;
+
+    popup.style.left = `${left}px`;
+    popup.style.top = `${Math.max(8, top)}px`;
   }
 
   function territoryPopupContent(territory, territoryDisasters) {

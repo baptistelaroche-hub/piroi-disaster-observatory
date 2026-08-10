@@ -592,3 +592,50 @@ sembler flotter en mer faute de relief cartographique suffisamment détaillé à
 de correctif de coordonnées possible pour ce point précis ; seul un zoom plus élevé (incompatible
 avec le zoom unique demandé, qui doit aussi garder Mozambique/Tanzanie/Afrique du Sud visibles)
 le résoudrait.
+
+## Mise à jour du 10/08/2026 — carte schématique (façon reliefweb.int/disasters)
+
+Après quatre correctifs successifs sur la vraie carte géographique (dérive au zoom, coordonnées
+imprécises, décalage popup, zoom verrouillé, correction Tanzanie) toujours perçus comme
+insuffisants, Baptiste a explicitement demandé une **carte schématique** — l'exemple donné,
+`reliefweb.int/disasters`, s'est avéré être un schéma SVG à positions fixes, pas une vraie
+projection géographique (vérifié en inspectant leur DOM : `rw-disaster-map`, aucune tuile).
+
+Décision (confirmée avec Baptiste) : remplacer la carte Leaflet/OpenStreetMap d'`index.html` par
+un schéma custom en HTML/CSS/SVG, avec retrait des trajectoires cycloniques de la carte (pas de
+sens sur un fond non géographique — la donnée reste consultable sur la mini-carte réelle de
+chaque fiche cyclone, indépendante et inchangée).
+
+- **Positions fixes curatées** : `territory.schematic_x`/`schematic_y` (en % du conteneur)
+  ajoutés à `territories.json` (+ objet Afrique du Sud codé en dur dans `map.js`) — l'orientation
+  générale (nord/sud/est/ouest) reste cohérente avec la vraie géographie, mais l'espacement est
+  choisi pour la lisibilité, sans prétention de précision. Les coordonnées `lat`/`lon` restent
+  dans `territories.json` (toujours exactes, cf. mises à jour précédentes) mais ne servent plus
+  au placement sur cette carte.
+- **Fond schématique** : deux formes SVG simples et stylisées (Afrique continentale, Madagascar)
+  en `viewBox="0 0 100 100"`, purement décoratives — pas une trace de coastline précise.
+- **Bulles** : même design que les anciens marqueurs (cercle rouge CRF, nombre de catastrophes,
+  anneau blanc si réponse PIROI, libellé du territoire en dessous).
+- **Popup au clic** : composant HTML custom (plus de dépendance Leaflet sur cette page),
+  réutilise `territoryPopupContent()` inchangé — même liste des 5 catastrophes récentes, même
+  lien "Voir tout". Se positionne au-dessus ou en dessous de la bulle selon la place disponible,
+  se ferme au clic ailleurs sur la carte ou sur le bouton ×.
+- **Retiré** : dépendance Leaflet (CSS/JS) sur `index.html`, `tracks.js` et sa case à cocher
+  "Afficher les trajectoires cycloniques". `dashboard/js/tracks.js` reste dans le dépôt mais
+  n'est plus chargé nulle part — conservé pour référence, pas supprimé, en cas de retour arrière.
+  La fiche détail d'un cyclone (`disaster.html`) garde sa propre mini-carte Leaflet réelle,
+  totalement indépendante et non affectée.
+
+Bug de méthode rencontré (encore) en l'implémentant : `let openPopupIso3 = null;` était déclarée
+après le premier appel à `render()` — exactement le même type de zone temporelle morte que le
+bug `FIXED_ZOOM` de la mise à jour précédente. Corrigé en déplaçant la déclaration au tout début
+de la fonction d'initialisation, avec `mapContainer`. Ce genre d'erreur (variable référencée par
+une fonction appelée avant sa propre déclaration textuelle, alors que les déclarations de
+fonctions sont hoistées mais pas les `let`/`const`) mérite une relecture systématique de l'ordre
+des déclarations avant tout nouveau test, pas seulement après un premier bug de ce type.
+
+Testé en navigateur : 8 bulles positionnées et lisibles, popup au clic (contenu, position,
+fermeture par re-clic/bouton ×/clic ailleurs), filtres territoire et catégorie fonctionnels,
+graphiques/fiches SN inchangés, mini-carte cyclone de `disaster.html` toujours fonctionnelle et
+indépendante, aucune régression sur `liste.html`/`bilan.html`, affichage mobile et mode sombre
+vérifiés, aucune erreur console sur les 4 pages.

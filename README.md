@@ -664,3 +664,49 @@ Testé en navigateur : les 8 libellés de capitale s'affichent et correspondent 
 territoire (vérifié un par un : clic sur le marqueur "Dar es Salaam" → popup "Tanzanie", etc.),
 badge de réponse PIROI toujours bien positionné sur le cercle, tuiles CARTO chargées sans erreur,
 aucune régression sur les 3 autres pages, mode sombre et mobile vérifiés.
+
+## Mise à jour du 10/08/2026 (bis) — vrai bug trouvé : `position: relative` cassait le placement vertical
+
+Baptiste a immédiatement contredit le diagnostic précédent avec une nouvelle capture d'écran :
+Mamoudzou affiché en plein milieu de Madagascar, Maputo/Saint-Denis/Port Louis en plein océan.
+Les libellés de capitale ajoutés à la mise à jour précédente n'ont donc pas résolu le vrai
+problème — ils l'ont seulement rendu visible.
+
+**Méthode** : au lieu de re-vérifier seulement les données (déjà prouvées correctes à plusieurs
+reprises), comparaison directe entre (a) les coordonnées écran mesurées de chaque marqueur
+(`getBoundingClientRect`) et (b) le calcul de projection Web Mercator effectué indépendamment
+avec les fonctions de Leaflet lui-même (`L.CRS.EPSG3857.latLngToPoint`), sans passer par
+l'instance de carte. Résultat : l'écart horizontal entre marqueurs correspondait exactement aux
+degrés de longitude réels, mais l'écart vertical était très compressé et même **inversé** pour
+plusieurs paires (Mamoudzou apparaissait au sud d'Antananarivo à l'écran, alors que Mayotte est
+géographiquement au nord de la capitale malgache).
+
+**Cause racine** : la règle CSS `.territory-marker { position: relative; ... }` (ajoutée pour
+empiler le cercle et le libellé de capitale) écrasait la règle `position: absolute` que
+`leaflet.css` impose normalement à tout `.leaflet-marker-icon`. Avec `position: relative`, le
+`transform: translate3d(...)` posé par Leaflet s'additionne à la position naturelle de
+l'élément dans le flux du DOM du marker-pane (les marqueurs s'empilent les uns sous les autres
+dans leur ordre d'ajout) au lieu de positionner l'élément dans l'absolu par rapport à l'origine
+de la carte — ce qui décale chaque marqueur d'une quantité différente et brouille leur position
+relative réelle. Le calcul de position (`iconAnchor`, coordonnées) était donc correct depuis le
+début ; c'est l'affichage qui trichait.
+
+**Fix** : `.territory-marker { position: absolute; }` (une ligne). Le badge "réponse PIROI"
+n'est pas affecté car il est positionné par rapport à `.territory-marker-body` (déjà en
+`position: relative`), pas par rapport à `.territory-marker` lui-même.
+
+**Vérifié** : ordre des 8 marqueurs sur l'axe vertical, mesuré à l'écran, comparé à l'ordre
+attendu par latitude réelle (nord → sud : Victoria, Dar es Salaam, Moroni, Mamoudzou,
+Antananarivo, Port Louis, Saint-Denis, Maputo) — les deux ordres correspondent exactement après
+le correctif, alors qu'ils divergeaient sur 2 paires avant. Mamoudzou se retrouve à ~145px au
+nord d'Antananarivo (contre ~30px, dans le mauvais sens, avant le correctif) — cohérent avec le
+calcul Leaflet indépendant. Badge de réponse PIROI toujours ancré au bon coin, aucune erreur
+console.
+
+**Leçon retenue** : cette session a maintenant vu deux bugs de la même famille (une règle CSS
+générique qui écrase une propriété que Leaflet utilise pour positionner ses marqueurs —
+`transition` sur `transform` la première fois, `position` cette fois). Après toute nouvelle
+règle CSS touchant `.leaflet-marker-icon`/`.territory-marker` ou ses classes filles, comparer
+systématiquement `getBoundingClientRect()` à un calcul de projection indépendant (pas seulement
+`marker.getLatLng()`, qui ne vérifie que la donnée, jamais le rendu) avant de conclure qu'un
+positionnement est correct.

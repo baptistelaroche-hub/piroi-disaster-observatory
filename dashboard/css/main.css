@@ -320,9 +320,14 @@ h3 {
    transform à cet endroit fait donc "rattraper" en douceur chaque repositionnement Leaflet au
    lieu de suivre instantanément — les marqueurs semblaient dériver/se décaler pendant le zoom.
    Le survol grossissant est donc appliqué à l'enfant (.territory-marker-count), qui ne porte
-   aucune transform de positionnement. */
+   aucune transform de positionnement.
+   IMPORTANT : position doit rester "absolute" (comme .leaflet-marker-icon dans leaflet.css).
+   Avec "relative", le translate3d de Leaflet s'applique par-dessus la position naturelle de
+   l'élément dans le flux du marker-pane (les marqueurs s'empilent les uns sous les autres dans
+   l'ordre du DOM) au lieu d'être positionné dans l'absolu — ce qui décale chaque marqueur d'une
+   quantité différente et brouille complètement leur position géographique relative. */
 .territory-marker {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;

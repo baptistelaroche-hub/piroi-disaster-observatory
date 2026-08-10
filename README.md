@@ -568,3 +568,27 @@ production grâce à la vérification systématique avant chaque push.
 Testé en navigateur : 8 marqueurs affichés, zoom réellement verrouillé (molette simulée sans
 effet, aucun bouton de zoom visible), popups fonctionnelles, bascule des trajectoires cycloniques
 sans erreur, aucune régression sur les 3 autres pages, aucune erreur console.
+
+**Quatrième round** : capture d'écran complète de la page (zoom verrouillé, donc rendu
+reproductible) fournie par Baptiste. En comparant chaque marqueur à son étiquette OpenStreetMap
+la plus proche, un vrai décalage identifié : le marqueur Tanzanie (point Dodoma, capitale
+administrative officielle) apparaissait proche de la frontière Zambie/Malawi, loin des étiquettes
+"Tanzania" et "Dar es Salaam" affichées par OpenStreetMap — alors que Dodoma est en réalité assez
+proche du centre géographique du pays. La confusion vient du fait qu'OpenStreetMap place son
+étiquette de pays près de Dar es Salaam (plus grande ville, ancienne capitale, toujours le
+repère visuel dominant), pas au centre géométrique : un point techniquement exact peut donc
+paraître mal placé s'il ne correspond à aucun repère visible sur le fond de carte.
+
+Correctif : `tza` dans `territories.json` passe de Dodoma (-6.163, 35.7516) à Dar es Salaam
+(-6.7924, 39.2083) — la ville la plus reconnaissable, également plus pertinente pour la PIROI
+(façade Océan Indien, exposée aux cyclones, contrairement à Dodoma qui est à l'intérieur des
+terres). Les 7 autres territoires collent déjà correctement à leur étiquette OSM (Seychelles sur
+"Sesel", Comores sur "Comores", Maurice sur "Mauritius/Maurice", etc.) — pas de changement.
+
+Limite connue, pas corrigée : à ce niveau de zoom, Mayotte et La Réunion (petites îles) ne
+sont pas toujours accompagnées d'une forme de terre visible sur les tuiles OpenStreetMap
+elles-mêmes — leurs marqueurs sont géographiquement exacts (préfectures curatées), mais peuvent
+sembler flotter en mer faute de relief cartographique suffisamment détaillé à cette échelle. Pas
+de correctif de coordonnées possible pour ce point précis ; seul un zoom plus élevé (incompatible
+avec le zoom unique demandé, qui doit aussi garder Mozambique/Tanzanie/Afrique du Sud visibles)
+le résoudrait.

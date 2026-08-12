@@ -1,11 +1,15 @@
 const SOUTH_AFRICA_ISO3 = "zaf";
 const DEFAULT_YEAR_MIN = 2000;
 const DEFAULT_YEAR_MAX = new Date().getFullYear();
-// Zoom verrouillé sur un seul niveau (demande PIROI Center, cf. reliefweb.int/disasters) : la
-// disposition relative des marqueurs de territoire ne doit jamais changer d'apparence — seul le
-// glisser-déposer (pan, contraint à la zone) reste possible. Choisi pour que les 8 territoires
-// PIROI restent visibles sans avoir à déplacer la carte.
-const FIXED_ZOOM = 5;
+// Le zoom initial montre les 8 territoires PIROI d'un coup d'œil. Un léger zoom avant/arrière
+// reste possible (MIN_ZOOM/MAX_ZOOM ci-dessous) pour le confort de lecture, mais la carte ne
+// peut pas dézoomer jusqu'à voir la Terre entière (cf. maxBounds dans initMap) et les marqueurs
+// se repositionnent correctement à chaque niveau — le bug de dérive venait d'une règle CSS
+// (position: relative écrasant le position: absolute de Leaflet), corrigé le 10/08/2026, pas du
+// zoom lui-même.
+const DEFAULT_ZOOM = 5;
+const MIN_ZOOM = 4;
+const MAX_ZOOM = 7;
 
 (async function initDashboard() {
   let data;
@@ -167,15 +171,10 @@ const FIXED_ZOOM = 5;
     const leafletMap = L.map("map", {
       maxBounds: zoneBounds,
       maxBoundsViscosity: 1.0, // limite dure : le glisser-panoramique "rebondit" sur la bordure
-      zoomControl: false, // pas de boutons +/- : le zoom est fixe, ils n'auraient aucun effet
-      scrollWheelZoom: false,
-      doubleClickZoom: false,
-      touchZoom: false,
-      boxZoom: false,
-      minZoom: FIXED_ZOOM,
-      maxZoom: FIXED_ZOOM,
+      minZoom: MIN_ZOOM,
+      maxZoom: MAX_ZOOM,
     });
-    leafletMap.setView([-19, 50], FIXED_ZOOM);
+    leafletMap.setView([-19, 50], DEFAULT_ZOOM);
 
     // Style CARTO Positron (épuré, sans les noms de ville — on affiche nos propres repères de
     // capitale pour rester cohérent avec les données curatées) plutôt que le rendu OpenStreetMap
@@ -220,7 +219,7 @@ const FIXED_ZOOM = 5;
 
       const hasResponse = territoryDisasters.some((d) => d.piroi_response);
       // iconAnchor pointe sur le centre du cercle (30px), pas sur toute la boîte (qui inclut le
-      // libellé de capitale en dessous) — le point géographique reste exact, seul l'affichage
+      // libellé du territoire en dessous) — le point géographique reste exact, seul l'affichage
       // s'étend visuellement.
       const icon = L.divIcon({
         className: "territory-marker",
@@ -228,7 +227,7 @@ const FIXED_ZOOM = 5;
           <span class="territory-marker-body">
             <span class="territory-marker-count">${territoryDisasters.length}</span>${hasResponse ? '<i class="response-badge" title="Réponse PIROI"></i>' : ""}
           </span>
-          ${territory.capital ? `<span class="territory-marker-label">${escapeHTML(territory.capital)}</span>` : ""}
+          <span class="territory-marker-label">${escapeHTML(territory.name)}</span>
         `,
         iconSize: [120, 50],
         iconAnchor: [60, 15],
@@ -264,22 +263,12 @@ const FIXED_ZOOM = 5;
     `;
   }
 
-  function filteredIbtracsCount() {
-    return ibtracsDisasters.filter((d) => {
-      if (!d.territories_piroi_approches.some((iso3) => state.territories.has(iso3))) return false;
-      if (state.piroiResponseOnly && !d.piroi_response) return false;
-      const year = d.date_start ? Number(d.date_start.slice(0, 4)) : null;
-      return year != null && year >= state.yearMin && year <= state.yearMax;
-    }).length;
-  }
-
   function renderStatTiles(inZone) {
-    const cyclonesInZone = filteredIbtracsCount();
+    const piroiInterventions = inZone.filter((d) => d.piroi_response).length;
     const dates = inZone.map((d) => d.date_start).filter(Boolean);
 
     document.getElementById("stat-total-disasters").textContent = formatNumber(inZone.length);
-    document.getElementById("stat-total-cyclones").textContent = formatNumber(cyclonesInZone);
-    document.getElementById("stat-total-piroi").textContent = formatNumber(inZone.length + cyclonesInZone);
+    document.getElementById("stat-piroi-interventions").textContent = formatNumber(piroiInterventions);
     const start = dates.length ? Math.min(...dates.map((d) => new Date(d).getFullYear())) : "?";
     const end = dates.length ? Math.max(...dates.map((d) => new Date(d).getFullYear())) : "?";
     document.getElementById("stat-period").textContent = `${start} – ${end}`;

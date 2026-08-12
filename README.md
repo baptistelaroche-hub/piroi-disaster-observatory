@@ -710,3 +710,36 @@ règle CSS touchant `.leaflet-marker-icon`/`.territory-marker` ou ses classes fi
 systématiquement `getBoundingClientRect()` à un calcul de projection indépendant (pas seulement
 `marker.getLatLng()`, qui ne vérifie que la donnée, jamais le rendu) avant de conclure qu'un
 positionnement est correct.
+
+## Mise à jour du 12/08/2026 — libellés pays, léger zoom, tuiles d'indicateurs simplifiées
+
+Maintenant que le bug de positionnement est réellement réglé, trois ajustements demandés par
+Baptiste :
+
+- **Libellé des marqueurs** : nom du territoire (`Madagascar`, `Mayotte`, `La Réunion`, …) au
+  lieu du nom de la capitale (`Antananarivo`, `Mamoudzou`, `Saint-Denis`, …) — `territory.name`
+  remplace `territory.capital` dans le `divIcon` de `map.js`. Aucun changement de données
+  nécessaire, `territories.json` fournit déjà `name` pour chaque territoire.
+- **Léger zoom avant/arrière réactiviré** : le zoom n'est plus verrouillé sur un seul niveau
+  (`FIXED_ZOOM`). Remplacé par `MIN_ZOOM=4` / `MAX_ZOOM=7` autour d'un niveau par défaut
+  toujours à 5, avec les contrôles Leaflet standard (boutons +/-, molette, pincement tactile)
+  réactivés. Cela n'était possible sans réintroduire le bug de dérive que parce que la vraie
+  cause (le `position: relative` ci-dessus) est corrigée : Leaflet recalcule maintenant
+  correctement chaque marqueur à chaque niveau de zoom. `maxBounds`/`maxBoundsViscosity`
+  restent inchangés : toujours impossible de dézoomer jusqu'à voir la Terre entière.
+- **Bandeau d'indicateurs réduit à 3 tuiles** : suppression de "Cyclones IBTrACS" et
+  "Événements zone PIROI" (qui additionnait les deux compteurs précédents, redondant).
+  "Catastrophes ReliefWeb" renommée "Catastrophes dans la zone" (le compteur inclut aussi les
+  catastrophes synthétiques `source: piroi`, pas seulement ReliefWeb — le libellé était
+  trompeur). Nouvelle tuile "Nombre d'intervention PIROI" : compte, parmi les catastrophes
+  actuellement visibles (mêmes filtres période/territoire/catégorie que les autres tuiles), 
+  celles où `piroi_response` est vrai — même champ que la case "Réponse PIROI uniquement" et le
+  badge sur les marqueurs de la carte, pour rester cohérent avec le reste de l'interface.
+
+Testé en local : ordre des 8 marqueurs vérifié identique (nord → sud) aux niveaux de zoom 4, 5,
+6 et 7 (les animations de zoom ne se terminaient pas dans l'environnement de test automatisé —
+même limitation que les captures d'écran, contournée en testant `map.setZoom(z, {animate:
+false})` directement plutôt que les boutons ; le zoom réel au clic/molette n'est pas affecté,
+seule l'animation CSS de transition l'est dans cet environnement précis). Tuiles vérifiées :
+150 catastrophes, 49 interventions PIROI, période 2000–2026, aucune erreur console sur les
+4 pages.

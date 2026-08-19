@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-18T03:43:06.751270+00:00",
+  "fetched_at": "2026-08-19T03:45:33.923452+00:00",
   "source": "https://api.reliefweb.int/v2/disasters",
   "total_count": 3724,
   "disasters": [
@@ -1161,6 +1161,50 @@
       }
     },
     {
+      "id": "5966",
+      "name": "Chad: Drought and Civil Strife - Nov 1984",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/55",
+        "id": 55,
+        "name": "Chad",
+        "shortname": "Chad",
+        "iso3": "tcd",
+        "location": {
+          "lat": 15.36,
+          "lon": 18.66
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/55",
+          "id": 55,
+          "name": "Chad",
+          "shortname": "Chad",
+          "iso3": "tcd",
+          "location": {
+            "lat": 15.36,
+            "lon": 18.66
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4672,
+          "name": "Drought",
+          "code": "DR",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5966",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1984-11-01T00:00:00+00:00",
+        "event": "1984-11-01T00:00:00+00:00"
+      }
+    },
+    {
       "id": "5511",
       "name": "Typhoon Agnes - Nov 1984",
       "description": "Typhoon Agnes originated near the Caroline Islands on 1 November. It hit the central Philippines on 5 November, bringing a death toll of at least 727. Several hundred people were reported missing and about 600,000 were made homeless. After crossing the South China Sea, Agnes landed over Viet Nam on 7 November and weakened into an area of low pressure over Thailand on 8 November. ([Government of Hong Kong SAR, 1985](https://reliefweb.int/node/3614074))\n\n**Philippines**\n\nTyphoon Undang (Agnes) hit the central regions of Leyte, Negros, Panay and Palawan Islands on 3 November. ([UN DHA, 08 November 1984](https://reliefweb.int/node/36413)) A final report of casualties and damage from the typhoon stated that there were 862 dead, 197 injured and 217 missing. At least 1,495,738 persons (293,998 families) have been rendered homeless. The total damage to property, crops, livestock, roads and bridges was 1,929.5 million pesos (approx US$96.6 million). ([UN DHA, 21 December 1984](https://reliefweb.int/node/36413))\n\n**Viet Nam**\n\nTyphoon Agnes struck Viet Nam on 9 and 11 November causing damage to the Red River Delta and coastal provinces. Three days of rainfall, varying between 400 and 700mm, caused extensive flooding in Hanoi. ([UN DHA, 15 November 1984](https://reliefweb.int/node/34379)) Anges caused at least 134 deaths and seriously affected around 650,000 people. At least 31,000 houses were completely destroyed and over 120,000 were flooded and damaged. Out of 198,000 hectares of rice paddies flooded, total crop losses occurred on 55,000 hectares. Crop losses also occurred on 6,310 hectares of maize, 8,652 sweet potatoes and 16,000 manioc. Some 400 schools and 230 nurseries were also destroyed. ([UN DHA, 03 December 1984](https://reliefweb.int/node/34575))",
@@ -1254,50 +1298,6 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/5406",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1984-11-01T00:00:00+00:00",
-        "event": "1984-11-01T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "5966",
-      "name": "Chad: Drought and Civil Strife - Nov 1984",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/55",
-        "id": 55,
-        "name": "Chad",
-        "shortname": "Chad",
-        "iso3": "tcd",
-        "location": {
-          "lat": 15.36,
-          "lon": 18.66
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/55",
-          "id": 55,
-          "name": "Chad",
-          "shortname": "Chad",
-          "iso3": "tcd",
-          "location": {
-            "lat": 15.36,
-            "lon": 18.66
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4672,
-          "name": "Drought",
-          "code": "DR",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5966",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1984-11-01T00:00:00+00:00",
@@ -1893,50 +1893,6 @@
       }
     },
     {
-      "id": "5270",
-      "name": "Chile: Earthquake - Mar 1985",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/57",
-        "id": 57,
-        "name": "Chile",
-        "shortname": "Chile",
-        "iso3": "chl",
-        "location": {
-          "lat": -37.72,
-          "lon": -72.31
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/57",
-          "id": 57,
-          "name": "Chile",
-          "shortname": "Chile",
-          "iso3": "chl",
-          "location": {
-            "lat": -37.72,
-            "lon": -72.31
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4628,
-          "name": "Earthquake",
-          "code": "EQ",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5270",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1985-03-01T00:00:00+00:00",
-        "event": "1985-03-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5603",
       "name": "Argentina: Glacier Threat - Mar 1985",
       "status": "past",
@@ -1974,6 +1930,50 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/5603",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1985-03-01T00:00:00+00:00",
+        "event": "1985-03-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5270",
+      "name": "Chile: Earthquake - Mar 1985",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/57",
+        "id": 57,
+        "name": "Chile",
+        "shortname": "Chile",
+        "iso3": "chl",
+        "location": {
+          "lat": -37.72,
+          "lon": -72.31
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/57",
+          "id": 57,
+          "name": "Chile",
+          "shortname": "Chile",
+          "iso3": "chl",
+          "location": {
+            "lat": -37.72,
+            "lon": -72.31
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4628,
+          "name": "Earthquake",
+          "code": "EQ",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5270",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1985-03-01T00:00:00+00:00",
@@ -2025,43 +2025,43 @@
       }
     },
     {
-      "id": "5536",
-      "name": "Somalia: Cholera Epidemic - Apr 1985",
+      "id": "6373",
+      "name": "Brazil: Floods - Apr 1985",
       "status": "past",
       "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/216",
-        "id": 216,
-        "name": "Somalia",
-        "shortname": "Somalia",
-        "iso3": "som",
+        "href": "https://api.reliefweb.int/v2/countries/42",
+        "id": 42,
+        "name": "Brazil",
+        "shortname": "Brazil",
+        "iso3": "bra",
         "location": {
-          "lat": 5.79,
-          "lon": 47.33
+          "lat": -9.59,
+          "lon": -51.62
         }
       },
       "country": [
         {
-          "href": "https://api.reliefweb.int/v2/countries/216",
-          "id": 216,
-          "name": "Somalia",
-          "shortname": "Somalia",
-          "iso3": "som",
+          "href": "https://api.reliefweb.int/v2/countries/42",
+          "id": 42,
+          "name": "Brazil",
+          "shortname": "Brazil",
+          "iso3": "bra",
           "location": {
-            "lat": 5.79,
-            "lon": 47.33
+            "lat": -9.59,
+            "lon": -51.62
           },
           "primary": true
         }
       ],
       "type": [
         {
-          "id": 4642,
-          "name": "Epidemic",
-          "code": "EP",
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
           "primary": true
         }
       ],
-      "url": "https://reliefweb.int/taxonomy/term/5536",
+      "url": "https://reliefweb.int/taxonomy/term/6373",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1985-04-01T00:00:00+00:00",
@@ -2114,43 +2114,43 @@
       }
     },
     {
-      "id": "6373",
-      "name": "Brazil: Floods - Apr 1985",
+      "id": "5536",
+      "name": "Somalia: Cholera Epidemic - Apr 1985",
       "status": "past",
       "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/42",
-        "id": 42,
-        "name": "Brazil",
-        "shortname": "Brazil",
-        "iso3": "bra",
+        "href": "https://api.reliefweb.int/v2/countries/216",
+        "id": 216,
+        "name": "Somalia",
+        "shortname": "Somalia",
+        "iso3": "som",
         "location": {
-          "lat": -9.59,
-          "lon": -51.62
+          "lat": 5.79,
+          "lon": 47.33
         }
       },
       "country": [
         {
-          "href": "https://api.reliefweb.int/v2/countries/42",
-          "id": 42,
-          "name": "Brazil",
-          "shortname": "Brazil",
-          "iso3": "bra",
+          "href": "https://api.reliefweb.int/v2/countries/216",
+          "id": 216,
+          "name": "Somalia",
+          "shortname": "Somalia",
+          "iso3": "som",
           "location": {
-            "lat": -9.59,
-            "lon": -51.62
+            "lat": 5.79,
+            "lon": 47.33
           },
           "primary": true
         }
       ],
       "type": [
         {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
+          "id": 4642,
+          "name": "Epidemic",
+          "code": "EP",
           "primary": true
         }
       ],
-      "url": "https://reliefweb.int/taxonomy/term/6373",
+      "url": "https://reliefweb.int/taxonomy/term/5536",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1985-04-01T00:00:00+00:00",
@@ -2891,50 +2891,6 @@
       }
     },
     {
-      "id": "6187",
-      "name": "Cuba: Hurricane Kate - Nov 1985",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/71",
-        "id": 71,
-        "name": "Cuba",
-        "shortname": "Cuba",
-        "iso3": "cub",
-        "location": {
-          "lat": 21.95,
-          "lon": -79.24
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/71",
-          "id": 71,
-          "name": "Cuba",
-          "shortname": "Cuba",
-          "iso3": "cub",
-          "location": {
-            "lat": 21.95,
-            "lon": -79.24
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4618,
-          "name": "Tropical Cyclone",
-          "code": "TC",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6187",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1985-11-01T00:00:00+00:00",
-        "event": "1985-11-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5570",
       "name": "Colombia: Volcanic Eruption - Nov 1985",
       "status": "past",
@@ -3016,6 +2972,50 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/4804",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1985-11-01T00:00:00+00:00",
+        "event": "1985-11-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "6187",
+      "name": "Cuba: Hurricane Kate - Nov 1985",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/71",
+        "id": 71,
+        "name": "Cuba",
+        "shortname": "Cuba",
+        "iso3": "cub",
+        "location": {
+          "lat": 21.95,
+          "lon": -79.24
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/71",
+          "id": 71,
+          "name": "Cuba",
+          "shortname": "Cuba",
+          "iso3": "cub",
+          "location": {
+            "lat": 21.95,
+            "lon": -79.24
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4618,
+          "name": "Tropical Cyclone",
+          "code": "TC",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6187",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1985-11-01T00:00:00+00:00",
@@ -5772,6 +5772,50 @@
       }
     },
     {
+      "id": "6163",
+      "name": "Somalia: Drought May - 1987",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/216",
+        "id": 216,
+        "name": "Somalia",
+        "shortname": "Somalia",
+        "iso3": "som",
+        "location": {
+          "lat": 5.79,
+          "lon": 47.33
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/216",
+          "id": 216,
+          "name": "Somalia",
+          "shortname": "Somalia",
+          "iso3": "som",
+          "location": {
+            "lat": 5.79,
+            "lon": 47.33
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4672,
+          "name": "Drought",
+          "code": "DR",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6163",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1987-05-01T00:00:00+00:00",
+        "event": "1987-05-01T00:00:00+00:00"
+      }
+    },
+    {
       "id": "5386",
       "name": "China: Forest Fire - May 1987",
       "description": "A UNDRO/UNDP representative reports that a major fire broke out on 6 May in Gulian forest, Mohe county of Heilongjiang province, killing 142 people, rendering 51,000 homeless. More than 300,000 hectares of forest was affected. Over 27,000 inhabitants of Xilinji and Tuqiang  were evacuated. ([UN DHA, 13 May 1987](https://reliefweb.int/node/35150)). As of 14 May 1987, the fire has so far killed 168, seriously injured 300 and made 40,000 homeless. A total of 11,700 families have been affected.  ([UN DHA, 14 May 1987](https://reliefweb.int/node/35150))",
@@ -5812,50 +5856,6 @@
       "url": "https://reliefweb.int/taxonomy/term/5386",
       "date": {
         "changed": "2020-12-29T06:06:30+00:00",
-        "created": "1987-05-01T00:00:00+00:00",
-        "event": "1987-05-01T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "6163",
-      "name": "Somalia: Drought May - 1987",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/216",
-        "id": 216,
-        "name": "Somalia",
-        "shortname": "Somalia",
-        "iso3": "som",
-        "location": {
-          "lat": 5.79,
-          "lon": 47.33
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/216",
-          "id": 216,
-          "name": "Somalia",
-          "shortname": "Somalia",
-          "iso3": "som",
-          "location": {
-            "lat": 5.79,
-            "lon": 47.33
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4672,
-          "name": "Drought",
-          "code": "DR",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6163",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
         "created": "1987-05-01T00:00:00+00:00",
         "event": "1987-05-01T00:00:00+00:00"
       }
@@ -7869,6 +7869,50 @@
       }
     },
     {
+      "id": "5020",
+      "name": "Colombia: Floods - Aug 1988",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/64",
+        "id": 64,
+        "name": "Colombia",
+        "shortname": "Colombia",
+        "iso3": "col",
+        "location": {
+          "lat": 3.9,
+          "lon": -73.07
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/64",
+          "id": 64,
+          "name": "Colombia",
+          "shortname": "Colombia",
+          "iso3": "col",
+          "location": {
+            "lat": 3.9,
+            "lon": -73.07
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5020",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1988-08-01T00:00:00+00:00",
+        "event": "1988-08-01T00:00:00+00:00"
+      }
+    },
+    {
       "id": "6176",
       "name": "China: Floods in Shanxi Province - Aug 1988",
       "description": "More than 30 counties have been hit by hailstorms since mid-June. in Lanxi, 903 persons were injured, with 170,000 people, 102 villages, and 67,700 hectares of farmland affected. More than 15 cities and counties were hit by rainstorms between 13-18 July. 18 persons were injured. Floods have ruined 345 houses, and 10,000 hectares of farmland. Inundations in 6 towns and 59,000 houses damaged dozens of water conservation facilities. ([UN DHA, 18 Aug 1988](https://reliefweb.int/node/35143))",
@@ -7909,50 +7953,6 @@
       "url": "https://reliefweb.int/taxonomy/term/6176",
       "date": {
         "changed": "2021-10-03T06:16:48+00:00",
-        "created": "1988-08-01T00:00:00+00:00",
-        "event": "1988-08-01T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "5020",
-      "name": "Colombia: Floods - Aug 1988",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/64",
-        "id": 64,
-        "name": "Colombia",
-        "shortname": "Colombia",
-        "iso3": "col",
-        "location": {
-          "lat": 3.9,
-          "lon": -73.07
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/64",
-          "id": 64,
-          "name": "Colombia",
-          "shortname": "Colombia",
-          "iso3": "col",
-          "location": {
-            "lat": 3.9,
-            "lon": -73.07
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5020",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
         "created": "1988-08-01T00:00:00+00:00",
         "event": "1988-08-01T00:00:00+00:00"
       }
@@ -8447,50 +8447,6 @@
       }
     },
     {
-      "id": "5822",
-      "name": "Honduras: Floods - Sep 1988",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/116",
-        "id": 116,
-        "name": "Honduras",
-        "shortname": "Honduras",
-        "iso3": "hnd",
-        "location": {
-          "lat": 14.82,
-          "lon": -86.62
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/116",
-          "id": 116,
-          "name": "Honduras",
-          "shortname": "Honduras",
-          "iso3": "hnd",
-          "location": {
-            "lat": 14.82,
-            "lon": -86.62
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5822",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1988-09-01T00:00:00+00:00",
-        "event": "1988-09-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "6171",
       "name": "El Salvador: Floods - Sep 1988",
       "status": "past",
@@ -8528,6 +8484,50 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/6171",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1988-09-01T00:00:00+00:00",
+        "event": "1988-09-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5822",
+      "name": "Honduras: Floods - Sep 1988",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/116",
+        "id": 116,
+        "name": "Honduras",
+        "shortname": "Honduras",
+        "iso3": "hnd",
+        "location": {
+          "lat": 14.82,
+          "lon": -86.62
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/116",
+          "id": 116,
+          "name": "Honduras",
+          "shortname": "Honduras",
+          "iso3": "hnd",
+          "location": {
+            "lat": 14.82,
+            "lon": -86.62
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5822",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1988-09-01T00:00:00+00:00",
@@ -8999,6 +8999,50 @@
       }
     },
     {
+      "id": "6142",
+      "name": "Panama: Hurricane Joan - Nov 1988",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/184",
+        "id": 184,
+        "name": "Panama",
+        "shortname": "Panama",
+        "iso3": "pan",
+        "location": {
+          "lat": 8.7,
+          "lon": -80.27
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/184",
+          "id": 184,
+          "name": "Panama",
+          "shortname": "Panama",
+          "iso3": "pan",
+          "location": {
+            "lat": 8.7,
+            "lon": -80.27
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4618,
+          "name": "Tropical Cyclone",
+          "code": "TC",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6142",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1988-11-01T00:00:00+00:00",
+        "event": "1988-11-01T00:00:00+00:00"
+      }
+    },
+    {
       "id": "5093",
       "name": "China: Earthquake - Nov 1988",
       "description": "On 6 November 1988, an earthquake measuring 7.6 on the richter scale hit southwest China in Lancang and Menglian counties of Yunnan province. The population of 14 counties in Yunnan province is 3.1 million, of which over 1 million people were affected by the earthquake. 3,364 persons were seriously injured. Over 200,000 buildings, including 144,000 houses, collapsed. In addition, 500,000 buildings, including 253,000 houses, were damaged. Almost 1,000 schools and 98 clinics were destroyed. In Lancang county, 2,590 persons were injured, and 70 percent of the population was affected. 74 percent of houses were damaged/destroyed and 40,000 mt of grain was reportedly ruined. ([UN DHA, 14 Nov 1988](https://reliefweb.int/node/35115))",
@@ -9039,50 +9083,6 @@
       "url": "https://reliefweb.int/taxonomy/term/5093",
       "date": {
         "changed": "2021-05-04T05:55:29+00:00",
-        "created": "1988-11-01T00:00:00+00:00",
-        "event": "1988-11-01T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "6142",
-      "name": "Panama: Hurricane Joan - Nov 1988",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/184",
-        "id": 184,
-        "name": "Panama",
-        "shortname": "Panama",
-        "iso3": "pan",
-        "location": {
-          "lat": 8.7,
-          "lon": -80.27
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/184",
-          "id": 184,
-          "name": "Panama",
-          "shortname": "Panama",
-          "iso3": "pan",
-          "location": {
-            "lat": 8.7,
-            "lon": -80.27
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4618,
-          "name": "Tropical Cyclone",
-          "code": "TC",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6142",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
         "created": "1988-11-01T00:00:00+00:00",
         "event": "1988-11-01T00:00:00+00:00"
       }
@@ -10302,6 +10302,50 @@
       }
     },
     {
+      "id": "5182",
+      "name": "Somalia: Floods - Jun 1989",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/216",
+        "id": 216,
+        "name": "Somalia",
+        "shortname": "Somalia",
+        "iso3": "som",
+        "location": {
+          "lat": 5.79,
+          "lon": 47.33
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/216",
+          "id": 216,
+          "name": "Somalia",
+          "shortname": "Somalia",
+          "iso3": "som",
+          "location": {
+            "lat": 5.79,
+            "lon": 47.33
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5182",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1989-06-01T00:00:00+00:00",
+        "event": "1989-06-01T00:00:00+00:00"
+      }
+    },
+    {
       "id": "6219",
       "name": "Sri Lanka: Floods - Jun 1989",
       "description": "The UNDP/UNDRO resident representative reports heavy rains during the past several days which caused floods and landslides in the southwestern part of Sri Lanka. The worst affected area was Bulathkohupitiya in the Kegalle district. Other affected districts were Eliya, Gampaha, Galle, Kalutara, Matara, Nuwara and Ratnapura. ([UN DHA, 6 Jun 1989](https://reliefweb.int/node/34776))\n\nAccording to the UNDP/UNDRP resident representative, the latest official estimates show more than 300 dead and 300,000 homeless. ([UN DHA, 8 Jun 1989](https://reliefweb.int/node/34776))\n\nWith receding flood waters, victims in the Colombo area who were previously housed in temples and schools are preparing to return to their houses. The number of affected persons in the most affected districts (Colombo, Galle, Gampaha, Kalutara, Kegalle, Ratnapura) is now estimated at 250,000. ([UN DHA, 9 Jun 1989](https://reliefweb.int/node/34776))",
@@ -10342,50 +10386,6 @@
       "url": "https://reliefweb.int/taxonomy/term/6219",
       "date": {
         "changed": "2022-06-09T05:59:37+00:00",
-        "created": "1989-06-01T00:00:00+00:00",
-        "event": "1989-06-01T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "5182",
-      "name": "Somalia: Floods - Jun 1989",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/216",
-        "id": 216,
-        "name": "Somalia",
-        "shortname": "Somalia",
-        "iso3": "som",
-        "location": {
-          "lat": 5.79,
-          "lon": 47.33
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/216",
-          "id": 216,
-          "name": "Somalia",
-          "shortname": "Somalia",
-          "iso3": "som",
-          "location": {
-            "lat": 5.79,
-            "lon": 47.33
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5182",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
         "created": "1989-06-01T00:00:00+00:00",
         "event": "1989-06-01T00:00:00+00:00"
       }
@@ -12169,50 +12169,6 @@
       }
     },
     {
-      "id": "5472",
-      "name": "Southeast Europe: Earthquake - May 1990",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/196",
-        "id": 196,
-        "name": "Romania",
-        "shortname": "Romania",
-        "iso3": "rou",
-        "location": {
-          "lat": 45.9432,
-          "lon": 24.9668
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/196",
-          "id": 196,
-          "name": "Romania",
-          "shortname": "Romania",
-          "iso3": "rou",
-          "location": {
-            "lat": 45.9432,
-            "lon": 24.9668
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4628,
-          "name": "Earthquake",
-          "code": "EQ",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5472",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1990-05-01T00:00:00+00:00",
-        "event": "1990-05-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "6306",
       "name": "Sudan: Earthquake - May 1990",
       "status": "past",
@@ -12250,6 +12206,50 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/6306",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1990-05-01T00:00:00+00:00",
+        "event": "1990-05-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5472",
+      "name": "Southeast Europe: Earthquake - May 1990",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/196",
+        "id": 196,
+        "name": "Romania",
+        "shortname": "Romania",
+        "iso3": "rou",
+        "location": {
+          "lat": 45.9432,
+          "lon": 24.9668
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/196",
+          "id": 196,
+          "name": "Romania",
+          "shortname": "Romania",
+          "iso3": "rou",
+          "location": {
+            "lat": 45.9432,
+            "lon": 24.9668
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4628,
+          "name": "Earthquake",
+          "code": "EQ",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5472",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1990-05-01T00:00:00+00:00",
@@ -12347,50 +12347,6 @@
       }
     },
     {
-      "id": "6189",
-      "name": "Iran: Earthquake - Jun 1990",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/121",
-        "id": 121,
-        "name": "Iran (Islamic Republic of)",
-        "shortname": "Iran",
-        "iso3": "irn",
-        "location": {
-          "lat": 32.57,
-          "lon": 54.3
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/121",
-          "id": 121,
-          "name": "Iran (Islamic Republic of)",
-          "shortname": "Iran",
-          "iso3": "irn",
-          "location": {
-            "lat": 32.57,
-            "lon": 54.3
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4628,
-          "name": "Earthquake",
-          "code": "EQ",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6189",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1990-06-01T00:00:00+00:00",
-        "event": "1990-06-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5187",
       "name": "Turkey: Floods - Jun 1990",
       "status": "past",
@@ -12475,6 +12431,50 @@
       "url": "https://reliefweb.int/taxonomy/term/4822",
       "date": {
         "changed": "2023-12-18T04:37:55+00:00",
+        "created": "1990-06-01T00:00:00+00:00",
+        "event": "1990-06-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "6189",
+      "name": "Iran: Earthquake - Jun 1990",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/121",
+        "id": 121,
+        "name": "Iran (Islamic Republic of)",
+        "shortname": "Iran",
+        "iso3": "irn",
+        "location": {
+          "lat": 32.57,
+          "lon": 54.3
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/121",
+          "id": 121,
+          "name": "Iran (Islamic Republic of)",
+          "shortname": "Iran",
+          "iso3": "irn",
+          "location": {
+            "lat": 32.57,
+            "lon": 54.3
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4628,
+          "name": "Earthquake",
+          "code": "EQ",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6189",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
         "created": "1990-06-01T00:00:00+00:00",
         "event": "1990-06-01T00:00:00+00:00"
       }
@@ -14031,50 +14031,6 @@
       }
     },
     {
-      "id": "5876",
-      "name": "Mongolia: Severe Winds/Snow/Steppe Fire - Apr 1991",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/160",
-        "id": 160,
-        "name": "Mongolia",
-        "shortname": "Mongolia",
-        "iso3": "mng",
-        "location": {
-          "lat": 46.84,
-          "lon": 103.08
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/160",
-          "id": 160,
-          "name": "Mongolia",
-          "shortname": "Mongolia",
-          "iso3": "mng",
-          "location": {
-            "lat": 46.84,
-            "lon": 103.08
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4656,
-          "name": "Severe Local Storm",
-          "code": "ST",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5876",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1991-04-01T00:00:00+00:00",
-        "event": "1991-04-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "6140",
       "name": "Costa Rica: Earthquake - Apr 1991",
       "status": "past",
@@ -14112,6 +14068,50 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/6140",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1991-04-01T00:00:00+00:00",
+        "event": "1991-04-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5876",
+      "name": "Mongolia: Severe Winds/Snow/Steppe Fire - Apr 1991",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/160",
+        "id": 160,
+        "name": "Mongolia",
+        "shortname": "Mongolia",
+        "iso3": "mng",
+        "location": {
+          "lat": 46.84,
+          "lon": 103.08
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/160",
+          "id": 160,
+          "name": "Mongolia",
+          "shortname": "Mongolia",
+          "iso3": "mng",
+          "location": {
+            "lat": 46.84,
+            "lon": 103.08
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4656,
+          "name": "Severe Local Storm",
+          "code": "ST",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5876",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1991-04-01T00:00:00+00:00",
@@ -14572,6 +14572,50 @@
       }
     },
     {
+      "id": "6233",
+      "name": "Maldives: Storms/Surges - Jun 1991",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/148",
+        "id": 148,
+        "name": "Maldives",
+        "shortname": "Maldives",
+        "iso3": "mdv",
+        "location": {
+          "lat": 3.22,
+          "lon": 73.25
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/148",
+          "id": 148,
+          "name": "Maldives",
+          "shortname": "Maldives",
+          "iso3": "mdv",
+          "location": {
+            "lat": 3.22,
+            "lon": 73.25
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4618,
+          "name": "Tropical Cyclone",
+          "code": "TC",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6233",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1991-06-01T00:00:00+00:00",
+        "event": "1991-06-01T00:00:00+00:00"
+      }
+    },
+    {
       "id": "5941",
       "name": "China: Floods - Jun 1991",
       "description": "A UNDRO delegate returned to Geneva on the 31st of August after a 5-week mission to China concerning the floods that affected the provinces of Anhui, Jiangsu and Henan (East China) in June/July 1991.\n\nDuring his mission in China, the UNDRO delegate undertook two field missions covering the areas affected by the floods. From 24 to 29 July, the delegate visited Anhui and Jiangsu provinces to assess the situation and to submit recommendations for the appropriate use of emergency funds.\n\nAnhui province:\n\n- death toll: 556\n\n- number of homeless: 5.93 million\n\n- number of persons evacuated: 4,922,300\n\n- number of dwellings destroyed or needing repairs: 2.251 million\n\nJiangsu province:\n\n- death toll: 260\n\n- number of homeless: 2.12 million\n\n- number of persons evacuated: 3.36 million\n\n- number of dwellings destroyed or needing repairs: 1.35 million ([UN DHA, 3 Sep 1991](https://reliefweb.int/node/35103))",
@@ -14658,50 +14702,6 @@
       "url": "https://reliefweb.int/taxonomy/term/5717",
       "date": {
         "changed": "2022-10-11T05:26:18+00:00",
-        "created": "1991-06-01T00:00:00+00:00",
-        "event": "1991-06-01T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "6233",
-      "name": "Maldives: Storms/Surges - Jun 1991",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/148",
-        "id": 148,
-        "name": "Maldives",
-        "shortname": "Maldives",
-        "iso3": "mdv",
-        "location": {
-          "lat": 3.22,
-          "lon": 73.25
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/148",
-          "id": 148,
-          "name": "Maldives",
-          "shortname": "Maldives",
-          "iso3": "mdv",
-          "location": {
-            "lat": 3.22,
-            "lon": 73.25
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4618,
-          "name": "Tropical Cyclone",
-          "code": "TC",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6233",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
         "created": "1991-06-01T00:00:00+00:00",
         "event": "1991-06-01T00:00:00+00:00"
       }
@@ -14937,50 +14937,6 @@
       }
     },
     {
-      "id": "6231",
-      "name": "Cambodia: Flood Emergency - Aug 1991",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/48",
-        "id": 48,
-        "name": "Cambodia",
-        "shortname": "Cambodia",
-        "iso3": "khm",
-        "location": {
-          "lat": 12.46,
-          "lon": 104.92
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/48",
-          "id": 48,
-          "name": "Cambodia",
-          "shortname": "Cambodia",
-          "iso3": "khm",
-          "location": {
-            "lat": 12.46,
-            "lon": 104.92
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6231",
-      "date": {
-        "changed": "2023-01-20T04:43:48+00:00",
-        "created": "1991-08-01T00:00:00+00:00",
-        "event": "1991-08-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5895",
       "name": "Typhoon Fred - Aug 1991",
       "description": "UNDRO/UNDP representative reports that on 17 August 1991, Typhoon Fred struck central Vietnam provinces of Quang-Bin and Ha Tinh. Neighbouring provinces of Than Hor and Nghe affected also. Preliminary information received from national commission on storm and flood control. Damage/losses can be summarized as follows: 5 deaths, 16 injured, 3,331 houses collapsed and 99,630 roofs blown off, more than 40 hospitals, dispensaries and schools, equally affected, dykes, roads, bridges severely damaged and power lines broken, 67,600 ha rice and subsidiary crops flooded, damaged or destroyed, irrigation works seriously affected. ([UN DHA, 20 Aug 1991](https://reliefweb.int/node/34321))\n\nUNDRO/UNDP Resident Representative reports 5 deaths, 16 injured, 3,331 houses collapsed 99,630 roofs blown off, 40 hospitals, dispensaries and schools affected, infrastructure damaged and large acreage rice and subsidiary crops flooded, damaged or destroyed. New information received from Ministry of Water Resources who also heads National Commission Typhoon/Flood Control, indicates that damage to infrastructure and agriculture output is as follows: estimated loss rice output 20 to 30 percent. Badly damaged 37,900 ha of blossoming rice, flooded 14,000 ha rice, 3,000 ha subsidiary crops. 50 boats and ships sunk, 10,375 houses collapsed. 347,070 m3 irrigation embankments washed off. Loss estimate VND 8.5 billion (USD 9.5 million). In Than Hoa province\ncontinuing heavy rains and floods. ([UN DHA, 26 Aug 1991](https://reliefweb.int/node/34321))",
@@ -15143,6 +15099,50 @@
       "url": "https://reliefweb.int/taxonomy/term/4952",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1991-08-01T00:00:00+00:00",
+        "event": "1991-08-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "6231",
+      "name": "Cambodia: Flood Emergency - Aug 1991",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/48",
+        "id": 48,
+        "name": "Cambodia",
+        "shortname": "Cambodia",
+        "iso3": "khm",
+        "location": {
+          "lat": 12.46,
+          "lon": 104.92
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/48",
+          "id": 48,
+          "name": "Cambodia",
+          "shortname": "Cambodia",
+          "iso3": "khm",
+          "location": {
+            "lat": 12.46,
+            "lon": 104.92
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6231",
+      "date": {
+        "changed": "2023-01-20T04:43:48+00:00",
         "created": "1991-08-01T00:00:00+00:00",
         "event": "1991-08-01T00:00:00+00:00"
       }
@@ -16090,50 +16090,6 @@
       }
     },
     {
-      "id": "6232",
-      "name": "Philippines: Taal Volcano Alert - Feb 1992",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/188",
-        "id": 188,
-        "name": "Philippines",
-        "shortname": "Philippines",
-        "iso3": "phl",
-        "location": {
-          "lat": 11.74,
-          "lon": 122.88
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/188",
-          "id": 188,
-          "name": "Philippines",
-          "shortname": "Philippines",
-          "iso3": "phl",
-          "location": {
-            "lat": 11.74,
-            "lon": 122.88
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4615,
-          "name": "Volcano",
-          "code": "VO",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6232",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1992-02-01T00:00:00+00:00",
-        "event": "1992-02-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5139",
       "name": "Algeria: Heavy Rains/Earthquake - Feb 1992",
       "description": "Between 21-29 January 1992, following a long period of drought, torrential rains resulted in severe flooding in the areas of Alger, Tipaza, Blida and Ain-Defla inundating roads and at last 50 000 ha of land. \n18 deaths had been reported. Additionally, a medium-size earthquake occurred in Ain-Defla affecting more than 450 families. [OCHA, 07 Feb 1992](https://reliefweb.int/node/34491)",
@@ -16260,6 +16216,50 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/4698",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1992-02-01T00:00:00+00:00",
+        "event": "1992-02-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "6232",
+      "name": "Philippines: Taal Volcano Alert - Feb 1992",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/188",
+        "id": 188,
+        "name": "Philippines",
+        "shortname": "Philippines",
+        "iso3": "phl",
+        "location": {
+          "lat": 11.74,
+          "lon": 122.88
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/188",
+          "id": 188,
+          "name": "Philippines",
+          "shortname": "Philippines",
+          "iso3": "phl",
+          "location": {
+            "lat": 11.74,
+            "lon": 122.88
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4615,
+          "name": "Volcano",
+          "code": "VO",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6232",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1992-02-01T00:00:00+00:00",
@@ -16443,50 +16443,6 @@
       }
     },
     {
-      "id": "5920",
-      "name": "Ecuador: Floods - Mar 1992",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/81",
-        "id": 81,
-        "name": "Ecuador",
-        "shortname": "Ecuador",
-        "iso3": "ecu",
-        "location": {
-          "lat": -1.16,
-          "lon": -78.43
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/81",
-          "id": 81,
-          "name": "Ecuador",
-          "shortname": "Ecuador",
-          "iso3": "ecu",
-          "location": {
-            "lat": -1.16,
-            "lon": -78.43
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5920",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1992-03-01T00:00:00+00:00",
-        "event": "1992-03-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "6363",
       "name": "Tropical Cyclone Fran - Mar 1992",
       "description": "Tropical Cyclone 'Fran' hit Vanuatu on 9 March 1992 with average winds estimated at 90 knots and gusting to 120 knots. Early reports indicate worst damage to Efate island and Port Vila where buildings damaged by strong winds and water. Evacuation centres were opened and communications equipment secured before cyclone hit. All schools were closed and national disaster management office broadcasted hourly preparedness messages to public. These preparatory measures expected to have mitigated effects of cyclone. ([UN DHA, 10 Mar 1992](https://reliefweb.int/node/34416))\n\nThe effects of tropical cyclone Fran were felt over a large area of the southwest Pacific. At Wallis and Futuna Islands, damage to trees, telephone and power lines was experienced, several boats were sunk and some buildings lost roofs. The heaviest impacts were felt in Vanuatu; in Erromango, houses were destroyed, considerable crop damage occurred and a storm surge was reported at Erromango wharf. In Efate, over 130 houses lost roofs. ([Govt. of Australia, 16 Mar 1992](https://reliefweb.int/node/3991764))",
@@ -16541,6 +16497,50 @@
         "changed": "2023-08-25T02:42:32+00:00",
         "created": "1992-03-01T00:00:00+00:00",
         "event": "1992-03-09T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5920",
+      "name": "Ecuador: Floods - Mar 1992",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/81",
+        "id": 81,
+        "name": "Ecuador",
+        "shortname": "Ecuador",
+        "iso3": "ecu",
+        "location": {
+          "lat": -1.16,
+          "lon": -78.43
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/81",
+          "id": 81,
+          "name": "Ecuador",
+          "shortname": "Ecuador",
+          "iso3": "ecu",
+          "location": {
+            "lat": -1.16,
+            "lon": -78.43
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5920",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1992-03-01T00:00:00+00:00",
+        "event": "1992-03-01T00:00:00+00:00"
       }
     },
     {
@@ -17512,50 +17512,6 @@
       }
     },
     {
-      "id": "6286",
-      "name": "Colombia: Earthquake and Volcanic Activity - Oct 1992",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/64",
-        "id": 64,
-        "name": "Colombia",
-        "shortname": "Colombia",
-        "iso3": "col",
-        "location": {
-          "lat": 3.9,
-          "lon": -73.07
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/64",
-          "id": 64,
-          "name": "Colombia",
-          "shortname": "Colombia",
-          "iso3": "col",
-          "location": {
-            "lat": 3.9,
-            "lon": -73.07
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4628,
-          "name": "Earthquake",
-          "code": "EQ",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6286",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1992-10-01T00:00:00+00:00",
-        "event": "1992-10-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5705",
       "name": "Viet Nam: Typhoon Angela - Oct 1992",
       "status": "past",
@@ -17593,6 +17549,50 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/5705",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1992-10-01T00:00:00+00:00",
+        "event": "1992-10-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "6286",
+      "name": "Colombia: Earthquake and Volcanic Activity - Oct 1992",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/64",
+        "id": 64,
+        "name": "Colombia",
+        "shortname": "Colombia",
+        "iso3": "col",
+        "location": {
+          "lat": 3.9,
+          "lon": -73.07
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/64",
+          "id": 64,
+          "name": "Colombia",
+          "shortname": "Colombia",
+          "iso3": "col",
+          "location": {
+            "lat": 3.9,
+            "lon": -73.07
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4628,
+          "name": "Earthquake",
+          "code": "EQ",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6286",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1992-10-01T00:00:00+00:00",
@@ -18272,50 +18272,6 @@
       }
     },
     {
-      "id": "5545",
-      "name": "Bangladesh: Thunderstorms - Jan 1993",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/31",
-        "id": 31,
-        "name": "Bangladesh",
-        "shortname": "Bangladesh",
-        "iso3": "bgd",
-        "location": {
-          "lat": 23.84,
-          "lon": 90.27
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/31",
-          "id": 31,
-          "name": "Bangladesh",
-          "shortname": "Bangladesh",
-          "iso3": "bgd",
-          "location": {
-            "lat": 23.84,
-            "lon": 90.27
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4656,
-          "name": "Severe Local Storm",
-          "code": "ST",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5545",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1993-01-01T00:00:00+00:00",
-        "event": "1993-01-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5753",
       "name": "Colombia: Eruption of Volcano Galeras - Jan 1993",
       "status": "past",
@@ -18353,6 +18309,50 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/5753",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1993-01-01T00:00:00+00:00",
+        "event": "1993-01-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5545",
+      "name": "Bangladesh: Thunderstorms - Jan 1993",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/31",
+        "id": 31,
+        "name": "Bangladesh",
+        "shortname": "Bangladesh",
+        "iso3": "bgd",
+        "location": {
+          "lat": 23.84,
+          "lon": 90.27
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/31",
+          "id": 31,
+          "name": "Bangladesh",
+          "shortname": "Bangladesh",
+          "iso3": "bgd",
+          "location": {
+            "lat": 23.84,
+            "lon": 90.27
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4656,
+          "name": "Severe Local Storm",
+          "code": "ST",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5545",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1993-01-01T00:00:00+00:00",
@@ -18905,50 +18905,6 @@
       }
     },
     {
-      "id": "6203",
-      "name": "Eritrea: Hailstorm - Apr 1993",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/85",
-        "id": 85,
-        "name": "Eritrea",
-        "shortname": "Eritrea",
-        "iso3": "eri",
-        "location": {
-          "lat": 15.68,
-          "lon": 38.58
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/85",
-          "id": 85,
-          "name": "Eritrea",
-          "shortname": "Eritrea",
-          "iso3": "eri",
-          "location": {
-            "lat": 15.68,
-            "lon": 38.58
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4656,
-          "name": "Severe Local Storm",
-          "code": "ST",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6203",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1993-04-01T00:00:00+00:00",
-        "event": "1993-04-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5978",
       "name": "Ecuador: Rains/Landslides - Apr 1993",
       "status": "past",
@@ -18986,6 +18942,50 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/5978",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1993-04-01T00:00:00+00:00",
+        "event": "1993-04-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "6203",
+      "name": "Eritrea: Hailstorm - Apr 1993",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/85",
+        "id": 85,
+        "name": "Eritrea",
+        "shortname": "Eritrea",
+        "iso3": "eri",
+        "location": {
+          "lat": 15.68,
+          "lon": 38.58
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/85",
+          "id": 85,
+          "name": "Eritrea",
+          "shortname": "Eritrea",
+          "iso3": "eri",
+          "location": {
+            "lat": 15.68,
+            "lon": 38.58
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4656,
+          "name": "Severe Local Storm",
+          "code": "ST",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6203",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1993-04-01T00:00:00+00:00",
@@ -19483,51 +19483,6 @@
       }
     },
     {
-      "id": "6228",
-      "name": "Bangladesh: Floods - Jun 1993",
-      "description": "Floods which started to affect Bangladesh in early June have worsened due to heavy rainfall, seasonal storms and overflowing rivers. Flash floods and localized landslides have flattened houses, washed away bridges and railway tracks, blocked roads and cut off communication links. Storms with winds up to 43 miles per hour destroyed houses and caused boats to capsize and sink. Northeastern Bangladesh was reported to be the worst hit, including Sylhet, Sunamganj and Hobiganj districts, where tens of thousands of villagers were cut off by flood waters.  Other parts of the country were also affected including Cox's Bazar and low-lying suburbs of Dhaka. In the southern port of Chittagong, flash floods engulfed new areas and made an estimated 50,000 people homeless.  ([UN DHA, 21 Jun 1993](https://reliefweb.int/node/35279))\n\nThe damage reported by the Government on 26 June 1993 was as follows: 3,207,056 people were affected; 48,892 houses were fully damaged; 28 people died; and 175 educational institutions were fully damaged. ([UN DHA, 29 Jun 1993](https://reliefweb.int/node/35279))",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/31",
-        "id": 31,
-        "name": "Bangladesh",
-        "shortname": "Bangladesh",
-        "iso3": "bgd",
-        "location": {
-          "lat": 23.84,
-          "lon": 90.27
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/31",
-          "id": 31,
-          "name": "Bangladesh",
-          "shortname": "Bangladesh",
-          "iso3": "bgd",
-          "location": {
-            "lat": 23.84,
-            "lon": 90.27
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6228",
-      "date": {
-        "changed": "2023-01-05T05:45:56+00:00",
-        "created": "1993-06-01T00:00:00+00:00",
-        "event": "1993-06-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5933",
       "name": "Papua New Guinea: Floods - Jun 1993",
       "description": "Heavy rain in the southern part of Bougainville island in Papua New Guinea over the 12-13 June weekend caused flooding. National disaster and emergency services report that some 14,000 people have been affected in the southwestern part of the island. Damage to roads/bridges and flooding of food gardens was reported to be extensive. ([UN DHA, 17 Jun 1993](https://reliefweb.int/node/35591))",
@@ -19613,6 +19568,51 @@
       "url": "https://reliefweb.int/taxonomy/term/5723",
       "date": {
         "changed": "2025-06-16T06:18:32+00:00",
+        "created": "1993-06-01T00:00:00+00:00",
+        "event": "1993-06-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "6228",
+      "name": "Bangladesh: Floods - Jun 1993",
+      "description": "Floods which started to affect Bangladesh in early June have worsened due to heavy rainfall, seasonal storms and overflowing rivers. Flash floods and localized landslides have flattened houses, washed away bridges and railway tracks, blocked roads and cut off communication links. Storms with winds up to 43 miles per hour destroyed houses and caused boats to capsize and sink. Northeastern Bangladesh was reported to be the worst hit, including Sylhet, Sunamganj and Hobiganj districts, where tens of thousands of villagers were cut off by flood waters.  Other parts of the country were also affected including Cox's Bazar and low-lying suburbs of Dhaka. In the southern port of Chittagong, flash floods engulfed new areas and made an estimated 50,000 people homeless.  ([UN DHA, 21 Jun 1993](https://reliefweb.int/node/35279))\n\nThe damage reported by the Government on 26 June 1993 was as follows: 3,207,056 people were affected; 48,892 houses were fully damaged; 28 people died; and 175 educational institutions were fully damaged. ([UN DHA, 29 Jun 1993](https://reliefweb.int/node/35279))",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/31",
+        "id": 31,
+        "name": "Bangladesh",
+        "shortname": "Bangladesh",
+        "iso3": "bgd",
+        "location": {
+          "lat": 23.84,
+          "lon": 90.27
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/31",
+          "id": 31,
+          "name": "Bangladesh",
+          "shortname": "Bangladesh",
+          "iso3": "bgd",
+          "location": {
+            "lat": 23.84,
+            "lon": 90.27
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6228",
+      "date": {
+        "changed": "2023-01-05T05:45:56+00:00",
         "created": "1993-06-01T00:00:00+00:00",
         "event": "1993-06-01T00:00:00+00:00"
       }
@@ -20374,50 +20374,6 @@
       }
     },
     {
-      "id": "5663",
-      "name": "Venezuela: Tropical Storm - Aug 1993",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/250",
-        "id": 250,
-        "name": "Venezuela (Bolivarian Republic of)",
-        "shortname": "Venezuela",
-        "iso3": "ven",
-        "location": {
-          "lat": 7.62,
-          "lon": -65.8
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/250",
-          "id": 250,
-          "name": "Venezuela (Bolivarian Republic of)",
-          "shortname": "Venezuela",
-          "iso3": "ven",
-          "location": {
-            "lat": 7.62,
-            "lon": -65.8
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4618,
-          "name": "Tropical Cyclone",
-          "code": "TC",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5663",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1993-08-09T00:00:00+00:00",
-        "event": "1993-08-09T00:00:00+00:00"
-      }
-    },
-    {
       "id": "6561",
       "name": "Guam: Earthquake - Aug 1993",
       "status": "past",
@@ -20455,6 +20411,50 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/6561",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1993-08-09T00:00:00+00:00",
+        "event": "1993-08-09T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5663",
+      "name": "Venezuela: Tropical Storm - Aug 1993",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/250",
+        "id": 250,
+        "name": "Venezuela (Bolivarian Republic of)",
+        "shortname": "Venezuela",
+        "iso3": "ven",
+        "location": {
+          "lat": 7.62,
+          "lon": -65.8
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/250",
+          "id": 250,
+          "name": "Venezuela (Bolivarian Republic of)",
+          "shortname": "Venezuela",
+          "iso3": "ven",
+          "location": {
+            "lat": 7.62,
+            "lon": -65.8
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4618,
+          "name": "Tropical Cyclone",
+          "code": "TC",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5663",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1993-08-09T00:00:00+00:00",
@@ -21169,50 +21169,6 @@
       }
     },
     {
-      "id": "5613",
-      "name": "Costa Rica: Floods - Dec 1993",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/68",
-        "id": 68,
-        "name": "Costa Rica",
-        "shortname": "Costa Rica",
-        "iso3": "cri",
-        "location": {
-          "lat": 9.97,
-          "lon": -84.19
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/68",
-          "id": 68,
-          "name": "Costa Rica",
-          "shortname": "Costa Rica",
-          "iso3": "cri",
-          "location": {
-            "lat": 9.97,
-            "lon": -84.19
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5613",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1993-12-01T00:00:00+00:00",
-        "event": "1993-12-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "6502",
       "name": "Sri Lanka: Floods - Dec 1993",
       "description": "Since mid-December 1993, heavy rains have been hitting Sri Lanka, causing extensive flooding in the north, central and northeastern parts of the country. So far no deaths/serious injuries have been reported. However, damage to property, plantations, farms, and infrastructure is very extensive.  Nearly all major and minor irrigation tanks are overflowing. As reported to DHA, over 25,000 families (150,000 persons) have been affected and this number is expected to increase. ([UN DHA, 29 Dec 1993](https://reliefweb.int/node/34754))",
@@ -21253,6 +21209,50 @@
       "url": "https://reliefweb.int/taxonomy/term/6502",
       "date": {
         "changed": "2025-06-16T06:08:33+00:00",
+        "created": "1993-12-01T00:00:00+00:00",
+        "event": "1993-12-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5613",
+      "name": "Costa Rica: Floods - Dec 1993",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/68",
+        "id": 68,
+        "name": "Costa Rica",
+        "shortname": "Costa Rica",
+        "iso3": "cri",
+        "location": {
+          "lat": 9.97,
+          "lon": -84.19
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/68",
+          "id": 68,
+          "name": "Costa Rica",
+          "shortname": "Costa Rica",
+          "iso3": "cri",
+          "location": {
+            "lat": 9.97,
+            "lon": -84.19
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5613",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
         "created": "1993-12-01T00:00:00+00:00",
         "event": "1993-12-01T00:00:00+00:00"
       }
@@ -24055,50 +24055,6 @@
       }
     },
     {
-      "id": "5414",
-      "name": "Costa Rica: Floods - Nov 1994",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/68",
-        "id": 68,
-        "name": "Costa Rica",
-        "shortname": "Costa Rica",
-        "iso3": "cri",
-        "location": {
-          "lat": 9.97,
-          "lon": -84.19
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/68",
-          "id": 68,
-          "name": "Costa Rica",
-          "shortname": "Costa Rica",
-          "iso3": "cri",
-          "location": {
-            "lat": 9.97,
-            "lon": -84.19
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5414",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1994-11-01T00:00:00+00:00",
-        "event": "1994-11-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5846",
       "name": "Egypt: Floods - Nov 1994",
       "status": "past",
@@ -24230,6 +24186,50 @@
         "changed": "2024-10-16T03:29:31+00:00",
         "created": "1994-11-01T00:00:00+00:00",
         "event": "1994-10-31T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5414",
+      "name": "Costa Rica: Floods - Nov 1994",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/68",
+        "id": 68,
+        "name": "Costa Rica",
+        "shortname": "Costa Rica",
+        "iso3": "cri",
+        "location": {
+          "lat": 9.97,
+          "lon": -84.19
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/68",
+          "id": 68,
+          "name": "Costa Rica",
+          "shortname": "Costa Rica",
+          "iso3": "cri",
+          "location": {
+            "lat": 9.97,
+            "lon": -84.19
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5414",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1994-11-01T00:00:00+00:00",
+        "event": "1994-11-01T00:00:00+00:00"
       }
     },
     {
@@ -24725,50 +24725,6 @@
       }
     },
     {
-      "id": "5144",
-      "name": "Colombia: Earthquake - Feb 1995",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/64",
-        "id": 64,
-        "name": "Colombia",
-        "shortname": "Colombia",
-        "iso3": "col",
-        "location": {
-          "lat": 3.9,
-          "lon": -73.07
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/64",
-          "id": 64,
-          "name": "Colombia",
-          "shortname": "Colombia",
-          "iso3": "col",
-          "location": {
-            "lat": 3.9,
-            "lon": -73.07
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4628,
-          "name": "Earthquake",
-          "code": "EQ",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5144",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1995-02-01T00:00:00+00:00",
-        "event": "1995-02-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5682",
       "name": "Cyprus: Earthquake - Feb 1995",
       "status": "past",
@@ -24806,6 +24762,50 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/5682",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1995-02-01T00:00:00+00:00",
+        "event": "1995-02-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5144",
+      "name": "Colombia: Earthquake - Feb 1995",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/64",
+        "id": 64,
+        "name": "Colombia",
+        "shortname": "Colombia",
+        "iso3": "col",
+        "location": {
+          "lat": 3.9,
+          "lon": -73.07
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/64",
+          "id": 64,
+          "name": "Colombia",
+          "shortname": "Colombia",
+          "iso3": "col",
+          "location": {
+            "lat": 3.9,
+            "lon": -73.07
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4628,
+          "name": "Earthquake",
+          "code": "EQ",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5144",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1995-02-01T00:00:00+00:00",
@@ -25125,6 +25125,51 @@
       }
     },
     {
+      "id": "5947",
+      "name": "Bangladesh: Storms - Apr 1995",
+      "description": "Weekend storms affected the district of Chittagong, the district of Madaripur, and mostly the district of Munshiganj near Dhakar. In Munshiganj alone, 50 people were killed in several villages near Dhakar, out of a total of 69 reported cases. The death toll might exceed 100 since the rescue teams were unable to reach affected areas due to a general strike in the country. In addition, 1500 persons were injured, 3500 houses were damaged, and power supplies and telephone lines were interrupted. In Madaripur, south of Dhaka, another storm killed 9 people and injured more than 100 people. At the coastal area of Cox's Bazar and in Chittagong 10 were killed too.  ([UN DHA, 12 April 1995](https://reliefweb.int/node/33372))",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/31",
+        "id": 31,
+        "name": "Bangladesh",
+        "shortname": "Bangladesh",
+        "iso3": "bgd",
+        "location": {
+          "lat": 23.84,
+          "lon": 90.27
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/31",
+          "id": 31,
+          "name": "Bangladesh",
+          "shortname": "Bangladesh",
+          "iso3": "bgd",
+          "location": {
+            "lat": 23.84,
+            "lon": 90.27
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4656,
+          "name": "Severe Local Storm",
+          "code": "ST",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5947",
+      "date": {
+        "changed": "2023-01-17T04:05:09+00:00",
+        "created": "1995-04-01T00:00:00+00:00",
+        "event": "1995-04-01T00:00:00+00:00"
+      }
+    },
+    {
       "id": "5468",
       "name": "Russian Federation: Gas Explosion - Apr 1995",
       "status": "past",
@@ -25208,51 +25253,6 @@
       "url": "https://reliefweb.int/taxonomy/term/5214",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1995-04-01T00:00:00+00:00",
-        "event": "1995-04-01T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "5947",
-      "name": "Bangladesh: Storms - Apr 1995",
-      "description": "Weekend storms affected the district of Chittagong, the district of Madaripur, and mostly the district of Munshiganj near Dhakar. In Munshiganj alone, 50 people were killed in several villages near Dhakar, out of a total of 69 reported cases. The death toll might exceed 100 since the rescue teams were unable to reach affected areas due to a general strike in the country. In addition, 1500 persons were injured, 3500 houses were damaged, and power supplies and telephone lines were interrupted. In Madaripur, south of Dhaka, another storm killed 9 people and injured more than 100 people. At the coastal area of Cox's Bazar and in Chittagong 10 were killed too.  ([UN DHA, 12 April 1995](https://reliefweb.int/node/33372))",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/31",
-        "id": 31,
-        "name": "Bangladesh",
-        "shortname": "Bangladesh",
-        "iso3": "bgd",
-        "location": {
-          "lat": 23.84,
-          "lon": 90.27
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/31",
-          "id": 31,
-          "name": "Bangladesh",
-          "shortname": "Bangladesh",
-          "iso3": "bgd",
-          "location": {
-            "lat": 23.84,
-            "lon": 90.27
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4656,
-          "name": "Severe Local Storm",
-          "code": "ST",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5947",
-      "date": {
-        "changed": "2023-01-17T04:05:09+00:00",
         "created": "1995-04-01T00:00:00+00:00",
         "event": "1995-04-01T00:00:00+00:00"
       }
@@ -25392,50 +25392,6 @@
       }
     },
     {
-      "id": "5484",
-      "name": "Russian Federation: Sakhalin Island Earthquake - May 1995",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/197",
-        "id": 197,
-        "name": "Russian Federation",
-        "shortname": "Russia",
-        "iso3": "rus",
-        "location": {
-          "lat": 61.99,
-          "lon": 96.67
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/197",
-          "id": 197,
-          "name": "Russian Federation",
-          "shortname": "Russia",
-          "iso3": "rus",
-          "location": {
-            "lat": 61.99,
-            "lon": 96.67
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4628,
-          "name": "Earthquake",
-          "code": "EQ",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5484",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1995-05-01T00:00:00+00:00",
-        "event": "1995-05-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "6283",
       "name": "Bangladesh: Rainstorm / Tidal Surge - May 1995",
       "description": "Continuous heavy rainfall since 15 May, coupled with a high tidal surge, severely affected southern parts of Bangladesh, especially Cox's Bazar, Teknaf, Barguna, Bagerhat, and adjoining offshore islands (Manpura, Char Nizam, Hatiya, and Sandwip). ([UN DHA, 17 May 1995](https://reliefweb.int/node/33490))\n\nRainstorms and high tidal surges affected the districts of Bhola, Cox's Bazar, Bagerhat, Hatiya, Noakhali, Patuakhali, and Chittagong (in order of extent of damage). In Cox's Bazar, three people died and 790 were affected in five thanas of Cox's Bazar, Sadar, Chakaria, Moheskhali, Kutubdia, and Teknaf. 375 acres of crops were reported to be destroyed, while 850 acres were partially damaged. In Chittagong, 35,000 people were affected in eight thanas of Sandwip, Anwara, Banshkhali, Mirasarai, Sitakunda, and Patiya, as well as Bandar and Chandgaon of the greater Chittagong municipal area. No deaths or injuries were reported. 40 people were missing. 105 cattle were washed away. 7,810 houses were completely, and 12,315 were partially, destroyed. 7,340 acres of crops were lost.  ([UN DHA, 22 May 1995](https://reliefweb.int/node/33468))",
@@ -25476,6 +25432,50 @@
       "url": "https://reliefweb.int/taxonomy/term/6283",
       "date": {
         "changed": "2023-01-17T03:28:08+00:00",
+        "created": "1995-05-01T00:00:00+00:00",
+        "event": "1995-05-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5484",
+      "name": "Russian Federation: Sakhalin Island Earthquake - May 1995",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/197",
+        "id": 197,
+        "name": "Russian Federation",
+        "shortname": "Russia",
+        "iso3": "rus",
+        "location": {
+          "lat": 61.99,
+          "lon": 96.67
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/197",
+          "id": 197,
+          "name": "Russian Federation",
+          "shortname": "Russia",
+          "iso3": "rus",
+          "location": {
+            "lat": 61.99,
+            "lon": 96.67
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4628,
+          "name": "Earthquake",
+          "code": "EQ",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5484",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
         "created": "1995-05-01T00:00:00+00:00",
         "event": "1995-05-01T00:00:00+00:00"
       }
@@ -25924,50 +25924,6 @@
       }
     },
     {
-      "id": "6257",
-      "name": "Ghana: Floods - Jul 1995",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/102",
-        "id": 102,
-        "name": "Ghana",
-        "shortname": "Ghana",
-        "iso3": "gha",
-        "location": {
-          "lat": 7.28,
-          "lon": -1.19
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/102",
-          "id": 102,
-          "name": "Ghana",
-          "shortname": "Ghana",
-          "iso3": "gha",
-          "location": {
-            "lat": 7.28,
-            "lon": -1.19
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6257",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1995-07-01T00:00:00+00:00",
-        "event": "1995-07-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5461",
       "name": "Montserrat: Volcanic Activity - Jul 1995",
       "status": "past",
@@ -26094,6 +26050,50 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/5237",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1995-07-01T00:00:00+00:00",
+        "event": "1995-07-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "6257",
+      "name": "Ghana: Floods - Jul 1995",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/102",
+        "id": 102,
+        "name": "Ghana",
+        "shortname": "Ghana",
+        "iso3": "gha",
+        "location": {
+          "lat": 7.28,
+          "lon": -1.19
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/102",
+          "id": 102,
+          "name": "Ghana",
+          "shortname": "Ghana",
+          "iso3": "gha",
+          "location": {
+            "lat": 7.28,
+            "lon": -1.19
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6257",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1995-07-01T00:00:00+00:00",
@@ -27959,50 +27959,6 @@
       }
     },
     {
-      "id": "5109",
-      "name": "Slovenia: Waste Dump Fire - Dec 1995",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/214",
-        "id": 214,
-        "name": "Slovenia",
-        "shortname": "Slovenia",
-        "iso3": "svn",
-        "location": {
-          "lat": 46.17,
-          "lon": 14.69
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/214",
-          "id": 214,
-          "name": "Slovenia",
-          "shortname": "Slovenia",
-          "iso3": "svn",
-          "location": {
-            "lat": 46.17,
-            "lon": 14.69
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4620,
-          "name": "Technological Disaster",
-          "code": "AC",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5109",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1995-12-01T00:00:00+00:00",
-        "event": "1995-12-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5581",
       "name": "Turkey: Earthquake - Dec 1995",
       "status": "past",
@@ -28040,6 +27996,50 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/5581",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1995-12-01T00:00:00+00:00",
+        "event": "1995-12-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5109",
+      "name": "Slovenia: Waste Dump Fire - Dec 1995",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/214",
+        "id": 214,
+        "name": "Slovenia",
+        "shortname": "Slovenia",
+        "iso3": "svn",
+        "location": {
+          "lat": 46.17,
+          "lon": 14.69
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/214",
+          "id": 214,
+          "name": "Slovenia",
+          "shortname": "Slovenia",
+          "iso3": "svn",
+          "location": {
+            "lat": 46.17,
+            "lon": 14.69
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4620,
+          "name": "Technological Disaster",
+          "code": "AC",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5109",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1995-12-01T00:00:00+00:00",
@@ -28269,6 +28269,50 @@
       }
     },
     {
+      "id": "6012",
+      "name": "Haiti: Floods - Feb 1996",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/113",
+        "id": 113,
+        "name": "Haiti",
+        "shortname": "Haiti",
+        "iso3": "hti",
+        "location": {
+          "lat": 19.18,
+          "lon": -72.43
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/113",
+          "id": 113,
+          "name": "Haiti",
+          "shortname": "Haiti",
+          "iso3": "hti",
+          "location": {
+            "lat": 19.18,
+            "lon": -72.43
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6012",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1996-02-01T00:00:00+00:00",
+        "event": "1996-02-01T00:00:00+00:00"
+      }
+    },
+    {
       "id": "5199",
       "name": "Indonesia: Earthquake - Feb 1996",
       "description": "A strong earthquake hit Irian Jaya, Eastern Indonesia, on 17 February 1996 at 14:59 hrs local time (5:59 hrs GMT). According to the Indonesian Meteorology and Geophysics Agency (BMG), the earthquake measured 7.0 on the Richter scale. The epicentre was located in the Pacific Ocean, approx. 110 km east of Biak (or approx. 400 km northwest of Jayapura) at latitude 01.10 degrees south and longitude 137.15 degrees east, depth 33 km. The tremor was felt in Biak, Sarmi, Manokwari and Serui and triggered tidal waves. A series of aftershocks with magnitude 4 to 5 on the Richter scale shook part of Irian Jaya on Sunday, 18 February. The district of Biak is located on an island (off the north coast of Irian Jaya) which has a total population of 82,424. The worst affected area is the sub-district of north Biak, facing the pacific ocean, with a total population of about 9,800.  The national coordinating board for disaster management (Bakornas) and the head of the local office of Biak Numfor, provided provisional information on the impact of the earthquake as of 19 February 1996: death toll 41, with 50 injured and 19 missing; damage to 2,594 houses, 30 prayer buildings, 49 school buildings/teachers' houses, 7 village halls, and the airport control tower in Biak; estimated loss: 20 billion Rupiah (USD 8.8 million). ([UN DHA, 19 Feb 1996](https://reliefweb.int/node/33626))\n\nAs of 29 Feb, death toll was 108 with 58 missing, 56 seriously and 367 slightly injured; 1018 houses destroyed/swept away, 3180 houses with major and 845 minor damage. Updated figures on damage to public buildings and infrastructure available with DHA. National Meteorology and Geophysics authorities recorded 403 aftershocks, 4 of which at grade 6 in Richter scale. ([UN DHA, 1 Mar 1996](https://reliefweb.int/node/33638))",
@@ -28309,50 +28353,6 @@
       "url": "https://reliefweb.int/taxonomy/term/5199",
       "date": {
         "changed": "2024-04-08T01:26:57+00:00",
-        "created": "1996-02-01T00:00:00+00:00",
-        "event": "1996-02-01T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "6012",
-      "name": "Haiti: Floods - Feb 1996",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/113",
-        "id": 113,
-        "name": "Haiti",
-        "shortname": "Haiti",
-        "iso3": "hti",
-        "location": {
-          "lat": 19.18,
-          "lon": -72.43
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/113",
-          "id": 113,
-          "name": "Haiti",
-          "shortname": "Haiti",
-          "iso3": "hti",
-          "location": {
-            "lat": 19.18,
-            "lon": -72.43
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6012",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
         "created": "1996-02-01T00:00:00+00:00",
         "event": "1996-02-01T00:00:00+00:00"
       }
@@ -29076,52 +29076,6 @@
       }
     },
     {
-      "id": "6208",
-      "name": "Typhoon Gloria - Jul 1996",
-      "description": "Typhoon Gloria, the sixth major storm to hit the Philippines (in 1996), affected the Northern Luzon provinces causing flashfloods and landslides. The typhoon, with maximum sustained winds of 120 kph near the centre and gustiness up to 150 kph, is expected to move northwest towards Batanes in the direction of southern Taiwan. The National Disaster Coordinating Council (NDCC) of the Philippines provided a consolidated report on the impact of the typhoon as of 26 July, 0500 hrs. A total of 7,152 families (36,815 persons) were affected in ten provinces (Quezon, Aurora, Quirino, Nueva Vizcaya, Isabela, Cagayan, Batanes, La Union, Ilocos Norte and Ilocos Sur). Twenty persons were killed and six reported missing in the National Capital Region, Cordillera Autonomous Region, La Union, Ilocos Sur and Batangas. In the Mt. Pinatubo area, two foot and five foot high lahar flows were reported in the Sacobia and Pasig-Potrero rivers. Authorities have issued a full lahar alert in Pampanga and the rest of Central Luzon. ([UN DHA, 26 Jul 1996](https://reliefweb.int/node/32308))\n\nGloria skirted past the northern Philippines [...] leaving at least 55 people dead or missing. It then moved on to ravage Taiwan on 26 July where two people died, one person was reported missing and six were injured. Gloria also caused considerable damage to agricultural produce in Taiwan and economic loss was estimated at NT$ 580 million. Heading towards the coast of Fujian, Gloria made landfall near Xiamen on the morning of 27 July and\ndissipated over land. ([Govt. China-Hong Kong, 31 Mar 1997](https://reliefweb.int/node/3977510))",
-      "status": "past",
-      "glide": "TC-1996-000008-PHL",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/188",
-        "id": 188,
-        "name": "Philippines",
-        "shortname": "Philippines",
-        "iso3": "phl",
-        "location": {
-          "lat": 11.74,
-          "lon": 122.88
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/188",
-          "id": 188,
-          "name": "Philippines",
-          "shortname": "Philippines",
-          "iso3": "phl",
-          "location": {
-            "lat": 11.74,
-            "lon": 122.88
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4618,
-          "name": "Tropical Cyclone",
-          "code": "TC",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6208",
-      "date": {
-        "changed": "2023-09-27T03:20:41+00:00",
-        "created": "1996-07-01T00:00:00+00:00",
-        "event": "1996-07-21T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5800",
       "name": "Caribbean: Hurricane Bertha - Jul 1996",
       "status": "past",
@@ -29298,6 +29252,52 @@
       }
     },
     {
+      "id": "6208",
+      "name": "Typhoon Gloria - Jul 1996",
+      "description": "Typhoon Gloria, the sixth major storm to hit the Philippines (in 1996), affected the Northern Luzon provinces causing flashfloods and landslides. The typhoon, with maximum sustained winds of 120 kph near the centre and gustiness up to 150 kph, is expected to move northwest towards Batanes in the direction of southern Taiwan. The National Disaster Coordinating Council (NDCC) of the Philippines provided a consolidated report on the impact of the typhoon as of 26 July, 0500 hrs. A total of 7,152 families (36,815 persons) were affected in ten provinces (Quezon, Aurora, Quirino, Nueva Vizcaya, Isabela, Cagayan, Batanes, La Union, Ilocos Norte and Ilocos Sur). Twenty persons were killed and six reported missing in the National Capital Region, Cordillera Autonomous Region, La Union, Ilocos Sur and Batangas. In the Mt. Pinatubo area, two foot and five foot high lahar flows were reported in the Sacobia and Pasig-Potrero rivers. Authorities have issued a full lahar alert in Pampanga and the rest of Central Luzon. ([UN DHA, 26 Jul 1996](https://reliefweb.int/node/32308))\n\nGloria skirted past the northern Philippines [...] leaving at least 55 people dead or missing. It then moved on to ravage Taiwan on 26 July where two people died, one person was reported missing and six were injured. Gloria also caused considerable damage to agricultural produce in Taiwan and economic loss was estimated at NT$ 580 million. Heading towards the coast of Fujian, Gloria made landfall near Xiamen on the morning of 27 July and\ndissipated over land. ([Govt. China-Hong Kong, 31 Mar 1997](https://reliefweb.int/node/3977510))",
+      "status": "past",
+      "glide": "TC-1996-000008-PHL",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/188",
+        "id": 188,
+        "name": "Philippines",
+        "shortname": "Philippines",
+        "iso3": "phl",
+        "location": {
+          "lat": 11.74,
+          "lon": 122.88
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/188",
+          "id": 188,
+          "name": "Philippines",
+          "shortname": "Philippines",
+          "iso3": "phl",
+          "location": {
+            "lat": 11.74,
+            "lon": 122.88
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4618,
+          "name": "Tropical Cyclone",
+          "code": "TC",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6208",
+      "date": {
+        "changed": "2023-09-27T03:20:41+00:00",
+        "created": "1996-07-01T00:00:00+00:00",
+        "event": "1996-07-21T00:00:00+00:00"
+      }
+    },
+    {
       "id": "6099",
       "name": "Typhoon Frankie - Jul 1996",
       "description": "Typhoon Frankie, the first major storm to hit Vietnam this year, struck the northern part of the country on 24 July. The most affected provinces are Nam Ha, Thai Binh and Ninh Binh provinces, where heavy rains caused floods, and the wind hit the ports hard, damaging 354 fishing boats. The Central Committee for Flood and Storm Control has provided a consolidated report on the impact of the typhoon as of 28 July. The report states that 41 people have died, 224 are injured and 24 are missing. 22,310 houses collapsed, whilst 194,651 houses were submerged. Approx. 8,000 classrooms were affected by the impact, as well as approx. 2,400 hospital rooms. The committee also reports the loss of 37,755 ha of rice fields, whilst 177,875 ha of rice fields were submerged. Also roads, water resources and electricity equipment have been affected. ([UN DHA, 29 Jul 1996](https://reliefweb.int/node/32277))\n\nThe UNDP Resident Representative in Hanoi reports that the Ministry of Foreign Affairs today released the following information on the two above mentioned typhoons. On 24 July typhoon Frankie hit Thai Binh, Nam Ha and Ninh Binh provinces. And caused severe damage. Also the provinces of Hai Phong, Than Hoa, Quang Ninh, Ha Tay And Hai Hung were affected. On 22 august Typhoon Nikki struck the north-central coast of Viet Nam. However, it was reported that Nikki lost much of its strength and proceeded inland as a minor rainstorm. The authorities report a total of 194 people killed and 446 injured. More than 40,000 houses were completely destroyed, whilst more than 483,000 houses were damaged. Over 450,000 hectar of crops were damaged, with 50,000 hectar of fields completely lost. No appeal for international assistance was made by the Government of Viet Nam. ([UN DHA, 23 Aug 1996](https://reliefweb.int/node/32306))\n\nThe Disaster Management Unit of the Vietnamese Government provided consolidated damage and needs assessment for Typhoon Frankie (24 July), Tropical Low Pressure Storm (13 August) and Typhoon Niki (22 August). For Typhoon Sally (9 September) which brought rains and flooding to the northern provinces of the country, the complete damage assessment is not yet available. Damage has been massive, including 395 confirmed deaths and over 45,000 houses collapsed. The hardest hit provinces were Thai Binh, Nam Ha and Thanh Hoa. Approximately 500,000 ha of rice fields were submerged. Extensive damage to infrastructure was reported, such as earth dikes and road embankments being washed away, telephone and electricity wires being broken and missing. Total estimated damages amount USD 296 million. Government reported that, among other things, the most pressing needs are to repair /rebuild the collapsed houses and to provide food (approximately 41,000 tons). Using standard unit costs provided by the government, estimated accumulated humanitarian needs total USD 54 million. ([UN DHA, 14 Sep 1996](https://reliefweb.int/node/32285))",
@@ -29352,6 +29352,50 @@
         "changed": "2023-07-06T03:15:05+00:00",
         "created": "1996-07-01T00:00:00+00:00",
         "event": "1996-07-24T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "6416",
+      "name": "Iran: Flash Floods - Jul 1996",
+      "status": "past",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/121",
+        "id": 121,
+        "name": "Iran (Islamic Republic of)",
+        "shortname": "Iran",
+        "iso3": "irn",
+        "location": {
+          "lat": 32.57,
+          "lon": 54.3
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/121",
+          "id": 121,
+          "name": "Iran (Islamic Republic of)",
+          "shortname": "Iran",
+          "iso3": "irn",
+          "location": {
+            "lat": 32.57,
+            "lon": 54.3
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4624,
+          "name": "Flash Flood",
+          "code": "FF",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6416",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1996-07-01T00:00:00+00:00",
+        "event": "1996-07-01T00:00:00+00:00"
       }
     },
     {
@@ -29436,50 +29480,6 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/5680",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1996-07-01T00:00:00+00:00",
-        "event": "1996-07-01T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "6416",
-      "name": "Iran: Flash Floods - Jul 1996",
-      "status": "past",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/121",
-        "id": 121,
-        "name": "Iran (Islamic Republic of)",
-        "shortname": "Iran",
-        "iso3": "irn",
-        "location": {
-          "lat": 32.57,
-          "lon": 54.3
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/121",
-          "id": 121,
-          "name": "Iran (Islamic Republic of)",
-          "shortname": "Iran",
-          "iso3": "irn",
-          "location": {
-            "lat": 32.57,
-            "lon": 54.3
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4624,
-          "name": "Flash Flood",
-          "code": "FF",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6416",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1996-07-01T00:00:00+00:00",
@@ -31025,51 +31025,6 @@
       }
     },
     {
-      "id": "6212",
-      "name": "Ecuador: Drought - Feb 1997",
-      "status": "past",
-      "glide": "DR-1997-000023-ECU",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/81",
-        "id": 81,
-        "name": "Ecuador",
-        "shortname": "Ecuador",
-        "iso3": "ecu",
-        "location": {
-          "lat": -1.16,
-          "lon": -78.43
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/81",
-          "id": 81,
-          "name": "Ecuador",
-          "shortname": "Ecuador",
-          "iso3": "ecu",
-          "location": {
-            "lat": -1.16,
-            "lon": -78.43
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4672,
-          "name": "Drought",
-          "code": "DR",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6212",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1997-02-01T00:00:00+00:00",
-        "event": "1997-02-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "4815",
       "name": "Peru: Mudslides - Feb 1997",
       "status": "past",
@@ -31108,6 +31063,51 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/4815",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1997-02-01T00:00:00+00:00",
+        "event": "1997-02-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "6212",
+      "name": "Ecuador: Drought - Feb 1997",
+      "status": "past",
+      "glide": "DR-1997-000023-ECU",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/81",
+        "id": 81,
+        "name": "Ecuador",
+        "shortname": "Ecuador",
+        "iso3": "ecu",
+        "location": {
+          "lat": -1.16,
+          "lon": -78.43
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/81",
+          "id": 81,
+          "name": "Ecuador",
+          "shortname": "Ecuador",
+          "iso3": "ecu",
+          "location": {
+            "lat": -1.16,
+            "lon": -78.43
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4672,
+          "name": "Drought",
+          "code": "DR",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6212",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1997-02-01T00:00:00+00:00",
@@ -32632,6 +32632,51 @@
       }
     },
     {
+      "id": "6359",
+      "name": "Moldova: Floods - Aug 1997",
+      "status": "past",
+      "glide": "FL-1997-000522-MDA",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/158",
+        "id": 158,
+        "name": "Moldova",
+        "shortname": "Moldova",
+        "iso3": "mda",
+        "location": {
+          "lat": 47.19,
+          "lon": 28.57
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/158",
+          "id": 158,
+          "name": "Moldova",
+          "shortname": "Moldova",
+          "iso3": "mda",
+          "location": {
+            "lat": 47.19,
+            "lon": 28.57
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6359",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1997-08-01T00:00:00+00:00",
+        "event": "1997-08-01T00:00:00+00:00"
+      }
+    },
+    {
       "id": "5217",
       "name": "Myanmar: Floods - Aug 1997",
       "description": "The UNDP/DHA Resident Representative reports that, with the on-set of the monsoon, incessant rains in the first week of August, were unusually heavy in the northern and southern parts of Myanmar. The water levels of various rivers and tributaries such as Ayeyarwady, Chindwin, Thanlwin, Sittaung, Kaladan and Bago have increased (in some cases, exceeded danger levels) affecting small villages, crop lands and habitats, and dislocating many people. According to unofficial figures: 31 persons dead, over 100 persons missing. Damage and losses have affected 109,029 households (767,439 persons) with housing submerged or washed away, large areas of cultivated crop land, and draught animals. Rural health centers also affected due to the inundation. ([UN DHA, 14 Aug 1997](https://reliefweb.int/node/32045))\n\nThe flooding in Myanmar has affected nine of Myanmar's fourteen States and Divisions, with Mon State, and Bago and Ayeyarwaddy Divisions being worst hit. Official figures for these three administrative units indicate 68 deaths, with 103,650 persons from 20,851 households being affected: 35,173 persons (6,636 households) in Mon State, 33,768 persons (6,639 households) in Bago Division, and 34,709 persons (7,576 households) in Ayeyarwaddy Division. ([UN DHA, 26 Aug 1997](https://reliefweb.int/node/32221))\n\nIn Bilin 5 wards and 18 villages were submerged, affecting 33,191 persons from 6,387 households. 5 persons drowned. Out of the 7 Health clinics, 5 were flooded. 200 persons from 46 households in Natkyee were rendered homeless. 60,000 acres of paddyland were submerged under water, out of which 7,300 were totally destroyed. Of the destroyed acres, only 5,000 are replantable, the rest has been eroded. In Kyaikhto 16 villages consisting of 1,925 households were flooded, out of which 258 heavily affected. On 3 August a landslide buried a Kayin buddhist village (Saung Naing Gyi) two miles away from Kyaikhto. All 120 households were either washed away or buried under the debris. 533 people were affected by the landslide and 16 persons perished. The village is now being resettled at a place close to the previous village. Out of the cultivated 12,240 acres, 6,639 were totally destroyed. Rehabilitation of the destroyed farmland is under way. ([UN DHA, 18 Sep 1997](https://reliefweb.int/node/32575))",
@@ -32673,51 +32718,6 @@
       "url": "https://reliefweb.int/taxonomy/term/5217",
       "date": {
         "changed": "2024-02-05T02:48:21+00:00",
-        "created": "1997-08-01T00:00:00+00:00",
-        "event": "1997-08-01T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "6359",
-      "name": "Moldova: Floods - Aug 1997",
-      "status": "past",
-      "glide": "FL-1997-000522-MDA",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/158",
-        "id": 158,
-        "name": "Moldova",
-        "shortname": "Moldova",
-        "iso3": "mda",
-        "location": {
-          "lat": 47.19,
-          "lon": 28.57
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/158",
-          "id": 158,
-          "name": "Moldova",
-          "shortname": "Moldova",
-          "iso3": "mda",
-          "location": {
-            "lat": 47.19,
-            "lon": 28.57
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6359",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
         "created": "1997-08-01T00:00:00+00:00",
         "event": "1997-08-01T00:00:00+00:00"
       }
@@ -34465,51 +34465,6 @@
       }
     },
     {
-      "id": "5589",
-      "name": "Slovenia: Earthquake - Apr 1998",
-      "status": "past",
-      "glide": "EQ-1998-000110-SVN",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/214",
-        "id": 214,
-        "name": "Slovenia",
-        "shortname": "Slovenia",
-        "iso3": "svn",
-        "location": {
-          "lat": 46.17,
-          "lon": 14.69
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/214",
-          "id": 214,
-          "name": "Slovenia",
-          "shortname": "Slovenia",
-          "iso3": "svn",
-          "location": {
-            "lat": 46.17,
-            "lon": 14.69
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4628,
-          "name": "Earthquake",
-          "code": "EQ",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5589",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1998-04-01T00:00:00+00:00",
-        "event": "1998-04-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "6468",
       "name": "Vanuatu: Tropical Cyclones Yali and Zuman - Apr 1998",
       "status": "past",
@@ -34548,6 +34503,51 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/6468",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1998-04-01T00:00:00+00:00",
+        "event": "1998-04-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5589",
+      "name": "Slovenia: Earthquake - Apr 1998",
+      "status": "past",
+      "glide": "EQ-1998-000110-SVN",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/214",
+        "id": 214,
+        "name": "Slovenia",
+        "shortname": "Slovenia",
+        "iso3": "svn",
+        "location": {
+          "lat": 46.17,
+          "lon": 14.69
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/214",
+          "id": 214,
+          "name": "Slovenia",
+          "shortname": "Slovenia",
+          "iso3": "svn",
+          "location": {
+            "lat": 46.17,
+            "lon": 14.69
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4628,
+          "name": "Earthquake",
+          "code": "EQ",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5589",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1998-04-01T00:00:00+00:00",
@@ -38415,52 +38415,6 @@
       }
     },
     {
-      "id": "5775",
-      "name": "Rep. of Korea: Floods - Aug 1999",
-      "description": "On 5 August 1999, the National Disaster Prevention and Countermeasures Headquarters reported through the Office of the United Nations Resident Coordinator in Seoul that rain has stopped after having reached a peak of up to 176.5mm of rainfall per day in the southern part of the country. For Cheju Island, Pusan City, Kyungsan Province, and the southern coastal area of South Cholla Province, all warnings against torrential rain were lifted as of 4 August, 20:30 hrs. Some additional rainfall is still expected in some places of the southern part of the Korean Peninsula and Cheju Island. The report states that 40 persons were killed and 24 are missing. 24,408 people from 8,224 households have been affected. 9,647 houses and 44,046 hectares of farmland have been inundated.  ([OCHA, 6 Aug 1999](https://reliefweb.int/node/50617))",
-      "status": "past",
-      "glide": "FL-1999-000247-KOR",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/194",
-        "id": 194,
-        "name": "Republic of Korea",
-        "shortname": "Republic of Korea",
-        "iso3": "kor",
-        "location": {
-          "lat": 36.54,
-          "lon": 128.17
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/194",
-          "id": 194,
-          "name": "Republic of Korea",
-          "shortname": "Republic of Korea",
-          "iso3": "kor",
-          "location": {
-            "lat": 36.54,
-            "lon": 128.17
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5775",
-      "date": {
-        "changed": "2025-06-16T06:23:44+00:00",
-        "created": "1999-08-04T00:00:00+00:00",
-        "event": "1999-08-04T00:00:00+00:00"
-      }
-    },
-    {
       "id": "6313",
       "name": "Viet Nam: Floods - Aug 1999",
       "description": "The Disaster Management Unit (DMU) of the Office of the United Nations Resident Coordinator reports that the rapid rise of the water level of several rivers in the north, the centre and the south of Viet Nam, has caused serious flooding in the four Provinces of Binh Thuan, Lam Dong, Dac Lac and Dong Nai. The DMU reports that 35 people were either killed or are missing. In the four provinces, 8,464 houses have either been inundated, damaged or destroyed. About 24,000 hectares of farmland has been inundated (rice, paddy, sugar cane, maize). According to the Vietnamese News Agency, famine and epidemic diseases are likely to occur in Bin Thuan, the most affected Province. Many households have had no access to fresh water since July 30 when the local water supply system and electricity grid were completely destroyed. All wells in Tanh Linh and Duc Linh districts have been contaminated. The estimated total economic losses in all four provinces amount to more than USD 14 million. ([OCHA, 4 Aug 1999](https://reliefweb.int/node/50442))\n\nOn 12 August 1999, the Disaster Management Unit (DMU) of the Office of the United Nations Resident Coordinator provided an overview about the general situation, the impact and the initial national response in the four flood-affected provinces of Binh Thuan, Lam Dong, Dac Lac and Dong Nai. According to the report, 40 people were killed, 1,658 houses were destroyed and 21,377 houses have been damaged. About 20,000 hectares of paddy and crops were destroyed and 30,000 hectares have been inundated. Fisheries have also suffered substantial damage. Total losses in the sector of agriculture and fisheries amount to VND 101.7 billion (approx. USD 7.31 million). Landslides and floods have seriously affected the water distribution system. 97 bridges have either been destroyed or damaged and 28 small hydraulic power stations have been damaged. The estimated total economic losses in all four provinces amount to more than USD 19 million. ([OCHA, 13 Aug 1999](https://reliefweb.int/node/50946))",
@@ -38502,6 +38456,52 @@
       "url": "https://reliefweb.int/taxonomy/term/6313",
       "date": {
         "changed": "2023-07-14T02:19:18+00:00",
+        "created": "1999-08-04T00:00:00+00:00",
+        "event": "1999-08-04T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5775",
+      "name": "Rep. of Korea: Floods - Aug 1999",
+      "description": "On 5 August 1999, the National Disaster Prevention and Countermeasures Headquarters reported through the Office of the United Nations Resident Coordinator in Seoul that rain has stopped after having reached a peak of up to 176.5mm of rainfall per day in the southern part of the country. For Cheju Island, Pusan City, Kyungsan Province, and the southern coastal area of South Cholla Province, all warnings against torrential rain were lifted as of 4 August, 20:30 hrs. Some additional rainfall is still expected in some places of the southern part of the Korean Peninsula and Cheju Island. The report states that 40 persons were killed and 24 are missing. 24,408 people from 8,224 households have been affected. 9,647 houses and 44,046 hectares of farmland have been inundated.  ([OCHA, 6 Aug 1999](https://reliefweb.int/node/50617))",
+      "status": "past",
+      "glide": "FL-1999-000247-KOR",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/194",
+        "id": 194,
+        "name": "Republic of Korea",
+        "shortname": "Republic of Korea",
+        "iso3": "kor",
+        "location": {
+          "lat": 36.54,
+          "lon": 128.17
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/194",
+          "id": 194,
+          "name": "Republic of Korea",
+          "shortname": "Republic of Korea",
+          "iso3": "kor",
+          "location": {
+            "lat": 36.54,
+            "lon": 128.17
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5775",
+      "date": {
+        "changed": "2025-06-16T06:23:44+00:00",
         "created": "1999-08-04T00:00:00+00:00",
         "event": "1999-08-04T00:00:00+00:00"
       }
@@ -39334,51 +39334,6 @@
       }
     },
     {
-      "id": "5494",
-      "name": "India: Floods - Oct 1999",
-      "status": "past",
-      "glide": "FL-1999-000371-IND",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/119",
-        "id": 119,
-        "name": "India",
-        "shortname": "India",
-        "iso3": "ind",
-        "location": {
-          "lat": 22.76,
-          "lon": 79.28
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/119",
-          "id": 119,
-          "name": "India",
-          "shortname": "India",
-          "iso3": "ind",
-          "location": {
-            "lat": 22.76,
-            "lon": 79.28
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5494",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "1999-10-14T00:00:00+00:00",
-        "event": "1999-10-14T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5881",
       "name": "Cuba: Hurricane Irene - Oct 1999",
       "status": "past",
@@ -39417,6 +39372,51 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/5881",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "1999-10-14T00:00:00+00:00",
+        "event": "1999-10-14T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5494",
+      "name": "India: Floods - Oct 1999",
+      "status": "past",
+      "glide": "FL-1999-000371-IND",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/119",
+        "id": 119,
+        "name": "India",
+        "shortname": "India",
+        "iso3": "ind",
+        "location": {
+          "lat": 22.76,
+          "lon": 79.28
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/119",
+          "id": 119,
+          "name": "India",
+          "shortname": "India",
+          "iso3": "ind",
+          "location": {
+            "lat": 22.76,
+            "lon": 79.28
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5494",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "1999-10-14T00:00:00+00:00",
@@ -59746,51 +59746,6 @@
       }
     },
     {
-      "id": "5342",
-      "name": "Romania: Floods - Aug 2004",
-      "status": "past",
-      "glide": "FL-2004-000068-ROM",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/196",
-        "id": 196,
-        "name": "Romania",
-        "shortname": "Romania",
-        "iso3": "rou",
-        "location": {
-          "lat": 45.9432,
-          "lon": 24.9668
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/196",
-          "id": 196,
-          "name": "Romania",
-          "shortname": "Romania",
-          "iso3": "rou",
-          "location": {
-            "lat": 45.9432,
-            "lon": 24.9668
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5342",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "2004-08-06T00:00:00+00:00",
-        "event": "2004-08-06T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5983",
       "name": "DPR Korea: Floods - Aug 2004",
       "status": "past",
@@ -59829,6 +59784,51 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/5983",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "2004-08-06T00:00:00+00:00",
+        "event": "2004-08-06T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5342",
+      "name": "Romania: Floods - Aug 2004",
+      "status": "past",
+      "glide": "FL-2004-000068-ROM",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/196",
+        "id": 196,
+        "name": "Romania",
+        "shortname": "Romania",
+        "iso3": "rou",
+        "location": {
+          "lat": 45.9432,
+          "lon": 24.9668
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/196",
+          "id": 196,
+          "name": "Romania",
+          "shortname": "Romania",
+          "iso3": "rou",
+          "location": {
+            "lat": 45.9432,
+            "lon": 24.9668
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5342",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "2004-08-06T00:00:00+00:00",
@@ -63671,51 +63671,6 @@
       }
     },
     {
-      "id": "5086",
-      "name": "Indonesia: Flash Floods - Apr 2005",
-      "status": "past",
-      "glide": "FF-2005-000067-IDN",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/120",
-        "id": 120,
-        "name": "Indonesia",
-        "shortname": "Indonesia",
-        "iso3": "idn",
-        "location": {
-          "lat": -2.28,
-          "lon": 117.37
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/120",
-          "id": 120,
-          "name": "Indonesia",
-          "shortname": "Indonesia",
-          "iso3": "idn",
-          "location": {
-            "lat": -2.28,
-            "lon": 117.37
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4624,
-          "name": "Flash Flood",
-          "code": "FF",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5086",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "2005-04-26T00:00:00+00:00",
-        "event": "2005-04-26T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5722",
       "name": "Horn of Africa: Floods - Apr 2005",
       "status": "past",
@@ -63776,6 +63731,51 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/5722",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "2005-04-26T00:00:00+00:00",
+        "event": "2005-04-26T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5086",
+      "name": "Indonesia: Flash Floods - Apr 2005",
+      "status": "past",
+      "glide": "FF-2005-000067-IDN",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/120",
+        "id": 120,
+        "name": "Indonesia",
+        "shortname": "Indonesia",
+        "iso3": "idn",
+        "location": {
+          "lat": -2.28,
+          "lon": 117.37
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/120",
+          "id": 120,
+          "name": "Indonesia",
+          "shortname": "Indonesia",
+          "iso3": "idn",
+          "location": {
+            "lat": -2.28,
+            "lon": 117.37
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4624,
+          "name": "Flash Flood",
+          "code": "FF",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5086",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "2005-04-26T00:00:00+00:00",
@@ -66489,51 +66489,6 @@
       }
     },
     {
-      "id": "5817",
-      "name": "Bangladesh: Floods - Oct 2005",
-      "status": "past",
-      "glide": "FL-2005-000176-BGD",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/31",
-        "id": 31,
-        "name": "Bangladesh",
-        "shortname": "Bangladesh",
-        "iso3": "bgd",
-        "location": {
-          "lat": 23.84,
-          "lon": 90.27
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/31",
-          "id": 31,
-          "name": "Bangladesh",
-          "shortname": "Bangladesh",
-          "iso3": "bgd",
-          "location": {
-            "lat": 23.84,
-            "lon": 90.27
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5817",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "2005-10-13T00:00:00+00:00",
-        "event": "2005-10-13T00:00:00+00:00"
-      }
-    },
-    {
       "id": "6523",
       "name": "Sudan: Floods - Oct 2005",
       "status": "past",
@@ -66572,6 +66527,51 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/6523",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "2005-10-13T00:00:00+00:00",
+        "event": "2005-10-13T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5817",
+      "name": "Bangladesh: Floods - Oct 2005",
+      "status": "past",
+      "glide": "FL-2005-000176-BGD",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/31",
+        "id": 31,
+        "name": "Bangladesh",
+        "shortname": "Bangladesh",
+        "iso3": "bgd",
+        "location": {
+          "lat": 23.84,
+          "lon": 90.27
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/31",
+          "id": 31,
+          "name": "Bangladesh",
+          "shortname": "Bangladesh",
+          "iso3": "bgd",
+          "location": {
+            "lat": 23.84,
+            "lon": 90.27
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5817",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "2005-10-13T00:00:00+00:00",
@@ -66621,6 +66621,51 @@
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "2005-10-14T00:00:00+00:00",
         "event": "2005-10-14T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "6375",
+      "name": "Indonesia: Landslides - Oct 2005",
+      "status": "past",
+      "glide": "LS-2005-000179-IDN",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/120",
+        "id": 120,
+        "name": "Indonesia",
+        "shortname": "Indonesia",
+        "iso3": "idn",
+        "location": {
+          "lat": -2.28,
+          "lon": 117.37
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/120",
+          "id": 120,
+          "name": "Indonesia",
+          "shortname": "Indonesia",
+          "iso3": "idn",
+          "location": {
+            "lat": -2.28,
+            "lon": 117.37
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4728,
+          "name": "Land Slide",
+          "code": "LS",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6375",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "2005-10-19T00:00:00+00:00",
+        "event": "2005-10-19T00:00:00+00:00"
       }
     },
     {
@@ -66772,51 +66817,6 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/5750",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "2005-10-19T00:00:00+00:00",
-        "event": "2005-10-19T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "6375",
-      "name": "Indonesia: Landslides - Oct 2005",
-      "status": "past",
-      "glide": "LS-2005-000179-IDN",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/120",
-        "id": 120,
-        "name": "Indonesia",
-        "shortname": "Indonesia",
-        "iso3": "idn",
-        "location": {
-          "lat": -2.28,
-          "lon": 117.37
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/120",
-          "id": 120,
-          "name": "Indonesia",
-          "shortname": "Indonesia",
-          "iso3": "idn",
-          "location": {
-            "lat": -2.28,
-            "lon": 117.37
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4728,
-          "name": "Land Slide",
-          "code": "LS",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6375",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "2005-10-19T00:00:00+00:00",
@@ -73017,51 +73017,6 @@
       }
     },
     {
-      "id": "5133",
-      "name": "Burundi: Floods - Dec 2006",
-      "status": "past",
-      "glide": "FL-2006-000190-BDI",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/47",
-        "id": 47,
-        "name": "Burundi",
-        "shortname": "Burundi",
-        "iso3": "bdi",
-        "location": {
-          "lat": -3.53,
-          "lon": 29.89
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/47",
-          "id": 47,
-          "name": "Burundi",
-          "shortname": "Burundi",
-          "iso3": "bdi",
-          "location": {
-            "lat": -3.53,
-            "lon": 29.89
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5133",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "2006-12-22T00:00:00+00:00",
-        "event": "2006-12-22T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5785",
       "name": "Sri Lanka: Floods - Dec 2006",
       "description": "On 17 December, OCHA, UNICEF and MERLIN conducted a rapid assessment of the displacement caused by the flooding in Pottuvil Division. The National Disaster Management Center reported that 6,000 families and 2,200 families were affected as a result of floods in Pottuvil division and Lahugala respectively. On 18 December, a mini cyclone affected 27 families in Komari. The DMU reported that 27 houses were damaged. ([IASC Sri Lanka, 21 Dec 2006](https://reliefweb.int/node/222282/))",
@@ -73103,6 +73058,51 @@
       "url": "https://reliefweb.int/taxonomy/term/5785",
       "date": {
         "changed": "2023-09-11T03:41:46+00:00",
+        "created": "2006-12-22T00:00:00+00:00",
+        "event": "2006-12-22T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5133",
+      "name": "Burundi: Floods - Dec 2006",
+      "status": "past",
+      "glide": "FL-2006-000190-BDI",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/47",
+        "id": 47,
+        "name": "Burundi",
+        "shortname": "Burundi",
+        "iso3": "bdi",
+        "location": {
+          "lat": -3.53,
+          "lon": 29.89
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/47",
+          "id": 47,
+          "name": "Burundi",
+          "shortname": "Burundi",
+          "iso3": "bdi",
+          "location": {
+            "lat": -3.53,
+            "lon": 29.89
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5133",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
         "created": "2006-12-22T00:00:00+00:00",
         "event": "2006-12-22T00:00:00+00:00"
       }
@@ -86763,51 +86763,6 @@
       }
     },
     {
-      "id": "5437",
-      "name": "China: Earthquake - Oct 2008",
-      "status": "past",
-      "glide": "EQ-2008-000183-CHN",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/58",
-        "id": 58,
-        "name": "China",
-        "shortname": "China",
-        "iso3": "chn",
-        "location": {
-          "lat": 35.49,
-          "lon": 101.9
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/58",
-          "id": 58,
-          "name": "China",
-          "shortname": "China",
-          "iso3": "chn",
-          "location": {
-            "lat": 35.49,
-            "lon": 101.9
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4628,
-          "name": "Earthquake",
-          "code": "EQ",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5437",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
-        "created": "2008-10-06T00:00:00+00:00",
-        "event": "2008-10-06T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5676",
       "name": "Tropical Storm Marco - Oct 2008",
       "status": "past",
@@ -86846,6 +86801,51 @@
         }
       ],
       "url": "https://reliefweb.int/taxonomy/term/5676",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "2008-10-06T00:00:00+00:00",
+        "event": "2008-10-06T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5437",
+      "name": "China: Earthquake - Oct 2008",
+      "status": "past",
+      "glide": "EQ-2008-000183-CHN",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/58",
+        "id": 58,
+        "name": "China",
+        "shortname": "China",
+        "iso3": "chn",
+        "location": {
+          "lat": 35.49,
+          "lon": 101.9
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/58",
+          "id": 58,
+          "name": "China",
+          "shortname": "China",
+          "iso3": "chn",
+          "location": {
+            "lat": 35.49,
+            "lon": 101.9
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4628,
+          "name": "Earthquake",
+          "code": "EQ",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5437",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
         "created": "2008-10-06T00:00:00+00:00",
@@ -89459,6 +89459,51 @@
       }
     },
     {
+      "id": "6395",
+      "name": "Guatemala: Landslide - Jan 2009",
+      "status": "past",
+      "glide": "LS-2009-000004-GTM",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/109",
+        "id": 109,
+        "name": "Guatemala",
+        "shortname": "Guatemala",
+        "iso3": "gtm",
+        "location": {
+          "lat": 15.61,
+          "lon": -90.39
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/109",
+          "id": 109,
+          "name": "Guatemala",
+          "shortname": "Guatemala",
+          "iso3": "gtm",
+          "location": {
+            "lat": 15.61,
+            "lon": -90.39
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4728,
+          "name": "Land Slide",
+          "code": "LS",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/6395",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "2009-01-04T00:00:00+00:00",
+        "event": "2009-01-04T00:00:00+00:00"
+      }
+    },
+    {
       "id": "5985",
       "name": "Indonesia: Earthquake - Jan 2009",
       "description": "On 4 January a series of earthquakes struck off the coast of West Papua, with the closest city Manokwari 95 km from the epicentre. According to BMKG, the main earthquakes struck at 4:43 am local time, 7.2 on the Richter Scale (RS) at a depth of 10km and at 7:33 am local time, 7.6 on RS at the same depth; followed by over a dozen aftershocks.\n\nOfficial data released by SATKORLAK PB of West Papua showed that 4 people died in Manokwari and 1 person in Sorong. Around 250 people were injured. More than 800 houses, 34 government buildings, four schools, and 11 places of worship were damaged. As of 5 January, there wer more than 14,000 IDPs but most have taken refuge to anticipate further earthquakes while some have fled because of damaged houses.\n\nAccording to local government officials in Masni Sub-district, the five most affected villages are Sumberboga, Warori, Boisubur, Masni and Mancabori. ([OCHA, 5 Jan 2009](https://reliefweb.int/node/292413/))\n\nUnofficial reports confirmed that coastal communities, upwards of 1000 people, were moved to emergency shelters during the tsunami alert and were urged to stay outside of their houses by the local authorities until the aftershocks subsided. According to Metro TV, hundreds of people fled the aftershocks in Manokwari to nearby Makodim. ([4 Jan 2009](https://reliefweb.int/node/292296/))",
@@ -89500,51 +89545,6 @@
       "url": "https://reliefweb.int/taxonomy/term/5985",
       "date": {
         "changed": "2020-07-26T21:01:09+00:00",
-        "created": "2009-01-04T00:00:00+00:00",
-        "event": "2009-01-04T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "6395",
-      "name": "Guatemala: Landslide - Jan 2009",
-      "status": "past",
-      "glide": "LS-2009-000004-GTM",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/109",
-        "id": 109,
-        "name": "Guatemala",
-        "shortname": "Guatemala",
-        "iso3": "gtm",
-        "location": {
-          "lat": 15.61,
-          "lon": -90.39
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/109",
-          "id": 109,
-          "name": "Guatemala",
-          "shortname": "Guatemala",
-          "iso3": "gtm",
-          "location": {
-            "lat": 15.61,
-            "lon": -90.39
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4728,
-          "name": "Land Slide",
-          "code": "LS",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/6395",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
         "created": "2009-01-04T00:00:00+00:00",
         "event": "2009-01-04T00:00:00+00:00"
       }
@@ -94311,6 +94311,52 @@
       }
     },
     {
+      "id": "5578",
+      "name": "Typhoon Chan-hom - May 2009",
+      "description": "On 7 May 2009, Typhoon Chan-hom (local name \"EMONG\") made landfall in Northern Pangasinan and caused landslides and floods across multiple regions. ([Govt. of the Philippines, 8 May 2009](https://reliefweb.int/node/308032/)) On 19 May 2009, 385,833 persons were affected across 12 provinces in four regions of the country. The death toll was 60. ([Govt. of the Philippines, 19 May 2009](https://reliefweb.int/node/311653/)).",
+      "status": "past",
+      "glide": "TC-2009-000093-PHL",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/188",
+        "id": 188,
+        "name": "Philippines",
+        "shortname": "Philippines",
+        "iso3": "phl",
+        "location": {
+          "lat": 11.74,
+          "lon": 122.88
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/188",
+          "id": 188,
+          "name": "Philippines",
+          "shortname": "Philippines",
+          "iso3": "phl",
+          "location": {
+            "lat": 11.74,
+            "lon": 122.88
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4618,
+          "name": "Tropical Cyclone",
+          "code": "TC",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5578",
+      "date": {
+        "changed": "2023-11-15T05:12:27+00:00",
+        "created": "2009-05-08T00:00:00+00:00",
+        "event": "2009-05-08T00:00:00+00:00"
+      }
+    },
+    {
       "id": "5371",
       "name": "El Salvador: Earthquake - May 2009",
       "status": "past",
@@ -94397,52 +94443,6 @@
       "url": "https://reliefweb.int/taxonomy/term/5210",
       "date": {
         "changed": "2023-01-12T03:34:30+00:00",
-        "created": "2009-05-08T00:00:00+00:00",
-        "event": "2009-05-08T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "5578",
-      "name": "Typhoon Chan-hom - May 2009",
-      "description": "On 7 May 2009, Typhoon Chan-hom (local name \"EMONG\") made landfall in Northern Pangasinan and caused landslides and floods across multiple regions. ([Govt. of the Philippines, 8 May 2009](https://reliefweb.int/node/308032/)) On 19 May 2009, 385,833 persons were affected across 12 provinces in four regions of the country. The death toll was 60. ([Govt. of the Philippines, 19 May 2009](https://reliefweb.int/node/311653/)).",
-      "status": "past",
-      "glide": "TC-2009-000093-PHL",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/188",
-        "id": 188,
-        "name": "Philippines",
-        "shortname": "Philippines",
-        "iso3": "phl",
-        "location": {
-          "lat": 11.74,
-          "lon": 122.88
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/188",
-          "id": 188,
-          "name": "Philippines",
-          "shortname": "Philippines",
-          "iso3": "phl",
-          "location": {
-            "lat": 11.74,
-            "lon": 122.88
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4618,
-          "name": "Tropical Cyclone",
-          "code": "TC",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5578",
-      "date": {
-        "changed": "2023-11-15T05:12:27+00:00",
         "created": "2009-05-08T00:00:00+00:00",
         "event": "2009-05-08T00:00:00+00:00"
       }
@@ -97168,51 +97168,6 @@
       }
     },
     {
-      "id": "5360",
-      "name": "Guatemala: Food Insecurity - Sep 2009",
-      "status": "past",
-      "glide": "OT-2009-000169-GTM",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/109",
-        "id": 109,
-        "name": "Guatemala",
-        "shortname": "Guatemala",
-        "iso3": "gtm",
-        "location": {
-          "lat": 15.61,
-          "lon": -90.39
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/109",
-          "id": 109,
-          "name": "Guatemala",
-          "shortname": "Guatemala",
-          "iso3": "gtm",
-          "location": {
-            "lat": 15.61,
-            "lon": -90.39
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4672,
-          "name": "Drought",
-          "code": "DR",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5360",
-      "date": {
-        "changed": "2014-02-20T16:36:30+00:00",
-        "created": "2009-09-01T00:00:00+00:00",
-        "event": "2009-09-01T00:00:00+00:00"
-      }
-    },
-    {
       "id": "5614",
       "name": "Burkina Faso: Floods - Sep 2009",
       "status": "past",
@@ -97253,6 +97208,51 @@
       "url": "https://reliefweb.int/taxonomy/term/5614",
       "date": {
         "changed": "1970-01-01T00:00:00+00:00",
+        "created": "2009-09-01T00:00:00+00:00",
+        "event": "2009-09-01T00:00:00+00:00"
+      }
+    },
+    {
+      "id": "5360",
+      "name": "Guatemala: Food Insecurity - Sep 2009",
+      "status": "past",
+      "glide": "OT-2009-000169-GTM",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/109",
+        "id": 109,
+        "name": "Guatemala",
+        "shortname": "Guatemala",
+        "iso3": "gtm",
+        "location": {
+          "lat": 15.61,
+          "lon": -90.39
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/109",
+          "id": 109,
+          "name": "Guatemala",
+          "shortname": "Guatemala",
+          "iso3": "gtm",
+          "location": {
+            "lat": 15.61,
+            "lon": -90.39
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4672,
+          "name": "Drought",
+          "code": "DR",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5360",
+      "date": {
+        "changed": "2014-02-20T16:36:30+00:00",
         "created": "2009-09-01T00:00:00+00:00",
         "event": "2009-09-01T00:00:00+00:00"
       }
@@ -98405,6 +98405,51 @@
       }
     },
     {
+      "id": "5675",
+      "name": "Kenya: Floods - Sep 2009",
+      "status": "past",
+      "glide": "FL-2009-000218-KEN",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v2/countries/131",
+        "id": 131,
+        "name": "Kenya",
+        "shortname": "Kenya",
+        "iso3": "ken",
+        "location": {
+          "lat": 0.53,
+          "lon": 37.86
+        }
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v2/countries/131",
+          "id": 131,
+          "name": "Kenya",
+          "shortname": "Kenya",
+          "iso3": "ken",
+          "location": {
+            "lat": 0.53,
+            "lon": 37.86
+          },
+          "primary": true
+        }
+      ],
+      "type": [
+        {
+          "id": 4611,
+          "name": "Flood",
+          "code": "FL",
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/5675",
+      "date": {
+        "changed": "1970-01-01T00:00:00+00:00",
+        "created": "2009-09-21T00:00:00+00:00",
+        "event": "2009-09-21T00:00:00+00:00"
+      }
+    },
+    {
       "id": "5463",
       "name": "Bhutan: Earthquake - Sep 2009",
       "description": "On Monday, 21 September 2009, an earthquake measuring 6.1 on the Richter scale hit at 02:53:05 pm local time in Mongar in Bhutan. The US Geological Survey initially reported the earthquake as 6.3 mw which was later revised to 6.1 mw.\n\nThe epicenter of the earthquake was located 177 km from Thimpu , the Bhutanese capital. As of 09:30 pm local time in Bhutan, 12 people had been killed - 5 in Mongar, 4 in Samdrup Jongkhar and 3 in Trashigang. Seven more tremors were felt in Transhigang after the earthquake hit, with the first few tremors occurring every half an hour. In Mongar, three more tremors were felt. The earthquake was felt in the north-east states of India, including Assam, Arunachal Pradesh, Bihar, Meghalaya, Sikkim and West Bengal. It was also felt in Bangladesh. ([UNCT, 22 Sep 2009](https://reliefweb.int/node/325195/))\n\nThe earthquake in Bhutan caused damage to buildings and infrastructure in Bhutan and parts of northeast India. The Government of Bhutan reported 12 deaths and 35 injured on 1 October 2009. The earthquake severely affected living conditions leaving homes, schools and government buildings damaged beyond repair. The Government estimates that up to 8,400 people may have been left homeless. ([OCHA, 7 Oct 2009](https://reliefweb.int/node/329311/))",
@@ -98457,51 +98502,6 @@
       "url": "https://reliefweb.int/taxonomy/term/5463",
       "date": {
         "changed": "2020-07-26T20:33:09+00:00",
-        "created": "2009-09-21T00:00:00+00:00",
-        "event": "2009-09-21T00:00:00+00:00"
-      }
-    },
-    {
-      "id": "5675",
-      "name": "Kenya: Floods - Sep 2009",
-      "status": "past",
-      "glide": "FL-2009-000218-KEN",
-      "primary_country": {
-        "href": "https://api.reliefweb.int/v2/countries/131",
-        "id": 131,
-        "name": "Kenya",
-        "shortname": "Kenya",
-        "iso3": "ken",
-        "location": {
-          "lat": 0.53,
-          "lon": 37.86
-        }
-      },
-      "country": [
-        {
-          "href": "https://api.reliefweb.int/v2/countries/131",
-          "id": 131,
-          "name": "Kenya",
-          "shortname": "Kenya",
-          "iso3": "ken",
-          "location": {
-            "lat": 0.53,
-            "lon": 37.86
-          },
-          "primary": true
-        }
-      ],
-      "type": [
-        {
-          "id": 4611,
-          "name": "Flood",
-          "code": "FL",
-          "primary": true
-        }
-      ],
-      "url": "https://reliefweb.int/taxonomy/term/5675",
-      "date": {
-        "changed": "1970-01-01T00:00:00+00:00",
         "created": "2009-09-21T00:00:00+00:00",
         "event": "2009-09-21T00:00:00+00:00"
       }
@@ -191386,7 +191386,7 @@
       "id": "52453",
       "name": "Nigeria: Floods - Sep 2025",
       "description": "Between 13 and 14 September 2025, Dikwa Local Government Area (LGA) in Borno State, Nigeria experienced severe flooding triggered by heavy rainfall, which significantly impacted three camps: Alhaji Bashir Camp, Kamcheji Camp, and the Reception Centre. According to IOM Nigeria flash report 169 The flooding displaced 5,829 individuals across 1,058 households, including 3,350 children, 1,364 women, and 1,115 men. A total of 895 shelters were affected, with 849 completely destroyed and 46 partially damaged. ([RRM, 30 Sep 2025](https://reliefweb.int/node/4179820))\n\nBetween 21 and 26 September 2025, severe flooding caused by heavy rainfall and river overflows affected five local government areas (LGAs) across Jigawa State, including Guri, Kiri Kasamma, Birniwa, Jahun, and Ringim. The incident led to widespread damage to homes, shelters, and community infrastructure across host communities.  ([FEWS NET, 01 Oct 2025](https://reliefweb.int/node/4178689))\n\nLocalized flooding, particularly flash floods due to heavy rains, continued to drive population displacement, loss of livelihood assets, destruction of farmlands, and crop loss, exacerbating difficulties accessing food and income and increasing food consumption gaps in some riverine communities across the country. As of September 20, 232 individuals have died and about 121,000 individuals have been displaced by flooding. In Adamawa State, 13 communities in Yola North and Yola South LGAs were flooded and many residents were displaced by flash floods in mid-September. ([FEWS NET, 06 Oct 2025](https://reliefweb.int/node/4179742))\n\nThe WFP through its advance disaster analysis & mapping (ADAM) on Nigeria’s floods impact, released on 22\nSeptember 2025, an estimated 695,354 individuals have been impacted by the current 2025 floods with 1,081,680\nhectares of land inundated including 264,965 hectares of farmland. The NRCS is undertaking search and rescue\noperations, risk communication and community engagement (RCCE), prepositioning of NFIs, activation of early action\nprotocol, hygiene promotion, RFL services and health promotion as well as joint assessments with other stakeholders\nin the field. ([IFRC, 02 Nov 2025](https://reliefweb.int/node/4189970))",
-      "status": "ongoing",
+      "status": "past",
       "glide": "FL-2025-000187-NGA",
       "primary_country": {
         "href": "https://api.reliefweb.int/v2/countries/175",
@@ -191423,7 +191423,7 @@
       ],
       "url": "https://reliefweb.int/taxonomy/term/52453",
       "date": {
-        "changed": "2026-01-23T08:42:29+00:00",
+        "changed": "2026-08-18T07:11:37+00:00",
         "created": "2025-10-08T08:36:05+00:00",
         "event": "2025-09-13T00:00:00+00:00"
       }
@@ -195417,7 +195417,7 @@
     {
       "id": "52676",
       "name": "Indonesia: Earthquake - Aug 2026",
-      "description": "A magnitude 7.7 earthquake struck offshore Nagekeo Regency, East Nusa Tenggara Province, on 15 August 2026 at 04:58 WIB. The earthquake occurred at a depth of 15 km, approximately 38 km northeast of Mbay. The tsunami warning issued for several coastal areas was officially lifted by BMKG at 07:31 WIB. As of 16 August 2026 at 00:00 WIB, BNPB reported 47 fatalities and 101 injuries. More than 5,000 people remain displaced, including 3,356 people in Sikka, 2,078 in Manggarai, and 500 in Nagekeo. Additional displacement was reported in Bima and the Selayar Islands. Preliminary assessments recorded 914 houses severely damaged, 126 moderately damaged, and 317 slightly damaged. At least 93 educational facilities, 36 health facilities, and 38 government offices were also affected. BMKG recorded 341 aftershocks with magnitudes ranging from 2.5 to 6.2. Continuing aftershocks, damaged roads, electricity outages, and communication disruptions are affecting assessments and humanitarian operations. The Larantuka–Maumere road is accessible, while the Ende–Nagekeo road remains cut off. ([IFRC & PMI, 16 Aug 2026](https://reliefweb.int/node/4225800))\n\nThe number of IDPs increased to 9,290 people, based on the BNPB update at 00.00 WIB. The details include 3,356 Sikka people—1,356 in the Samador GOR and 2,000 spread independently in 10 points—Manggarai 2,078 people, and Nagekeo 500 people. [...] The earthquake shock was followed by 341 aftershock activities. The number of fatalities recorded to date is 47 people, with the highest death toll in Manggarai Regency with 23 people and East Manggarai with 17 people. Meanwhile, other fatalities were spread across Sikka Regency with 4 people, West Manggarai with 1 person, Ende with 1 person, and Nagekeo with 1 person. At least 101 residents were reported injured with varying degrees of severity. Damage increased significantly compared to previous reports: BNPB now records 914 houses severely damaged, 126 moderately damaged, and 317 lightly damaged—a total of 1,357 houses. The affected facilities include 93 educational facilities, 36 health facilities, and 38 government offices. ([MPBI, 17 Aug 2026](https://reliefweb.int/node/4225822))",
+      "description": "A magnitude 7.7 earthquake struck offshore Nagekeo Regency, East Nusa Tenggara Province, on 15 August 2026 at 04:58 WIB. The earthquake occurred at a depth of 15 km, approximately 38 km northeast of Mbay. The tsunami warning issued for several coastal areas was officially lifted by BMKG at 07:31 WIB. As of 16 August 2026 at 00:00 WIB, BNPB reported 47 fatalities and 101 injuries. More than 5,000 people remain displaced, including 3,356 people in Sikka, 2,078 in Manggarai, and 500 in Nagekeo. Additional displacement was reported in Bima and the Selayar Islands. Preliminary assessments recorded 914 houses severely damaged, 126 moderately damaged, and 317 slightly damaged. At least 93 educational facilities, 36 health facilities, and 38 government offices were also affected. BMKG recorded 341 aftershocks with magnitudes ranging from 2.5 to 6.2. Continuing aftershocks, damaged roads, electricity outages, and communication disruptions are affecting assessments and humanitarian operations. The Larantuka–Maumere road is accessible, while the Ende–Nagekeo road remains cut off. ([IFRC & PMI, 16 Aug 2026](https://reliefweb.int/node/4225800))\n\nThe number of IDPs increased to 9,290 people, based on the BNPB update at 00.00 WIB. The details include 3,356 Sikka people—1,356 in the Samador GOR and 2,000 spread independently in 10 points—Manggarai 2,078 people, and Nagekeo 500 people. [...] The earthquake shock was followed by 341 aftershock activities. The number of fatalities recorded to date is 47 people, with the highest death toll in Manggarai Regency with 23 people and East Manggarai with 17 people. Meanwhile, other fatalities were spread across Sikka Regency with 4 people, West Manggarai with 1 person, Ende with 1 person, and Nagekeo with 1 person. At least 101 residents were reported injured with varying degrees of severity. Damage increased significantly compared to previous reports: BNPB now records 914 houses severely damaged, 126 moderately damaged, and 317 lightly damaged—a total of 1,357 houses. The affected facilities include 93 educational facilities, 36 health facilities, and 38 government offices. ([MPBI, 17 Aug 2026](https://reliefweb.int/node/4225822))\n\nAs of 18 August 2026, 69 people were reported dead and 1,199 injured, including 115 people with serious injuries and 1,084 with minor injuries. A total of 46,252 people remain displaced, including 46,181 people across the seven affected regencies in East Nusa Tenggara and 71 people in Bima Regency, West Nusa Tenggara. [...] Preliminary damage included 5,713 houses severely damaged, 2,098 moderately damaged and 3,402 slightly damaged. A further 283 educational facilities, 211 health facilities, 97 government buildings, 96 places of worship and 106 business premises or offices were affected. ([IFRC & PMI, 18 Aug 2026](https://reliefweb.int/node/4226044))",
       "status": "alert",
       "glide": "EQ-2026-000150-IDN",
       "primary_country": {
@@ -195455,7 +195455,7 @@
       ],
       "url": "https://reliefweb.int/taxonomy/term/52676",
       "date": {
-        "changed": "2026-08-18T01:58:53+00:00",
+        "changed": "2026-08-19T00:20:32+00:00",
         "created": "2026-08-17T01:49:47+00:00",
         "event": "2026-08-15T00:00:00+00:00"
       }

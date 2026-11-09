@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-11-02T11:44:55.005444+00:00",
+  "fetched_at": "2026-11-09T12:15:15.768576+00:00",
   "source": "https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/csv/ibtracs.SI.list.v04r01.csv",
-  "row_count": 171076,
-  "sha256": "a11d3be667cbf6eade12ee785f31f9284d8881dc95c14b1f4d53ff4c50a04d37"
+  "row_count": 171079,
+  "sha256": "015394b51bcf05d39c6fafe2934ac29fd6fcc3db9b79e389c0b1e2fe5c423134"
 }
